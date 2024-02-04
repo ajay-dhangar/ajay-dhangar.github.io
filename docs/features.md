@@ -159,3 +159,11 @@ int main() {
 </TabItem>
 </Tabs>
 
+## Add Apple Style Window
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+ <BrowserWindow minHeight="500" url="http://hello.com/intro/">
+    <img src="https://github.com/Ajay-Dhangar.png" width="150" /> <br />
+    <button onClick={() => alert('Hello, world!')}>Click Me</button>
+ </BrowserWindow>
