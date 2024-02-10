@@ -6,6 +6,8 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 
+const path = require("path");
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "My Site",
@@ -29,22 +31,36 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'hi'],
+  //   localeConfigs: {
+  //     en: {
+  //       label: 'English',
+  //       direction: 'ltr',
+  //     },
+  //     hi: {
+  //       label: 'हिंदी',
+  //       direction: 'ltr',
+  //     },
+  //   },
+  // },
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        debug: true,
         docs: {
-          sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          path: "docs",
+          sidebarPath: "sidebars.js",
+          numberPrefixParser: false,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/Ajay-Dhangar/CodeMastermindHQ/edit/main/",
+          // remarkPlugins: [npm2yarn, {sync: true}],
         },
         blog: {
           showReadingTime: true,
@@ -79,6 +95,10 @@ const config = {
             label: "Tutorial",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
@@ -144,7 +164,55 @@ const config = {
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid", "@docusaurus/theme-live-codeblock"],
-  
+
+  plugins: [
+    [
+      "@docusaurus/plugin-pwa",
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          "appInstalled",
+          "standalone",
+          "queryString",
+        ],
+        pwaHead: [
+          {
+            tagName: "link",
+            rel: "icon",
+            href: "/img/docusaurus.png",
+          },
+          {
+            tagName: "link",
+            rel: "manifest",
+            href: "/manifest.json", // your PWA manifest
+          },
+          {
+            tagName: "meta",
+            name: "theme-color",
+            content: "rgb(37, 194, 160)",
+          },
+        ],
+      },
+    ],
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+    [
+      path.join(__dirname, "/plugins/my-plugin"),
+      {
+        settings: "Some20settings",
+        api: "Some-API",
+        keys: "Some-keys",
+      },
+    ],
+  ],
 };
 
 export default config;
