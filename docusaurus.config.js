@@ -1,12 +1,10 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from "prism-react-renderer";
 
 const path = require("path");
+import npm2yarn from '@docusaurus/remark-plugin-npm2yarn';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+// import configTabs from './src/remark/configTabs';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,16 +12,11 @@ const config = {
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "cmhq", 
+  projectName: "code-harbor-hub",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -58,9 +51,16 @@ const config = {
           numberPrefixParser: false,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          admonitions: {
+            keywords: ['my-custom-admonition'],
+            extendDefaults: true,
+          },
           editUrl:
             "https://github.com/Ajay-Dhangar/CodeMastermindHQ/edit/main/",
-          // remarkPlugins: [npm2yarn, {sync: true}],
+            remarkPlugins: [[npm2yarn, {sync: true}], remarkMath, rehypeKatex], // remarkMath, configTabs
+        },
+        pages: {
+          remarkPlugins: [npm2yarn], // remarkMath, configTabs
         },
         blog: {
           showReadingTime: true,
@@ -68,12 +68,23 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            remarkPlugins: [[npm2yarn, {sync: true}], ], // remarkMath, configTabs
         },
         theme: {
           customCss: "./src/css/custom.css",
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   themeConfig:
@@ -89,21 +100,33 @@ const config = {
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            type: "doc",
+            docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Docs",
+          },
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "tutorialSidebar",
+          //   position: "left",
+          //   label: "Tutorial",
+          // },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'api',
+            label: 'API',
           },
           { to: "/blog", label: "Blog", position: "left" },
           // {
           //   type: 'localeDropdown',
           //   position: 'right',
           // },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
+          // {
+          //   href: "https://github.com/ajay-dhangar/code-harbor-hub",
+          //   label: "GitHub",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
@@ -193,6 +216,15 @@ const config = {
           },
         ],
       },
+      // [
+      //   '@docusaurus/plugin-content-docs',
+      //   {
+      //     id: 'community',
+      //     path: 'community',
+      //     routeBasePath: 'community',
+      //     sidebarPath: './sidebarsCommunity.js',
+      //   },
+      // ],
     ],
     [
       "@docusaurus/plugin-ideal-image",
@@ -212,6 +244,7 @@ const config = {
         keys: "Some-keys",
       },
     ],
+    
   ],
 };
 

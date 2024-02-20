@@ -167,3 +167,91 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
     <img src="https://github.com/Ajay-Dhangar.png" width="150" /> <br />
     <button onClick={() => alert('Hello, world!')}>Click Me</button>
  </BrowserWindow>
+
+
+## Highlighting with metadata string
+
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+## Line numbering
+
+```jsx {1,4-6,11} showLineNumbers
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+## npm2yarn
+
+```bash npm2yarn
+npm install @docusaurus/remark-plugin-npm2yarn
+```
+
+## warning
+
+:::warning
+Beware of the dark side.
+:::
+
+## danger
+
+:::danger
+I find your lack of faith disturbing.
+:::
+
+## info
+
+:::info
+Luke, I am your father.
+:::
+
+## success
+
+:::success
+The Force will be with you, always.
+:::
+
+## Admonitions
+
+:::caution
+This is a caution admonition
+:::
+
+:::note
+This is a note admonition
+:::
+
+:::tip
+This is a tip admonition
+:::
+
+:::important
+This is an important admonition
+:::
+
+:::seealso
+This is a seealso admonition
+:::
+
+---
+
