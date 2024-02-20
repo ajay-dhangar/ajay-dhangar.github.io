@@ -15,7 +15,7 @@ CodeHarborHub is a dynamic platform dedicated to empowering developers, enthusia
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/Ajay-Dhangar/CodeHarborHub.git`
+1. Clone the repository: `git clone https://github.com/Ajay-Dhangar/code-harbor-hub.git`
 2. Explore the content and resources available in the various directories.
 
 ## Contribution Guidelines

@@ -1,9 +1,9 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
 const path = require("path");
-import npm2yarn from '@docusaurus/remark-plugin-npm2yarn';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 // import configTabs from './src/remark/configTabs';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -12,10 +12,10 @@ const config = {
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://cmhq.tech",
   baseUrl: "/",
 
-  organizationName: "cmhq", 
+  organizationName: "cmhq",
   projectName: "code-harbor-hub",
 
   onBrokenLinks: "throw",
@@ -52,12 +52,12 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           admonitions: {
-            keywords: ['my-custom-admonition'],
+            keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl:
-            "https://github.com/Ajay-Dhangar/CodeMastermindHQ/edit/main/",
-            remarkPlugins: [[npm2yarn, {sync: true}], remarkMath, rehypeKatex], // remarkMath, configTabs
+          // editUrl:
+          //   "https://github.com/Ajay-Dhangar/",
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], // remarkMath, configTabs
         },
         pages: {
           remarkPlugins: [npm2yarn], // remarkMath, configTabs
@@ -66,9 +66,9 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-            remarkPlugins: [[npm2yarn, {sync: true}], ], // remarkMath, configTabs
+          // editUrl:
+          //   "",
+          remarkPlugins: [[npm2yarn, { sync: true }]], // remarkMath, configTabs
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -76,22 +76,18 @@ const config = {
       }),
     ],
   ],
-
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
-  ],
+  
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      announcementBar: {
+        id: 'announcementBar',
+        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
+        isCloseable: true,
+      },
       navbar: {
         title: "CodeHarborHub",
         logo: {
@@ -105,17 +101,31 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          // {
-          //   type: "docSidebar",
-          //   sidebarId: "tutorialSidebar",
-          //   position: "left",
-          //   label: "Tutorial",
-          // },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'api',
-            label: 'API',
+            to: "/community",
+            label: "Community",
+            position: "left",
+          },
+          {
+            to: "/courses",
+            label: "Courses",
+            position: "left",
+          },
+          {
+            to: "/web-dev",
+            label: "Web Dev",
+            position: "left",
+          },
+          {
+            to: "/product",
+            label: "Product",
+            position: "left",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "api",
+            label: "API",
           },
           { to: "/blog", label: "Blog", position: "left" },
           // {
@@ -215,16 +225,7 @@ const config = {
             content: "rgb(37, 194, 160)",
           },
         ],
-      },
-      // [
-      //   '@docusaurus/plugin-content-docs',
-      //   {
-      //     id: 'community',
-      //     path: 'community',
-      //     routeBasePath: 'community',
-      //     sidebarPath: './sidebarsCommunity.js',
-      //   },
-      // ],
+      },      
     ],
     [
       "@docusaurus/plugin-ideal-image",
@@ -237,6 +238,68 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "community",
+        path: "community",
+        routeBasePath: "community",
+        editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsCommunity.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "product",
+        path: "product",
+        routeBasePath: "product",
+        editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsProduct.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],  
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "courses",
+        path: "courses",
+        routeBasePath: "courses",
+        editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsCourses.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ], 
+
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "web-dev",
+        path: "web-dev",
+        routeBasePath: "web-dev",
+        editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsWebDev.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+
+    [
       path.join(__dirname, "/plugins/my-plugin"),
       {
         settings: "Some20settings",
@@ -244,8 +307,9 @@ const config = {
         keys: "Some-keys",
       },
     ],
-    
+
   ],
+  
 };
 
 export default config;
