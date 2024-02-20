@@ -13,13 +13,13 @@ export default function Footer(props) {
                 className="mb-6 inline-block max-w-[160px]"
               >
                 <img style={{width: "80px"}}
-                  src="img/logo.svg"
+                  src="/img/logo.svg"
                   alt="logo"
                   className="max-w-full dark:hidden"
                 />
                 <img
                   style={{width: "80px"}}
-                  src="img/logo.svg"
+                  src="/img/logo.svg"
                   alt="logo"
                   className="hidden max-w-full dark:block"
                 />
