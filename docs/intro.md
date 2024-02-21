@@ -1,9 +1,8 @@
 ---
 title: Introduction to CodeHarborHub Documentation
 sidebar_label: Introduction
-sidebar_position: 1
+sidebar_position: 2
 id: intro
-slug: /
 ---
 
 Welcome to the CodeHarborHub documentation! This documentation is intended to help you get started with CodeHarborHub and to provide you with a comprehensive guide to the features and functionality of the platform.

@@ -94,18 +94,17 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          // {
-          //   type: "doc",
-          //   docId: "intro",
-          //   position: "left",
-          //   label: "Docs",
-          // },
           {
-            to: "/docs",
-            label: "Tutorials",
+            type: "doc",
+            docId: "intro",
             position: "left",
+            label: "Tutorials",
           },
-
+          // {
+          //   to: "/docs",
+          //   label: "Tutorials",
+          //   position: "left",
+          // },
           {
             to: "/courses",
             label: "Courses",
