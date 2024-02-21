@@ -8,8 +8,8 @@ import rehypeKatex from "rehype-katex";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "CodeHarborHub",
+  tagline: "A place to learn and grow",
   favicon: "img/favicon.ico",
 
   url: "https://cmhq.tech",
@@ -55,8 +55,8 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          // editUrl:
-          //   "https://github.com/Ajay-Dhangar/",
+          editUrl:
+            "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], // remarkMath, configTabs
         },
         pages: {
@@ -76,7 +76,6 @@ const config = {
       }),
     ],
   ],
-  
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -84,7 +83,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       announcementBar: {
-        id: 'announcementBar',
+        id: "announcementBar",
         content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
         isCloseable: true,
       },
@@ -95,17 +94,18 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "Docs",
+          // },
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Docs",
-          },
-          {
-            to: "/community",
-            label: "Community",
+            to: "/docs",
+            label: "Tutorials",
             position: "left",
           },
+
           {
             to: "/courses",
             label: "Courses",
@@ -122,10 +122,14 @@ const config = {
             position: "left",
           },
           {
-            type: "docSidebar",
+            to: "/docs/dsa/",
+            label: "DSA",
             position: "left",
-            sidebarId: "api",
-            label: "API",
+          },
+          {
+            to: "/community",
+            label: "Community",
+            position: "left",
           },
           { to: "/blog", label: "Blog", position: "left" },
           // {
@@ -147,7 +151,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
+                to: "/docs",
               },
             ],
           },
@@ -156,15 +160,15 @@ const config = {
             items: [
               {
                 label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "#",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "#",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "#",
               },
             ],
           },
@@ -225,7 +229,7 @@ const config = {
             content: "rgb(37, 194, 160)",
           },
         ],
-      },      
+      },
     ],
     [
       "@docusaurus/plugin-ideal-image",
@@ -244,7 +248,7 @@ const config = {
         id: "community",
         path: "community",
         routeBasePath: "community",
-        editUrl: "#",
+        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCommunity.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
@@ -259,14 +263,14 @@ const config = {
         id: "product",
         path: "product",
         routeBasePath: "product",
-        editUrl: "#",
+        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsProduct.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
-    ],  
+    ],
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -274,14 +278,14 @@ const config = {
         id: "courses",
         path: "courses",
         routeBasePath: "courses",
-        editUrl: "#",
+        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCourses.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       },
-    ], 
+    ],
 
     [
       "@docusaurus/plugin-content-docs",
@@ -290,7 +294,7 @@ const config = {
         id: "web-dev",
         path: "web-dev",
         routeBasePath: "web-dev",
-        editUrl: "#",
+        // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsWebDev.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
@@ -307,9 +311,7 @@ const config = {
         keys: "Some-keys",
       },
     ],
-
   ],
-  
 };
 
 export default config;
