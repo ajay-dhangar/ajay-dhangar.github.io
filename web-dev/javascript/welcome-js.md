@@ -6,18 +6,24 @@ sidebar_position: 1
 tags: [JavaScript]
 ---
 
-Welcome to the exciting world of JavaScript (JS)! JavaScript is a powerful programming language commonly used for creating interactive and dynamic websites. Whether you're a beginner or an experienced developer, learning JavaScript opens up a wide range of possibilities for building modern web applications.
+Welcome to JavaScript! JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
 
-## What is JavaScript?
+If you are new to JavaScript, you might want to start with the [Introduction to JavaScript](./intro-js.md) article.
 
-JavaScript is a high-level, interpreted programming language primarily used for adding interactivity and behavior to web pages. It was originally developed by **Brendan Eich** at ***Netscape Communications Corporation*** in 1995. Since then, JavaScript has evolved into one of the most popular programming languages in the world.
+JavaScript is a multi-paradigm, dynamic language with types and operators, standard built-in objects, and methods. Its syntax is based on the Java and C languages — many structures from those languages apply to JavaScript as well. JavaScript supports object-oriented programming with object prototypes, instead of classes (see more about [prototypal inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)).
 
-## Why Learn JavaScript?
+JavaScript also supports functional programming — you can pass functions as arguments to other functions, return them as values from other functions, and assign them to variables or store them in data structures.
 
-Learning JavaScript is essential for anyone interested in web development. Here are some reasons why you should consider learning JavaScript:
+JavaScript's standard library is very rich, providing a wide range of objects, including arrays, functions, and dates. Additionally, core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
 
-1. **Versatility:** JavaScript can be used for both front-end and back-end development, thanks to frameworks and libraries like React, Angular, Vue.js, and Node.js.
-2. **Interactivity:** With JavaScript, you can create dynamic and interactive web pages that respond to user actions, such as clicking buttons, entering text, or scrolling.
-3. **Career Opportunities:** JavaScript developers are in high demand in the tech industry, making it a valuable skill to have for career advancement.
-4. **Community and Resources:** JavaScript has a vast and active community of developers, along with abundant learning resources, tutorials, and documentation available online.
+- **Client-side JavaScript** extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
 
+- **Server-side JavaScript** extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+
+JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+
+JavaScript is an object-based language based on prototypes, rather than being class-based. Because of this different basis, it can be less apparent how JavaScript allows you to create hierarchies of objects and to have inheritance of properties and their values. JavaScript uses functions as classes. Some people are confused by this, as JavaScript's function syntax does not resemble that of class-based languages such as Java or C++.
+
+JavaScript is a versatile language and is used for more than just web pages. For example, many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, use JavaScript as their programming language.
+
+**Now that you have a basic understanding of JavaScript, let's dive into the language and learn more about it.** 
