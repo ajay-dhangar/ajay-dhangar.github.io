@@ -185,19 +185,19 @@ const config = {
             items: [
               {
                 label: "About",
-                to: "/about",
+                to: "/code-harbor-hub/",
               },
               {
                 label: "Contact",
-                to: "/contact",
+                to: "/code-harbor-hub/",
               },
               {
                 label: "Careers",
-                to: "/careers",
+                to: "/code-harbor-hub/",
               },
               {
                 label: "Team",
-                to: "/team",
+                to: "/code-harbor-hub/",
               },
             ],
           },

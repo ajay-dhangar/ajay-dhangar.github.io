@@ -8,7 +8,7 @@ tags: [JavaScript]
 
 Welcome to JavaScript! JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
 
-If you are new to JavaScript, you might want to start with the [Introduction to JavaScript](./intro-js.md) article.
+If you are new to JavaScript, you might want to start with the <mark>Introduction to JavaScript</mark> article.
 
 JavaScript is a multi-paradigm, dynamic language with types and operators, standard built-in objects, and methods. Its syntax is based on the Java and C languages — many structures from those languages apply to JavaScript as well. JavaScript supports object-oriented programming with object prototypes, instead of classes (see more about [prototypal inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)).
 
