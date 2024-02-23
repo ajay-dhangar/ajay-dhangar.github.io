@@ -1,9 +1,10 @@
 ---
 id: where-to-js
 title: Where to Write JavaScript
-sidebar_label: Where to Js
-sidebar_position: 3
-tags: [JavaScript, Introduction of js, Introduction of JavaScript]
+sidebar_label: Where to JavaScript
+sidebar_position: 2
+tags: [JavaScript, Introduction of js, Introduction of JavaScript, Where to javascript ]
+description: Where to write JavaScript code? Learn about the different places where JavaScript code can be written such as inline JavaScript, internal JavaScript, and external JavaScript.
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
