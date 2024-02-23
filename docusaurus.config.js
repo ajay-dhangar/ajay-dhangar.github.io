@@ -13,7 +13,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://cmhq.tech",
-  baseUrl: "/",
+  baseUrl: "/code-harbor-hub/",
 
   organizationName: "cmhq",
   projectName: "code-harbor-hub",
