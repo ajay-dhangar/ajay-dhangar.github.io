@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cmhq.tech/code-harbor-hub/blog</id>
-    <title>CodeHarborHub Blog</title>
+    <title>Code Harbor Hub Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cmhq.tech/code-harbor-hub/blog"/>
-    <subtitle>CodeHarborHub Blog</subtitle>
-    <icon>https://cmhq.tech/code-harbor-hub/img/favicon.ico</icon>
+    <subtitle>Code Harbor Hub Blog</subtitle>
+    <icon>https://cmhq.tech/code-harbor-hub/img/logo.jpg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://cmhq.tech/code-harbor-hub/blog/welcome</id>
