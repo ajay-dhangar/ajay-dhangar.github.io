@@ -1,16 +1,16 @@
 import { themes as prismThemes } from "prism-react-renderer";
-
-const path = require("path");
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 // import configTabs from './src/remark/configTabs';
 
+const path = require("path");
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "CodeHarborHub",
+  title: "Code Harbor Hub",
   tagline: "A place to learn and grow",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.jpg",
 
   url: "https://cmhq.tech",
   baseUrl: "/code-harbor-hub/",
@@ -55,8 +55,7 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl:
-            "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
+          editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], // remarkMath, configTabs
         },
         pages: {
@@ -81,7 +80,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/logo.jpg",
       announcementBar: {
         id: "announcementBar",
         content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
@@ -91,7 +90,7 @@ const config = {
         title: "CodeHarborHub",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/nav-logo.jpg",
         },
         items: [
           {
@@ -146,41 +145,101 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: ` `,
             items: [
               {
-                label: "Tutorial",
+                html: `
+                    <div class="footer_info--container">
+                      <img src="/code-harbor-hub/img/logo.png" alt="Footer logo" />
+                      <p>
+                        Welcome to CodeHarborHub, a place to learn and grow. We are a community of developers, creators, and learners
+                      </p>
+                    </div>
+                  `,
+              },
+            ],
+          },
+          {
+            title: "Resources",
+            items: [
+              {
+                label: "Tutorials",
                 to: "/docs",
               },
+              {
+                label: "Courses",
+                to: "/courses",
+              },
+              {
+                label: "Web Dev",
+                to: "/web-dev",
+              },
+              {
+                label: "DSA",
+                to: "/docs/dsa/",
+              },
             ],
           },
           {
-            title: "Community",
+            title: "Company",
             items: [
               {
-                label: "Stack Overflow",
-                href: "#",
+                label: "About",
+                to: "/about",
               },
               {
-                label: "Discord",
-                href: "#",
+                label: "Contact",
+                to: "/contact",
               },
               {
-                label: "Twitter",
-                href: "#",
+                label: "Careers",
+                to: "/careers",
+              },
+              {
+                label: "Team",
+                to: "/team",
               },
             ],
           },
           {
-            title: "More",
+            title: "Quick Links",
             items: [
               {
                 label: "Blog",
                 to: "/blog",
               },
               {
+                label: "Community",
+                to: "/community",
+              },
+              {
                 label: "GitHub",
-                href: "https://github.com/Ajay-Dhangar",
+                href: "https://github.com/ajay-dhangar",
+              },
+              {
+                label: "Products",
+                href: "/product",
+              },
+            ],
+          },
+          {
+            title: "Social",
+            items: [
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/ajay-dhangar/",
+              },
+              {
+                label: "YouTube",
+                href: "https://www.youtube.com/@ajay-dhangar/",
+              },
+              {
+                label: "Instagram",
+                href: "https://www.instagram.com/_ajay.dhangar",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/CodesWithAjay",
               },
             ],
           },

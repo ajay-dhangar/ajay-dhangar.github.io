@@ -34,3 +34,8 @@ This project is licensed under the [MIT License](#).
 
 - GitHub: [@Ajay-Dhangar](https://github.com/Ajay-Dhangar)
 - Website: [CMHQ.Tech](https://cmhq.tech)
+
+
+## Workflows 
+
+[![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml)

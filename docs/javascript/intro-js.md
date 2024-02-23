@@ -178,14 +178,14 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 
     <img
       id="myImage"
-      src="/img/static_website.svg"
+      src="/code-harbor-hub/img/static_website.svg"
       width="100%"
       height="auto"
     />
 
     <button
       type="button"
-      onclick="document.getElementById('myImage').src='/img/static_assets.svg'"
+      onclick="document.getElementById('myImage').src='/code-harbor-hub/img/static_assets.svg'"
     >
       Change Image
     </button>
@@ -197,11 +197,11 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 <h1>My First JavaScript</h1>
     <img
       id="myImage"
-      src='/img/static_website.svg'
+      src='/code-harbor-hub/img/svg/static_website.svg'
       width="100%"
       height="auto"
     />
-    <button onClick={()=> document.getElementById('myImage').src='/img/static_assets.svg'}>
+    <button onClick={()=> document.getElementById('myImage').src='/code-harbor-hub/img/svg/static_assets.svg'}>
       Change Image
     </button>
 </BrowserWindow>
@@ -216,7 +216,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 
     <form
       name="myForm"
-      action="/action_page.php"
+      action="#"
       onsubmit="return validateForm()"
       method="post"
     >

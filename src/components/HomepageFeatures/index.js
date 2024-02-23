@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   // {
   //   title: 'Easy to Use',
-  //   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+  //   Svg: require('@site/static/img/svg/undraw_docusaurus_mountain.svg').default,
   //   description: (
   //     <>
   //       CodeHarbor is designed to be easy to learn and improve your coding skills. Start with the basics and learn at your own pace.
@@ -14,7 +14,7 @@ const FeatureList = [
   // },
   // {
   //   title: 'Focus on What Matters',
-  //   Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+  //   Svg: require('@site/static/img/svg/undraw_docusaurus_tree.svg').default,
   //   description: (
   //     <>
   //       CodeHarbor lets you focus on your coding skills, and we'll do the chores. Go ahead and learn the basics of coding.
@@ -23,7 +23,7 @@ const FeatureList = [
   // },
   // {
   //   title: 'Powered by React',
-  //   Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+  //   Svg: require('@site/static/img/svg/undraw_docusaurus_react.svg').default,
   //   description: (
   //     <>
   //       CodeHarbor is built using React, a popular JavaScript library for building user interfaces. React makes it painless to create interactive UIs.
@@ -32,7 +32,7 @@ const FeatureList = [
   // },
   {
     title: "Blogging Platform",
-    Svg: require("@site/static/img/blogging.svg").default,
+    Svg: require("@site/static/img/svg/blogging.svg").default,
     description: (
       <>
         CodeHarbor is a blogging platform for developers. Share your knowledge
@@ -42,7 +42,7 @@ const FeatureList = [
   },
   {
     title: "Bug Fixes and Improvements",
-    Svg: require("@site/static/img/bug_fixing.svg").default,
+    Svg: require("@site/static/img/svg/bug_fixing.svg").default,
     description: (
       <>
         CodeHarbor is constantly being improved and updated. We are always open
@@ -53,7 +53,7 @@ const FeatureList = [
 
   {
     title: "YouTub Tutorial",
-    Svg: require("@site/static/img/youtube_tutorial.svg").default,
+    Svg: require("@site/static/img/svg/youtube_tutorial.svg").default,
     description: (
       <>
         CodeHarbor provides video tutorials on various topics. Learn from the
@@ -63,7 +63,7 @@ const FeatureList = [
   },
   {
     title: "Website Setup",
-    Svg: require("@site/static/img/website_setup.svg").default,
+    Svg: require("@site/static/img/svg/website_setup.svg").default,
     description: (
       <>
         CodeHarbor provides a step-by-step guide to set up your website. Get
@@ -74,7 +74,7 @@ const FeatureList = [
 
   {
     title: "Web Development",
-    Svg: require("@site/static/img/web_development.svg").default,
+    Svg: require("@site/static/img/svg/web_development.svg").default,
     description: (
       <>
         CodeHarbor provides tutorials on web development. Learn how to build
@@ -84,7 +84,7 @@ const FeatureList = [
   },
   {
     title: "Wall Post",
-    Svg: require("@site/static/img/wall_post.svg").default,
+    Svg: require("@site/static/img/svg/wall_post.svg").default,
     description: (
       <>
         CodeHarbor provides a wall post feature. Share your thoughts and ideas
@@ -95,7 +95,7 @@ const FeatureList = [
 
   {
     title: "Virtual Assistant",
-    Svg: require("@site/static/img/virtual_assistant.svg").default,
+    Svg: require("@site/static/img/svg/virtual_assistant.svg").default,
     description: (
       <>
         CodeHarbor provides a virtual assistant to help you with your coding
@@ -106,7 +106,7 @@ const FeatureList = [
 
   {
     title: "Usability Testing",
-    Svg: require("@site/static/img/usability_testing.svg").default,
+    Svg: require("@site/static/img/svg/usability_testing.svg").default,
     description: (
       <>
         CodeHarbor provides useability testing for your website. Get feedback
@@ -117,7 +117,7 @@ const FeatureList = [
 
   {
     title: "Website",
-    Svg: require("@site/static/img/website.svg").default,
+    Svg: require("@site/static/img/svg/website.svg").default,
     description: (
       <>
         CodeHarbor provides a website for developers. Share your knowledge and
@@ -128,7 +128,7 @@ const FeatureList = [
 
   // {
   //   title: 'Teaching',
-  //   Svg: require('@site/static/img/teaching.svg').default,
+  //   Svg: require('@site/static/img/svg/teaching.svg').default,
   //   description: (
   //     <>
   //       CodeHarbor provides tutorials on teaching. Learn how to teach and share your knowledge with others.
