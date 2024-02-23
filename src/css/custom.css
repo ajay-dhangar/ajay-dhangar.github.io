@@ -57,3 +57,54 @@ mark {
   padding: 0.1em;
   border-radius: 0.2em;
 }
+
+.footer {
+  background-color: #030303e0;
+  color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer .container {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.footer_info--container {
+  width: 400px;
+}
+
+.footer_info--container img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 420px) {
+  .footer_info--container {
+    width: 100%;
+  }  
+}
+
+.hero__title {
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero__subtitle {
+  transition: transform 0.5s;
+  animation: fadeIn 4s;
+  animation-fill-mode: forwards;
+}
+
+.hero__subtitle:hover {
+  transform: scale(1.1);
+}
