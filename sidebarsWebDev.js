@@ -8,7 +8,7 @@ module.exports = {
         id: "all-web-dev",
       },
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           type: "category",
