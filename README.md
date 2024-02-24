@@ -38,4 +38,4 @@ This project is licensed under the [MIT License](#).
 
 ## Workflows 
 
-[![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml) [![Hadolint](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/hadolint.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/hadolint.yml) [![Docker Image CI](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/docker-image.yml) [![CodeQL](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/codeql.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/codeql.yml)

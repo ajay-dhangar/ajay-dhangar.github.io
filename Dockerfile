@@ -11,12 +11,10 @@ COPY package*.json ./
 COPY . .
 
 # Install node packages, install serve, build the app, and remove dependencies at the end
-RUN npm install \
-    && npm install serve \
-    && npm run build 
+RUN npm install && npm run build
 
 # Expose the port 3000
 EXPOSE 3000
 
 # Start the app using serve command
-CMD [ "serve", "build" ]
+ENTRYPOINT npm run start

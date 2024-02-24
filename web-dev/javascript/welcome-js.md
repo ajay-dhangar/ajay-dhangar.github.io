@@ -71,8 +71,9 @@ JavaScript is a versatile language and is used for more than just web pages. For
   - Performance optimization techniques
   - Security best practices in JavaScript development
 - **Tools and Resources**
-  - Useful JavaScript libraries and frameworks
-  - Recommended books and online resources
+  - Useful JavaScript libraries and frameworks 
+  - Recommended books and online resources   
   - Popular development tools and IDEs for JavaScript development
   - Community forums and online communities for JavaScript developers
 
+ 

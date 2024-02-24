@@ -3,7 +3,7 @@ id: variables-in-javascript
 title: Variables in JavaScript
 sidebar_label: Variables in JavaScript
 sidebar_position: 7
-tags: [JavaScript, Variables, variables in js, JavaScript variables]
+tags: [JavaScript, Variables, variables in js, JavaScript variables, let, const, var, variable naming rules, variable best practices, variable declaration, variable initialization, variable scope, variable hoisting, variable re-declaration, variable re-assignment, variable mutable, variable naming conventions, variable naming best practices, variable naming rules, variable naming guidelines, variable naming standards, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable naming best practices in JavaScript, variable naming rules in JavaScript, variable naming guidelines in JavaScript, variable naming standards in JavaScript, variable naming conventions in JS, variable naming best practices in JS, variable naming rules in JS, variable naming guidelines in JS, variable naming standards in JS, variable naming conventions in JavaScript, variable]
 description: What are variables in JavaScript? How to declare and initialize variables in JavaScript? Learn about variable naming rules and best practices.
 ---
 
@@ -170,6 +170,133 @@ When naming variables in JavaScript, you should follow these best practices:
     for example, `a`, `b`, `c`, `x`, `y`, `z`, etc.
 6. Do not use a too long or too short variable name.
     for example, `thisIsAVeryLongVariableName`, `a`, `b`, etc.
+
+## Differents between var, let, and const in JavaScript
+
+In JavaScript, you can declare a variable using the `var`, `let`, or `const` keyword. Each keyword has different behavior and scope.
+
+| Keyword | Scope | Hoisting |TDZ | Re-declaration | Re-assignment | Mutable | 
+|:-------:|:-----:|:--------:|:--:|:--------------:|:-------------:|:-------:|
+| var     | Function | Yes | No | Yes | Yes | Yes |
+| let     | Block | No | Yes | No | Yes | Yes |
+| const   | Block | No | Yes | No | No | No |
+
+- **Scope**: The scope of a variable is the region of the program where the variable is accessible. The scope of a variable can be global or local. The `var` keyword has a function scope, while the `let` and `const` keywords have a block scope.
+  
+  for example, 
+
+  ```js title="scope.js"
+    var x = 10;
+    let y = 20;
+    const z = 30;
+
+    function test() {
+      var a = 40;
+      let b = 50;
+      const c = 60;
+      console.log(a, b, c); // 40 50 60
+    }
+
+    console.log(x, y, z); // 10 20 30
+    console.log(a, b, c); // ReferenceError: a is not defined
+    ```
+
+- **Hoisting**: Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase. The `var` keyword is hoisted, while the `let` and `const` keywords are not hoisted.
+  
+    for example,
+
+    ```js title="hoisting.js"
+    console.log(x); // undefined
+    var x = 10;
+    ```
+
+- **Temporal Dead Zone (TDZ)**: The temporal dead zone is a behavior in JavaScript where you cannot access a variable before it is declared. The `let` and `const` keywords have a temporal dead zone, while the `var` keyword does not have a temporal dead zone.
+  
+  for example,
+
+  ```js title="tdz.js"
+    console.log(x); // ReferenceError: Cannot access 'x' before initialization
+    let x = 10;
+  ```
+
+- **Re-declaration**: The `var` keyword allows you to re-declare a variable in the same scope, while the `let` and `const` keywords do not allow you to re-declare a variable in the same scope.
+  
+    for example,
+    
+    ```js title="re-declaration.js"
+        var x = 10;
+        var x = 20;
+        console.log(x); // 20
+    
+        let y = 30;
+        let y = 40; // SyntaxError: Identifier 'y' has already been declared
+    ```
+
+- **Re-assignment**: The `var`, `let`, and `const` keywords allow you to re-assign a value to a variable. However, the `const` keyword does not allow you to re-assign a value to a variable.
+      
+     for example,
+    
+     ```js title="re-assignment.js"
+     var x = 10;
+     x = 20;
+     console.log(x); // 20
+    
+     let y = 30;
+     y = 40;
+     console.log(y); // 40
+    
+     const z = 50;
+     z = 60; // TypeError: Assignment to constant variable.
+     ```
+
+- **Mutable**: The `var` and `let` keywords allow you to mutate the value of a variable, while the `const` keyword does not allow you to mutate the value of a variable.
+      
+     for example,
+    
+     ```js title="mutable.js"
+     var x = 10;
+     x = 20;
+     console.log(x); // 20
+    
+     let y = 30;
+     y = 40;
+     console.log(y); // 40
+    
+     const z = 50;
+     z = 60; // TypeError: Assignment to constant variable.
+     ```
+      
+      ```mermaid
+        graph TD;
+            A[Variables] --> B{Scope};
+            B --> |var| C[Function];
+            B --> |let| D[Block];
+            B --> |const| E[Block];
+            A --> F{Hoisting};
+            F --> |var| G[Yes];
+            F --> |let| H[No];
+            F --> |const| I[No];
+            A --> J{Temporal Dead Zone};
+            J --> |var| K[No];
+            J --> |let| L[Yes];
+            J --> |const| M[Yes];
+            A --> N{Re-declaration};
+            N --> |var| O[Yes];
+            N --> |let| P[No];
+            N --> |const| Q[No];
+            A --> R{Re-assignment};
+            R --> |var| S[Yes];
+            R --> |let| T[Yes];
+            R --> |const| U[No];
+            A --> V{Mutable};
+            V --> |var| W[Yes];
+            V --> |let| X[Yes];
+            V --> |const| Y[No];
+        ``` 
+
+:::important
+It is recommended to use `let` and `const` instead of `var` to declare variables. Use `let` when you want to declare a variable that can be re-assigned, and use `const` when you want to declare a variable that cannot be re-assigned.
+:::
 
 ## Conclusion
 
