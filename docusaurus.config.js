@@ -50,7 +50,7 @@ const config = {
           sidebarPath: "sidebars.js",
           numberPrefixParser: false,
           showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
+          showLastUpdateTime: true,          
           admonitions: {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
