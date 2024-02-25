@@ -8,6 +8,7 @@ description: What is JavaScript? Why JavaScript? How to use JavaScript? Learn ab
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
+import GiscusComponent from '@site/src/components/GiscusComponent';
 
 JavaScript is a high-level, interpreted programming language that is used to make web pages interactive. It is a dynamic, weakly typed, prototype-based language with first-class functions. JavaScript is a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles.
 
@@ -241,3 +242,8 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 ## Conclusion
 
 In this article, we have learned about JavaScript, its introduction, and its usage. We have also seen how JavaScript can be used to change HTML content, styles, and attributes. We have also seen how JavaScript can be used to validate data.
+
+
+## Q/A
+
+<GiscusComponent />
