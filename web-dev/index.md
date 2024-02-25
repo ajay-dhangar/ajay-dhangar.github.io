@@ -5,6 +5,8 @@ sidebar_label: Introduction Web Dev
 sidebar_position: 1
 ---
 
+import GiscusComponent from '@site/src/components/GiscusComponent';
+
 > Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development. Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding. Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.
 
 
@@ -309,3 +311,7 @@ pie showData
 ## Conclusion
 
 Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). It encompasses a wide range of topics and skills, including but not limited to creating and maintaining web applications, creating and maintaining websites, and creating and maintaining web services. Web development includes many types of web content creation. Some examples include hand coding web pages in a text editor, building a website in a program like Dreamweaver, and updating a blog via a blogging website. In recent years, content management systems like WordPress, Drupal, and Joomla have also become popular means of web development. These tools make it easy for anyone to create and edit their own website using a web-based interface.
+
+## Feedback
+
+<GiscusComponent />
