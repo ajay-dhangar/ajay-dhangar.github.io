@@ -157,3 +157,6 @@ mark {
   transform: scaleX(1);
 }
 
+.footer__bottom .margin-bottom--sm img {
+  border-radius: 8px;
+}
