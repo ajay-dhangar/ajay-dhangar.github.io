@@ -120,21 +120,30 @@ const config = {
               },
 
               {
+                to: "/web-dev",
+                label: "💻 Web Dev",
+              },
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
+              {
                 label: "🧠 DSA 🚀",
                 to: "/docs/dsa/",
               },
             ],
           },
-          {
-            to: "/web-dev",
-            label: "💻 Web Dev",
-            position: "left",
-          },
-          {
-            to: "/product",
-            label: "👨‍💻 Product",
-            position: "left",
-          },
+          // {
+          //   to: "/web-dev",
+          //   label: "💻 Web Dev",
+          //   position: "left",
+          // },
+          // {
+          //   to: "/product",
+          //   label: "👨‍💻 Product",
+          //   position: "left",
+          // },
           {
             to: '/showcase',
             label: '🌍 Showcase',
@@ -148,6 +157,29 @@ const config = {
           {
             label: "📝 Quiz Play",
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
+          },
+          {
+            type: 'dropdown',
+            html: '<span class="nav-emoji">🏷️</span> Tags',
+            position: 'left',
+            items: [
+              {
+                label: '🏷️ Tutorial Tags 📚',
+                to: '/docs/tags/',
+                activeBaseRegex: `/docs/tags/`,
+              },
+
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
+              {
+                label: '🏷️ Courses Tags 🎓',
+                to: '/courses/tags/',
+                activeBaseRegex: `/courses/tags/`,
+              },
+            ],
           },
           // { to: "/blog", label: "Blog", position: "left" },
           // {
