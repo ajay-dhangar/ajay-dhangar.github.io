@@ -50,7 +50,7 @@ const config = {
           sidebarPath: "sidebars.js",
           numberPrefixParser: false,
           showLastUpdateAuthor: true,
-          showLastUpdateTime: true,          
+          showLastUpdateTime: true,
           admonitions: {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
@@ -94,42 +94,62 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
+            type: "dropdown",
+            html: '<span class="nav-emoji">📚</span> Learning',
             position: "left",
-            label: "Tutorials",
-          },
-          // {
-          //   to: "/docs",
-          //   label: "Tutorials",
-          //   position: "left",
-          // },
-          {
-            to: "/courses",
-            label: "Courses",
-            position: "left",
+            items: [
+              {
+                type: "doc",
+                docId: "intro",
+                label: "📚 Tutorials 🚀",
+              },
+
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
+              {
+                to: "/courses",
+                label: "🎓 Courses 🚀",
+              },
+
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
+              {
+                label: "🧠 DSA 🚀",
+                to: "/docs/dsa/",
+              },
+            ],
           },
           {
             to: "/web-dev",
-            label: "Web Dev",
+            label: "💻 Web Dev",
             position: "left",
           },
           {
             to: "/product",
-            label: "Product",
+            label: "👨‍💻 Product",
             position: "left",
           },
           {
-            to: "/docs/dsa/",
-            label: "DSA",
-            position: "left",
+            to: '/showcase',
+            label: '🌍 Showcase',
+            position: 'left',
           },
           {
             to: "/community",
-            label: "Community",
+            label: "🤝 Community",
             position: "left",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          {
+            label: "📝 Quiz Play",
+            to: "https://quiz-app-ajay-dhangar.vercel.app/",
+          },
+          // { to: "/blog", label: "Blog", position: "left" },
           // {
           //   type: 'localeDropdown',
           //   position: 'right',
@@ -244,6 +264,11 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Copyright © CMHQ Made with ❤️ by Ajay-Dhangar",
+          src: "/img/main-logo.jpg",
+          href: "https://github.com/ajay-dhangar",
+        },
         copyright: `Copyright © ${new Date().getFullYear()} CodeHarborHub, Made by <a href="https://github.com/Ajay-Dhangar/">Ajay Dhangar</a>`,
       },
       prism: {
@@ -287,8 +312,9 @@ const config = {
             content: "rgb(37, 194, 160)",
           },
         ],
-      },
+      },      
     ],
+
     [
       "@docusaurus/plugin-ideal-image",
       {
