@@ -52,9 +52,6 @@ In JavaScript, you can use the backslash (`\`) to escape characters in a string.
 | `\b`             | Backspace                                |
 | `\f`             | Form feed                                |
 | `\v`             | Vertical tab                             |
-| `\xXX`           | Unicode character with the code `XX`     |
-| `\uXXXX`         | Unicode character with the code `XXXX`   |
-| `\u{X...X}`      | Unicode code point with the code `X...X` |
 
 ## String Length
 
