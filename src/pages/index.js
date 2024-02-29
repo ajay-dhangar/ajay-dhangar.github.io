@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageWelcome from '@site/src/components/HomepageWelcome';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -15,7 +16,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle typing_text">{siteConfig.tagline}</p>
+        <HomepageWelcome />
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -33,9 +34,9 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="CodeHarbor is a platform for developers to share their knowledge and experience with the community.">
       <HomepageHeader />
-      <main>
+      <main>        
         <HomepageFeatures />
       </main>
     </Layout>
