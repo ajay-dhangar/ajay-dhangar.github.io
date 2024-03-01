@@ -22,13 +22,13 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <HomepageWelcome />
-        <div className={styles.buttons}>
+        {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
             Documentation  - Get Started
           </Link>
-        </div>
+        </div> */}
       </div>
     </header>
   );
