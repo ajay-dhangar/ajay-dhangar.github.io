@@ -3,7 +3,7 @@ id: date-datatypes-in-javascript
 title: Date Datatypes in JavaScript
 sidebar_label: Date
 sidebar_position: 4
-tags: [JavaScript, Date, Date Datatypes in JavaScript, Date in JavaScript]
+tags: [JavaScript, Date, Date Datatypes in JavaScript, Date in JavaScript, JavaScript Date, JavaScript Date Datatypes, JavaScript Date Object, JavaScript Date Methods, JavaScript Date Examples, JavaScript Date Tutorial, JavaScript Date and Time, JavaScript Date Format, JavaScript Date Operations, JavaScript Date Functions, JavaScript Date Properties, JavaScript Date Setters, JavaScript Date Getters, JavaScript Date Working with Dates and Times, JavaScript Date Difference, JavaScript Date Add Days, JavaScript Date Add Months, JavaScript Date Add Years, JavaScript Date Add Hours, JavaScript Date Add Minutes, JavaScript Date Add Seconds, JavaScript Date Add Milliseconds, JavaScript Date Add Time, JavaScript Date Format, JavaScript Date Format Examples, JavaScript Date Format Tutorial, JavaScript Date Format Options, JavaScript Date Format Locale, JavaScript Date Format Timezone, JavaScript Date Format Date, JavaScript Date Format Time, JavaScript Date Format Day, JavaScript Date Format Month, JavaScript Date Format Year, JavaScript Date Format Weekday, JavaScript Date Format Week, JavaScript Date Format Hour, JavaScript Date Format Minute, JavaScript Date Format Second, JavaScript Date Format Millisecond, JavaScript Date Format UTC, JavaScript Date Format Local, JavaScript Date Format ISO, JavaScript Date Format Short, JavaScript Date Format Medium, JavaScript Date Format Long, JavaScript Date Format Full, JavaScript Date Format Custom]
 description: What is a Date in JavaScript and how to use it to work with dates and times.
 ---
 
