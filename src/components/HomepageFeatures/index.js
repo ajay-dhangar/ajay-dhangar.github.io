@@ -40,27 +40,29 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: "Bug Fixes and Improvements",
-    Svg: require("@site/static/img/svg/bug_fixing.svg").default,
-    description: (
-      <>
-        CodeHarbor is constantly being improved and updated. We are always open
-        to feedback and suggestions.
-      </>
-    ),
-  },
 
-  {
-    title: "YouTub Tutorial",
-    Svg: require("@site/static/img/svg/youtube_tutorial.svg").default,
-    description: (
-      <>
-        CodeHarbor provides video tutorials on various topics. Learn from the
-        best and improve your coding skills.
-      </>
-    ),
-  },
+  // {
+  //   title: "Bug Fixes and Improvements",
+  //   Svg: require("@site/static/img/svg/bug_fixing.svg").default,
+  //   description: (
+  //     <>
+  //       CodeHarbor is constantly being improved and updated. We are always open
+  //       to feedback and suggestions.
+  //     </>
+  //   ),
+  // },
+
+  // {
+  //   title: "YouTub Tutorial",
+  //   Svg: require("@site/static/img/svg/youtube_tutorial.svg").default,
+  //   description: (
+  //     <>
+  //       CodeHarbor provides video tutorials on various topics. Learn from the
+  //       best and improve your coding skills.
+  //     </>
+  //   ),
+  // },
+
   {
     title: "Website Setup",
     Svg: require("@site/static/img/svg/website_setup.svg").default,
@@ -72,48 +74,49 @@ const FeatureList = [
     ),
   },
 
-  {
-    title: "Web Development",
-    Svg: require("@site/static/img/svg/web_development.svg").default,
-    description: (
-      <>
-        CodeHarbor provides tutorials on web development. Learn how to build
-        websites and web applications.
-      </>
-    ),
-  },
-  {
-    title: "Wall Post",
-    Svg: require("@site/static/img/svg/wall_post.svg").default,
-    description: (
-      <>
-        CodeHarbor provides a wall post feature. Share your thoughts and ideas
-        with the community.
-      </>
-    ),
-  },
+  // {
+  //   title: "Web Development",
+  //   Svg: require("@site/static/img/svg/web_development.svg").default,
+  //   description: (
+  //     <>
+  //       CodeHarbor provides tutorials on web development. Learn how to build
+  //       websites and web applications.
+  //     </>
+  //   ),
+  // },
 
-  {
-    title: "Virtual Assistant",
-    Svg: require("@site/static/img/svg/virtual_assistant.svg").default,
-    description: (
-      <>
-        CodeHarbor provides a virtual assistant to help you with your coding
-        problems. Get help from the best.
-      </>
-    ),
-  },
+  // {
+  //   title: "Wall Post",
+  //   Svg: require("@site/static/img/svg/wall_post.svg").default,
+  //   description: (
+  //     <>
+  //       CodeHarbor provides a wall post feature. Share your thoughts and ideas
+  //       with the community.
+  //     </>
+  //   ),
+  // },
 
-  {
-    title: "Usability Testing",
-    Svg: require("@site/static/img/svg/usability_testing.svg").default,
-    description: (
-      <>
-        CodeHarbor provides useability testing for your website. Get feedback
-        from the community and improve your website.
-      </>
-    ),
-  },
+  // {
+  //   title: "Virtual Assistant",
+  //   Svg: require("@site/static/img/svg/virtual_assistant.svg").default,
+  //   description: (
+  //     <>
+  //       CodeHarbor provides a virtual assistant to help you with your coding
+  //       problems. Get help from the best.
+  //     </>
+  //   ),
+  // },
+
+  // {
+  //   title: "Usability Testing",
+  //   Svg: require("@site/static/img/svg/usability_testing.svg").default,
+  //   description: (
+  //     <>
+  //       CodeHarbor provides useability testing for your website. Get feedback
+  //       from the community and improve your website.
+  //     </>
+  //   ),
+  // },
 
   {
     title: "Website",
