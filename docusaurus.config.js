@@ -237,7 +237,7 @@ const config = {
             items: [
               {
                 label: "About",
-                to: "/code-harbor-hub/",
+                to: "/code-harbor-hub/about/",
               },
               {
                 label: "Contact",

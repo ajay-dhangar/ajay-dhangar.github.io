@@ -4,6 +4,11 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepageWelcome from '@site/src/components/HomepageWelcome';
+import CoursesOfferedContent from '@site/src/components/CoursesOfferedContent';
+import FeaturedCourses from '@site/src/components/FeaturedCoursesWrapper';
+import OurInstructors from '@site/src/components/OurInstructors';
+import UpcomingEvents from '@site/src/components/UpcomingEvents';
+import GiscusComponent from '@site/src/components/GiscusComponent';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -38,6 +43,18 @@ export default function Home() {
       <HomepageHeader />
       <main>        
         <HomepageFeatures />
+        <hr />
+        <CoursesOfferedContent />
+        <hr />
+        <FeaturedCourses />
+        <hr />
+        <OurInstructors />
+        <hr />
+        <UpcomingEvents />
+        <hr />
+        <div className="">
+          <GiscusComponent />
+        </div>
       </main>
     </Layout>
   );
