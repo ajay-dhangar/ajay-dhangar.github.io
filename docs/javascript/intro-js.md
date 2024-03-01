@@ -61,7 +61,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <h1>My First JavaScript</h1>
     <p id="demo">Welcome CodeHarborHub Learners!</p>
 </BrowserWindow>
@@ -83,7 +83,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <h1>My First JavaScript</h1>
     <p id="demo" style={{fontSize: "35px"}}>This is a paragraph.</p>
 </BrowserWindow>
@@ -108,7 +108,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
   <h1>My First JavaScript</h1>
   <p id="hidedemo">This is a paragraph.</p>
   <button onClick={()=> document.getElementById('hidedemo').style.display='none'} style={{paddingTop: '14px'}}>
@@ -135,7 +135,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
   <h1>My First JavaScript</h1>
   <p id="showdemo" style={{display:"none"}}>This is a paragraph.</p>
   <button onClick={()=> document.getElementById('showdemo').style.display='block'} style={{paddingTop: '14px'}}>
@@ -162,7 +162,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
   <h1>My First JavaScript</h1>
   <p id="mydemo">This is a paragraph.</p>
   <button onClick={()=> document.getElementById('mydemo').style.color='red'} style={{paddingTop: '14px'}}>
@@ -195,7 +195,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
 <h1>My First JavaScript</h1>
     <img
       id="myImage"
