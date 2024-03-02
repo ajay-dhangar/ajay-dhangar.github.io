@@ -12,7 +12,7 @@ const config = {
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
-  url: "https://cmhq.tech",
+  url: "http://localhost:3000",
   baseUrl: "/code-harbor-hub/",
 
   organizationName: "cmhq",
@@ -86,6 +86,16 @@ const config = {
         content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
         isCloseable: true,
       },
+
+      algolia: {
+        appId: 'X742YLA7P2',
+        apiKey: 'ba2ea86160a96d48e07b59aee07e4c68',
+        indexName: 'codeharborhub',
+        contextualSearch: true,
+        placeholder: 'Search Docs in CHH',
+        // others
+      },
+
       navbar: {
         title: "CodeHarborHub",
         logo: {
