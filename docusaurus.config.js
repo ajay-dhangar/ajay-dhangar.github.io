@@ -88,8 +88,8 @@ const config = {
       },
 
       algolia: {
-        appId: 'X742YLA7P2',
-        apiKey: 'ba2ea86160a96d48e07b59aee07e4c68',
+        appId: `${process.env.APPLICATION_ID}`,
+        apiKey: `${process.env.API_KEY}`,
         indexName: 'codeharborhub',
         contextualSearch: true,
         placeholder: 'Search Docs in CHH',
