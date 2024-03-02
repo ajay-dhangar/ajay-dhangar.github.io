@@ -12,7 +12,7 @@ const config = {
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
-  url: "https://cmhq.tech",
+  url: "http://localhost:3000",
   baseUrl: "/code-harbor-hub/",
 
   organizationName: "cmhq",
