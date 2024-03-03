@@ -12,7 +12,7 @@ const config = {
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
-  url: "https://cmhq.tech",
+  url: "http://localhost:3000",
   baseUrl: "/code-harbor-hub/",
 
   organizationName: "cmhq",
@@ -130,7 +130,7 @@ const config = {
 
               {
                 label: "🧠 DSA 🚀",
-                to: "/docs/dsa/",
+                to: "/dsa",
               },
             ],
           },
@@ -366,6 +366,21 @@ const config = {
         routeBasePath: "community",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCommunity.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "dsa",
+        path: "dsa",
+        routeBasePath: "dsa",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsDSA.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
         showLastUpdateAuthor: true,
