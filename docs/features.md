@@ -1,5 +1,9 @@
 ---
+id: features
 sidebar_position: 3
+title: Features of  CodeHarborHub Documentation
+sidebar_label: Features
+
 ---
 
 ## Diagrams
@@ -249,9 +253,4 @@ This is a tip admonition
 This is an important admonition
 :::
 
-:::seealso
-This is a seealso admonition
-:::
-
 ---
-

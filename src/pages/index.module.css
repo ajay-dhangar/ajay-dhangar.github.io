@@ -135,9 +135,9 @@
 }
 
 .home__divider:nth-child(even) {
-  background-color: #bc0a9e50;
+  background-color: #bc0a9e18;
 }
 
 .home__divider:nth-child(odd) {
-  background-color: #cefb0850;
+  background-color: #d9ef7420;
 }
