@@ -12,7 +12,7 @@ const config = {
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
-  url: "http://localhost:3000",
+  url: "https://ajay-dhangar.github.io",
   baseUrl: "/code-harbor-hub/",
 
   organizationName: "cmhq",
