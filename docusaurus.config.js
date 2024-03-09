@@ -2,7 +2,6 @@ import { themes as prismThemes } from "prism-react-renderer";
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-// import configTabs from './src/remark/configTabs';
 
 const path = require("path");
 
@@ -11,7 +10,6 @@ const config = {
   title: "Code Harbor Hub",
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
-
 
   url: "https://ajay-dhangar.github.io",
   baseUrl: "/code-harbor-hub/",
