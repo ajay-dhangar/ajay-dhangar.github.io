@@ -11,7 +11,7 @@ COPY package*.json ./
 COPY . .
 
 # Install node packages, install serve, build the app, and remove dependencies at the end
-RUN npm install && npm run build
+RUN npm install && npm run build && npm install serve
 
 # Expose the port 3000
 EXPOSE 3000

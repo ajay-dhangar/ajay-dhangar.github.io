@@ -2,7 +2,6 @@ import { themes as prismThemes } from "prism-react-renderer";
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-// import configTabs from './src/remark/configTabs';
 
 const path = require("path");
 
@@ -130,7 +129,7 @@ const config = {
 
               {
                 label: "🧠 DSA 🚀",
-                to: "/docs/dsa/",
+                to: "/dsa",
               },
             ],
           },
@@ -366,6 +365,21 @@ const config = {
         routeBasePath: "community",
         // editUrl: "#",
         sidebarPath: require.resolve("./sidebarsCommunity.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "dsa",
+        path: "dsa",
+        routeBasePath: "dsa",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsDSA.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
         showLastUpdateAuthor: true,
