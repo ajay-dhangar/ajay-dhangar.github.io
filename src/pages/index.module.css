@@ -134,10 +134,10 @@
   padding: 0 20px;
 }
 
-.home__divider:nth-child(even) {
+/* .home__divider:nth-child(even) {
   background-color: #bc0a9e18;
-}
+} */
 
-.home__divider:nth-child(odd) {
+/* .home__divider:nth-child(odd) {
   background-color: #d9ef7420;
-}
+} */
