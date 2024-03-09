@@ -15,7 +15,7 @@ const config = {
   url: "https://ajay-dhangar.github.io",
   baseUrl: "/code-harbor-hub/",
 
-  organizationName: "cmhq",
+  organizationName: "ajay-dhangar", //
   projectName: "code-harbor-hub",
 
   onBrokenLinks: "throw",
