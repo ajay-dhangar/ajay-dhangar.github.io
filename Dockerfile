@@ -5,6 +5,9 @@ FROM node:18
 WORKDIR /src
 
 # Copy local directories to the current local directory of our docker image (/app)
+
+COPY package*.json ./
+
 COPY . .
 
 # Install node packages, install serve, build the app, and remove dependencies at the end
