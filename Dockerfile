@@ -4,14 +4,14 @@ FROM node:18
 # The /app directory should act as the main application directory
 WORKDIR /src
 
-# Copy local directories to the current local directory of our docker image (/app)
-
+# Copy the app package and package-lock.json file
 COPY package*.json ./
 
+# Copy local directories to the current local directory of our docker image (/app)
 COPY . .
 
 # Install node packages, install serve, build the app, and remove dependencies at the end
-RUN npm install && npm run build
+RUN npm install && npm run build && npm install serve
 
 # Expose the port 3000
 EXPOSE 3000
