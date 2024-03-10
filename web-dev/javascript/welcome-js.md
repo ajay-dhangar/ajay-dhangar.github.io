@@ -75,5 +75,3 @@ JavaScript is a versatile language and is used for more than just web pages. For
   - Recommended books and online resources   
   - Popular development tools and IDEs for JavaScript development
   - Community forums and online communities for JavaScript developers
-
- 
