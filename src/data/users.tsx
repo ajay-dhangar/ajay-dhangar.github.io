@@ -230,7 +230,7 @@ const Users: User[] = [
   {
     title: 'CodeMastermindHQ',
     description: "Experience the power of real-world coding with CodeMastermindHQ.",
-    preview: require('./showcase/CodeMastermindHQ.jpg'),
+    preview: require('./showcase/codemastermindhq.jpg'),
     website: 'https://CodeMastermindHQ.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/CodeMastermindHQ',
     tags: ['opensource', 'personal', 'templates'],
