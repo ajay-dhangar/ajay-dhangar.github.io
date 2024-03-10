@@ -47,96 +47,96 @@ export const Tags: {[type in TagType]: Tag} = {
   html: {
     label: 'HTML',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#f06529',
   },
   css: {
     label: 'CSS',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#2965f1',
   },
   javascript: {
     label: 'JavaScript',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#f0db4f',
   },
   vanilla: {
     label: 'Vanilla',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#f0db4f',
   },
   react: {
     label: 'React.js',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#61dafb',
   },
   nextjs: {
     label: 'Next.js',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#000000',
   },
   typescript: {
     label: 'TypeScript',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#007acc',
   },
   nodejs: {
     label: 'Node.js',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#026e00',
   }, 
   
   mongodb: {
     label: 'MongoDB',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#13aa52',
   },
   
   favorite: {
     label: 'Favorite',
     description:
-      'Our favorite CodeMastermindHQ sites that you must absolutely check-out!',
+      'Our favorite CodeHarborHub sites that you must absolutely check-out!',
     color: '#e9669e',
   },
   opensource: {
     label: 'Open-Source',
     description:
-      'Open-Source CodeMastermindHQ sites can be useful for inspiration!',
+      'Open-Source CodeHarborHub sites can be useful for inspiration!',
     color: '#39ca30',
   },
 
   product: {
     label: 'Product',
-    description: 'CodeMastermindHQ sites associated to a commercial product!',
+    description: 'CodeHarborHub sites associated to a commercial product!',
     color: '#dfd545',
   },
 
   design: {
     label: 'Design',
     description:
-      'Beautiful CodeMastermindHQ sites, polished and standing out from the initial template!',
+      'Beautiful CodeHarborHub sites, polished and standing out from the initial template!',
     color: '#a44fb7',
   },
 
   i18n: {
     label: 'I18n',
     description:
-      'Translated CodeMastermindHQ sites using the internationalization support with more than 1 locale.',
+      'Translated CodeHarborHub sites using the internationalization support with more than 1 locale.',
     color: '#127f82',
   },
 
   versioning: {
     label: 'Versioning',
     description:
-      'CodeMastermindHQ sites using the versioning feature of the docs plugin to manage multiple versions.',
+      'CodeHarborHub sites using the versioning feature of the docs plugin to manage multiple versions.',
     color: '#fe6829',
   },
 
@@ -144,39 +144,39 @@ export const Tags: {[type in TagType]: Tag} = {
   large: {
     label: 'Large',
     description:
-      'Very large CodeMastermindHQ sites, including many more pages than the average!',
+      'Very large CodeHarborHub sites, including many more pages than the average!',
     color: '#8c2f00',
   },
 
   meta: {
     label: 'Meta',
-    description: 'CodeMastermindHQ sites of Meta projects',
-    color: '#4267b2', // CodeMastermindHQ blue
+    description: 'CodeHarborHub sites of Meta projects',
+    color: '#4267b2', // CodeHarborHub blue
   },
 
   personal: {
     label: 'Personal',
     description:
-      'Personal websites, blogs and digital gardens built with CodeMastermindHQ',
+      'Personal websites, blogs and digital gardens built with CodeHarborHub',
     color: '#14cfc3',
   },
 
   templates: {
     label: 'Templates',
     description:
-      'CodeMastermindHQ sites using the templates reading direction support.',
+      'CodeHarborHub sites using the templates reading direction support.',
     color: '#ffcfc3',
   },
   portfolio: {
     label: 'portfolio',
     description:
-      'CodeMastermindHQ sites using the coding direction for portfolio.',
+      'CodeHarborHub sites using the coding direction for portfolio.',
     color: '#ff4400',
   },
 
   clone: {
     label: 'Clone',
-    description: 'CodeMastermindHQ sites using the clone projects reading',
+    description: 'CodeHarborHub sites using the clone projects reading',
     color: '#004400',
   },
 };
@@ -230,8 +230,8 @@ const Users: User[] = [
   {
     title: 'CodeMastermindHQ',
     description: "Experience the power of real-world coding with CodeMastermindHQ.",
-    preview: require('./showcase/CodeMastermindhq.jpg'),
-    website: 'https://codemastermindhq.vercel.app/',
+    preview: require('./showcase/CodeMastermindHQ.jpg'),
+    website: 'https://CodeMastermindHQ.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/CodeMastermindHQ',
     tags: ['opensource', 'personal', 'templates'],
   },

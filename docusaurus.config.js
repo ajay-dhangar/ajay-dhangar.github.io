@@ -88,7 +88,7 @@ const config = {
       navbar: {
         title: "CodeHarborHub",
         logo: {
-          alt: "My Site Logo",
+          alt: "CodeHarborHub Logo",
           src: "img/nav-logo.jpg",
         },
         items: [
