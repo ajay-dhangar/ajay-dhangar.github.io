@@ -227,14 +227,6 @@ const Users: User[] = [
     source: 'https://github.com/Ajay-Dhangar/gericht-restaurant-modern-ui',
     tags: ['opensource', 'templates', 'clone'],
   },
-  {
-    title: 'CodeMastermindHQ',
-    description: "Experience the power of real-world coding with CodeMastermindHQ.",
-    preview: require('./showcase/codemastermindhq.jpg'),
-    website: 'https://CodeMastermindHQ.vercel.app/',
-    source: 'https://github.com/Ajay-Dhangar/CodeMastermindHQ',
-    tags: ['opensource', 'personal', 'templates'],
-  },
   /*
   Pro Tip: add your site in alphabetical order.
   Appending your site here (at the end) is more likely to produce Git conflicts.
