@@ -3,10 +3,13 @@ id: time-complexity
 title: Time Complexity
 sidebar_label: Time Complexity
 sidebar_position: 1
+description: "Time Complexity is a measure of the amount of time an algorithm takes to solve a problem as a function of the size of the input to the problem. It is commonly estimated by counting the number of elementary operations performed by the algorithm, where an elementary operation takes a fixed amount of time to perform."
+tags: [time complexity, big o notation, algorithm, complexity analysis, data structure, dsa, javascript, java, python, c, c++, time complexity example, time complexity calculation, time complexity analysis, time complexity explanation, time complexity conclusion, time complexity importance, time complexity formula, time complexity constant time, time complexity linear time, time complexity logarithmic time, time complexity quadratic time, time complexity exponential time, time complexity factorial time, time complexity polynomial time, time complexity sublinear time, time complexity linearithmic time, time complexity quasilinear time, time complexity superpolynomial time, time complexity subexponential time, time complexity log factorial time, time complexity exponential factorial time, time complexity exponential exponential time, time complexity exponential factorial exponential time, time complexity exponential exponential factorial time]
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import SolutionAuthor from '@site/src/components/SolutionAuthor';
 
 Time Complexity is a measure of the amount of time an algorithm takes to solve a problem as a function of the size of the input to the problem. It is commonly estimated by counting the number of elementary operations performed by the algorithm, where an elementary operation takes a fixed amount of time to perform.
 
@@ -89,6 +92,7 @@ To analyze the time complexity of an algorithm, we can follow these steps:
 
 <Tabs>
   <TabItem value="js" label="JavaScipt" default>
+   <SolutionAuthor name="@Ajay-Dhangar"/>
     ```js
        function sum(arr) {
          let result = 0;
