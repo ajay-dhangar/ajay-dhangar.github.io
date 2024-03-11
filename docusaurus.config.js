@@ -178,6 +178,16 @@ const config = {
                 to: '/courses/tags/',
                 activeBaseRegex: `/courses/tags/`,
               },
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+
+              {
+                label: '🏷️ DSA Tags 🧠',
+                to: '/dsa/tags/',
+                activeBaseRegex: `/dsa/tags/`,
+              },
             ],
           },
           // { to: "/blog", label: "Blog", position: "left" },

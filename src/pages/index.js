@@ -6,7 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageWelcome from "@site/src/components/HomepageWelcome";
 import CoursesOfferedContent from "@site/src/components/CoursesOfferedContent";
 import FeaturedCourses from "@site/src/components/FeaturedCoursesWrapper";
-import OurInstructors from "@site/src/components/OurInstructors";
+// import OurInstructors from "@site/src/components/OurInstructors";
 import UpcomingEvents from "@site/src/components/UpcomingEvents";
 import GiscusComponent from "@site/src/components/GiscusComponent";
 
@@ -53,9 +53,9 @@ export default function Home() {
         <div className={styles.home__divider}>
           <FeaturedCourses />
         </div>
-        <div className={styles.home__divider}>
+        {/* <div className={styles.home__divider}>
           <OurInstructors />
-        </div>
+        </div> */}
         <div className={styles.home__divider}>
           <UpcomingEvents />
         </div>
