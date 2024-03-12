@@ -134,10 +134,14 @@
   padding: 0 20px;
 }
 
-/* .home__divider:nth-child(even) {
-  background-color: #bc0a9e18;
-} */
+.home__divider:nth-child(even) {
+  background-color: #0d1117;
+  padding: 20px 10px;  
+  border-radius: 8px;
+  color: #fff;
+}
 
-/* .home__divider:nth-child(odd) {
-  background-color: #d9ef7420;
-} */
+.home__divider:nth-child(odd) {
+  background-color: #0d111711;
+  padding: 20px 10px;
+}
