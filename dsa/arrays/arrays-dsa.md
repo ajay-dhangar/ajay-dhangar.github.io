@@ -10,11 +10,13 @@ tags: [dsa, data-structures, arrays, array, array-data-structure, array-in-dsa, 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import SolutionAuthor from '@site/src/components/SolutionAuthor';
-import ArrayVisualization from '@site/src/components/DSA/arrays/ArrayVisualization';
+import ArrayVisualizations from '@site/src/components/DSA/arrays/ArrayVisualizations';
 
 An array is a collection of items stored at contiguous memory locations. It is a data structure that stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
 
-<ArrayVisualization />
+## Visualizations of Arrays in Data Structures and Algorithms (DSA)
+
+<ArrayVisualizations />
 
 ## Why are Arrays important?
 
