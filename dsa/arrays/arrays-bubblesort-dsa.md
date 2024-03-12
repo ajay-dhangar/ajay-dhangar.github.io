@@ -7,9 +7,12 @@ description: "Bubble Sort is a simple sorting algorithm that repeatedly steps th
 tags: [dsa, arrays, sorting, bubble-sort, algorithm of bubble-sort, pseudocode of bubble-sort, complexity of bubble-sort, example of bubble-sort, live example of bubble-sort, explanation of bubble-sort, quiz of bubble-sort, conclusion of bubble-sort]
 ---
 
+import BubbleSortVisualization from '@site/src/components/dsa/arrays/BubbleSortVisualization';
+
 **Bubble Sort** is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller elements <mark>bubble</mark> to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to <mark>insertion sort</mark>. It can be practical if the input is usually in sorted order but may occasionally have some out-of-order elements nearly in position.
 
-![Bubble Sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+
+<BubbleSortVisualization />
 
 ## Algorithm
 
