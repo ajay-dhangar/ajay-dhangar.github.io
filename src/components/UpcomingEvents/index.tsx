@@ -13,8 +13,9 @@ const EventsWrapper = styled.div`
 
 const EventCard = styled.div`
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(179, 179, 0, 0.5);
   padding: 20px;
+  margin-top: 20px;
 `;
 
 const EventTitle = styled.h3`

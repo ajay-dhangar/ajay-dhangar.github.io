@@ -57,13 +57,14 @@ export default function Home() {
         </div>
         {/* <div className={styles.home__divider}>
           <OurInstructors />
-        </div> */}
-        <div className={styles.home__divider}>
-          <UpcomingEvents />
-        </div>
+        </div> */}        
 
         <div className={styles.home__divider}>
           <FAQs faqs={faqs} />
+        </div>
+
+        <div className={styles.home__divider}>
+          <UpcomingEvents />
         </div>
 
         <div>
