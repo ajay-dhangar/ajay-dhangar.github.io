@@ -12,6 +12,8 @@ import GiscusComponent from "@site/src/components/GiscusComponent";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
+import FAQs from "../components/FAQs";
+import faqs from "../data/faqs";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -58,6 +60,10 @@ export default function Home() {
         </div> */}
         <div className={styles.home__divider}>
           <UpcomingEvents />
+        </div>
+
+        <div className={styles.home__divider}>
+          <FAQs faqs={faqs} />
         </div>
 
         <div>

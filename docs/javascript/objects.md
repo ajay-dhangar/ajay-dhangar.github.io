@@ -3,7 +3,7 @@ id: objects-in-javascript
 title: Objects in JavaScript
 sidebar_label: Objects
 sidebar_position: 16
-tags: [JavaScript]
+tags: [JavaScript, Objects, Object Literals, Constructor Function, Dot Notation, Bracket Notation, Object Destructuring, Object Methods, Object Prototypes]
 description: "In this tutorial, we will learn about objects in JavaScript. We will learn how to create objects, access object properties, and methods. We will also learn about object destructuring, object methods, and object prototypes."
 ---
 
