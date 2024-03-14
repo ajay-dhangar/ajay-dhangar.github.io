@@ -7,24 +7,24 @@ export default function Table({
   isSorted = true,
   data,
 }) {
-  const hasTopic = data.some((d) => d.tags);
+  const hasTopic: boolean = data.some((d: any) => d.tags);
   const sortOrder = {
     Easy: 0,
     Medium: 1, 
     Hard: 2,
   };
-  const renderDifficultyClassName = (difficulty) => {
+  const renderDifficultyClassName = (difficulty: string): string => {
     return difficulty.toLowerCase();
   };
-  const renderRow = (
+  const renderRow: JSX.Element[] = (
     isSorted
-      ? data.sort((x, y) => sortOrder[x.difficulty] - sortOrder[y.difficulty])
+      ? data.sort((x: any, y: any) => sortOrder[x.difficulty] - sortOrder[y.difficulty])
       : data
-  ).map((d, idx) => {
+  ).map((d: any, idx: number) => {
     return (
       <tr key={idx}>
         <td>
-          <a href={d.leetCodeLink} target="_blank" type="noopener noreferrer">
+          <a href={d.leetCodeLink} target="_blank" rel="noopener noreferrer">
             {d.problemName}
           </a>
         </td>
@@ -33,7 +33,7 @@ export default function Table({
         </td>
         <td style={{ textAlign: "center" }}>
           {d.solutionLink && (
-            <a href={d.solutionLink} target="_blank" type="noopener noreferrer">
+            <a href={d.solutionLink} target="_blank" rel="noopener noreferrer">
               View Solutions
             </a>
           )}
@@ -54,7 +54,7 @@ export default function Table({
       {collectionLink && (
         <h4>
           Start Practicing:{" "}
-          <a href={collectionLink} target="_blank" type="noopener noreferrer">
+          <a href={collectionLink} target="_blank" rel="noopener noreferrer">
             {collectionLink}
           </a>
         </h4>
