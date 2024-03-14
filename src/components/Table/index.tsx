@@ -10,7 +10,7 @@ export default function Table({
   const hasTopic = data.some((d) => d.tags);
   const sortOrder = {
     Easy: 0,
-    Medium: 1,
+    Medium: 1, 
     Hard: 2,
   };
   const renderDifficultyClassName = (difficulty) => {
@@ -24,7 +24,7 @@ export default function Table({
     return (
       <tr key={idx}>
         <td>
-          <a href={d.leetCodeLink} target="_blank">
+          <a href={d.leetCodeLink} target="_blank" type="noopener noreferrer">
             {d.problemName}
           </a>
         </td>
@@ -33,7 +33,7 @@ export default function Table({
         </td>
         <td style={{ textAlign: "center" }}>
           {d.solutionLink && (
-            <a href={d.solutionLink} target="_blank">
+            <a href={d.solutionLink} target="_blank" type="noopener noreferrer">
               View Solutions
             </a>
           )}
