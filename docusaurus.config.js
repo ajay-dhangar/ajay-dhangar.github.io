@@ -206,11 +206,11 @@ const config = {
           //   type: 'localeDropdown',
           //   position: 'right',
           // },
-          // {
-          //   href: "https://github.com/ajay-dhangar/code-harbor-hub",
-          //   label: "GitHub",
-          //   position: "right",
-          // },
+          {
+            href: "https://github.com/ajay-dhangar/code-harbor-hub",
+            label: "GitHub",
+            position: "right",
+          },
         ],
       },
       footer: {
