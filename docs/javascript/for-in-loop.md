@@ -3,7 +3,21 @@ id: for-in-loop-in-javascript
 title: For In Loop
 sidebar_label: For In Loop
 sidebar_position: 22
-tags: [JavaScript, For In Loop, Loop, Iteration, Control, Flow, Iterative, Statements, Loops, Iteration, Iterating, Iterations]
+tags:
+  [
+    JavaScript,
+    For In Loop,
+    Loop,
+    Iteration,
+    Control,
+    Flow,
+    Iterative,
+    Statements,
+    Loops,
+    Iteration,
+    Iterating,
+    Iterations,
+  ]
 description: "In this tutorial, we will learn about the for...in loop in JavaScript. We will learn how to use the for...in loop to iterate over the properties of an object in JavaScript."
 ---
 
@@ -34,13 +48,13 @@ The following example demonstrates how to use the `for...in` loop to iterate ove
 
 ```js title="app.js"
 const person = {
-  name: 'Shiva',
+  name: "Shiva",
   age: 25,
-  profession: 'Developer'
+  profession: "Developer",
 };
 
 for (let key in person) {
-  console.log(key + ': ' + person[key]);
+  console.log(key + ": " + person[key]);
 }
 ```
 
@@ -54,13 +68,14 @@ age: 25
 profession: Developer
 ```
 
-In this example, the `for...in` loop iterates over the `name`, `age`, and `profession` properties of the `person` object and logs their names and values to the console. 
+In this example, the `for...in` loop iterates over the `name`, `age`, and `profession` properties of the `person` object and logs their names and values to the console.
 
 :::info 📝 Note
 The `for...in` loop is a powerful tool for iterating over the properties of an object and performing actions on each property. However, it should be used with caution, as it may iterate over inherited properties and may not guarantee a specific order of iteration.
 
 In modern JavaScript, the `for...in` loop is often replaced with the `for...of` loop when iterating over arrays and other iterable objects, as it provides more predictable and controllable iteration behavior. However, the `for...in` loop remains a useful tool for iterating over the properties of an object.
 :::
+
 
 ## Conclusion
 
