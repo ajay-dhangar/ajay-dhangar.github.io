@@ -7,11 +7,6 @@ description: "An array is a collection of items stored at contiguous memory loca
 tags: [dsa, data-structures, arrays, array, array-data-structure, array-in-dsa, array-in-data-structure, array-in-algorithm, array-in-dsa-example, array-in-dsa-explanation, array-in-dsa-conclusion, array-in-dsa-importance, array-in-dsa-syntax, array-in-dsa-declaration, array-in-dsa-access, array-in-dsa-update, array-in-dsa-length, array-in-dsa-iterate, array-in-dsa-max-min, array-in-dsa-program, array-in-dsa-code, array-in-dsa-js, array-in-dsa-java, array-in-dsa-python, array-in-dsa-c, array-in-dsa-cpp, array-in-dsa-ts]
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import SolutionAuthor from '@site/src/components/SolutionAuthor';
-import ArrayVisualizations from '@site/src/components/DSA/arrays/ArrayVisualizations';
-
 An array is a collection of items stored at contiguous memory locations. It is a data structure that stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
 
 ## Visualizations of Arrays in Data Structures and Algorithms (DSA)
@@ -541,6 +536,48 @@ The maximum and minimum elements in an array can be found by iterating through t
 - The space complexity of finding the maximum and minimum elements in an array is O(1).
 :::
 
+## Problems for Practice
+
+export const problems = [
+  {
+    "problemName": "1. Two Sum",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/two-sum/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "2. Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "3. Contains Duplicate",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/contains-duplicate/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "4. Product of Array Except Self",
+    "difficulty": "Medium",
+    "leetCodeLink": "https://leetcode.com/problems/product-of-array-except-self/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "5. Maximum Subarray",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/maximum-subarray/",
+    "solutionLink": "#"
+  }
+  
+]
+
+<Table 
+    title=""
+    data={problems}
+    isSorted={false}
+    collectionLink="https://leetcode.com/study-plan/programming-skills"
+/>
 
 ## Conclusion
 

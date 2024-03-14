@@ -3,6 +3,7 @@ import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
+
 const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -55,10 +56,10 @@ const config = {
             extendDefaults: true,
           },
           editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
-          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], // remarkMath, configTabs
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], 
         },
         pages: {
-          remarkPlugins: [npm2yarn], // remarkMath, configTabs
+          remarkPlugins: [npm2yarn],
         },
         blog: {
           showReadingTime: true,
@@ -66,7 +67,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   "",
-          remarkPlugins: [[npm2yarn, { sync: true }]], // remarkMath, configTabs
+          remarkPlugins: [
+            [
+              npm2yarn,
+              {converters: ['pnpm']},
+            ],
+          ],
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -318,6 +324,7 @@ const config = {
         // theme: prismThemes.vsDark,
         darkTheme: prismThemes.dracula,
         // darkTheme: prismThemes.github,
+        additionalLanguages: ['powershell'],
       },
     }),
 

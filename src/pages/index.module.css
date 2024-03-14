@@ -8,6 +8,10 @@
 /* background: linear-gradient(90deg, rgba(2,9,57,1) 0%, rgba(0,159,255,1) 100%); */
 }
 
+.hero__subtitle {
+ margin: 5px 0;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
