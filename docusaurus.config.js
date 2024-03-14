@@ -3,7 +3,6 @@ import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
-
 const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -56,7 +55,7 @@ const config = {
             extendDefaults: true,
           },
           editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
-          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], 
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
           remarkPlugins: [npm2yarn],
@@ -67,12 +66,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   "",
-          remarkPlugins: [
-            [
-              npm2yarn,
-              {converters: ['pnpm']},
-            ],
-          ],
+          remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -99,46 +93,57 @@ const config = {
         },
         items: [
           {
-            type: "dropdown",
-            html: '<span class="nav-emoji">📚</span> Learning',
-            position: "left",
-            items: [
-              {
-                type: "doc",
-                docId: "docs",
-                label: "📚 Tutorials 🚀",
-              },
-
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                to: "/courses",
-                label: "🎓 Courses 🚀",
-              },
-
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                to: "/web-dev",
-                label: "💻 Web Dev",
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                label: "🧠 DSA 🚀",
-                to: "/dsa",
-              },
-            ],
+            type: "doc",
+            docId: "docs",
+            label: "📚 Tutorials",
           },
+
+          {
+            label: "🧠 DSA",
+            to: "/dsa",
+          },
+
+          // {
+          //   type: "dropdown",
+          //   html: '<span class="nav-emoji">📚</span> Learning',
+          //   position: "left",
+          //   items: [
+          //     {
+          //       type: "doc",
+          //       docId: "docs",
+          //       label: "📚 Tutorials 🚀",
+          //     },
+
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       to: "/courses",
+          //       label: "🎓 Courses 🚀",
+          //     },
+
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       to: "/web-dev",
+          //       label: "💻 Web Dev",
+          //     },
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       label: "🧠 DSA 🚀",
+          //       to: "/dsa",
+          //     },
+          //   ],
+          // },
           // {
           //   to: "/web-dev",
           //   label: "💻 Web Dev",
@@ -150,9 +155,9 @@ const config = {
           //   position: "left",
           // },
           {
-            to: '/showcase',
-            label: '🌍 Showcase',
-            position: 'left',
+            to: "/showcase",
+            label: "🌍 Showcase",
+            position: "left",
           },
           {
             to: "/community",
@@ -164,34 +169,34 @@ const config = {
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
           },
           {
-            type: 'dropdown',
+            type: "dropdown",
             html: '<span class="nav-emoji">🏷️</span> Tags',
-            position: 'left',
+            position: "left",
             items: [
               {
-                label: '🏷️ Tutorial Tags 📚',
-                to: '/docs/tags/',
+                label: "🏷️ Tutorial Tags 📚",
+                to: "/docs/tags/",
                 activeBaseRegex: `/docs/tags/`,
               },
 
               {
-                type: 'html',
+                type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
               {
-                label: '🏷️ Courses Tags 🎓',
-                to: '/courses/tags/',
+                label: "🏷️ Courses Tags 🎓",
+                to: "/courses/tags/",
                 activeBaseRegex: `/courses/tags/`,
               },
               {
-                type: 'html',
+                type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
               {
-                label: '🏷️ DSA Tags 🧠',
-                to: '/dsa/tags/',
+                label: "🏷️ DSA Tags 🧠",
+                to: "/dsa/tags/",
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
@@ -318,13 +323,18 @@ const config = {
         },
         copyright: `Copyright © ${new Date().getFullYear()} CodeHarborHub, Made by <a href="https://github.com/Ajay-Dhangar/">Ajay Dhangar</a>`,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       prism: {
         theme: prismThemes.github,
         // theme: prismThemes.dracula,
         // theme: prismThemes.vsDark,
         darkTheme: prismThemes.dracula,
         // darkTheme: prismThemes.github,
-        additionalLanguages: ['powershell'],
+        additionalLanguages: ["powershell"],
       },
     }),
 
@@ -360,7 +370,7 @@ const config = {
             content: "rgb(37, 194, 160)",
           },
         ],
-      },      
+      },
     ],
 
     [
