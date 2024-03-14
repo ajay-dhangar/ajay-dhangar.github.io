@@ -82,9 +82,9 @@ The string concatenation operator (`+`) can also be used to concatenate strings 
 
 For example, `console.log("Hello" + 123);` will output `Hello123`.
 
-String template literals can also be used to concatenate strings in a more readable way. For example, `console.log(`${"Hello"} ${"World"}`);` will output `Hello World`. It is intruduced in ECMAScript 6 (ES6).
+String template literals can also be used to concatenate strings in a more readable way. For example, <code>console.log(&#96;`${"Hello"} ${"World"}`&#96;);</code> will output `Hello World`. It is intruduced in ECMAScript 6 (ES6).
 
-When using template literals, expressions within `${}` are evaluated and concatenated with the surrounding string.
+When using template literals, expressions within <code>&#96;`${}`&#96;</code> are evaluated and concatenated with the surrounding string.
 :::
 
 ## Conclusion

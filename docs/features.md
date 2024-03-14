@@ -3,7 +3,6 @@ id: features
 sidebar_position: 3
 title: Features of  CodeHarborHub Documentation
 sidebar_label: Features
-
 ---
 
 ## Diagrams
@@ -252,5 +251,19 @@ This is a tip admonition
 :::important
 This is an important admonition
 :::
+
+import TOCInline from '@theme/TOCInline';
+import CodeBlock from '@theme/CodeBlock';
+
+The table of contents for this page, serialized:
+
+<CodeBlock className="language-json">{JSON.stringify(toc, null, 2)}</CodeBlock>
+
+The front matter of this page:
+
+<ul>
+  {Object.entries(frontMatter).map(([key, value]) => <li key={key}><b>{key}</b>: {value}</li>)}
+</ul>
+
 
 ---
