@@ -56,9 +56,7 @@ const config = {
             extendDefaults: true,
           },
           editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
-          remarkPlugins: [[npm2yarn, { sync: true }]], 
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], 
         },
         pages: {
           remarkPlugins: [npm2yarn],
