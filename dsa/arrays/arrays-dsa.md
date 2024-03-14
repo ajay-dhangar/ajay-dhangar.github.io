@@ -536,6 +536,48 @@ The maximum and minimum elements in an array can be found by iterating through t
 - The space complexity of finding the maximum and minimum elements in an array is O(1).
 :::
 
+## Problems for Practice
+
+export const problems = [
+  {
+    "problemName": "1. Two Sum",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/two-sum/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "2. Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "3. Contains Duplicate",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/contains-duplicate/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "4. Product of Array Except Self",
+    "difficulty": "Medium",
+    "leetCodeLink": "https://leetcode.com/problems/product-of-array-except-self/",
+    "solutionLink": "#"
+  },
+  {
+    "problemName": "5. Maximum Subarray",
+    "difficulty": "Easy",
+    "leetCodeLink": "https://leetcode.com/problems/maximum-subarray/",
+    "solutionLink": "#"
+  }
+  
+]
+
+<Table 
+    title=""
+    data={problems}
+    isSorted={false}
+    collectionLink="https://leetcode.com/study-plan/programming-skills"
+/>
 
 ## Conclusion
 

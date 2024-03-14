@@ -170,3 +170,46 @@ mark {
   border-top-left-radius: 8px;
   font-weight: 500;
 }
+
+table {
+  width:100%;
+}
+
+table th:nth-child(1) {
+  text-align: left;
+}
+
+table.suggested-problem-table tbody > tr > td:nth-child(1) {
+  width: 30%;
+}
+
+table.suggested-problem-table tbody > tr > td:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+table.suggested-problem-table tbody > tr > td:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+table.suggested-problem-table tbody > tr > td:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+
+table, tr, td, th {
+  border: none !important;
+}
+
+.easy {
+  color: rgb(153, 183, 180);
+}
+
+.medium {
+  color: rgb(255 184 0);
+}
+
+.hard {
+  color: rgb(255 45 85);
+}
