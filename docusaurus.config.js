@@ -2,6 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import 'dotenv/config';
 
 
 const path = require("path");
@@ -12,8 +13,11 @@ const config = {
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
-  url: "https://ajay-dhangar.github.io",
-  baseUrl: "/code-harbor-hub/",
+  url: process.env.URL,
+  baseUrl: process.env.BASE_URL, 
+  customFields: {
+    teamEmail: process.env.EMAIL,
+  },
 
   organizationName: "ajay-dhangar",
   projectName: "code-harbor-hub",
