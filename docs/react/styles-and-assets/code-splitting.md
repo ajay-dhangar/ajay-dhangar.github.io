@@ -5,6 +5,8 @@ sidebar_label: Code Splitting
 sidebar_position: 9
 ---
 
+import React, { lazy, Suspense } from 'react';
+
 ### Introduction:
 Welcome to the enchanting world of React code splitting! In this guide, we'll explore the art of code splitting, a powerful technique that will bring exceptional performance and delightful user experiences to your React applications. Whether you're a seasoned developer or a curious beginner, get ready to embark on an adventure where we uncover the secrets of optimizing your app's loading times and resource utilization.
 
@@ -24,7 +26,6 @@ Unfolding the Mysteries of Code Splitting:
 To unlock the secrets of code splitting in React, we shall invoke two mystical artifacts: `React.lazy()` and the enchanted `Suspense` component.
 
 ```jsx title="MyComponent.js"
-// MyComponent.js
 import React from 'react';
 
 const MyComponent = () => {
@@ -54,15 +55,13 @@ const App = () => {
 export default App;
 ```
 
-<BrowserWindow>
-      
+<BrowserWindow>      
     <div>
       <h1>Welcome to My Enchanted React App!</h1>
       <Suspense fallback={<div>Casting a spell...</div>}>
         <div>Behold, my dynamically-imported component!</div>
       </Suspense>
-    </div>
-      
+    </div>      
  </BrowserWindow>
 
   
