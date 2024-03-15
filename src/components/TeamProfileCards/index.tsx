@@ -45,6 +45,7 @@ function TeamProfileCard({
               src={`${githubUrl}.png`}
               alt={`${name}'s avatar`}
             />
+            <br />
             <div className="avatar__intro">
               <Heading as="h3" className="avatar__name">
                 {name}
