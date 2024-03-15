@@ -7,8 +7,6 @@ tags: [JavaScript, Events, DOM, EventListener, EventObject, EventPropagation, Pr
 description: What is the event in JavaScript? How to handle events in JavaScript? Learn about different types of events, event listeners, event objects, event propagation, and how to prevent default behavior and stop event propagation.
 ---
 
-import BrowserWindow from '@site/src/components/BrowserWindow';
-
 An event is a signal that something has happened. For example, when a user clicks a button, the click event is triggered. Events are a part of the Document Object Model (DOM) and are used to interact with the user.
 
 ```mermaid
