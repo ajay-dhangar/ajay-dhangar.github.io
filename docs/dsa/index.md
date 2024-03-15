@@ -1,5 +1,4 @@
 ---
-id: intro-dsa
 title: Data Structures and Algorithms
 sidebar_label: Data Structures and Algorithms
 sidebar_position: 1
