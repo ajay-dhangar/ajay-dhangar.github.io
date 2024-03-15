@@ -20,7 +20,7 @@ CodeHarborHub is a dynamic platform dedicated to empowering developers, enthusia
 
 ## Contribution Guidelines
 
-We welcome contributions! If you have valuable insights, tutorials, or want to enhance existing content, please check our [Contribution Guidelines](/CONTRIBUTING.md).
+We welcome contributions! If you have valuable insights, tutorials, or want to enhance existing content, please check our [Contribution Guidelines](#).
 
 ## Join Our Community
 
@@ -28,7 +28,7 @@ Get involved, ask questions, and share your expertise. Join our community on [Di
 
 ## License
 
-This project is licensed under the [MIT License](/LICENSE).
+This project is licensed under the [MIT License](#).
 
 ## Connect with the Creator
 
@@ -38,4 +38,4 @@ This project is licensed under the [MIT License](/LICENSE).
 
 ## Workflows, Badges, and Analytics
 
-[![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml) [![Hadolint](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/hadolint.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/hadolint.yml) [![CodeQL](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/codeql.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/codeql.yml)[![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/50606)[![CodeScene System Mastery](https://codescene.io/projects/50606/status-badges/system-mastery)](https://codescene.io/projects/50606)[![CodeScene Missed Goals](https://codescene.io/projects/50606/status-badges/missed-goals)](https://codescene.io/projects/50606)[![CodeScene Code Health](https://codescene.io/projects/50606/status-badges/code-health)](https://codescene.io/projects/50606)[![DeepScan grade](https://deepscan.io/api/teams/22888/projects/26587/branches/848459/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=22888&pid=26587&bid=848459)
+[![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/deploy.yml) [![Hadolint](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/hadolint.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/hadolint.yml) [![Docker Image CI](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/docker-image.yml) [![CodeQL](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/codeql.yml/badge.svg)](https://github.com/Ajay-Dhangar/code-harbor-hub/actions/workflows/codeql.yml)[![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/50606)[![CodeScene System Mastery](https://codescene.io/projects/50606/status-badges/system-mastery)](https://codescene.io/projects/50606)[![CodeScene Missed Goals](https://codescene.io/projects/50606/status-badges/missed-goals)](https://codescene.io/projects/50606)[![CodeScene Code Health](https://codescene.io/projects/50606/status-badges/code-health)](https://codescene.io/projects/50606)[![DeepScan grade](https://deepscan.io/api/teams/22888/projects/26587/branches/848459/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=22888&pid=26587&bid=848459)
