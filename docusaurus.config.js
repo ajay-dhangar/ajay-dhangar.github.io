@@ -319,6 +319,11 @@ const config = {
         // darkTheme: prismThemes.github,
         additionalLanguages: ['powershell'],
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
     }),
 
   markdown: {
