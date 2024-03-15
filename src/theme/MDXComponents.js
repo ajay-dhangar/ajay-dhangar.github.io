@@ -8,9 +8,7 @@ import Table from '@site/src/components/Table';
 import ArrayVisualizations from '@site/src/components/DSA/arrays/ArrayVisualizations';
 import SelectionSortVisualization from '@site/src/components/DSA/arrays/SelectionSortVisualization';
 import BubbleSortVisualization from '@site/src/components/DSA/arrays/BubbleSortVisualization';
-import BrowserWindow from '@site/src/components/BrowserWindow';
-import GiscusComponent from '@site/src/components/GiscusComponent';
-import { FaReact } from 'react-icons/fa';
+
 
 export default {
   // Re-use the default mapping
@@ -23,9 +21,6 @@ export default {
   Table,
   Contributors,
   ArrayVisualizations,
-  GiscusComponent,
-  BrowserWindow,
-  FaReact,
   BubbleSortVisualization,
   SelectionSortVisualization
 };
