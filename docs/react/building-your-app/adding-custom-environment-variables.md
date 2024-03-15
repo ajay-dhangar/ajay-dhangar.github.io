@@ -3,6 +3,7 @@ id: adding-custom-environment-variables
 title: Adding Custom Environment Variables
 sidebar_label: Environment Variables
 sidebar_position: 9
+tags: [react, create-react-app, environment-variables, .env, custom-environment-variables, environment, npm, package.json, .env file, environment variables, environment variables in Create React App, CRA documentation, custom environment variables]
 ---
 
 Welcome, aspiring Code Masterminds, to the enchanting world of React development! 🚀 In this guide, we will explore the magical realm of custom environment variables and how they empower your React applications.

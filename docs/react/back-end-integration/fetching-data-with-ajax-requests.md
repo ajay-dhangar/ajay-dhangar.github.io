@@ -6,7 +6,7 @@ sidebar_position: 2
 date: 2021-02-25 11:08:29
 ---
 
-import './../css/style.css'
+import '../css/style.css';
 
 In modern web development, retrieving data from a server and displaying it on a web page is a common task. To achieve this in React, we use AJAX (Asynchronous JavaScript and XML) requests. AJAX allows us to fetch data from a server without needing to reload the entire page.
 

@@ -3,6 +3,8 @@ id: debugging-tests
 title: Debugging Tests in Create React App
 sidebar_label: Debugging Tests
 sidebar_position: 2
+tags: [react, testing, jest, debugging, chrome-devtools, visual-studio-code, react-testing-library, react-testing, react-app, create-react-app, cypress, jest-dom, react-dom, react-scripts, react-test-renderer, react-testing-library, testing-library, jest, debugging, chrome-devtools, visual-studio-code, react-testing-library, react-testing, react-app, create-react-app, cypress, jest-dom, react-dom, react-scripts, react-test-renderer, react-testing-library, testing-library, jest]
+description: "Learn how to debug tests in React applications using Chrome DevTools and Visual Studio Code. Uncover the mysteries of debugging and defeat the Bug Monsters in your test code!"
 ---
 
 ## Introduction

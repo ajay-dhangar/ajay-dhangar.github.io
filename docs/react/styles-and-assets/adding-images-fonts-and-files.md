@@ -3,6 +3,8 @@ id: adding-images-fonts-and-files
 title: Adding Images, Fonts, and Files in a React App
 sidebar_label: Images Fonts and Files
 sidebar_position: 6
+tags: [react, create-react-app, images, fonts, files, assets, react-scripts, react-dom, react-app]
+description: "Learn how to work with images, fonts, and files in a React application. Manage and utilize these assets effectively to create visually appealing and interactive web experiences."
 ---
 
 In this guide, we'll explore how to work with images, fonts, and files in a React application. These assets are essential for creating visually appealing and interactive web experiences. We'll cover everything you need to know to manage and utilize these assets effectively.

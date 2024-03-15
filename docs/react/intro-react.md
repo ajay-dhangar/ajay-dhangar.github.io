@@ -3,7 +3,6 @@ id: react-intro
 title: Welcome to React
 sidebar_label: Welcome
 sidebar_position: 2
-date: 2021-02-25 11:08:29
 description: Development and implementation the API of interaction of two sites 
 tags: [React, JavaScript library, User interfaces, Virtual DOM, Declarative syntax, UI components, Web development, Front-end, Single-page applications, Performance optimization, State management, Component-based architecture, JavaScript framework]
 ---

@@ -3,6 +3,8 @@ id: setting-up-your-editor
 title: Setting Up Your Editor
 sidebar_label: Editor Setup
 sidebar_position: 1
+tags: [react, create-react-app, editor, syntax-highlighting, linting, debugging, code-formatting, prettier, vscode, webstorm]
+description: "Learn how to set up your text editor for working with Create React App. Enhance your editing experience and maximize productivity with these tips."
 ---
 
 When working with Create React App, there are several tools you can use to enhance your editing experience and maximize productivity. Let's go through some tips to get your editor set up correctly.

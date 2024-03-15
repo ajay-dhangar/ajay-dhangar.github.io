@@ -3,6 +3,8 @@ id: using-https-in-development
 title: Using HTTPS in Development
 sidebar_label: HTTPS in Development
 sidebar_position: 4
+tags: [react, create-react-app, https, development, environment-variables, ssl, certificate, custom-certificate, environment, npm, package.json, .env, create-react-app, CRA, development-server, HTTPS, SSL, SSL certificate, self-signed certificate, custom SSL certificate, environment variables, HTTPS environment variable, SSL_CRT_FILE, SSL_KEY_FILE, start script, .env file, environment variables, environment variables in Create React App, CRA documentation, custom environment variables]
+description: "Learn how to serve your Create React App over HTTPS in development. This is useful when you need to send requests to an API server that requires HTTPS, or when you want to test your site using a secure connection."
 ---
 
 When you're developing a website using Create React App (CRA), you might need to serve your pages over HTTPS instead of HTTP. This is especially important if you're using the "proxy" feature to send requests from your development server to an API server that requires HTTPS.

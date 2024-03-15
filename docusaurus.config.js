@@ -97,11 +97,13 @@ const config = {
             docId: "docs",
             label: "📚 Tutorials",
           },
-
+          
           {
             label: "🧠 DSA",
             to: "/dsa",
           },
+
+          { to: "/blog", label: "📝 Blog", position: "left" },
 
           // {
           //   type: "dropdown",
@@ -165,7 +167,7 @@ const config = {
             position: "left",
           },
           {
-            label: "📝 Quiz Play",
+            label: "🎮 Quiz Play",
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
           },
           {
@@ -200,8 +202,7 @@ const config = {
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
-          },
-          // { to: "/blog", label: "Blog", position: "left" },
+          },          
           // {
           //   type: 'localeDropdown',
           //   position: 'right',

@@ -3,7 +3,6 @@ id: integrating-with-an-api-backend
 title: Integrating with an API Backend
 sidebar_label: Integrating with an API
 sidebar_position: 3
-date: 2021-02-25 11:08:29
 ---
 
 # Integrating a React App with an API Backend

@@ -3,6 +3,8 @@ id: adding-a-stylesheet
 title: Adding A Stylesheet
 sidebar_label: Stylesheet
 sidebar_position: 1
+tags: [react, create-react-app, css, stylesheet, styling, react-scripts, react-dom, react-app]
+description: "Learn how to add a stylesheet to your Create React App project. Style your components and make them visually appealing with CSS."
 ---
 
 ## Introduction:

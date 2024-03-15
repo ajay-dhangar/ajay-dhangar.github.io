@@ -3,6 +3,8 @@ id: developing-components-in-issolation
 title: Developing Components in Isolation
 sidebar_label: Developing Components
 sidebar_position: 2
+tags: [react, storybook, react-styleguidist, components, ui, development, isolation, preview, states, storybook-for-react, react-styleguidist]
+description: "Learn how to develop and preview your React components in isolation from your main app using Storybook or React Styleguidist. Create a convenient way to work on components individually and view all their states."
 ---
 
 In a typical app, you have various UI components, each having multiple states. Let's take a basic button component as an example, which can have the following states:

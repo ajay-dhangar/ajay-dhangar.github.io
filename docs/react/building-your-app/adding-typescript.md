@@ -2,6 +2,8 @@
 id: adding-typescript
 title: Adding TypeScript
 sidebar_position: 6
+tags: [react, adding-typescript, typescript]
+description: "Learn how to add TypeScript to your Create React App project. Enhance your code with type safety and unleash the power of TypeScript in your React applications."
 ---
 
 :::note

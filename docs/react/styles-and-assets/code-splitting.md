@@ -3,6 +3,8 @@ id: code-splitting
 title: Code Splitting
 sidebar_label: Code Splitting
 sidebar_position: 9
+tags: [react, performance, optimization, code-splitting, lazy-loading, suspense, react-lazy]
+description: "Learn how to optimize your React application's performance by code splitting. Split your code into smaller chunks and load them only when needed, resulting in faster load times and improved user experiences."
 ---
 
 import React, { lazy, Suspense } from 'react';

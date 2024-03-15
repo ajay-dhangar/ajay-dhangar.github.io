@@ -3,6 +3,8 @@ id: using-the-public-folder
 title: Unleash the Magic of the Public Folder
 sidebar_label: Using the Public Folder
 sidebar_position: 8
+tags: [react, create-react-app, public-folder, assets, react-scripts, react-dom, react-app]
+description: "Learn how to use the public folder in a Create React App project. Customize the HTML file and add assets directly to the public folder to enhance your React application."
 ---
 
 :::tip info

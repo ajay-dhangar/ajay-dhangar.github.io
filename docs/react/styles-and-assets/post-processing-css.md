@@ -3,6 +3,8 @@ id: post-processing-css
 title: Post Processing CSS
 sidebar_label: Post Processing CSS
 sidebar_position: 5
+tags: [react, create-react-app, css, stylesheet, styling, react-scripts, react-dom, react-app]
+description: "Learn how to leverage post-processing CSS in Create React App to enhance your stylesheets and ensure cross-browser compatibility. Automatically add vendor prefixes, embrace new CSS features, and more."
 ---
 
 import '../css/style.css'

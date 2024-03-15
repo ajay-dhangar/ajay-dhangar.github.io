@@ -3,6 +3,8 @@ id: adding-css-reset
 title: Adding A CSS Reset
 sidebar_label: CSS Reset
 sidebar_position: 4
+tags: [react, create-react-app, css, stylesheet, styling, react-scripts, react-dom, react-app]
+description: "Learn how to add a CSS reset to your Create React App project using PostCSS Normalize. Ensure consistent styling across different browsers by providing a solid foundation for your React components."
 ---
 
 This tutorial will guide you on adding a CSS reset to your React project using [PostCSS Normalize], which provides a solid foundation for consistent styling across different browsers.

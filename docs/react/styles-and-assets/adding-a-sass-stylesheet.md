@@ -3,6 +3,8 @@ id: adding-a-sass-stylesheet
 title: Adding A Sass Stylesheet
 sidebar_label: Sass Stylesheet
 sidebar_position: 3
+tags: [react, create-react-app, sass, stylesheet]
+description: "Learn how to add a Sass stylesheet to your Create React App project. Use the power of Sass to write cleaner and more maintainable styles for your React components."
 ---
 
 :::caution warn

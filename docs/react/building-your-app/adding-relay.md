@@ -2,6 +2,8 @@
 id: adding-relay
 title: Adding Relay
 sidebar_position: 7
+tags: [react, create-react-app, relay, graphql, client, framework, data-fetching, graphql-server, relay-environment, relay-query, relay-fragment, relay-component, relay-routing, react-router-dom]
+description: "Learn how to add Relay to your Create React App project and fetch data from a GraphQL server. Follow the steps to set up Relay, create a Relay environment, and write your first Relay query."
 ---
 
 ## Introduction to Relay

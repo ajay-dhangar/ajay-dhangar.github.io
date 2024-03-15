@@ -3,10 +3,9 @@ id: proxying-api-requests-in-development
 title: Proxying API Requests in Development
 sidebar_label: Proxying API Requests
 sidebar_position: 1
-date: 2021-02-25 11:08:29
 ---
 
-import './../css/style.css'
+import '../css/style.css'
 
 When building a React app, you might encounter a common scenario where your frontend and backend are served from different hosts or ports. This separation could lead to [CORS issues](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) during development, causing your API requests to fail and producing error messages in your browser console.
 

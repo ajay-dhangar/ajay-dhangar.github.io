@@ -2,6 +2,8 @@
 id: folder-structure
 title: Folder Structure
 sidebar_position: 2
+tags: [react, create-react-app, folder-structure, project-structure, file-structure]
+description: "Learn how to organize your files and folders in a new React project. This structure will help you keep things tidy and make it easier to build and maintain your site."
 ---
 
 When you create a new project for your website, it's important to organize your files in a specific way. This structure will help you keep things tidy and make it easier to build and maintain your site.

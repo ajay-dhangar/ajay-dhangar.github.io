@@ -3,6 +3,8 @@ id: running-tests
 title: Running Tests in Create React App
 sidebar_label: Running Tests
 sidebar_position: 1
+tags: [react, testing, jest, create-react-app, react-scripts, react-dom, react-testing-library, jest-dom, testing-library, jest, react-app, create-react-app, cypress, react-testing, react-test-renderer, testing, testing-library, jest-dom, react-dom, react-scripts, react-test-renderer, react-testing-library, testing-library, jest]
+description: "Learn how to run tests in a Create React App project using Jest. Explore the basics of testing and discover the joy of catching bugs early!"
 ---
 
 ## Introduction

@@ -3,10 +3,9 @@ id: title-and-meta-tags
 title: Title And Meta Tags
 sidebar_label: Title & Meta Tags
 sidebar_position: 4
-date: 2021-02-25 11:08:29
 ---
 
-import './../css/style.css'
+import '../css/style.css'
 
 In web development, title and meta tags play a crucial role in optimizing your website for search engines and providing a better user experience. They are like a website's introduction, giving a sneak peek into what visitors can expect. In this guide, we will explore how to handle title and meta tags in your Create React App for back-end integration, making your website more appealing and discoverable.
 

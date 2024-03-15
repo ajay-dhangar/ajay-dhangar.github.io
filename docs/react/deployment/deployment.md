@@ -3,7 +3,8 @@ id: deployment
 title: Deployment in Create React App
 sidebar_label: Deployment
 sidebar_position: 1
-date: 2021-02-25 11:08:29
+tags: [react, create-react-app, deployment, vercel, hosting, deployment-platform, production, build, optimization, deployment-steps, deployment-guide, deployment-process, deployment-platforms, deployment-tutorial, deployment-instructions, deployment-in-react, deployment-in-CRA, deployment-in-Create-React-App, Vercel, Vercel-deployment, Vercel-tutorial, Vercel-guide, Vercel-deployment-guide, Vercel-deployment-tutorial, Vercel-deployment-instructions, Vercel-deployment-process, Vercel-deployment-platform, Vercel-deployment-steps]
+description: "Learn how to deploy your Create React App to the internet using Vercel. Follow the steps to optimize your app, choose a deployment platform, and deploy your app with Vercel."
 ---
 
 
