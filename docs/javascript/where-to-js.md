@@ -7,8 +7,6 @@ tags: [JavaScript, Introduction of js, Introduction of JavaScript, Where to java
 description: Where to write JavaScript code? Learn about the different places where JavaScript code can be written such as inline JavaScript, internal JavaScript, and external JavaScript.
 ---
 
-import BrowserWindow from '@site/src/components/BrowserWindow';
-
 JavaScript code can be written in three places:
 
 ### 1. Inline JavaScript

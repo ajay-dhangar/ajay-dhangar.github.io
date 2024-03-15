@@ -7,8 +7,6 @@ tags: [JavaScript, Introduction of js, Introduction of JavaScript, Basic JavaScr
 description: Basic concepts of JavaScript. Learn about displaying output in JavaScript, JavaScript display possibilities, and more.
 ---
 
-import BrowserWindow from '@site/src/components/BrowserWindow';
-
 In this tutorial, you will learn about the basic concepts of JavaScript. We know that JavaScript is easy to manipulate and can be used to create dynamic content on the web pages. That means JavaScript can be used to change the content of the web page without refreshing the page. Content may be text, images, or any other HTML element. 
 
 **So, let's start with the basic concepts of JavaScript.**
