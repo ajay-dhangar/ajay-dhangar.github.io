@@ -7,10 +7,6 @@ description: "Space complexity is a measure of the amount of working storage an 
 tags: [Space Complexity, Big O Notation, Memory, Algorithm, Complexity Analysis, Data Structure, DSA, JavaScript, Java, Python, C, C++, Space Complexity Example, Space Complexity Calculation, Space Complexity Analysis, Space Complexity Explanation, Space Complexity Conclusion, Space Complexity Importance, Space Complexity Formula, Space Complexity Constant Space, Space Complexity Auxiliary Space, Space Complexity Example, Space Complexity Program, Space Complexity Code]
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import SolutionAuthor from '@site/src/components/SolutionAuthor';
-
 Space complexity is a measure of the amount of working storage an algorithm needs. It is a measure of the amount of memory space an algorithm needs to solve a problem as a function of the size of the input to the problem. It is the amount of memory space required by the algorithm to execute in its life cycle.
 
 ## Why is Space Complexity important?

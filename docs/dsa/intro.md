@@ -1,8 +1,10 @@
 ---
-id: data-structures-and-algorithms
-title: Data Structures and Algorithms
+id: introduction-to-dsa
+title: Introduction to Data Structures and Algorithms
 sidebar_label: Data Structures and Algorithms
 sidebar_position: 1
+description: "Data Structures and Algorithms are the building blocks of computer science. They are the tools you'll use to build software systems. This section is a collection of resources to help you understand and master Data Structures and Algorithms."
+tags: [dsa, data-structures, algorithms, programming, computer-science, software-engineering, competitive-programming, interview-preparation, open-source, learning, teaching, problem-solving, performance, career-growth, understanding, competitive-programming, coding-competitions, open-source, building-systems, learning-new-technologies, programming-languages, tools, concepts, problem-solving, data-structures, algorithms, resources, books, websites, courses, youtube-channels, practice, interview-preparation, competitive-programming, community, contribute]
 ---
 
 > Data Structures and Algorithms are the building blocks of computer science. They are the tools you'll use to build software systems. This section is a collection of resources to help you understand and master Data Structures and Algorithms.
