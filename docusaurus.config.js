@@ -99,46 +99,62 @@ const config = {
         },
         items: [
           {
-            type: "dropdown",
-            html: '<span class="nav-emoji">📚</span> Learning',
-            position: "left",
-            items: [
-              {
-                type: "doc",
-                docId: "docs",
-                label: "📚 Tutorials 🚀",
-              },
-
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                to: "/courses",
-                label: "🎓 Courses 🚀",
-              },
-
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                to: "/web-dev",
-                label: "💻 Web Dev",
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-
-              {
-                label: "🧠 DSA 🚀",
-                to: "/dsa",
-              },
-            ],
+            type: "doc",
+            docId: "docs",
+            label: "📚 Tutorials",
           },
+
+          {
+            label: "🧠 DSA",
+            to: "/dsa",
+          },
+
+          {
+            to: "/blog",
+            label: "📰 Blog",
+          },
+
+          // {
+          //   type: "dropdown",
+          //   html: '<span class="nav-emoji">📚</span> Learning',
+          //   position: "left",
+          //   items: [
+          //     {
+          //       type: "doc",
+          //       docId: "docs",
+          //       label: "📚 Tutorials 🚀",
+          //     },
+
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       to: "/courses",
+          //       label: "🎓 Courses 🚀",
+          //     },
+
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       to: "/web-dev",
+          //       label: "💻 Web Dev",
+          //     },
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       label: "🧠 DSA 🚀",
+          //       to: "/dsa",
+          //     },
+          //   ],
+          // },
           // {
           //   to: "/web-dev",
           //   label: "💻 Web Dev",
@@ -160,7 +176,7 @@ const config = {
             position: "left",
           },
           {
-            label: "📝 Quiz Play",
+            label: "🎮 Quiz Play",
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
           },
           {
@@ -195,8 +211,7 @@ const config = {
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
-          },
-          // { to: "/blog", label: "Blog", position: "left" },
+          },          
           // {
           //   type: 'localeDropdown',
           //   position: 'right',
