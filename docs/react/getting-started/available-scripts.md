@@ -34,4 +34,12 @@ In the past, this separation caused issues with some hosting platforms that didn
 
 All the commands except `eject` will continue to work, but they will now refer to the copied scripts, allowing you to customize them. However, from this point forward, you're responsible for maintaining and configuring the build tools on your own.
 
-Remember, you don't have to use `eject`. The pre-configured features are suitable for small to medium deployments, and you're not obligated to use this customization feature. However, we understand that customization is important when you're ready for it.
+Remember, you don't have to use `eject`. The pre-configured features are suitable for small to medium deployments, and you're not obligated to use this customization feature. However, we understand that customization is important when you're ready for it. You can read more about the <u>ejecting</u> process in the documentation.
+
+## Custom Scripts
+
+You can also run custom scripts by adding them to the `scripts` section of your `package.json` file. For example, you can add a script to run a linter or a custom build process. You can then run the script using `npm run <script-name>`. For more information, refer to the <u>custom scripts</u> section.
+
+## Learn More
+
+You can learn more about the available scripts and their usage in the [Create React App documentation](https://create-react-app.dev/docs/available-scripts).

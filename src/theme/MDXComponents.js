@@ -10,7 +10,8 @@ import SelectionSortVisualization from '@site/src/components/DSA/arrays/Selectio
 import BubbleSortVisualization from '@site/src/components/DSA/arrays/BubbleSortVisualization';
 import BrowserWindow from '@site/src/components/BrowserWindow';
 import GiscusComponent from '@site/src/components/GiscusComponent';
-import CollectionList from '@site/src/components/CollectionList'
+import CollectionList from '@site/src/components/CollectionList';
+import { FaReact } from 'react-icons/fa';
 
 export default {
   // Re-use the default mapping
@@ -27,5 +28,6 @@ export default {
   ArrayVisualizations,
   BubbleSortVisualization,
   SelectionSortVisualization,
-  CollectionList
+  CollectionList,
+  FaReact
 };

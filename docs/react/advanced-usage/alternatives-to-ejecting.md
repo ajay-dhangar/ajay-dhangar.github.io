@@ -3,6 +3,9 @@ id: alternatives-to-ejecting
 title: Alternatives to Ejecting
 sidebar_label: Alternatives to Ejecting
 sidebar_position: 5
+tags: [React, Create React App, Advanced Usage]
+keywords: [alternatives to ejecting, create react app, react-scripts, craco, custom scripts, package.json, ejectify, custom templates, boilerplates]
+description: Learn about alternatives to ejecting from Create React App and how to customize your project without ejecting.
 ---
 
 ## Introduction
@@ -14,7 +17,7 @@ Create React App (CRA) is an awesome tool that provides a quick and easy way to 
 Instead of ejecting, you can use the `react-scripts` package that comes with Create React App under the hood. It offers hidden features that you can use to tweak your project's settings without ejecting. Create a file in the root of your project called `.env`, and you can add custom environment variables like this:
 
 ```plaintext
-REACT_APP_MY_VARIABLE=hello-codemasters
+REACT_APP_MY_VARIABLE=hello-coders
 ```
 
 Now you can access this variable in your code using `process.env.REACT_APP_MY_VARIABLE`.

@@ -3,6 +3,9 @@ id: proxying-api-requests-in-development
 title: Proxying API Requests in Development
 sidebar_label: Proxying API Requests
 sidebar_position: 1
+tags: [React, API, Backend, Integration, Proxy]
+keywords: [react, api, backend, integration, proxy, proxying, cors, development, server, client, frontend, backend, fullstack, web development, javascript, node.js, express, rest, json, asynchronous, promise, async, await, state, useEffect, useState, form, submit, create, update, delete, fetch, send, receive, response, error, axios, library, package, npm, install, tool, postman, testing, endpoint, list, data, new, component, app, file, code, example, tutorial, guide, how-to, learn, step-by-step, beginner, basics, introduction, overview, explanation, example, code, source, snippet, tutorial, guide, learn, how-to, steps]
+description: "Learn how to proxy API requests during development in a React app using Create React App, avoiding CORS issues and enabling seamless interaction with your backend server."
 ---
 
 import '../css/style.css'
@@ -44,7 +47,7 @@ Now your app should be running at `http://localhost:3000/`.
 <BrowserWindow>
     <div style={{textAlign: 'center'}}>
       <header style={{minHeight: '80vh', display:' flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: 'calc(10px + 2vmin)'}}>
-        <img src="https://raw.githubusercontent.com/CodeMastermindHQ/CodeMastermindHQ/7072abb527b8d225d5646fe4a2d73b7dc50ef7ae/static/dev-img/react.svg" className="App-logo" alt="logo" />
+        <img src="/code-harbor-hub/img/docs/react/logo.svg" className="App-logo" alt="logo" />
         <br/>
         <p>
           Edit src/App.js and save to reload.
@@ -117,7 +120,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://your-backend-server.com', // Replace this with your backend server URL
+      target: 'http://your-backend-server.com',
       changeOrigin: true,
     })
   );
@@ -216,17 +219,18 @@ This file is automatically registered when you start the development server, so 
 
 By using the manual setup, you gain more control over your proxy configuration, allowing for advanced routing and customization.
 
+:::tip Additional Configuration
+
+For more advanced use cases, you can configure multiple proxies, custom headers, and other options.
+
+Check out the [official documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) for detailed information on manual proxy configuration.
+
+:::
+
 
 ## Conclusion:
 Congratulations! You've successfully learned how to proxy API requests during development with Create React App. By using proxying, you've simplified your development environment and avoided troublesome CORS issues.
 
 Whether you choose the built-in `proxy` field or the more flexible manual setup, understanding how to handle API requests effectively will boost your productivity and make building React apps a delightful experience.
 
-Happy coding! 🚀
-
-:::caution warn
-Remember to replace `'http://your-backend-server.com'` with your actual backend server URL. Feel free to explore more about the `http-proxy-middleware` and other exciting features of Create React App as you continue your journey as a Code Mastermind!
-:::
-
-<!-- ========================================================== -->
-
+Now that you've mastered proxying, you're ready to build amazing apps with seamless frontend-backend communication. Keep coding and have fun!

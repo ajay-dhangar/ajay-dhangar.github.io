@@ -3,6 +3,9 @@ id: title-and-meta-tags
 title: Title And Meta Tags
 sidebar_label: Title & Meta Tags
 sidebar_position: 4
+tags: [title, meta, tags, react, create react app, seo, search engine optimization, server, server-side, back-end, integration]
+keywords: [title, meta, tags, react, create react app, seo, search engine optimization, server, server-side, back-end, integration]
+description: Learn how to handle title and meta tags in your Create React App for back-end integration, making your website more appealing and discoverable.
 ---
 
 import '../css/style.css'

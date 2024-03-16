@@ -3,7 +3,9 @@ id: fetching-data-with-ajax-requests
 title: Fetching Data with AJAX Requests in React
 sidebar_label: Fetching Data
 sidebar_position: 2
-date: 2021-02-25 11:08:29
+tags: [React, AJAX, Data Fetching, API, Asynchronous]
+keywords: [fetching data in react, ajax requests in react, data fetching in react, react ajax, react fetch, react data fetching, react api]
+description: "Learn how to fetch data with AJAX requests in a React application using the `fetch()` API and the `axios` library."
 ---
 
 import '../css/style.css';
@@ -177,7 +179,6 @@ npm start
 Your app will open in a new browser tab at "http://localhost:3000," showing the fetched data from the API.
 
 Congratulations! You've successfully implemented AJAX requests in your React app using Axios.
-
 
 ## Conclusion
 

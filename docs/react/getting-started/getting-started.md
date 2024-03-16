@@ -146,7 +146,7 @@ Runs the app in development mode. Open [http://localhost:3000](http://localhost:
 <BrowserWindow>
     <div style={{textAlign: 'center'}}>
       <header style={{minHeight: '80vh', display:' flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: 'calc(10px + 2vmin)'}}>
-        <img src="https://raw.githubusercontent.com/CodeMastermindHQ/CodeMastermindHQ/7072abb527b8d225d5646fe4a2d73b7dc50ef7ae/static/dev-img/react.svg" className="App-logo" alt="logo" />
+        <img src='/code-harbor-hub/img/docs/react/logo.svg' className="App-logo" alt="logo" />
         <br/>
         <p>
           Edit src/App.js and save to reload.
@@ -183,4 +183,4 @@ Builds the app for production in the `build` folder. It bundles React in product
 
 The build output is minified, and the filenames include hashes for caching.
 
-Your app is now ready to be deployed!
+Your app is now ready to be deployed! Check out our `Deployment` documentation to learn how to deploy your app to popular hosting providers.
