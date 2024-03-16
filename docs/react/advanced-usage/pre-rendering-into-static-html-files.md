@@ -3,6 +3,9 @@ id: pre-rendering-into-static-html-files
 title: Pre-Rendering into Static HTML Files
 sidebar_label: Pre-Rendering Static HTML
 sidebar_position: 3
+tags: [React, Pre-Rendering, Static HTML, SEO, Performance]
+keywords: [pre-rendering, static html, react pre-rendering, react static html, pre-rendering in react, static html in react, react performance, react seo]
+description: Learn how to pre-render your React application into static HTML files to improve performance and SEO.
 ---
 
 If you're hosting your React application using a static hosting provider, you have a fantastic opportunity to enhance its performance and SEO by pre-rendering it into static HTML files. Pre-rendering involves generating HTML pages for each route or link in your application, making them readily available to users even before the JavaScript bundle loads. This seamless process not only improves loading times but also boosts your website's visibility on search engines.

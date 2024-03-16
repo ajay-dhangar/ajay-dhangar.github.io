@@ -3,6 +3,9 @@ id: can-i-use-decorators
 title: The Power of Decorators in CRA
 sidebar_label: Use Decorators
 sidebar_position: 2
+tags: [decorators, create react app, decorators in create react app, decorators in react, decorators in javascript, decorators in typescript]
+keywords: [decorators, create react app, decorators in create react app, decorators in react, decorators in javascript, decorators in typescript]
+description: Learn how to use decorators in Create React App to enhance and extend the functionality of your components.
 ---
 
 
@@ -145,6 +148,4 @@ Now, the `title` property cannot be changed from outside the component, keeping 
 
 Decorators are a superpower in Create React App, and now you know how to use them to make your components even more awesome! By leveraging class, method, and property decorators, you can add exciting features, enhance behavior, and make your codebase cleaner and more organized.
 
-Remember, with great power comes great responsibility. Use decorators wisely and sparingly, and you'll become a true React pro in no time!
-
-Happy decorating! 🎉
+Remember, with great power comes great responsibility. Use decorators wisely and sparingly, and you'll become a true React pro in no time! Happy coding! 

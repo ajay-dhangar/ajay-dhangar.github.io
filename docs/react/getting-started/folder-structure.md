@@ -67,4 +67,4 @@ As a beginner, it's recommended to put your JavaScript and CSS files inside the 
 
 Feel free to create additional folders at the top level for organizing your project, like "images" or "docs". However, keep in mind that files in these folders won't be included in the final version of your website when you're ready to publish it.
 
-If you're using Git version control system and your project is not part of a larger repository, a new repository will be initialized, creating a `.git` folder. This helps you track changes to your code and collaborate with others if needed.s
+If you're using Git version control system and your project is not part of a larger repository, a new repository will be initialized, creating a `.git` folder. This helps you track changes to your code and collaborate with others if needed. You can ignore this folder for now if you're not familiar with Git.

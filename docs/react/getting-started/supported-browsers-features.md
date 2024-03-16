@@ -45,5 +45,3 @@ The `browserslist` configuration is set up to ensure your website works smoothly
 Please note that the `browserslist` configuration does not automatically include polyfills for you. If you're using any other modern JavaScript features that require additional support, make sure to include the necessary polyfills manually.
 
 To summarize, your website is designed to work with all modern web browsers out of the box. If you need to support older browsers, you can include the required polyfills using the [react-app-polyfill](https://github.com/facebook/create-react-app/blob/main/packages/react-app-polyfill/README.md) package. Additionally, the website project supports advanced JavaScript language features to enhance your coding experience. The `browserslist` configuration ensures broad browser compatibility, and you can manually add polyfills if needed.
-
-If you have any further questions or need more assistance, feel free to ask. Happy coding!

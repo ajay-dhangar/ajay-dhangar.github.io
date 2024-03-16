@@ -38,3 +38,7 @@ Create React App does not automatically include polyfills for you. If you need t
 :::tip info
 If you make changes to the `browserslist` configuration but notice that your changes are not being picked up immediately, it may be due to an [issue in babel-loader](https://github.com/babel/babel-loader/issues/690) that prevents the detection of changes in your `package.json`. To resolve this, you can delete the `node_modules/.cache` folder and try again.
 :::
+
+## Summary
+
+Keeping your project up to date with the latest version of `react-scripts` is important to ensure that you benefit from the latest features and improvements. By following the migration instructions in the changelog, you can safely update your project to a newer version of `react-scripts` and keep your project in sync with the latest developments in the React ecosystem.
