@@ -184,3 +184,11 @@ Builds the app for production in the `build` folder. It bundles React in product
 The build output is minified, and the filenames include hashes for caching.
 
 Your app is now ready to be deployed! Check out our `Deployment` documentation to learn how to deploy your app to popular hosting providers.
+
+:::tip Vite for React Development
+For an alternative and more modern approach to setting up your React projects, consider using Vite, a blazing-fast build tool. Learn more about getting started with React and Vite in our dedicated guide: [Getting Started with React and Vite](/blog/getting-started-with-vite).
+:::
+
+## Conclusion 
+
+In this guide, we learned how to get started with React by creating a new app using Create React App. We followed the steps to set up our development environment and build our first React application. We also explored the project structure and available scripts for managing our React app.
