@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcode_harbor_hub=self.webpackChunkcode_harbor_hub||[]).push([[45808],{56592:a=>{a.exports=JSON.parse('{"label":"Web applications","permalink":"/code-harbor-hub/blog/tags/web-applications","allTagsPath":"/code-harbor-hub/blog/tags","count":1,"unlisted":false}')}}]);
