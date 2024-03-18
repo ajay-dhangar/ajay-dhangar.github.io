@@ -77,6 +77,13 @@ const config = {
         content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
         isCloseable: true,
       },
+
+      algolia: {
+        appId: process.env.APPLICATION_ID,
+        apiKey: process.env.API_KEY,
+        indexName: 'codeharborhub',
+      },
+
       navbar: {
         title: "CodeHarborHub",
         logo: {
