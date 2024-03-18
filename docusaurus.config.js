@@ -79,8 +79,8 @@ const config = {
       },
 
       algolia: {
-        appId: 'X742YLA7P2',  // process.env.APPLICATION_ID
-        apiKey: 'ba2ea86160a96d48e07b59aee07e4c68', // process.env.API_KEY
+        appId: process.env.APPLICATION_ID,
+        apiKey: process.env.API_KEY,
         indexName: 'codeharborhub',
       },
 
