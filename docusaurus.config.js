@@ -2,8 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-import 'dotenv/config';
-
+import "dotenv/config";
 
 const path = require("path");
 
@@ -14,7 +13,7 @@ const config = {
   favicon: "img/logo.jpg",
 
   url: process.env.URL,
-  baseUrl: process.env.BASE_URL, 
+  baseUrl: process.env.BASE_URL,
   customFields: {
     teamEmail: process.env.EMAIL,
   },
@@ -42,7 +41,7 @@ const config = {
             extendDefaults: true,
           },
           editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
-          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex], 
+          remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
           remarkPlugins: [npm2yarn],
@@ -53,12 +52,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   "",
-          remarkPlugins: [
-            [
-              npm2yarn,
-              {converters: ['pnpm']},
-            ],
-          ],
+          remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -79,9 +73,10 @@ const config = {
       },
 
       algolia: {
-        appId: process.env.APPLICATION_ID,
-        apiKey: process.env.API_KEY,
-        indexName: 'codeharborhub',
+        apiKey: "c1fc26c940b9a310faacfa13b70d46d0",
+        indexName: "ajay-dhangario",
+        appId: "46COWIIU59",
+        contextualSearch: false,
       },
 
       navbar: {
@@ -94,17 +89,17 @@ const config = {
           {
             type: "doc",
             docId: "docs",
-            label: "📚 Tutorials",
+            html: '<span class="nav-emoji">📚</span> Tutorials',
           },
 
           {
-            label: "🧠 DSA",
+            html: '<span class="nav-emoji">🧠</span> DSA',
             to: "/dsa",
           },
 
           {
             to: "/blog",
-            label: "📰 Blog",
+            html: '<span class="nav-emoji">📰</span> Blog',
           },
 
           // {
@@ -159,55 +154,55 @@ const config = {
           //   position: "left",
           // },
           {
-            to: '/showcase',
-            label: '🌍 Showcase',
-            position: 'left',
-          },
-          {
-            to: "/community",
-            label: "🤝 Community",
+            to: "/showcase",
+            html: '<span class="nav-emoji">🌍</span> Showcase',
             position: "left",
           },
           {
-            label: "🎮 Quiz Play",
+            to: "/community",
+            html: '<span class="nav-emoji">🤝</span> Community',
+            position: "left",
+          },
+          {
+            html: '<span class="nav-emoji"> 📊</span> Quiz',
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
           },
           {
-            type: 'dropdown',
+            type: "dropdown",
             html: '<span class="nav-emoji">🏷️</span> Tags',
-            position: 'left',
+            position: "left",
             items: [
               {
-                label: '🏷️ Tutorial Tags 📚',
-                to: '/docs/tags/',
+                label: "🏷️ Tutorial Tags 📚",
+                to: "/docs/tags/",
                 activeBaseRegex: `/docs/tags/`,
               },
 
               {
-                type: 'html',
+                type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
               {
-                label: '🏷️ Courses Tags 🎓',
-                to: '/courses/tags/',
+                label: "🏷️ Courses Tags 🎓",
+                to: "/courses/tags/",
                 activeBaseRegex: `/courses/tags/`,
               },
               {
-                type: 'html',
+                type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
 
               {
-                label: '🏷️ DSA Tags 🧠',
-                to: '/dsa/tags/',
+                label: "🏷️ DSA Tags 🧠",
+                to: "/dsa/tags/",
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
-          }, 
+          },
           {
             href: "https://github.com/ajay-dhangar/code-harbor-hub",
-            label: "GitHub",
+            html: '<span class="nav-emoji"></span> GitHub',
             position: "right",
           },
         ],
@@ -328,7 +323,7 @@ const config = {
         // theme: prismThemes.vsDark,
         darkTheme: prismThemes.dracula,
         // darkTheme: prismThemes.github,
-        additionalLanguages: ['powershell'],
+        additionalLanguages: ["powershell"],
       },
       docs: {
         sidebar: {
@@ -369,7 +364,7 @@ const config = {
             content: "rgb(37, 194, 160)",
           },
         ],
-      },      
+      },
     ],
 
     [
