@@ -1,7 +1,7 @@
 ---
 id: for-in-loop-in-javascript
 title: For In Loop in JavaScript
-sidebar_label: For In Loop
+sidebar_label: For...In
 sidebar_position: 22
 tags:
   [
@@ -105,7 +105,7 @@ for (let property in person) {
 
 In this example, the `hasOwnProperty` method is used to check if the property is a direct property of the `person` object. If it is, the property name and its value are printed to the console.
 
-:::tip 📝 Note
+:::tip tips & tricks
 The `hasOwnProperty` method returns `true` if the property is a direct property of the object, otherwise it returns `false`.
 
 The `for...in` loop should be used with caution, as it iterates over all enumerable properties of the object, including inherited properties from the object's prototype chain. It is recommended to use the `hasOwnProperty` method to check if the property is a direct property of the object.
@@ -113,6 +113,40 @@ The `for...in` loop should be used with caution, as it iterates over all enumera
 The `for...in` loop should not be used to iterate over arrays, as it may produce unexpected results due to the iteration of array indices and inherited properties.
 
 The `for...in` loop should be used only for objects.
+
+:::
+
+:::info 📚 Learn Extra
+
+## Array.forEach Method
+
+If you want to iterate over the elements of an array, you can use the `forEach` method. The `forEach` method is a more appropriate way to iterate over the elements of an array, as it provides a concise and readable syntax for performing actions on each element of the array.
+
+Here's an example that demonstrates the use of the `forEach` method to iterate over the elements of an array:
+
+```js title="app.js"
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(function (number) {
+  console.log(number);
+});
+```
+
+In this example, the `forEach` method iterates over the elements of the `numbers` array and executes the provided function for each element.
+
+The `forEach` method is a convenient and concise way to iterate over the elements of an array in JavaScript.
+
+## Array.forEach Method vs. for...of Loop vs. for...in Loop Comparison
+
+| No. | forEach Method                                            | for...of Loop                                             | for...in Loop                                     |
+| :-: | :-------------------------------------------------------- | :-------------------------------------------------------- | :------------------------------------------------ |
+| 1.  | Iterates over the elements of an array.                   | Iterates over the elements of an iterable object.         | Iterates over the properties of an object.        |
+| 2.  | Provides a concise and readable syntax.                   | Provides a concise and readable syntax.                   | Provides a concise and readable syntax.           |
+| 3.  | Should be used for arrays.                                | Should be used for iterable objects.                      | Should be used for objects.                       |
+| 4.  | Does not iterate over inherited properties.               | Does not iterate over inherited properties.               | Iterates over inherited properties.               |
+| 5.  | Does not iterate over array indices.                      | Does not iterate over array indices.                      | Iterates over array indices.                      |
+| 6.  | Does not require a loop variable.                         | Requires a loop variable.                                 | Requires a loop variable.                         |
+| 7.  | Does not require an explicit check for direct properties. | Does not require an explicit check for direct properties. | Requires an explicit check for direct properties. |
 
 :::
 
