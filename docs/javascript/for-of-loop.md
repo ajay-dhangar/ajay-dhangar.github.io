@@ -1,10 +1,23 @@
 ---
 id: for-of-loop-in-javascript
 title: For Of Loop in JavaScript
-sidebar_label: For Of Loop
+sidebar_label: For...Of
 sidebar_position: 23
 tags:
-  [JavaScript, For Of Loop, Loop, Iteration, Control, Flow, Iterative, Statements, Loops, Iteration, Iterating, Iterations]
+  [
+    JavaScript,
+    For Of Loop,
+    Loop,
+    Iteration,
+    Control,
+    Flow,
+    Iterative,
+    Statements,
+    Loops,
+    Iteration,
+    Iterating,
+    Iterations,
+  ]
 description: "In this tutorial, we will learn about the for...of loop in JavaScript. We will learn how to use the for...of loop to iterate over the elements of an iterable object in JavaScript."
 ---
 

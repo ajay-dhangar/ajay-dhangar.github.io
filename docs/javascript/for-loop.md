@@ -3,7 +3,21 @@ id: for-loop-in-javascript
 title: For Loop in JavaScript
 sidebar_label: For Loop
 sidebar_position: 21
-tags: [JavaScript, For Loop, Loop, Iteration, Control, Flow, Iterative, Statements, Loops, Iteration, Iterating, Iterations]
+tags:
+  [
+    JavaScript,
+    For Loop,
+    Loop,
+    Iteration,
+    Control,
+    Flow,
+    Iterative,
+    Statements,
+    Loops,
+    Iteration,
+    Iterating,
+    Iterations,
+  ]
 description: "In this tutorial, we will learn about the for loop in JavaScript. We will learn how to use the for loop to execute a block of code multiple times in JavaScript."
 ---
 
@@ -110,19 +124,20 @@ In each iteration of the outer loop, the inner loop runs three times, printing t
 
 ```js live
 function printNumbers() {
-    return (
-        <div>
-            {(() => {
-                let numbers = [];
-                for (let i = 1; i <= 5; i++) {
-                    numbers.push(<p key={i}>{i}</p>);
-                }
-                return numbers;
-            })()}
-        </div>
-    )
+  return (
+    <div>
+      {(() => {
+        let numbers = [];
+        for (let i = 1; i <= 5; i++) {
+          numbers.push(<p key={i}>{i}</p>);
+        }
+        return numbers;
+      })()}
+    </div>
+  );
 }
 ```
+
 :::
 
 ## Conclusion
