@@ -1,10 +1,3 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e9e32e1;
   --ifm-color-primary-dark: #29784c;
@@ -31,11 +24,11 @@
   /* --docusaurus-highlighted-code-line-bg: rgb(100, 100, 100); */
 }
 
-div[class^="announcementBar_"] {
-  background-image: linear-gradient(90deg, #2e9e31 0%, #25c2a0 100%);
-  color: #f2f2f2;
+div[class^='announcementBar_'] {
+  background-image: linear-gradient(#ff0303, #ff030329, transparent), url("../../static/img/use-svg-as-background-image-particle-strokes.svg");
+  color: #fff;
   border-bottom: 1.8px dotted rgb(37, 184, 11);
-  font-weight: bold;
+  font-weight: bold;  
   font-size: 18px;
   width: 100%;
   height: auto;
@@ -44,12 +37,12 @@ div[class^="announcementBar_"] {
   text-align: center;
 }
 
-div[class^="announcementBar_"] a {
-  color: var(--ifm-announcement-color);
+div[class^='announcementBar_'] a {
+  color: #ffe11c;
 }
 
-div[class^="announcementBar_"] .clean-btn {
-  color: #ffffff;
+div[class^='announcementBar_'] .clean-btn {
+  color: #ffe11c;
   opacity: 100%;
 }
 
