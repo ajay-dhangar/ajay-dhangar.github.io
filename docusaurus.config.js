@@ -276,7 +276,7 @@ const config = {
               },
               {
                 label: "Terms of Service",
-                to: "/code-harbor-hub/",
+                to: "/code-harbor-hub/terms-service/",
               },
               {
                 label: "Code of Conduct",
