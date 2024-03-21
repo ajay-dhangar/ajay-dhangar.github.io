@@ -185,7 +185,14 @@ const PrivacyPolicy: React.FC = () => {
           <SubTitle>Contact Us</SubTitle>
           If you have any questions or concerns about this Privacy Policy,
           please contact us at{" "}
-          <a href="mailto:ajaydhangar49@gmail.com" target="_blank" rel="noopener noreferrer">ajaydhangar49@gmail.com</a>. Thank you for visiting CodeHarborHub!
+          <a
+            href="mailto:ajaydhangar49@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ajaydhangar49@gmail.com
+          </a>
+          . Thank you for visiting CodeHarborHub!
         </Content>
       </PrivacyPolicyContainer>
     </Layout>
