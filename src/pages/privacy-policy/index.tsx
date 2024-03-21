@@ -14,52 +14,25 @@ const PrivacyPolicyContainer = styled.div`
   line-height: 1.6;
   font-family: "Open Sans", sans-serif;
   text-align: justify;
-  a {
-    color: #007bff;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 `;
 
 const Title = styled.h2`
   margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  line-height: 1.6;
   text-align: center;
 `;
 
 const SubTitle = styled.h3`
-  font-size: 20px;
   margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  line-height: 1.6;
 `;
 
 const Content = styled.p`
-  font-size: 16px;
   margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
-  text-align: justify;
-  a {
-    color: #007bff;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 `;
 
 const StyledOl = styled.ol`
   margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
-  text-align: justify;
 `;
 
 const StyledLi = styled.li`
@@ -76,13 +49,15 @@ const PrivacyPolicy: React.FC = () => {
       <PrivacyPolicyContainer>
         <Title>Privacy Policy</Title>
         <Content>
-          <strong>Last Updated:</strong> 21st March 2024 <br /> <br />
+          <strong>Last Updated:</strong> 21st March 2024
+          <br /> <br />
           Welcome to{" "}
           <a
             href="https://ajay-dhangar.github.io/code-harbor-hub/"
             target="_blank"
             rel="noopener noreferrer"
           >
+            {" "}
             CodeHarborHub
           </a>
           , an educational and technology-focused platform operated by{" "}
@@ -91,6 +66,7 @@ const PrivacyPolicy: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            {" "}
             Ajay Dhangar
           </a>
           . We are committed to protecting your privacy and ensuring the
@@ -190,6 +166,7 @@ const PrivacyPolicy: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            {" "}
             ajaydhangar49@gmail.com
           </a>
           . Thank you for visiting CodeHarborHub!
