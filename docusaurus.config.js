@@ -268,6 +268,27 @@ const config = {
             ],
           },
           {
+            title: "Terms/Conditions",
+            items: [
+              {
+                label: "Privacy Policy",
+                to: "/code-harbor-hub/privacy-policy/",
+              },
+              {
+                label: "Terms of Service",
+                to: "/code-harbor-hub/",
+              },
+              {
+                label: "Code of Conduct",
+                to: "/code-harbor-hub/",
+              },
+              {
+                label: "Cookie Policy",
+                to: "/code-harbor-hub/",
+              },
+            ],
+          },
+          {
             title: "Quick Links",
             items: [
               {
