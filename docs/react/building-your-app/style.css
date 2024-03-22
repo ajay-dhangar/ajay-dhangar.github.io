@@ -122,14 +122,6 @@
   font-size: 18px;
 }
 
-.col-sm-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 18px;
-}
-
 .mt-4 {
   margin-top: 16px;
 }
