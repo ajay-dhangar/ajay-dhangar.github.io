@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ajay-dhangar.github.io/code-harbor-hub/blog</id>
-    <title>Code Harbor Hub Blog</title>
+    <title>CodeHarborHub Blog</title>
     <updated>2024-03-17T12:15:07.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ajay-dhangar.github.io/code-harbor-hub/blog"/>
-    <subtitle>Code Harbor Hub Blog</subtitle>
+    <subtitle>CodeHarborHub Blog</subtitle>
     <icon>https://ajay-dhangar.github.io/code-harbor-hub/img/logo.jpg</icon>
     <entry>
         <title type="html"><![CDATA[Getting Started with React and Vite]]></title>
