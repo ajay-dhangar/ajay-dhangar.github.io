@@ -1,9 +1,0 @@
-version: '3'
-services:
-  scraper:
-    build: .
-    env_file: .env
-    volumes:
-      - .:/code-harbor-hub
-    environment:
-      - CONFIG_PATH=/code-harbor-hub/config.json
