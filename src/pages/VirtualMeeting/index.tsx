@@ -72,7 +72,10 @@ const VirtualMeeting: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <Layout
+      title={`Virtual Meeting`}
+      description="Virtual Meeting Page for CodeHarborHub Learners, and users"
+    >
       <div className="virtual-meeting-container">
         <div className="video-conference">
           <video id="localVideo" autoPlay muted />

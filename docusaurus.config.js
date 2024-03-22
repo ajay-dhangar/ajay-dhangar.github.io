@@ -8,7 +8,7 @@ const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Code Harbor Hub",
+  title: "CodeHarborHub",
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
@@ -255,15 +255,15 @@ const config = {
               },
               {
                 label: "Contact",
-                to: "/code-harbor-hub/",
+                to: "#",
               },
               {
                 label: "Careers",
-                to: "/code-harbor-hub/",
+                to: "#",
               },
               {
                 label: "Team",
-                to: "/code-harbor-hub/",
+                to: "/community/team/",
               },
             ],
           },
@@ -272,19 +272,19 @@ const config = {
             items: [
               {
                 label: "Privacy Policy",
-                to: "/code-harbor-hub/privacy-policy/",
+                to: "/privacy-policy/",
               },
               {
                 label: "Terms of Service",
-                to: "/code-harbor-hub/terms-service/",
+                to: "/terms-service/",
               },
               {
                 label: "Code of Conduct",
-                to: "/code-harbor-hub/",
+                to: "#",
               },
               {
                 label: "Cookie Policy",
-                to: "/code-harbor-hub/",
+                to: "#",
               },
             ],
           },
@@ -372,12 +372,12 @@ const config = {
           {
             tagName: "link",
             rel: "icon",
-            href: "/img/docusaurus.png",
+            href: "/img/logo.png",
           },
           {
             tagName: "link",
             rel: "manifest",
-            href: "/manifest.json", // your PWA manifest
+            href: "/manifest.json",
           },
           {
             tagName: "meta",

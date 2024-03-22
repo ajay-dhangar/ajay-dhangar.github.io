@@ -25,7 +25,7 @@ JavaScript code can be written directly in an HTML file in the HTML element's at
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <button onClick={()=>alert('Hello World!')}>Click me</button>
 </BrowserWindow>
 
@@ -50,7 +50,7 @@ JavaScript code can be written in the `<script>` tag in the HTML file. The `<scr
 </html>
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <button onClick={()=>alert('Hello World!')}>Click me</button>
 </BrowserWindow>
 
@@ -77,7 +77,7 @@ function sayHello() {
 }
 ```
 
-<BrowserWindow minHeight="500" url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <button onClick={()=>alert('Hello World!')}>Click me</button>
 </BrowserWindow>
 
