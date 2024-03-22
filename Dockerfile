@@ -1,45 +1,29 @@
-# syntax=docker/dockerfile:1
+# Use the official Node.js image as a base
+FROM node:14-alpine as builder
 
-# Stage 1: Base image.
-## Start with a base image containing NodeJS so we can build codeharborhub.
-FROM node:lts as base
-## Disable colour output from yarn to make logs easier to read.
-ENV FORCE_COLOR=0
-## Enable corepack.
-RUN corepack enable
-## Set the working directory to `/opt/codeharborhub`.
-WORKDIR /opt/codeharborhub
+# Set the working directory in the container
+WORKDIR /app
 
-# Stage 2a: Development mode.
-FROM base as dev
-## Set the working directory to `/opt/codeharborhub`.
-WORKDIR /opt/codeharborhub
-## Expose the port that codeharborhub will run on.
-EXPOSE 3000
-## Run the development server.
-CMD [ -d "node_modules" ] && npm run start || npm run install && npm run start --host 0.0.0.0
+# Copy package.json and package-lock.json to the working directory
+COPY package.json package-lock.json ./
 
-# Stage 2b: Production build mode.
-FROM base as prod
-## Set the working directory to `/opt/codeharborhub`.
-WORKDIR /opt/codeharborhub
-## Copy over the source code.
-COPY . /opt/codeharborhub/
-## Install dependencies with `--immutable` to ensure reproducibility.
-RUN npm ci
-## Build the static site.
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Build the CodeHarborHub site
 RUN npm run build
 
-# Stage 3a: Serve with `codeharborhub serve`.
-FROM prod as serve
-## Expose the port that codeharborhub will run on.
-EXPOSE 3000
-## Run the production server.
-CMD ["npm", "run", "serve", "--host 0.0.0.0", "--no-open"]
+# Use a lightweight Node.js image for serving the built site
+FROM nginx:alpine
 
-# Stage 3b: Serve with Caddy.
-FROM caddy:2-alpine as caddy
-## Copy the Caddyfile.
-COPY --from=prod /opt/codeharborhub/Caddyfile /etc/caddy/Caddyfile
-## Copy the codeharborhub build output.
-COPY --from=prod /opt/codeharborhub/build /var/codeharborhub
+# Copy the built site from the previous stage to the NGINX directory
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start NGINX when the container starts
+CMD ["nginx", "-g", "daemon off;"]
