@@ -66,7 +66,7 @@ The `innerHTML` property is used to write into an HTML element.
 </html>
 ```
 
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <p id="demo">Hello World!</p>
 </BrowserWindow>
 
@@ -108,7 +108,7 @@ The `document.getElementById().innerText` method is used to write into an HTML e
 </html>
 ```
 
-<BrowserWindow url="http://127.0.0.1:5500/index.html">
+<BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
     <p id="demo">Hello World!</p>
 </BrowserWindow>
 

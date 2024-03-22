@@ -58,12 +58,15 @@ const Strong = styled.strong`
 
 const TermsOfService: React.FC = () => {
   return (
-    <Layout>
+    <Layout
+    title={`Terms of Service`}
+    description="Terms of Service Page for CodeHarborHub Learners, and users"
+    >
       <TermsContainer>
         <Title>Terms of Service</Title>
         <Content>
-          These Terms of Service govern your use of <b>CodeHarborHub</b>,
-          provided by <Strong>Ajay Dhangar</Strong>. By accessing or using the Service,
+          These Terms of Service govern your use of <b><mark>CodeHarborHub</mark></b>,
+          provided by <Strong><mark>Ajay Dhangar</mark></Strong>. By accessing or using the Service,
           you agree to be bound by these Terms. If you disagree with any part of
           the Terms, you may not access the Service.
           <br /> <br />
@@ -95,7 +98,7 @@ const TermsOfService: React.FC = () => {
                  <Strong>User Content:</Strong> You retain ownership of any content you submit or upload to the Service ("User Content"). By submitting User Content, you grant us a worldwide, royalty-free, and non-exclusive license to use, reproduce, modify, adapt, publish, translate, distribute, and display such User Content.
                 </StyledLi>
                 <StyledLi>
-                <Strong>Intellectual Property:</Strong> All content, trademarks, service marks, logos, and other intellectual property displayed on or related to the Service are the property of <Strong>Ajay Dhangar</Strong> or its licensors. You may not use or display any of these without our prior written consent.
+                <Strong>Intellectual Property:</Strong> All content, trademarks, service marks, logos, and other intellectual property displayed on or related to the Service are the property of <Strong><mark>Ajay Dhangar</mark></Strong> or its licensors. You may not use or display any of these without our prior written consent.
                 </StyledLi>
             </StyledOl>
 

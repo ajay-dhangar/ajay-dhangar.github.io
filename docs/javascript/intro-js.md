@@ -108,9 +108,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 <BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
   <h1>My First JavaScript</h1>
   <p id="hidedemo">This is a paragraph.</p>
-  <button onClick={()=> document.getElementById('hidedemo').style.display='none'} style={{paddingTop: '14px'}}>
-      Click Me!
-  </button>
+  <button onClick={()=> document.getElementById('hidedemo').style.display='none'}> Click Me! </button>
 </BrowserWindow>
 
 ### 4. JavaScript Can Show HTML Elements
@@ -135,9 +133,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 <BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
   <h1>My First JavaScript</h1>
   <p id="showdemo" style={{display:"none"}}>This is a paragraph.</p>
-  <button onClick={()=> document.getElementById('showdemo').style.display='block'} style={{paddingTop: '14px'}}>
-      Click Me!
-  </button>
+  <button onClick={()=> document.getElementById('showdemo').style.display='block'}>Click Me!</button>
 </BrowserWindow>
 
 ### 5. JavaScript Can Change HTML Attributes
@@ -162,9 +158,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
 <BrowserWindow minHeight="300px" url="http://127.0.0.1:5500/index.html">
   <h1>My First JavaScript</h1>
   <p id="mydemo">This is a paragraph.</p>
-  <button onClick={()=> document.getElementById('mydemo').style.color='red'} style={{paddingTop: '14px'}}>
-      Click Me!
-  </button>
+  <button onClick={()=> document.getElementById('mydemo').style.color='red'}>Click Me!</button>
 </BrowserWindow>
 
 ### 6. JavaScript Can Change HTML Image
@@ -200,9 +194,7 @@ JavaScript can be used in a lot of different ways. Here are a few examples:
       width="100%"
       height="auto"
     />
-    <button onClick={()=> document.getElementById('myImage').src='/code-harbor-hub/img/svg/static_assets.svg'}>
-      Change Image
-    </button>
+    <button onClick={()=> document.getElementById('myImage').src='/code-harbor-hub/img/svg/static_assets.svg'}>Change Image</button>
 </BrowserWindow>
 
 ### 7. JavaScript Can Validate Data
