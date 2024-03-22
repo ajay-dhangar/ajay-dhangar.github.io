@@ -48,10 +48,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   "",
+          editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
@@ -64,11 +61,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: "img/logo.jpg",
       announcementBar: {
         id: "announcementBar",
-        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
+        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/code-harbor-hub/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
         isCloseable: true,
       },
 
@@ -91,68 +87,14 @@ const config = {
             docId: "docs",
             html: '<span class="nav-emoji">📚</span> Tutorials',
           },
-
           {
             html: '<span class="nav-emoji">🧠</span> DSA',
             to: "/dsa",
           },
-
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
           },
-
-          // {
-          //   type: "dropdown",
-          //   html: '<span class="nav-emoji">📚</span> Learning',
-          //   position: "left",
-          //   items: [
-          //     {
-          //       type: "doc",
-          //       docId: "docs",
-          //       label: "📚 Tutorials 🚀",
-          //     },
-
-          //     {
-          //       type: "html",
-          //       value: '<hr style="margin: 0.3rem 0;">',
-          //     },
-
-          //     {
-          //       to: "/courses",
-          //       label: "🎓 Courses 🚀",
-          //     },
-
-          //     {
-          //       type: "html",
-          //       value: '<hr style="margin: 0.3rem 0;">',
-          //     },
-
-          //     {
-          //       to: "/web-dev",
-          //       label: "💻 Web Dev",
-          //     },
-          //     {
-          //       type: "html",
-          //       value: '<hr style="margin: 0.3rem 0;">',
-          //     },
-
-          //     {
-          //       label: "🧠 DSA 🚀",
-          //       to: "/dsa",
-          //     },
-          //   ],
-          // },
-          // {
-          //   to: "/web-dev",
-          //   label: "💻 Web Dev",
-          //   position: "left",
-          // },
-          // {
-          //   to: "/product",
-          //   label: "👨‍💻 Product",
-          //   position: "left",
-          // },
           {
             to: "/showcase",
             html: '<span class="nav-emoji">🌍</span> Showcase',
@@ -251,7 +193,7 @@ const config = {
             items: [
               {
                 label: "About",
-                to: "/code-harbor-hub/about/",
+                to: "/about/",
               },
               {
                 label: "Contact",
@@ -297,7 +239,7 @@ const config = {
               },
               {
                 label: "Community",
-                to: "/community",
+                to: "/community/",
               },
               {
                 label: "GitHub",
@@ -305,7 +247,7 @@ const config = {
               },
               {
                 label: "Products",
-                href: "/product",
+                href: "/product/",
               },
             ],
           },
@@ -392,9 +334,9 @@ const config = {
       "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
+        max: 1030, 
+        min: 640, 
+        steps: 2,
         disableInDev: false,
       },
     ],
