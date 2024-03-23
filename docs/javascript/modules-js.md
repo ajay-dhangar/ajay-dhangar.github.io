@@ -373,6 +373,33 @@ This is how you can re-export named exports from other modules in JavaScript.
 
 :::
 
+:::important
+
+When using modules in JavaScript, you need to be aware of the module system you are using. Common module systems include CommonJS, AMD, and ES6 modules. ES6 modules are the standard module system in modern JavaScript applications.
+
+If you are using a module in html file, you can use the `type="module"` attribute in the `<script>` tag to indicate that the script is a module.
+
+For example:
+
+```html title="index.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Example</title>
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <!-- Your HTML content here -->
+</body>
+</html>
+```
+
+In this example, the `type="module"` attribute in the `<script>` tag indicates that the `app.js` script is a module.
+
+:::
+
 ## Conclusion
 
 Modules in JavaScript provide a way to organize your code into reusable pieces. You can export and import variables, functions, classes, and other values between modules to create a modular and maintainable codebase.
