@@ -5,7 +5,24 @@ sidebar_label: Debugging
 sidebar_position: 39
 tags:
   [
-    JavaScript, Debugging, Console, Breakpoints, Sources, Call Stack, Watch, Scope, Network, Performance, Memory, Profiling, Code Coverage, Chrome DevTools, Error Messages, Code Review, Debugger Statement, Debugging Techniques
+    JavaScript,
+    Debugging,
+    Console,
+    Breakpoints,
+    Sources,
+    Call Stack,
+    Watch,
+    Scope,
+    Network,
+    Performance,
+    Memory,
+    Profiling,
+    Code Coverage,
+    Chrome DevTools,
+    Error Messages,
+    Code Review,
+    Debugger Statement,
+    Debugging Techniques,
   ]
 description: "In this tutorial, you will learn how to debug JavaScript code in the browser using the Chrome DevTools. We will cover the basics of debugging, including breakpoints, console, sources, call stack, watch, scope, network, performance, memory, profiling, and code coverage."
 ---
@@ -33,7 +50,7 @@ Here are some common debugging techniques that you can use to debug JavaScript c
 
 ## Debugging with Chrome DevTools
 
-Chrome DevTools is a set of web developer tools built into the Google Chrome browser. It provides a rich set of debugging tools that you can use to inspect and debug your web applications. To open Chrome DevTools, right-click on a web page and select "Inspect" or press `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Option+I` (Mac). 
+Chrome DevTools is a set of web developer tools built into the Google Chrome browser. It provides a rich set of debugging tools that you can use to inspect and debug your web applications. To open Chrome DevTools, right-click on a web page and select "Inspect" or press `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Option+I` (Mac).
 
 ### Breakpoints
 
@@ -68,7 +85,6 @@ The call stack panel shows the sequence of function calls that led to the curren
 ### Watch
 
 The watch panel allows you to monitor the value of variables in real-time. You can add variables to the watch list and see their values update as you step through the code. This is useful for tracking the state of your application and identifying issues in your code.
-
 
 ### Scope
 
@@ -119,13 +135,12 @@ Code review is a collaborative process where you review your code with a colleag
 Debugging is an iterative process that requires patience and persistence. By mastering the debugging techniques and tools available to you, you can identify and fix errors in your code quickly and efficiently.
 :::
 
-
 :::tip
 When debugging, start with the simplest possible case and gradually add complexity. Break down the problem into smaller parts, test each part individually, and identify the source of the issue. By following a systematic approach, you can debug your code effectively and efficiently.
 :::
 
-
 :::tip Major Browsers' Debugging Tools
+
 - **Chrome DevTools**: Built into Google Chrome, it provides a rich set of debugging tools for web developers.
 - **Firefox Developer Tools**: Built into Mozilla Firefox, it provides a set of debugging tools for web developers.
 - **Safari Web Inspector**: Built into Apple Safari, it provides a set of debugging tools for web developers.
@@ -141,7 +156,6 @@ When debugging, start with the simplest possible case and gradually add complexi
 - **Puffin Browser DevTools**: Built into Puffin Browser, it provides a set of debugging tools for web developers.
 
 :::
-
 
 ## Conclusion
 
