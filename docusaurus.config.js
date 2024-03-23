@@ -143,9 +143,10 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/ajay-dhangar/code-harbor-hub",
-            html: '<span class="nav-emoji"></span> GitHub',
-            position: "right",
+            href: 'https://github.com/ajay-dhangar/code-harbor-hub',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
