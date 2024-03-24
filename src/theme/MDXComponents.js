@@ -13,6 +13,7 @@ import GiscusComponent from '@site/src/components/GiscusComponent';
 import CollectionList from '@site/src/components/CollectionList';
 import { FaReact } from 'react-icons/fa';
 import Courses from '@site/src/components/Courses';
+import DocCardList from '@theme/DocCardList';
 import Highlight from '@site/src/components/Highlight';
 
 export default {
@@ -32,6 +33,7 @@ export default {
   BubbleSortVisualization,
   SelectionSortVisualization,
   CollectionList,
+  DocCardList,
   FaReact,
   Courses
 };

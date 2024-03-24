@@ -178,9 +178,7 @@ mark {
 
 .solution-author-wrapper {
   text-align: center;
-  border-top: 1px solid #0994be91;
-  /* border-left: 1px solid #0994be91;
-  border-right: 1px solid #0994be91; */
+  border-top: 1px solid #4e8da0db;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   font-weight: 500;
