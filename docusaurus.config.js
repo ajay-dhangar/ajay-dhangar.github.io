@@ -69,9 +69,9 @@ const config = {
       },
 
       algolia: {
-        apiKey: "c1fc26c940b9a310faacfa13b70d46d0",
-        indexName: "ajay-dhangario",
-        appId: "46COWIIU59",
+        apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
+        indexName: "code-harbor-hub",
+        appId: "M9BCMBK1PH",
         contextualSearch: false,
       },
 
