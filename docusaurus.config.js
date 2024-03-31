@@ -409,7 +409,7 @@ const config = {
         path: "leetcode-dsa-solutions",
         routeBasePath: "leetcode-dsa-solutions",
         // editUrl: "#",
-        sidebarPath: require.resolve("./sidebarsLeetCode.js"),
+        sidebarPath: require.resolve("./sidebarsDSA.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
         showLastUpdateAuthor: true,
