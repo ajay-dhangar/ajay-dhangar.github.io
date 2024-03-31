@@ -401,6 +401,21 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "leetcode-dsa-solutions",
+        path: "leetcode-dsa-solutions",
+        routeBasePath: "leetcode-dsa-solutions",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsLeetCode.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
 
     [
       "@docusaurus/plugin-content-docs",
