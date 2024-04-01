@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './BubbleSortVisualization.css'; // Import CSS file
+import './BubbleSortVisualization.css'; 
 
 const BubbleSortVisualization: React.FC = () => {
   const [array, setArray] = useState<number[]>([]);
@@ -16,7 +16,7 @@ const BubbleSortVisualization: React.FC = () => {
   }, [delay]);
 
   const generateArray = () => {
-    const newArray = Array.from({ length: 30 }, () => Math.ceil(Math.random() * 100));
+    const newArray = Array.from({ length: 50 }, () => Math.ceil(Math.random() * 100));
     setArray(newArray);
   };
 

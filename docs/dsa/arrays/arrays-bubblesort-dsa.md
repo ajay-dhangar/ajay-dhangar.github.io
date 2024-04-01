@@ -20,7 +20,7 @@ tags: [dsa, arrays, sorting, bubble-sort, algorithm of bubble-sort, pseudocode o
 4. Repeat steps 1-3 until the array is sorted.
 5. The array is sorted.
 6. Exit.
-7. The time complexity of the bubble sort is O(n^2). 
+7. The time complexity of the bubble sort is O(n<sup>2</sup>). 
 8. The space complexity of the bubble sort is O(1).
 
 ## Pseudocode
@@ -88,10 +88,10 @@ console.log(bubbleSort(arr)); // [ 11, 12, 22, 25, 34, 64, 90 ]
 
 ## Complexity
 
-- **Time Complexity**: O(n^2) 
+- **Time Complexity**: O(n<sup>2</sup>) 
   - Best Case: O(n)
-  - Average Case: O(n^2)
-  - Worst Case: O(n^2)
+  - Average Case: O(n<sup>2</sup>)
+  - Worst Case: O(n<sup>2</sup>)
 - **Space Complexity**: O(1) 
 - **Stable**: Yes 
 
@@ -126,14 +126,14 @@ function bubbleSort() {
 
 ## Explanation
 
-In the above example, we have an array of numbers `[64, 34, 25, 12, 22, 11, 90]`. We are using the bubble sort algorithm to sort the array in ascending order. The bubble sort algorithm compares each pair of adjacent items and swaps them if they are in the wrong order. The algorithm repeats this process until the array is sorted. The sorted array is `[11, 12, 22, 25, 34, 64, 90]`. The time complexity of the bubble sort is O(n^2) and the space complexity is O(1).
+In the above example, we have an array of numbers `[64, 34, 25, 12, 22, 11, 90]`. We are using the bubble sort algorithm to sort the array in ascending order. The bubble sort algorithm compares each pair of adjacent items and swaps them if they are in the wrong order. The algorithm repeats this process until the array is sorted. The sorted array is `[11, 12, 22, 25, 34, 64, 90]`. The time complexity of the bubble sort is O(n<sup>2</sup>) and the space complexity is O(1).
 
 :::info Try it yourself
 Change the array values and see how the bubble sort algorithm sorts the array.
 :::
 
 :::tip 📝 Note
-Bubble sort is not a practical sorting algorithm when the input is large. It is not suitable for large datasets due to its O(n^2) time complexity.
+Bubble sort is not a practical sorting algorithm when the input is large. It is not suitable for large datasets due to its O(n<sup>2</sup>) time complexity.
 
 The main advantage of bubble sort is that it is easy to understand and implement. It is often used to teach the concept of sorting algorithms.
 
@@ -161,7 +161,7 @@ Insertion Sort, Selection Sort, Merge Sort, Quick Sort, etc.
 
 1. What is the time complexity of the bubble sort algorithm?
    - [ ] O(n)
-   - [x] O(n^2)     ✔
+   - [x] O(n<sup>2</sup>)     ✔
    - [ ] O(log n)
    - [ ] O(n!)
   

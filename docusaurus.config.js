@@ -401,6 +401,21 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "dsa-solutions",
+        path: "dsa-solutions",
+        routeBasePath: "dsa-solutions",
+        // editUrl: "#",
+        sidebarPath: require.resolve("./sidebarsDSASolutions.js"),
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
 
     [
       "@docusaurus/plugin-content-docs",
