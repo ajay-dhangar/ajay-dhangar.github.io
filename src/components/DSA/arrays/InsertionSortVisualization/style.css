@@ -20,15 +20,17 @@ button:disabled {
 .array-bar {
   width: 15px;
   margin: 0 2px;
-  background-color: #4caf50; /* Default color */
+  background-color: #4caf50; 
   display: inline-block;
-  transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+  transition: background-color 0.3s ease-in-out;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
 }
 
 .array-bar.current-index {
-  background-color: #2196f3; /* Color for elements being compared */
+  background-color: #2196f3;
 }
 
 .array-bar.min-index {
-  background-color: #ffeb3b; /* Color for elements being replaced with the minimum value */
+  background-color: #ffeb3b;
 }

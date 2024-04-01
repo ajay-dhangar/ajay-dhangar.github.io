@@ -23,11 +23,11 @@ const InsertionSortVisualization: React.FC = () => {
 
   const updateMoveDuration = () => {
     const stylesheets = document.styleSheets;
-    for (let i = 0; i < stylesheets.length; i++) {
-      const rules = (stylesheets[i] as CSSStyleSheet).cssRules || (stylesheets[i] as CSSStyleSheet).rules;
-      for (let j = 0; j < rules.length; j++) {
-        if ((rules[j] as CSSStyleRule).selectorText === '.v-move') {
-          (rules[j] as CSSStyleRule).style.transitionDuration = `${delay}ms`;
+    for (const stylesheet of stylesheets) {
+      const rules = (stylesheet as CSSStyleSheet).cssRules;
+      for (const rule of rules) {
+        if ((rule as CSSStyleRule).selectorText === '.v-move') {
+          (rule as CSSStyleRule).style.transitionDuration = `${delay}ms`;
           break;
         }
       }
