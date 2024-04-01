@@ -4,7 +4,7 @@
   border-radius: 5px;
 }
 
-button {
+.insertion-sort-visualization button {
   margin: 5px;
   padding: 5px 10px;
   font-size: 16px;
@@ -12,12 +12,12 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
+.insertion-sort-visualization button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-.array-bar {
+.insertion-sort-visualization .array-bar {
   width: 15px;
   margin: 0 2px;
   background-color: #4caf50; 
@@ -27,10 +27,10 @@ button:disabled {
   border-top-right-radius: 0.2rem;
 }
 
-.array-bar.current-index {
+.insertion-sort-visualization .array-bar.current-index {
   background-color: #2196f3;
 }
 
-.array-bar.min-index {
+.insertion-sort-visualization .array-bar.min-index {
   background-color: #ffeb3b;
 }
