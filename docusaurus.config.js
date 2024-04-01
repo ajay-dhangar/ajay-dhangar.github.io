@@ -377,6 +377,9 @@ const config = {
         disableInDev: false,
       },
     ],
+
+    // All Foders Plugins Here
+
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -407,6 +410,22 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "dsa-solutions",
+        path: "dsa-solutions",
+        routeBasePath: "dsa-solutions",
+        // editUrl: "#",
+        remarkPlugins: [remarkMath.default],
+        rehypePlugins: [rehypeKatex.default],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -453,6 +472,8 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+
+    // All Files Plugins End Here
 
     [
       path.join(__dirname, "/plugins/my-plugin"),
