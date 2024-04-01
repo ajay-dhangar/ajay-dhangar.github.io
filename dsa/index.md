@@ -10,44 +10,71 @@ sidebar_position: 1
 If you're new to Data Structures and Algorithms, start with the [Introduction to Data Structures and Algorithms](/docs/dsa/) guide.
 
 ```mermaid
-graph LR;
-    A[Data Structures & Algorithms] --> B{Topics};
-    B --> C(Data Structures);
-    B --> D(Algorithms);
-    C --> C1(Arrays);
-    C --> C2(Linked Lists);
-    C --> C3(Stacks & Queues);
-    C --> C4(Trees);
-    C --> C5(Graphs);
-    C --> C6(Hash Tables & Sets);
-    C --> C7(Heaps & Priority Queues);
-    C --> C8(Tries);
-    C --> C9(Other Advanced Data Structures);
-    D --> D1(Searching);
-    D --> D2(Sorting);
-    D --> D3(Recursion);
-    D --> D4(Dynamic Programming);
-    D --> D5(Greedy Algorithms);
-    D --> D6(Divide and Conquer);
-    D --> D7(Backtracking);
-    D --> D8(Bit Manipulation);
-    D --> D9(Mathematical Algorithms);
-    D --> D10(String Algorithms);
-    D --> D11(Geometric Algorithms);
-    D --> D12(Randomized Algorithms);
-    D --> D13(Network Flow & NP Complete);
-    D --> D14(Cryptography & Security Algorithms);
-    D --> D15(Combinatorial & Number Theory Algorithms);
-    D --> D16(Game Theory Algorithms);
-    D --> D17(Probabilistic Algorithms);
-    D --> D18(Approximation Algorithms);
-    D --> D19(Parallel & External Algorithms);
-    D --> D20(Quantum Algorithms);
-    D --> D21(Miscellaneous Algorithms);
-
+graph TD;
+    A[Data Structures & Algorithms] --> B(Data Structures);
+    A --> C(Algorithms);
+    
 ```
 
 I'd be glad to create a comprehensive response for your Data Structures and Algorithms (DSA) roadmap, incorporating the best aspects of previous suggestions and addressing potential shortcomings:
+
+### Data Structures
+
+Data Structures are the fundamental building blocks used to organize and store data efficiently. Here are some common data structures you should be familiar with:
+
+```mermaid
+graph TD;
+    A[Data Structures] --> B(Array);
+    A --> C(String);
+    A --> D(Linked List);
+    A --> E(Stack);
+    A --> F(Queue);
+    A --> G(Tree);
+    A --> H(Graph);
+    A --> I(Hashing);
+    A --> J(Heap);
+    A --> K(Trie);
+```
+
+- **Array**: A collection of elements of the same type stored in contiguous memory locations.
+- **String**: A sequence of characters.
+- **Linked List**: A linear data structure where elements are not stored in contiguous memory locations.
+- **Stack**: A linear data structure that follows the Last In First Out (LIFO) principle.
+- **Queue**: A linear data structure that follows the First In First Out (FIFO) principle.
+- **Tree**: A non-linear data structure used to store data hierarchically.
+- **Graph**: A non-linear data structure consisting of vertices and edges.
+- **Hashing**: A technique used to uniquely identify objects.
+- **Heap**: A complete binary tree that satisfies the heap property.
+- **Trie**: A tree-like data structure used to store a dynamic set of strings.
+
+### Algorithms
+
+Algorithms are step-by-step procedures used to solve problems or perform computations. Here are some common algorithms you should be familiar with:
+
+```mermaid
+graph TD;
+    A[Algorithms] --> B(Sorting);
+    A --> C(Searching);
+    A --> D(Recursion);
+    A --> E(Dynamic Programming);
+    A --> F(Greedy Algorithms);
+    A --> G(Divide and Conquer);
+    A --> H(Brute Force);
+    A --> I(Bit Manipulation);
+    A --> J(Graph Algorithms);
+    A --> K(String Matching);
+```
+
+- **Sorting**: Arranging elements in a specific order.
+- **Searching**: Finding a specific element in a collection of elements.
+- **Recursion**: A technique where a function calls itself to solve a smaller instance of the same problem.
+- **Dynamic Programming**: Solving problems by breaking them down into smaller subproblems.
+- **Greedy Algorithms**: Making locally optimal choices at each step.
+- **Divide and Conquer**: Solving problems by breaking them down into smaller subproblems.
+- **Brute Force**: Solving problems by trying all possible solutions.
+- **Bit Manipulation**: Algorithmically manipulating bits or binary digits.
+- **Graph Algorithms**: Solving problems on graphs.
+- **String Matching**: Finding a substring within a string.
 
 ## Resources
 

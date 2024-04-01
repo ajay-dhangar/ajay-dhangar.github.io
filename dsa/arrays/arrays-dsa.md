@@ -7,13 +7,10 @@ description: "Arrays are the most basic data structure in computer science. They
 tags: [dsa, arrays, data-structures, algorithms, programming-skills, leetcode, interview-questions, problems, practice, collection]
 ---
 
-import ArraysInDSAProblems from '@site/src/database/dsa/arrays';
 import collections from './collections';
 
-<CollectionList collections={collections} />
+In this page we will shared all the problems related to Arrays in Data Structures and Algorithms. We will also discuss the problems for practice. So, let's get started.
 
-<Table 
-    title="DSA Problems on Arrays"
-    data={ArraysInDSAProblems}
-    isSorted={false}
-/>
+## Study Materials / Resources
+
+<CollectionList collections={collections} />

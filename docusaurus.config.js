@@ -405,11 +405,11 @@ const config = {
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
-        id: "leetcode-dsa-solutions",
-        path: "leetcode-dsa-solutions",
-        routeBasePath: "leetcode-dsa-solutions",
+        id: "dsa-solutions",
+        path: "dsa-solutions",
+        routeBasePath: "dsa-solutions",
         // editUrl: "#",
-        sidebarPath: require.resolve("./sidebarsDSA.js"),
+        sidebarPath: require.resolve("./sidebarsDSASolutions.js"),
         remarkPlugins: [remarkMath.default],
         rehypePlugins: [rehypeKatex.default],
         showLastUpdateAuthor: true,
