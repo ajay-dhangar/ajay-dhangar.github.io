@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './ArrayVisualization.css'; 
+import './style.css'; 
 
-const ArrayVisualizations: React.FC = () => {
+const InsertionSortVisualization: React.FC = () => {
   const [array, setArray] = useState<number[]>([]);
   const [delay, setDelay] = useState<number>(300); 
-  const [minIndex, setMinIndex] = useState<number | null>(null); 
-  const [isDisabled, setIsDisabled] = useState<boolean>(false); 
+  const [minIndex, setMinIndex] = useState<number | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [isSorting, setIsSorting] = useState<boolean>(false);
 
@@ -18,7 +17,7 @@ const ArrayVisualizations: React.FC = () => {
   }, [delay]);
 
   const generateArray = () => {
-    const newArray = Array.from({ length: 18 }, () => Math.ceil(Math.random() * 90) + 10);
+    const newArray = Array.from({ length: 40 }, () => Math.ceil(Math.random() * 90) + 10);
     setArray(newArray);
   };
 
@@ -35,43 +34,48 @@ const ArrayVisualizations: React.FC = () => {
     }
   };
 
-  const findLowest = async () => {
-    setIsDisabled(true);
+  const insertionSort = async () => {
     setIsSorting(true);
-    let minVal = array[0];
-    let minIdx = 0;
-    for (let j = 1; j < array.length; j++) {
-      setCurrentIndex(j);
-      if (array[j] < minVal) {
-        minVal = array[j];
-        minIdx = j;
+    for (let i = 1; i < array.length; i++) {
+      let key = array[i];
+      let j = i - 1;
+      setCurrentIndex(i);
+      while (j >= 0 && array[j] > key) {
+        await delayFunction(delay);
+        array[j + 1] = array[j];
+        setArray([...array]);
+        j = j - 1;
       }
-      await new Promise(resolve => setTimeout(resolve, delay));
+      array[j + 1] = key;
+      setArray([...array]);
+      setMinIndex(j + 1);
     }
-    setMinIndex(minIdx);
     setIsSorting(false);
-    setIsDisabled(false);
   };
 
   const resetArray = () => {
     generateArray();
     setMinIndex(null);
+    setCurrentIndex(null);
+  };
+
+  const delayFunction = (ms: number) => {
+    return new Promise(resolve => setTimeout(resolve, ms));
   };
 
   return (
-    <div className='array-visualizations'>
+    <div className='insertion-sort-visualization'>
       <p>Speed: <input type="range" min="50" max="500" value={delay} onChange={e => setDelay(Number(e.target.value))} /></p>
-      <button onClick={findLowest} disabled={isDisabled || isSorting}>Find Lowest</button>
+      <button onClick={insertionSort} disabled={isSorting}>Sort</button>
       &nbsp;
-      <button onClick={resetArray} disabled={isDisabled || isSorting}>New Values</button>
-      <p>Lowest value: {minIndex !== null ? array[minIndex] : null}</p>
+      <button onClick={resetArray} disabled={isSorting}>Reset</button>
       <br /> <br />
       <div className="array-container">
         {array.map((value, index) => (
           <div
             key={index}
-            className={`array-bar ${index === minIndex ? 'min-value' : ''} ${index === currentIndex ? 'current-value' : ''}`}
-            style={{ height: `${value * 3}px` }}
+            className={`array-bar ${index === currentIndex ? 'current-index' : index === minIndex ? 'min-index' : ''}`}
+            style={{ height: `${value * 3}px`, transitionDelay: `${delay / 2}ms` }}
           ></div>
         ))}
       </div>      
@@ -79,4 +83,4 @@ const ArrayVisualizations: React.FC = () => {
   );
 };
 
-export default ArrayVisualizations;
+export default InsertionSortVisualization;

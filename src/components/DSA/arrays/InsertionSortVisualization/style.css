@@ -1,0 +1,34 @@
+.insertion-sort-visualization {
+  padding: 20px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 0.5;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.array-bar {
+  width: 15px;
+  margin: 0 2px;
+  background-color: #4caf50; /* Default color */
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.array-bar.current-index {
+  background-color: #2196f3; /* Color for elements being compared */
+}
+
+.array-bar.min-index {
+  background-color: #ffeb3b; /* Color for elements being replaced with the minimum value */
+}

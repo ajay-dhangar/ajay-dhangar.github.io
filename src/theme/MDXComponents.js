@@ -15,6 +15,7 @@ import { FaReact } from 'react-icons/fa';
 import Courses from '@site/src/components/Courses';
 import DocCardList from '@theme/DocCardList';
 import Highlight from '@site/src/components/Highlight';
+import InsertionSortVisualization from '@site/src/components/DSA/arrays/InsertionSortVisualization';
 
 export default {
   // Re-use the default mapping
@@ -35,5 +36,6 @@ export default {
   CollectionList,
   DocCardList,
   FaReact,
-  Courses
+  Courses,
+  InsertionSortVisualization
 };
