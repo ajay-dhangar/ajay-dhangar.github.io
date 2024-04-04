@@ -155,18 +155,14 @@
 }
 
 .home__divider {
-  margin: 0 auto;
-  padding: 0 20px;
+  text-align: center;
 }
 
-.home__divider:nth-child(even) {
-  background-color: #0d1117;
-  padding: 20px 10px;  
-  border-radius: 8px;
-  color: #fff;
-}
-
-.home__divider:nth-child(odd) {
-  background-color: #09fcf40d;
-  padding: 20px 10px;
+.home__divider::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 2px;
+  background-color: var(--ifm-color-primary);
 }

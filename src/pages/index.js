@@ -2,18 +2,14 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-// import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import HomepageWelcome from "@site/src/components/HomepageWelcome";
-import CoursesOfferedContent from "@site/src/components/CoursesOfferedContent";
-import FeaturedCourses from "@site/src/components/FeaturedCoursesWrapper";
 // import OurInstructors from "@site/src/components/OurInstructors";
-import UpcomingEvents from "@site/src/components/UpcomingEvents";
 import GiscusComponent from "@site/src/components/GiscusComponent";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import FAQs from "../components/FAQs";
-import faqs from "../data/faqs";
+import Hero from "../components/HomePage/Hero";
+import Features from "../components/HomePage/Features";
+import Courses from "../components/HomePage/Courses";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -21,18 +17,12 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {/* {siteConfig.title}           */}
+          {siteConfig.title}          
           Code Harbor Hub
           {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
         </Heading>
-        <p className="hero__subtitle">
-          <HomepageWelcome />
-        </p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs"
-          >
+          <Link className="button button--secondary button--lg" to="/docs">
             Documentation - Get Started
           </Link>
         </div>
@@ -41,34 +31,90 @@ function HomepageHeader() {
   );
 }
 
+const featuresData = [
+  {
+    icon: "/code-harbor-hub/img/svg/blogging.svg",
+    title: "Blog Posts",
+    description: "Read the latest blog posts shared by the CodeHarborHub.",
+  },
+  {
+    icon: "/code-harbor-hub/img/svg/browsing.svg",
+    title: "Browse Courses",
+    description:
+      "Browse through the courses and tutorials shared by the CodeHarborHub.",
+  },
+  {
+    icon: "/code-harbor-hub/img/svg/building.svg",
+    title: "Contribute To projects",
+    description:
+      "Contribute to open source projects and learn from the CodeHarborHub.",
+  },
+  {
+    icon: "/code-harbor-hub/img/svg/coding.svg",
+    title: "Code Snippets",
+    description: "Find and share code snippets with the CodeHarborHub.",
+  },
+];
+
+const coursesData = [
+  {
+    title: "HTML & CSS",
+    description:
+      "Learn the basics of HTML and CSS. Start building your first website.",
+    imageUrl: "/code-harbor-hub/img/svg/cms.svg",
+  },
+  {
+    title: "JavaScript",
+    description:
+      "Learn the basics of JavaScript. Start building interactive websites.",
+    imageUrl: "/code-harbor-hub/img/svg/javascript_frameworks.svg",
+  },
+  {
+    title: "React",
+    description:
+      "Learn the basics of React. Start building your first React app.",
+    imageUrl: "/code-harbor-hub/img/svg/react.svg",
+  },
+  {
+    title: "Node.js",
+    description:
+      "Learn the basics of Node.js. Start building your first Node.js app.",
+    imageUrl: "/code-harbor-hub/img/svg/youtube_tutorial.svg",
+  },
+];
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="CodeHarbor is a platform for developers to share their knowledge and experience with the community."
+      description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
     >
-      <HomepageHeader />
+      {/* <HomepageHeader /> */}
+
       <main>
-        {/* <HomepageFeatures /> */}
-        <div className={styles.home__divider}>
-          <CoursesOfferedContent />
-        </div>
-        <div className={styles.home__divider}>
-          <FeaturedCourses />
-        </div>
-        {/* <div className={styles.home__divider}>
-          <OurInstructors />
-        </div> */}        
+        <Hero
+          title="Welcome To CodeHarborHub"
+          description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
+          imageUrl="/code-harbor-hub/img/svg/about_me.svg"
+        />
 
         <div className={styles.home__divider}>
-          <FAQs faqs={faqs} />
+          <Heading as="h2">Features of CodeHarborHub</Heading>
         </div>
+
+        <Features features={featuresData} />
 
         <div className={styles.home__divider}>
-          <UpcomingEvents />
+          <Heading as="h2">Courses Available</Heading>
         </div>
 
+        <Courses courses={coursesData} />
+
+        <div className={styles.home__divider}>
+          <Heading as="h2">Join the Discussion</Heading>
+        </div>
+        
         <div>
           <GiscusComponent />
         </div>
