@@ -2,29 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 10px;
+  margin: 20px 0;
 }
 
-.hero_container::after, .course_cards::after, .feature_container::after {
+.hero_container::after,
+.course_cards::after,
+.feature_container::after {
   border-bottom: 1px solid #666;
   content: "";
   width: 100%;
   margin-top: 8px;
   height: 1px;
-}
-
-@media (max-width: 853px) {
-  .hero_container {
-    background-image: linear-gradient(
-      -45deg,
-      #ee7752,
-      #e73c7e,
-      #23a6d5,
-      #23d5ab
-    );
-    background-size: 400% 400%;
-    animation: GradientAnimation 15s ease infinite;
-  }
 }
 
 .hero_content {
@@ -83,6 +71,52 @@
 }
 
 @media (max-width: 853px) {
+  .hero_container {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #f2f2f2;
+    background: linear-gradient(90deg, #539200cd, rgba(117, 233, 82, 0.79)),
+      url("../../../static/img/background-img.svg");
+    animation: waveX 10s linear infinite, waveY 10s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .hero_container:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes waveX {
+    0% {
+      background-position-x: 100%, 0;
+    }
+    100% {
+      background-position-x: 100%, 33rem;
+    }
+  }
+  @keyframes waveY {
+    100% {
+      background-position-y: 100%, 0;
+    }
+    0% {
+      background-position-y: 100%, 33rem;
+    }
+  }
+
+  .hero_title {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .hero_description {
+    text-align: justify;
+  }
+
+  .buttons_container {
+    justify-content: center;
+    margin-left: 0;
+  }
+
   .hero_image_container {
     display: none;
   }
@@ -96,7 +130,8 @@
   background-size: 400% 400%;
   animation: GradientAnimation 15s ease infinite;
 }
-.feature_container, .course_cards {
+.feature_container,
+.course_cards {
   margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +141,8 @@
   justify-content: center;
 }
 
-.feature_item, .course_card {
+.feature_item,
+.course_card {
   padding: 3px;
   text-align: start;
   border: 1px solid #ccc;
@@ -116,7 +152,8 @@
   height: 320px;
 }
 
-.feature_item img, .course_card img {
+.feature_item img,
+.course_card img {
   width: 100%;
   height: 150px;
   border-radius: 5px;
@@ -126,13 +163,15 @@
   animation: GradientAnimation 15s ease infinite;
 }
 
-.feature_item h3, .course_card h3 {
+.feature_item h3,
+.course_card h3 {
   padding: 0 10px;
   font-size: 1.5rem;
   margin-top: 10px;
 }
 
-.feature_item p, .course_card p{
+.feature_item p,
+.course_card p {
   padding: 0 10px;
   font-size: 1rem;
   margin-top: 5px;
