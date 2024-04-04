@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./hero.module.css";
+import styles from "../home.module.css";
+import Link from "@docusaurus/Link";
 
 interface HeroProps {
   title: string;
@@ -15,14 +16,14 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
         <p className={styles.hero_description}>{description}</p>
         <div className={styles.buttons_container}>
           <button className={styles.animated_button}>
-            <a className={styles.source_link} href="/docs/">
+            <Link className={styles.source_link} to="/docs/">
               Getting Started
-            </a>
+            </Link>
           </button>
           <button className={styles.animated_button}>
-            <a className={styles.source_link} href="/courses/">
+            <Link className={styles.source_link} to="/courses/">
               Courses
-            </a>
+            </Link>
           </button>
         </div>
       </div>
