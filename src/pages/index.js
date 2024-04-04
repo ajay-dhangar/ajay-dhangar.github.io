@@ -61,13 +61,13 @@ const coursesData = [
     title: "HTML & CSS",
     description:
       "Learn the basics of HTML and CSS. Start building your first website.",
-    imageUrl: "/code-harbor-hub/img/svg/cms.svg",
+    imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
   },
   {
     title: "JavaScript",
     description:
       "Learn the basics of JavaScript. Start building interactive websites.",
-    imageUrl: "/code-harbor-hub/img/svg/javascript_frameworks.svg",
+    imageUrl: "/code-harbor-hub/img/svg/static_assets.svg",
   },
   {
     title: "React",
