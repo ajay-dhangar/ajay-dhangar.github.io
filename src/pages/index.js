@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
+// import clsx from "clsx";
+// import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 // import OurInstructors from "@site/src/components/OurInstructors";
@@ -11,25 +11,25 @@ import Hero from "../components/HomePage/Hero";
 import Features from "../components/HomePage/Features";
 import Courses from "../components/HomePage/Courses";
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}          
-          Code Harbor Hub
-          {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-        </Heading>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs">
-            Documentation - Get Started
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+// function HomepageHeader() {
+//   const { siteConfig } = useDocusaurusContext();
+//   return (
+//     <header className={clsx("hero hero--primary", styles.heroBanner)}>
+//       <div className="container">
+//         <Heading as="h1" className="hero__title">
+//           {siteConfig.title}          
+//           Code Harbor Hub
+//           <p className="hero__subtitle">{siteConfig.tagline}</p>
+//         </Heading>
+//         <div className={styles.buttons}>
+//           <Link className="button button--secondary button--lg" to="/docs">
+//             Documentation - Get Started
+//           </Link>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
 
 const featuresData = [
   {
