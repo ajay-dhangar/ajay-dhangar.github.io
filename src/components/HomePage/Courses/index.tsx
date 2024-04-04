@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./courses.module.css";
+import styles from "../home.module.css";
 
 type Course = {
   title: string;

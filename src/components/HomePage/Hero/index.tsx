@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./hero.module.css";
+import styles from "../home.module.css";
 
 interface HeroProps {
   title: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./features.module.css";
+import styles from "../home.module.css";
 
 type Feature = {
   icon: string; 
