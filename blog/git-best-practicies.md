@@ -4,6 +4,7 @@ sidebar_label: Git Best Practicies
 authors: [ajay-dhangar]
 tags: [git, best practicies]
 date: 2024-03-15 14:37:46
+hide_table_of_contents: true
 ---
 
 Git is a powerful tool for managing the development of software projects, but it can be challenging to use effectively. In this article, we'll take a look at some best practices for using Git, including how to structure your commits, how to manage branches, and how to collaborate with others. By following these best practices, you can make your development process more efficient and less error-prone.
