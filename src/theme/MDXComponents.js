@@ -16,6 +16,8 @@ import Courses from '@site/src/components/Courses';
 import DocCardList from '@theme/DocCardList';
 import Highlight from '@site/src/components/Highlight';
 import InsertionSortVisualization from '@site/src/components/DSA/arrays/InsertionSortVisualization';
+import File from '@site/src/components/File';
+import YoutubeVideo from '../components/YoutubeVideo';
 
 export default {
   // Re-use the default mapping
@@ -37,5 +39,7 @@ export default {
   DocCardList,
   FaReact,
   Courses,
-  InsertionSortVisualization
+  InsertionSortVisualization,
+  File,
+  YoutubeVideo
 };
