@@ -1,5 +1,5 @@
 ---
-id: building-your-first-react-app-lesson-1
+id: lesson-1
 title: "Creating a simple 'Hello World' app"
 sidebar_label: Lesson - 1
 sidebar_position: 1
