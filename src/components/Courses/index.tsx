@@ -16,25 +16,41 @@ interface Props {
 }
 
 const CoursesContainer = styled.div`
-  margin: 20px;
+  margin: 5px;
 `;
 
 const FilterButtons = styled.div`
-  margin-bottom: 10px;
+  margin: 10px 0;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  justify-content: space-between;
+  gap: 10px; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
 `;
 
 const Button = styled.button`
-  margin-right: 10px;
-  padding: 5px 10px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #007bff;
+  }
 `;
 
 const CoursesList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
+  margin-top: 20px;
 `;
 
 const CourseItem = styled.div`
@@ -52,14 +68,40 @@ const CourseImage = styled.img`
 
 const CourseTitle = styled.h3`
   margin-bottom: 5px;
+  padding: 0 5px;
 `;
 
 const CourseDescription = styled.p`
   margin-bottom: 5px;
+  padding: 0 8px;
+  text-align: justify;
 `;
 
 const CourseAuthor = styled.span`
   font-style: italic;
+  padding: 0 8px;
+`;
+
+const VisitCourse = styled.div`
+  margin-top: 10px;
+  padding: 0 8px;
+
+  a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
 `;
 
 const Courses: React.FC<Props> = ({ courses }) => {
@@ -77,8 +119,13 @@ const Courses: React.FC<Props> = ({ courses }) => {
         <Button onClick={() => setFilter("html")}>HTML</Button>
         <Button onClick={() => setFilter("css")}>CSS</Button>
         <Button onClick={() => setFilter("javascript")}>JavaScript</Button>
-        {/* Add more buttons for other categories */}
+        <Button onClick={() => setFilter("dsa")}>DSA</Button>
+        <Button onClick={() => setFilter("react")}>React</Button>
+        <Button onClick={() => setFilter("node")}>Node</Button>
+        <Button onClick={() => setFilter("python")}>Python</Button>
+        <Button onClick={() => setFilter("mongodb")}>MongoDB</Button>
       </FilterButtons>
+      
       <CoursesList>
         {filteredCourses.map((course) => (
           <CourseItem key={course.id}>
@@ -86,11 +133,11 @@ const Courses: React.FC<Props> = ({ courses }) => {
             <CourseTitle>{course.title}</CourseTitle>
             <CourseDescription>{course.description}</CourseDescription>
             <CourseAuthor><strong>Author:</strong> {course.author}</CourseAuthor>
-            <div>
+            <VisitCourse>
               <a href={course.link} target="_blank" rel="noopener noreferrer">
                 Visit Course
               </a>
-            </div>
+            </VisitCourse>
           </CourseItem>
         ))}
       </CoursesList>

@@ -99,6 +99,8 @@ export default function Home() {
           imageUrl="/code-harbor-hub/img/svg/about_me.svg"
         />
 
+        <hr style={{ margin: "1rem" }} />
+
         <div className={styles.home__divider}>
           <Heading as="h2">Features of CodeHarborHub</Heading>
         </div>

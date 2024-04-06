@@ -7,10 +7,9 @@ description: "Recommended courses for learning web development, data science, pr
 tags: [courses]
 keywoards: [courses]
 author: [CodeHarborHub, Ajay Dhangar]
+hide_table_of_contents: true
 ---
 
 import courses from '@site/src/database/courses';
 
-<div className="Courses">
-    <Courses courses={courses} />
-</div>
+<Courses courses={courses} />

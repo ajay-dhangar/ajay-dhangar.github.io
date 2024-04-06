@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 40px 0;
-  padding: 10px;
+  margin: 0;
+  padding: 40px 10px;
 }
 
-.hero_container::after,
+
 .course_cards::after,
 .feature_container::after {
   border-bottom: 1px solid #666;
