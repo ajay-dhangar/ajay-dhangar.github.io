@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 20px 0;
+  margin: 40px 0;
+  padding: 10px;
 }
 
 .hero_container::after,
@@ -22,7 +23,7 @@
 
 .hero_title {
   font-size: 2.5rem;
-  padding: 5px 8px;
+  padding: 2px 4px;
 }
 
 .hero_description {

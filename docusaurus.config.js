@@ -253,19 +253,19 @@ const config = {
             ],
           },
           {
-            title: "Social",
+            title: "Social Media",
             items: [
               {
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/ajay-dhangar/",
+                href: "https://www.linkedin.com/groups/14232119/",
               },
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/@ajay-dhangar/",
               },
               {
-                label: "Instagram",
-                href: "https://www.instagram.com/_ajay.dhangar",
+                label: "Discord",
+                href: "https://discord.gg/c53FQn3pRv",
               },
               {
                 label: "Twitter",
