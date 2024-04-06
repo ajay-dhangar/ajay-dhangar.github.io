@@ -30,9 +30,9 @@ Get involved, ask questions, and share your expertise. Join our community on [Di
 
 This project is licensed under the [MIT License](LICENSE)
 
-## Connect with the Creator
+## Connect with Us
 
-- GitHub: [@Ajay-Dhangar](https://github.com/Ajay-Dhangar)
+[![](https://dcbadge.vercel.app/api/server/c53FQn3pRv)](https://discord.gg/c53FQn3pRv)
 
 ## Workflows, Badges, and Analytics
 
