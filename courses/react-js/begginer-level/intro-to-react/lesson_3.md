@@ -16,6 +16,9 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allow
 To install Node.js, follow these steps:
 
 1. Go to the [Node.js website](https://nodejs.org/) and download the LTS (Long-Term Support) version for your operating system.
+    
+   [![alt text](image.png)](https://nodejs.org/en)
+
 2. Run the installer and follow the installation instructions.
 3. Verify the installation by opening a terminal or command prompt and running the following commands:
 
@@ -56,6 +59,61 @@ A code editor is a tool used by developers to write, edit, and manage code for s
 - [Emacs](https://www.gnu.org/software/emacs/)
 
 Choose a code editor that you are comfortable with and that meets your development needs. Visual Studio Code is a popular choice among developers due to its features, extensions, and community support.
+
+:::note 📝 Visual Studio Code (VS Code) Download / Installation
+
+In this course, we will be using Visual Studio Code as our code editor. You can download it from the [Visual Studio Code website](https://code.visualstudio.com/).
+
+![alt text](image-1.png)
+
+1. Go to the [Visual Studio Code website](https://code.visualstudio.com/).
+2. Download the installer for your operating system.
+3. Run the installer and follow the installation instructions.
+4. Open Visual Studio Code and install any recommended extensions for JavaScript and React development.
+5. You are now ready to start coding with Visual Studio Code!
+6. If you are using a different code editor, follow the installation instructions for that editor.
+7. Make sure to install any recommended extensions for JavaScript and React development in your code editor.
+8. You are now ready to start coding with your preferred code editor!
+9. If you are using a different code editor, follow the installation instructions for that editor.
+
+   ![alt text](image-2.png)
+
+   Now that you have installed Node.js, npm, and a code editor, you are ready to start building React applications. You can use these tools to create, develop, and deploy React projects on your local machine.
+:::
+
+:::tip more 📌 Additional Resources
+
+1. Our official vs code theme for Code Editor [Dark Code Master](https://marketplace.visualstudio.com/items?itemName=DarkCodeMaster.dark-code-master)
+   
+   <Tabs>
+      <TabItem value="On Marketplace" label="On Marketplace">
+
+        [![alt text](image-3.png)](https://marketplace.visualstudio.com/items?itemName=DarkCodeMaster.dark-code-master&ssr=false#overview)
+
+      </TabItem>
+      <TabItem value="On Github" label="On Github">
+
+         [![alt text](image-4.png)](https://github.com/Ajay-Dhangar/dark-code-master-theme)
+
+      </TabItem>
+
+      <TabItem value="On Vs Code" label="On Vs Code">
+
+         [![alt text](image-5.png)](vscode:extension/DarkCodeMaster.dark-code-master)
+
+      </TabItem>
+   </Tabs>   
+
+2. [Visual Studio Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+
+3. [Visual Studio Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+4. [Visual Studio Code Extensions for JavaScript and React Development](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
+
+5. [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/)
+
+:::
+
 
 ## Now run your first JavaScript code using Node.js
 
