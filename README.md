@@ -24,7 +24,7 @@ We welcome contributions! If you have valuable insights, tutorials, or want to e
 
 ## Join Our Community
 
-Get involved, ask questions, and share your expertise. Join our community on [Discord](#) and let's learn and grow together!
+Get involved, ask questions, and share your expertise. Join our community on [Discord](https://discord.gg/c53FQn3pRv) and let's learn and grow together!
 
 ## License
 
