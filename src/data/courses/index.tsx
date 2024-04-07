@@ -1,22 +1,22 @@
 const courses = [
-    {
-      id: 1,
-      title: "HTML Crash Course",
-      description: "Learn HTML from scratch. This course is for absolute beginners who want to learn the HTML programming language.",
-      category: "html",
-      imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
-      author: "Ajay Dhangar",
-      link: "#"
-    },
-    {
-      id: 2,
-      title: "CSS Learning Path",
-      description: "Learn CSS from scratch. This course is for absolute beginners who want to learn the CSS programming language.",
-      category: "css",
-      imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
-      author: "Ajay Dhangar",
-      link: "#"
-    },
+    // {
+    //   id: 1,
+    //   title: "HTML Crash Course",
+    //   description: "Learn HTML from scratch. This course is for absolute beginners who want to learn the HTML programming language.",
+    //   category: "html",
+    //   imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
+    //   author: "Ajay Dhangar",
+    //   link: "#"
+    // },
+    // {
+    //   id: 2,
+    //   title: "CSS Learning Path",
+    //   description: "Learn CSS from scratch. This course is for absolute beginners who want to learn the CSS programming language.",
+    //   category: "css",
+    //   imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
+    //   author: "Ajay Dhangar",
+    //   link: "#"
+    // },
     {
       id: 3,
       title: "JavaScript for Beginners",
