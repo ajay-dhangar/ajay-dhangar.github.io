@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
             </Link>
           </button>
           <button className={styles.animated_button}>
-            <Link className={styles.source_link} to="/courses/">
+            <Link className={styles.source_link} to="/courses/category/beginners-level/">
               Courses
             </Link>
           </button>

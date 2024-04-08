@@ -28,7 +28,7 @@ const FilterButtons = styled.div`
   -ms-overflow-style: none;
   scrollbar-width: none;
   justify-content: space-between;
-  gap: 10px; 
+  gap: 10px;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
@@ -62,8 +62,9 @@ const CourseItem = styled.div`
 const CourseImage = styled.img`
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  object-fit: cover;
+  background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 150% 150%;
 `;
 
 const CourseTitle = styled.h3`
@@ -104,6 +105,8 @@ const VisitCourse = styled.div`
   }
 `;
 
+
+
 const Courses: React.FC<Props> = ({ courses }) => {
   const [filter, setFilter] = useState("all");
 
@@ -125,14 +128,16 @@ const Courses: React.FC<Props> = ({ courses }) => {
         <Button onClick={() => setFilter("python")}>Python</Button>
         <Button onClick={() => setFilter("mongodb")}>MongoDB</Button>
       </FilterButtons>
-      
+
       <CoursesList>
         {filteredCourses.map((course) => (
           <CourseItem key={course.id}>
             <CourseImage src={course.imageUrl} alt={course.title} />
             <CourseTitle>{course.title}</CourseTitle>
             <CourseDescription>{course.description}</CourseDescription>
-            <CourseAuthor><strong>Author:</strong> {course.author}</CourseAuthor>
+            <CourseAuthor>
+              <strong>Author:</strong> {course.author}
+            </CourseAuthor>
             <VisitCourse>
               <a href={course.link} target="_blank" rel="noopener noreferrer">
                 Visit Course
