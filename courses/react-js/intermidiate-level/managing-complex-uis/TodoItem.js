@@ -6,7 +6,12 @@ function TodoItem({ todo, toggleTodo }) {
   const handleToggle = () => {
     toggleTodo && toggleTodo(id);
   };
- 
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleToggle();
+    }
+  };
 
   return (
     <div style={{ marginBottom: "5px" }}>
@@ -17,8 +22,9 @@ function TodoItem({ todo, toggleTodo }) {
           cursor: "pointer",
           color: completed ? "var(--ifm-task-complete-color)" : "var(--ifm-task-incomplete-color)",
         }}
-
         onClick={handleToggle}
+        onKeyDown={handleKeyPress} 
+        tabIndex={0}
       >
         {text}
       </span>
