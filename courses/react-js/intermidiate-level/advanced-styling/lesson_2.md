@@ -1,6 +1,6 @@
 ---
 id: lesson-2
-title: "Advanced styling libraries (styled-components, tailwindcss, Material-UI) (Optional))"
+title: "Advanced styling libraries (styled-components, tailwindcss, Material-UI) (Optional)"
 sidebar_label: Lesson - 2
 sidebar_position: 2
 description: "Learn how to use advanced styling libraries like styled-components, tailwindcss, and Material-UI to style your React components. These libraries provide powerful tools and utilities for creating modern and responsive designs in your applications."
