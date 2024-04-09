@@ -1,11 +1,4 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
- .browserWindow {
+.browserWindow {
   border: 3px solid var(--ifm-color-emphasis-200);
   border-radius: var(--ifm-global-radius);
   box-shadow: var(--ifm-global-shadow-lw);
@@ -20,7 +13,7 @@
 }
 
 .row::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -34,7 +27,7 @@
   width: 10%;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   --ifm-background-color: #fff;
 }
 
@@ -49,7 +42,7 @@
   user-select: none;
 }
 
-[data-theme='dark'] .browserWindowAddressBar {
+[data-theme="dark"] .browserWindowAddressBar {
   color: var(--ifm-color-gray-300);
 }
 

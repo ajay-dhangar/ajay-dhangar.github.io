@@ -15,8 +15,6 @@ tags:
   ]
 ---
 
-import "./Card.css";
-
 In React applications, managing CSS classes can become challenging as your project grows in size and complexity. The BEM (Block Element Modifier) naming convention provides a structured approach to naming CSS classes, making it easier to organize and maintain your stylesheets. This lesson will introduce you to the BEM naming convention and show you how to use it to create organized CSS classes in your React components.
 
 ## What is the BEM naming convention?
@@ -149,9 +147,9 @@ To see the BEM naming convention in action, let's create a simple React componen
 </Tabs>
 
 <BrowserWindow>
-    <div className="card">
-      <h2 className="card__title">Card Title</h2>
-      <p className="card__description">This is a card description.</p>
+    <div style={{border: "1px solid #ccc", borderRadius: "10px", padding:" 20px", margin: "20px", boxShadow: "0 2px 8px rgba(0, 0, 0, 0.26)"}}>
+      <h2 style={{fontSize: "1.5rem", marginBottom: "0.5rem"}}>Card Title</h2>
+      <p style={{fontSize: "1rem", color: "#888"}}>This is a card description.</p>
     </div>
 </BrowserWindow>
 
