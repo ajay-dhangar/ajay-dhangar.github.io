@@ -8,7 +8,6 @@ tags: [courses, react-js, intermediate-level, api-calls, fetch, axios, state-man
 ---
 
 import UserList from './UserList';
-import UserListAxios from './UserListAxios';
 
 In React applications, making API calls to fetch data from external services is a common task. You can use the `fetch()` method or the `axios` library to make HTTP requests and handle the response data in your React components. This lesson will show you how to make API calls using `fetch()` and `axios` and update your application's state with the fetched data.
 
@@ -86,7 +85,7 @@ export default UserList;
 ```
 
 <BrowserWindow>
-  <UserListAxios />
+  <UserList />
 </BrowserWindow>
 
 In this example, the `UserList` component uses the `axios.get()` method to make a GET request to the JSONPlaceholder API and fetch a list of users. The fetched data is stored in the `users` state using the `setUsers` function, and the list of users is rendered in the component's UI.
