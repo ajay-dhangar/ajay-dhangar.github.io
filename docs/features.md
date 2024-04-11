@@ -3,6 +3,8 @@ id: features
 sidebar_position: 2
 title: Features of  CodeHarborHub Documentation
 sidebar_label: Features
+description: "This documentation is intended to help you get started with CodeHarborHub and to provide you with a comprehensive guide to the features and functionality of the platform. This is a place to learn about technology, programming, web development, data science, and more."
+tags: [features, codeharborhub, documentation, technology, programming, web development, data science, collaboration, learning, teaching, code, data, projects, tutorials, resources, version control, issue tracking, git, github, collaboration, learning, technology, programming, web development, data science ]
 ---
 
 ## Diagrams
@@ -264,6 +266,8 @@ The front matter of this page:
 <ul>
   {Object.entries(frontMatter).map(([key, value]) => <li key={key}><b>{key}</b>: {value}</li>)}
 </ul>
+
+<Lesson id={frontMatter.id} title={frontMatter.title} description={frontMatter.description} tags={frontMatter.tags} />
 
 
 ---

@@ -18,6 +18,7 @@ import Highlight from '@site/src/components/Highlight';
 import InsertionSortVisualization from '@site/src/components/DSA/arrays/InsertionSortVisualization';
 import File from '@site/src/components/File';
 import YoutubeVideo from '../components/YoutubeVideo';
+import Lesson from '@site/src/components/Lesson';
 
 export default {
   // Re-use the default mapping
@@ -41,5 +42,6 @@ export default {
   Courses,
   InsertionSortVisualization,
   File,
-  YoutubeVideo
+  YoutubeVideo,
+  Lesson
 };
