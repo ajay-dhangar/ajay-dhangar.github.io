@@ -1,15 +1,16 @@
 // import clsx from "clsx";
 // import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
 // import OurInstructors from "@site/src/components/OurInstructors";
 import GiscusComponent from "@site/src/components/GiscusComponent";
-
 import Heading from "@theme/Heading";
-import styles from "./index.module.css";
-import Hero from "../components/HomePage/Hero";
-import Features from "../components/HomePage/Features";
+import Layout from "@theme/Layout";
+
 import Courses from "../components/HomePage/Courses";
+import Features from "../components/HomePage/Features";
+import Hero from "../components/HomePage/Hero";
+
+import styles from "./index.module.css";
 
 // function HomepageHeader() {
 //   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +18,7 @@ import Courses from "../components/HomePage/Courses";
 //     <header className={clsx("hero hero--primary", styles.heroBanner)}>
 //       <div className="container">
 //         <Heading as="h1" className="hero__title">
-//           {siteConfig.title}          
+//           {siteConfig.title}
 //           Code Harbor Hub
 //           <p className="hero__subtitle">{siteConfig.tagline}</p>
 //         </Heading>
@@ -93,30 +94,24 @@ export default function Home() {
       {/* <HomepageHeader /> */}
 
       <main>
+        {" "}
         <Hero
           title="Welcome To CodeHarborHub"
           description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
           imageUrl="/code-harbor-hub/img/img-5.png"
         />
-
         <hr style={{ margin: "1rem" }} />
-
         <div className={styles.home__divider}>
           <Heading as="h2">Features of CodeHarborHub</Heading>
         </div>
-
         <Features features={featuresData} />
-
         <div className={styles.home__divider}>
           <Heading as="h2">Courses Available</Heading>
         </div>
-
         <Courses courses={coursesData} />
-
         <div className={styles.home__divider}>
           <Heading as="h2">Join the Discussion</Heading>
         </div>
-        
         <div>
           <GiscusComponent />
         </div>
