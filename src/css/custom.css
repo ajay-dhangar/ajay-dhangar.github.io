@@ -11,6 +11,7 @@
   /* --docusaurus-highlighted-code-line-bg: rgb(72, 77, 91); */
   --ifm-task-complete-color: #2e9e32e1;
   --ifm-task-incomplete-color: #3d78cbe1;
+  /* --ifm-background-color: #f8f9fa; */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -26,6 +27,7 @@
   /* --docusaurus-highlighted-code-line-bg: rgb(100, 100, 100); */
   --ifm-task-complete-color: #25c2a0;
   --ifm-task-incomplete-color: #3d78cbe1;
+  /* --ifm-background-color: #020202; */
 }
 
 .header-github-link::before {

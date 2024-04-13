@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../home.module.css";
 import Link from "@docusaurus/Link";
+import BrowserWindow from "../../BrowserWindow";
 
 interface HeroProps {
   title: string;
@@ -21,7 +22,10 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
             </Link>
           </button>
           <button className={styles.animated_button}>
-            <Link className={styles.source_link} to="/courses/category/beginners-level/">
+            <Link
+              className={styles.source_link}
+              to="/courses/category/beginners-level/"
+            >
               Courses
             </Link>
           </button>
@@ -29,7 +33,9 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
       </div>
       {imageUrl && (
         <div className={styles.hero_image_container}>
-          <img className={styles.hero_image} src={imageUrl} alt={title} />
+          <BrowserWindow url="https://www.codeharborhub.live" bodyStyle={{padding: "0"}}>
+            <img className={styles.hero_image} src={imageUrl} alt={title} />
+          </BrowserWindow>
         </div>
       )}
     </div>

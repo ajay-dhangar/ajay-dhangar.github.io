@@ -18,14 +18,10 @@ export type TagType =
   | 'product'
   | 'design'
   | 'i18n'
-  | 'versioning'
-  | 'large'
-  | 'meta'
   | 'personal'
   | 'templates'
   | 'portfolio'
   | 'nextjs'
-  | 'vanilla'
   | 'typescript'
   | 'clone';
 
@@ -53,12 +49,6 @@ export const Tags: {[type in TagType]: Tag} = {
   },
   javascript: {
     label: 'JavaScript',
-    description:
-      '',
-    color: '#f0db4f',
-  },
-  vanilla: {
-    label: 'Vanilla',
     description:
       '',
     color: '#f0db4f',
@@ -127,27 +117,6 @@ export const Tags: {[type in TagType]: Tag} = {
       '',
     color: '#127f82',
   },
-
-  versioning: {
-    label: 'Versioning',
-    description:
-      '',
-    color: '#fe6829',
-  },
-
-  large: {
-    label: 'Large',
-    description:
-      '',
-    color: '#8c2f00',
-  },
-
-  meta: {
-    label: 'Meta',
-    description: '',
-    color: '#4267b2', 
-  },
-
   personal: {
     label: 'Personal',
     description:
