@@ -18,14 +18,10 @@ export type TagType =
   | 'product'
   | 'design'
   | 'i18n'
-  | 'versioning'
-  | 'large'
-  | 'meta'
   | 'personal'
   | 'templates'
   | 'portfolio'
   | 'nextjs'
-  | 'vanilla'
   | 'typescript'
   | 'clone';
 
@@ -57,12 +53,6 @@ export const Tags: {[type in TagType]: Tag} = {
       '',
     color: '#f0db4f',
   },
-  vanilla: {
-    label: 'Vanilla',
-    description:
-      '',
-    color: '#f0db4f',
-  },
   react: {
     label: 'React.js',
     description:
@@ -86,15 +76,15 @@ export const Tags: {[type in TagType]: Tag} = {
     description:
       '',
     color: '#026e00',
-  }, 
-  
+  },
+
   mongodb: {
     label: 'MongoDB',
     description:
       '',
     color: '#13aa52',
   },
-  
+
   favorite: {
     label: 'Favorite',
     description:
@@ -127,27 +117,6 @@ export const Tags: {[type in TagType]: Tag} = {
       '',
     color: '#127f82',
   },
-
-  versioning: {
-    label: 'Versioning',
-    description:
-      '',
-    color: '#fe6829',
-  },
-
-  large: {
-    label: 'Large',
-    description:
-      '',
-    color: '#8c2f00',
-  },
-
-  meta: {
-    label: 'Meta',
-    description: '',
-    color: '#4267b2', 
-  },
-
   personal: {
     label: 'Personal',
     description:
@@ -184,7 +153,7 @@ const Users: User[] = [
     website: 'https://my-youtube-ajay.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/youtube_clone',
     tags: ['opensource', 'clone', 'templates', 'react'],
-  },  
+  },
   {
     title: 'Quiz App',
     description: 'Explore and test your knowledge with the Quiz app. Engaging quizzes to challenge your mind and expand your horizons. Try it now!',
@@ -200,7 +169,7 @@ const Users: User[] = [
     website: 'https://shivay-studio.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/music-app',
     tags: ['opensource', 'clone', 'templates'],
-  }, 
+  },
 
   {
     title: 'TailwindBlog',
