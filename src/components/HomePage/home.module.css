@@ -46,20 +46,21 @@
 }
 
 .animated_button {
-  padding: 15px 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #f2f2f2;
   font-size: 1.2rem;
   border: none;
-  border-radius: 50px;
   cursor: pointer;
-  color: #f2f2f2;
-  background-color: #23a5d5;
   box-shadow: 0 0 5px 0 #ccc;
-  transition: background 0.3s ease, transform 0.2s ease;
+  object-fit: cover;
+  background: linear-gradient(-45deg, #f44009, #db0557, #0785b3, #07ab85);
+  background-size: 400% 400%;
+  animation: GradientAnimation 15s ease infinite;
 }
 
 .animated_button:hover {
-  background: #e73c7e;
-  transform: translateY(-3px);
+  background: linear-gradient(-30deg, #f44009, #db0557, #0785b3, #07ab85);
 }
 
 .source_link {
@@ -124,9 +125,9 @@
     margin-left: 0;
   }
 
-  .hero_image_container {
+  /* .hero_image_container {
     display: none;
-  }
+  } */
 }
 
 .hero_image {
@@ -198,11 +199,9 @@
 
 .play_button_overlay {
   position: absolute;
-  top: 50%;
-  right: 15%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   font-size: 2rem;
   border-radius: 50%;
   background: rgba(220, 212, 212, 0.5);
@@ -211,4 +210,7 @@
   align-items: center;
   cursor: pointer;
   transition: background 0.3s ease;
+}
+.play_icon {
+  color: #f2f2f2;
 }
