@@ -44,7 +44,7 @@ const YouTubePlayer: React.FC<YouTubePlayerProps> = ({ videoId, height, width })
           if (player) {
             player.stopVideo();
           }
-        }, 130000); 
+        }, 130000);
       }
     };
 
