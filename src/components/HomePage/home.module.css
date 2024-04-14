@@ -195,3 +195,20 @@
     background-position: 0% 50%;
   }
 }
+
+.play_button_overlay {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: rgba(220, 212, 212, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
