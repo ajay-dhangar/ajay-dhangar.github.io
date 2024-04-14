@@ -76,15 +76,15 @@ export const Tags: {[type in TagType]: Tag} = {
     description:
       '',
     color: '#026e00',
-  }, 
-  
+  },
+
   mongodb: {
     label: 'MongoDB',
     description:
       '',
     color: '#13aa52',
   },
-  
+
   favorite: {
     label: 'Favorite',
     description:
@@ -153,7 +153,7 @@ const Users: User[] = [
     website: 'https://my-youtube-ajay.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/youtube_clone',
     tags: ['opensource', 'clone', 'templates', 'react'],
-  },  
+  },
   {
     title: 'Quiz App',
     description: 'Explore and test your knowledge with the Quiz app. Engaging quizzes to challenge your mind and expand your horizons. Try it now!',
@@ -169,7 +169,7 @@ const Users: User[] = [
     website: 'https://shivay-studio.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/music-app',
     tags: ['opensource', 'clone', 'templates'],
-  }, 
+  },
 
   {
     title: 'TailwindBlog',

@@ -52,7 +52,7 @@ div[class^='announcementBar_'] {
   background-image: linear-gradient(#ff0303, #ff030329, transparent), url("../../static/img/use-svg-as-background-image-particle-strokes.svg");
   color: #fff;
   border-bottom: 1.8px dotted rgb(37, 184, 11);
-  font-weight: bold;  
+  font-weight: bold;
   font-size: 18px;
   width: 100%;
   height: auto;
@@ -101,7 +101,7 @@ mark {
 @media screen and (max-width: 420px) {
   .footer_info--container {
     width: 100%;
-  }  
+  }
 }
 
 .hero__title {
@@ -151,7 +151,7 @@ mark {
   text-decoration: none;
 }
 
-.footer__copyright a { 
+.footer__copyright a {
   color: #F0DB4F;
   text-decoration: none;
   position: relative;
