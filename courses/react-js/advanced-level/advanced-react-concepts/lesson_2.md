@@ -68,7 +68,7 @@ Here's an example of a Higher-Order Components:
   <TabItem value="BrowserWindow" label="BrowserWindow">
     <BrowserWindow minHeight={300}>
       <div>Hello, World!</div>
-    </BrowserWindow>    
+    </BrowserWindow>
   </TabItem>
 </Tabs>
 
