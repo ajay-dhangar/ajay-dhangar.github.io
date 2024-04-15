@@ -1,5 +1,5 @@
 import React from "react";
-import { FixedSizeList } from "react-window";
+import {FixedSizeList} from "react-window";
 const VirtualizationExample = () => {
   const Row = ({ index, style }) => <div style={style}>Row {index}</div>;
   return (

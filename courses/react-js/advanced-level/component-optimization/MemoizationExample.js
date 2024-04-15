@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from "react";
-const ExpensiveComponent = ({ value }) => {
+import React, {useMemo, useState} from "react";
+
+const ExpensiveComponent = ({value}) => {
   const expensiveFunction = (value) => {
     // Expensive computation
     return value * 2;
   };
-  const memoizedValue = useMemo(() => expensiveFunction(value), [value]);
+  const memoizedValue = useMemo(() => expensiveFunction(value), [ value ]);
   return <div>{memoizedValue}</div>;
 };
 const MemoizationExample = () => {
