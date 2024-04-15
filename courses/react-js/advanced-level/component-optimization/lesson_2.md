@@ -4,14 +4,24 @@ title: "Debugging tools and strategies for troubleshooting React apps"
 sidebar_label: Lesson - 2
 sidebar_position: 2
 description: "In this lesson, you will learn about debugging tools and strategies for troubleshooting React applications. We will cover common debugging techniques, tools, and best practices that can help you identify and fix issues in your React apps."
-tags: [courses, react-js, advanced-level, component-optimization, debugging, tools, strategies, troubleshooting]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    component-optimization,
+    debugging,
+    tools,
+    strategies,
+    troubleshooting,
+  ]
 ---
 
 In this lesson, you will learn about debugging tools and strategies for troubleshooting React applications. We will cover common debugging techniques, tools, and best practices that can help you identify and fix issues in your React apps.
 
 ## Debugging Techniques
 
-Debugging React applications can be challenging, especially when dealing with complex components and state management. Here are some common debugging techniques that can help you troubleshoot issues in your React apps: 
+Debugging React applications can be challenging, especially when dealing with complex components and state management. Here are some common debugging techniques that can help you troubleshoot issues in your React apps:
 
 ### 1. Console Logging
 
@@ -58,7 +68,7 @@ Here's an example of using the `useEffect` hook for debugging:
 ```jsx {6,7,8,9,10,11} title="DebuggingHooksExample.js"
 import React, { useState, useEffect } from "react";
 
-const DebuggingHooksExample = () => {    
+const DebuggingHooksExample = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

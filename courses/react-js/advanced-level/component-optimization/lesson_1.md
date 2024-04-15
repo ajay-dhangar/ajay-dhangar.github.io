@@ -42,7 +42,7 @@ const ExpensiveComponent = ({ value }) => {
 const MemoizationExample = () => {
   const [count, setCount] = useState(0);
   return (
-    <div>      
+    <div>
       <ExpensiveComponent value={count} />
       <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
@@ -76,7 +76,7 @@ In React, lazy loading can be achieved using the `React.lazy` function and the `
     );
   };
   export default LazyLoadingExample;
-  ``` 
+  ```
  </TabItem>
  <TabItem value="LazyComponent" label="LazyComponent.js">
   ```jsx title="LazyComponent.js"
@@ -84,7 +84,7 @@ In React, lazy loading can be achieved using the `React.lazy` function and the `
     return <div>Lazy Component</div>;
   };
   export default LazyComponent;
-  ``` 
+  ```
  </TabItem>
 </Tabs>
 
@@ -117,7 +117,7 @@ In addition to memoization and lazy loading, there are other optimization strate
   ```
 
   <BrowserWindow minHeight={200} bodyStyle={{ padding: 0, paddingLeft: "5px" }}>
-    <VirtualizationExample />
+  <VirtualizationExample />
   </BrowserWindow>
 
 - **Optimizing Images**: Compressing and optimizing images can help reduce the size of your assets and improve the performance of your application.
@@ -140,7 +140,7 @@ In addition to memoization and lazy loading, there are other optimization strate
 - **Caching**: Caching static assets and API responses can help reduce the load time of your application and improve the overall performance.
 
   For example, you can use service workers to cache static assets and implement client-side caching strategies to cache API responses.
-  
+
   ```jsx title="CachingExample.js"
   import React, { useState, useEffect } from "react";
   const CachingExample = () => {
@@ -159,7 +159,7 @@ In addition to memoization and lazy loading, there are other optimization strate
   ```
 
 - **Code Splitting**: Splitting your code into smaller chunks and loading them on-demand can help reduce the initial load time of your application and improve the performance.
-  
+
   For example, you can use tools like Webpack or create-react-app to automatically split your code into smaller chunks and load them on-demand.
 
   ```jsx title="CodeSplittingExample.js"
