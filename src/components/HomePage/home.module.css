@@ -28,8 +28,8 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-stroke: 1px #1b0446;
-    text-shadow: 2px 2px 2px #1b044644;
+  /* -webkit-text-stroke: 1px #1b0446; */
+  /* text-shadow: 2px 2px 2px #1b044644; */
 }
 
 .hero_description {
