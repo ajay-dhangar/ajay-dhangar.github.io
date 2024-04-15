@@ -76,7 +76,7 @@ In React, lazy loading can be achieved using the `React.lazy` function and the `
     );
   };
   export default LazyLoadingExample;
-  ``` 
+  ```
  </TabItem>
  <TabItem value="LazyComponent" label="LazyComponent.js">
   ```jsx title="LazyComponent.js"
@@ -84,7 +84,7 @@ In React, lazy loading can be achieved using the `React.lazy` function and the `
     return <div>Lazy Component</div>;
   };
   export default LazyComponent;
-  ``` 
+  ```
  </TabItem>
 </Tabs>
 
