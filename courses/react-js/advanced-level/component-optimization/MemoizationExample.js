@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo, useState } from "react";
+
 const ExpensiveComponent = ({ value }) => {
   const expensiveFunction = (value) => {
     // Expensive computation
@@ -10,7 +11,7 @@ const ExpensiveComponent = ({ value }) => {
 const MemoizationExample = () => {
   const [count, setCount] = useState(0);
   return (
-    <div>      
+    <div>
       <ExpensiveComponent value={count} />
       <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
