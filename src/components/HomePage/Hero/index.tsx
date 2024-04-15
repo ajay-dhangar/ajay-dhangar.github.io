@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
           {showVideo ? (
             <BrowserWindow
               url="https://www.codeharborhub.live"
-              bodyStyle={{ padding: "0" }}
+              bodyStyle={{ padding: "0", overflow: "hidden" }}
             >
               <YouTubePlayer videoId="lI3RBnK8V6Y" height={300} width={480} />
             </BrowserWindow>
