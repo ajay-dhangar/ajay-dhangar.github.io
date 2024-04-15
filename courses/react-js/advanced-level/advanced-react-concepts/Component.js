@@ -1,4 +1,5 @@
 import React from "react";
+
 import withLogger from "./withLogger";
 
 const Component = ({ message }) => {

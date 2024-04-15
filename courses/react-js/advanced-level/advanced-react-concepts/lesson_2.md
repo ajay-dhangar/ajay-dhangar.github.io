@@ -4,7 +4,15 @@ title: "Higher-Order Components (HOCs) for reusable component patterns"
 sidebar_label: Lesson - 2
 sidebar_position: 2
 description: "In this lesson, you will learn about Higher-Order Components (HOCs) in React and how they can be used to create reusable component patterns. We will cover what HOCs are, how to create HOCs, and best practices for using HOCs in your React applications."
-tags: [courses, react-js, advanced-level, higher-order-components, reusable-components, patterns]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    higher-order-components,
+    reusable-components,
+    patterns,
+  ]
 ---
 
 In React applications, reusability is a key factor in building maintainable and scalable components. Higher-Order Components (HOCs) are a design pattern that allows you to reuse component logic across multiple components. In this lesson, we will cover Higher-Order Components and how they can be used to create reusable component patterns.
@@ -27,6 +35,7 @@ Here's an example of a Higher-Order Components:
 
     export default App;
     ```
+
   </TabItem>
   <TabItem value="withLogger.js" label="withLogger.js">
     ```jsx
@@ -34,13 +43,14 @@ Here's an example of a Higher-Order Components:
 
     const withLogger = (WrappedComponent) => {
       return (props) => {
-        console.log(`Rendering ${WrappedComponent.name} with props:`, props); 
+        console.log(`Rendering ${WrappedComponent.name} with props:`, props);
         return <WrappedComponent {...props} />;
       };
     };
 
     export default withLogger;
     ```
+
   </TabItem>
   <TabItem value="Component.js" label="Component.js">
     ```jsx
@@ -53,11 +63,12 @@ Here's an example of a Higher-Order Components:
 
     export default withLogger(Component);
     ```
+
   </TabItem>
   <TabItem value="BrowserWindow" label="BrowserWindow">
     <BrowserWindow minHeight={300}>
       <div>Hello, World!</div>
-    </BrowserWindow>    
+    </BrowserWindow>
   </TabItem>
 </Tabs>
 
@@ -68,58 +79,58 @@ In this example, the `withLogger` function is a Higher-Order Component that take
 To create a Higher-Order Component in React, you can follow these steps:
 
 1. First create react app using following command:
-   
-    ```bash
-    npx create-react-app higher-order-components
-    ```
+
+   ```bash
+   npx create-react-app higher-order-components
+   ```
 
 2. Create a new file for your HOC, for example, `withLogger.js`.
 3. Define a function that takes a component as an argument and returns a new component with additional props or functionality.
 
-    ```jsx title="withLogger.js"
-    import React from "react";
+   ```jsx title="withLogger.js"
+   import React from "react";
 
-    const withLogger = (WrappedComponent) => {
-      return (props) => {
-        console.log(`Rendering ${WrappedComponent.name} with props:`, props); 
-        return <WrappedComponent {...props} />;
-      };
-    };
+   const withLogger = (WrappedComponent) => {
+     return (props) => {
+       console.log(`Rendering ${WrappedComponent.name} with props:`, props);
+       return <WrappedComponent {...props} />;
+     };
+   };
 
-    export default withLogger;
-    ```
+   export default withLogger;
+   ```
 
 4. Import the HOC in the component file where you want to enhance the component.
 
-    ```jsx title="Component.js"
-    import React from "react";
-    import withLogger from "./withLogger";
+   ```jsx title="Component.js"
+   import React from "react";
+   import withLogger from "./withLogger";
 
-    const Component = ({ message }) => {
-      return <div>{message}</div>;
-    };
+   const Component = ({ message }) => {
+     return <div>{message}</div>;
+   };
 
-    export default withLogger(Component);
-    ```
+   export default withLogger(Component);
+   ```
 
 5. Wrap the component with the HOC to enhance its functionality. And update the `App.js` file to render the enhanced component.
 
-    ```jsx title="App.js"
-    import React from "react";
-    import Component from "./Component";
+   ```jsx title="App.js"
+   import React from "react";
+   import Component from "./Component";
 
-    const App = () => {
-      return <Component message="Hello, World!" />;
-    };
+   const App = () => {
+     return <Component message="Hello, World!" />;
+   };
 
-    export default App;
-    ```
+   export default App;
+   ```
 
 6. Run the application to see the enhanced component in action.
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 7. open the browser on `http://localhost:3000/` to see the output.
 

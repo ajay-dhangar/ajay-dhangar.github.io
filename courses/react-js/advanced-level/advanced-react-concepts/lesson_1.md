@@ -4,7 +4,16 @@ title: "Error handling in React components"
 sidebar_label: Lesson - 1
 sidebar_position: 1
 description: "In this lesson, you will learn how to handle errors in React components using error boundaries. We will cover what error boundaries are, how to create custom error boundaries, and best practices for handling errors in your React applications."
-tags: [courses, react-js, advanced-level, error-handling, error-boundaries, react-components, best-practices]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    error-handling,
+    error-boundaries,
+    react-components,
+    best-practices,
+  ]
 ---
 
 In React applications, error handling is an essential aspect of building robust and reliable user interfaces. Errors can occur during the rendering, lifecycle methods, or event handling of React components, and it's crucial to handle them gracefully to prevent the entire application from crashing. In this lesson, we will cover how to handle errors in React components using error boundaries.
@@ -12,7 +21,6 @@ In React applications, error handling is an essential aspect of building robust 
 ## Error Boundaries
 
 Error boundaries are React components that catch JavaScript errors anywhere in their child component tree and display a fallback UI instead of crashing the entire application. They work like a JavaScript `try-catch` block but for React components. Error boundaries are a declarative way to handle errors in React applications and provide a safety net for unexpected errors.
-
 
 Here's an example of how to create a simple error boundary component in React:
 
@@ -32,7 +40,8 @@ Here's an example of how to create a simple error boundary component in React:
     };
 
     export default App;
-    ```    
+    ```
+
   </TabItem>
   <TabItem value="ErrorBoundary.js" label="ErrorBoundary.js">
     ```jsx
@@ -63,6 +72,7 @@ Here's an example of how to create a simple error boundary component in React:
 
     export default ErrorBoundary;
     ```
+
   </TabItem>
   <TabItem value="ErrorProneComponent.js" label="ErrorProneComponent.js">
     ```jsx
@@ -84,6 +94,7 @@ Here's an example of how to create a simple error boundary component in React:
 
     export default ErrorProneComponent;
     ```
+
   </TabItem>
   <TabItem value="BrowserWindow" label="BrowserWindow">
     <BrowserWindow minHeight={300}>
