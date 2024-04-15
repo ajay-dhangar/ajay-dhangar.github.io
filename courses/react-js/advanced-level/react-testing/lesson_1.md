@@ -61,42 +61,42 @@ To write tests for React components, you can use testing frameworks like Jest, E
 
 1. Create a simple React component to test.
 
-    ```jsx title="Button.js"
-    import React from "react";
+   ```jsx title="Button.js"
+   import React from "react";
 
-    const Button = ({ onClick, children }) => {
-      return <button onClick={onClick}>{children}</button>;
-    };
+   const Button = ({ onClick, children }) => {
+     return <button onClick={onClick}>{children}</button>;
+   };
 
-    export default Button;
-    ```
+   export default Button;
+   ```
 
 2. Write a unit test for the `Button` component using Jest.
 
-    ```jsx title="Button.test.js"
-    import React from "react";
-    import { render, fireEvent } from "@testing-library/react";
-    import Button from "./Button";
+   ```jsx title="Button.test.js"
+   import React from "react";
+   import { render, fireEvent } from "@testing-library/react";
+   import Button from "./Button";
 
-    test("renders a button with text", () => {
-      const handleClick = jest.fn();
-      const { getByText } = render(
-        <Button onClick={handleClick}>Click me</Button>
-      );
+   test("renders a button with text", () => {
+     const handleClick = jest.fn();
+     const { getByText } = render(
+       <Button onClick={handleClick}>Click me</Button>,
+     );
 
-      const button = getByText("Click me");
-      fireEvent.click(button);
+     const button = getByText("Click me");
+     fireEvent.click(button);
 
-      expect(button).toBeInTheDocument();
-      expect(handleClick).toHaveBeenCalledTimes(1);
-    });
-    ```
+     expect(button).toBeInTheDocument();
+     expect(handleClick).toHaveBeenCalledTimes(1);
+   });
+   ```
 
 3. Run the test using Jest.
 
-    ```bash
-    npm test
-    ```
+   ```bash
+   npm test
+   ```
 
 This example demonstrates how to write a unit test for a simple React component using Jest and React Testing Library. You can write similar tests for other components, covering different scenarios, edge cases, and interactions.
 
