@@ -4,7 +4,15 @@ title: "Best practices for effective React testing"
 sidebar_label: Lesson - 2
 sidebar_position: 2
 description: "In this lesson, you will learn best practices for writing effective tests for React components using Jest, Enzyme, React Testing Library, and other testing frameworks. We will cover strategies for testing different aspects of React components, handling common testing scenarios, and optimizing your test suite for better performance and reliability."
-tags: [courses, react-js, advanced-level, react-testing, best-practices, testing-frameworks]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    react-testing,
+    best-practices,
+    testing-frameworks,
+  ]
 ---
 
 Testing React components is an essential part of building robust and reliable applications. Effective testing ensures that your components work as expected, handle edge cases gracefully, and provide a seamless user experience. In this lesson, we will discuss best practices for writing tests for React components using popular testing frameworks like Jest, Enzyme, and React Testing Library.
@@ -65,7 +73,6 @@ Optimize your test suite for better performance by following these strategies:
 
 By following these best practices, you can write effective tests for React components that are reliable, maintainable, and optimized for better performance. Testing is an essential part of the development process and helps you catch bugs early, ensure code quality, and deliver a seamless user experience.
 
-
 :::info 📝 Note
 
 ## Testing React Components with Jest, Enzyme, and React Testing Library
@@ -86,27 +93,26 @@ When writing tests for React components, you can use popular testing frameworks 
 
   For Example:
 
-    ```jsx title="Button.test.js"
-    import React from "react";
-    import { render, fireEvent } from "@testing-library/react";
-    import Button from "./Button";
+  ```jsx title="Button.test.js"
+  import React from "react";
+  import { render, fireEvent } from "@testing-library/react";
+  import Button from "./Button";
 
-    test("renders a button with text", () => {
-      const handleClick = jest.fn();
-      const { getByText } = render(
-        <Button onClick={handleClick}>Click me</Button>
-      );
+  test("renders a button with text", () => {
+    const handleClick = jest.fn();
+    const { getByText } = render(
+      <Button onClick={handleClick}>Click me</Button>,
+    );
 
-      const button = getByText("Click me");
-      fireEvent.click(button);
+    const button = getByText("Click me");
+    fireEvent.click(button);
 
-      expect(button).toBeInTheDocument();
-      expect(handleClick).toHaveBeenCalledTimes(1);
-    });
+    expect(button).toBeInTheDocument();
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+  ```
 
-    ```
-
-In this example, we have written a unit test for a simple React component using Jest and React Testing Library. The test verifies that the component renders a button with text and handles the click event correctly. By following best practices and using Jest matchers and utilities, you can write effective tests for React components.  
+In this example, we have written a unit test for a simple React component using Jest and React Testing Library. The test verifies that the component renders a button with text and handles the click event correctly. By following best practices and using Jest matchers and utilities, you can write effective tests for React components.
 
 ### Enzyme
 
@@ -117,27 +123,26 @@ In this example, we have written a unit test for a simple React component using 
 - Enzyme is compatible with different testing frameworks like Jest, Mocha, and Chai.
 - Enzyme is recommended for testing React components with complex rendering logic, state management, and lifecycle methods.
 - Enzyme provides utilities for testing component interactions, event handling, and component updates.
-- Enzyme supports testing components in isolation and verifying component output and behavior.                  
+- Enzyme supports testing components in isolation and verifying component output and behavior.
 - Enzyme is a versatile testing library that can be used for unit tests, integration tests, and component tests.
 
-   For Example:
+  For Example:
 
-    ```jsx title="Button.test.js"
-    import React from "react";
-    import { shallow } from "enzyme";
-    import Button from "./Button";
+  ```jsx title="Button.test.js"
+  import React from "react";
+  import { shallow } from "enzyme";
+  import Button from "./Button";
 
-    test("renders a button with text", () => {
-      const handleClick = jest.fn();
-      const wrapper = shallow(<Button onClick={handleClick}>Click me</Button>);
+  test("renders a button with text", () => {
+    const handleClick = jest.fn();
+    const wrapper = shallow(<Button onClick={handleClick}>Click me</Button>);
 
-      expect(wrapper.find("button").text()).toEqual("Click me");
-      wrapper.find("button").simulate("click");
-      expect(handleClick).toHaveBeenCalledTimes(1);
-    });
+    expect(wrapper.find("button").text()).toEqual("Click me");
+    wrapper.find("button").simulate("click");
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+  ```
 
-    ```
-    
 In this example, we have written a unit test for a simple React component using Enzyme. The test verifies that the component renders a button with text and handles the click event correctly. By using Enzyme's APIs for rendering and interacting with components, you can write effective tests for React components.
 
 ### React Testing Library
@@ -150,30 +155,28 @@ In this example, we have written a unit test for a simple React component using 
 - React Testing Library is designed to test components in a way that resembles how users interact with them.
 - React Testing Library is easy to use and integrates well with popular testing frameworks like Jest.
 
-    For Example:
-    
-     ```jsx title="Button.test.js"
-     import React from "react";
-     import { render, fireEvent } from "@testing-library/react";
-     import Button from "./Button";
-    
-     test("renders a button with text", () => {
-        const handleClick = jest.fn();
-        const { getByText } = render(
-          <Button onClick={handleClick}>Click me</Button>
-        );
-    
-        const button = getByText("Click me");
-        fireEvent.click(button);
-    
-        expect(button).toBeInTheDocument();
-        expect(handleClick).toHaveBeenCalledTimes(1);
-     });
-    
-     ```
+  For Example:
+
+  ```jsx title="Button.test.js"
+  import React from "react";
+  import { render, fireEvent } from "@testing-library/react";
+  import Button from "./Button";
+
+  test("renders a button with text", () => {
+    const handleClick = jest.fn();
+    const { getByText } = render(
+      <Button onClick={handleClick}>Click me</Button>,
+    );
+
+    const button = getByText("Click me");
+    fireEvent.click(button);
+
+    expect(button).toBeInTheDocument();
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+  ```
 
 In this example, we have written a unit test for a simple React component using React Testing Library. The test verifies that the component renders a button with text and handles the click event correctly. By using React Testing Library's utilities for rendering, querying, and interacting with components, you can write effective tests for React components.
-
 
 :::
 
