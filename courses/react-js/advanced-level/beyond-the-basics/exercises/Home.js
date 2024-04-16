@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from "react";
 
 const Home = () => {
   const [user, setUser] = useState(null);
@@ -6,11 +6,11 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('https://api.github.com/users/ajay-dhangar');
+        const res = await fetch("https://api.github.com/users/ajay-dhangar");
         const userData = await res.json();
         setUser(userData);
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error("Error fetching user data:", error);
       }
     };
 
