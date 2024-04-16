@@ -23,6 +23,7 @@ export type TagType =
   | 'portfolio'
   | 'nextjs'
   | 'typescript'
+  | 'ai'
   | 'clone';
 
 export type User = {
@@ -137,6 +138,12 @@ export const Tags: {[type in TagType]: Tag} = {
     color: '#ff4400',
   },
 
+  ai: {
+    label: 'AI',
+    description: '',
+    color: '#07f505',
+  },
+
   clone: {
     label: 'Clone',
     description: '',
@@ -145,6 +152,15 @@ export const Tags: {[type in TagType]: Tag} = {
 };
 
 const Users: User[] = [
+
+  {
+    title: 'Gemini AI Chabot',
+    description: 'The Gemini AI Chatbot is a modern chatbot that can help you with your queries.',
+    preview: require('./showcase/gemini-ai-chatbot.png'),
+    website: 'https://code-harbor-hub-gemini-ai-chatbot.vercel.app/',
+    source: 'https://github.com/Ajay-Dhangar/gemini-ai-chatbot',
+    tags: ['opensource', 'design', 'nextjs', 'typescript', 'ai'],
+  },
 
   {
     title: 'You Tube Clone',
