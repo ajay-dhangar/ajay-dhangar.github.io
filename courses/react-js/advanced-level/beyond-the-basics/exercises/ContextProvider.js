@@ -18,6 +18,7 @@ const ThemeProvider = ({ children }) => {
         toggleTheme,
       }}
     >
+      {" "}
       <div
         style={{
           background: theme === "light" ? "#fff" : "#000",
