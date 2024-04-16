@@ -152,7 +152,7 @@ export const Tags: {[type in TagType]: Tag} = {
 };
 
 const Users: User[] = [
-  
+
   {
     title: 'Gemini AI Chabot',
     description: 'The Gemini AI Chatbot is a modern chatbot that can help you with your queries.',
@@ -169,7 +169,7 @@ const Users: User[] = [
     website: 'https://my-youtube-ajay.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/youtube_clone',
     tags: ['opensource', 'clone', 'templates', 'react'],
-  },  
+  },
   {
     title: 'Quiz App',
     description: 'Explore and test your knowledge with the Quiz app. Engaging quizzes to challenge your mind and expand your horizons. Try it now!',
