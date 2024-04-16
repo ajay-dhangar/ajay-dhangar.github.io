@@ -4,7 +4,18 @@ title: "React Hooks in Depth (useEffect, useContext, useReducer, etc.)"
 sidebar_label: Lesson - 1
 sidebar_position: 1
 description: "In this lesson, we will learn about React Hooks in depth. We will learn about useEffect, useContext, useReducer, and other hooks. We will also learn how to create custom hooks in React."
-tags: [courses, react-js, advanced-level, beyond-the-basics, hooks, useEffect, useContext, useReducer, custom-hooks]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    beyond-the-basics,
+    hooks,
+    useEffect,
+    useContext,
+    useReducer,
+    custom-hooks,
+  ]
 ---
 
 import Counter from './exercises/Counter';
@@ -15,9 +26,9 @@ import AppUseCustomHook from './exercises/AppUseCustomHook';
 
 In the React Hooks in Depth lesson, we will learn about React Hooks in depth. We will learn about useEffect, useContext, useReducer, and other hooks. We will also learn how to create custom hooks in React.
 
-## What are React Hooks? 
+## What are React Hooks?
 
-React Hooks are functions that let you use state and other React features in functional components. They are introduced in React 16.8.0. Hooks do not work inside classes. They let you use state and other React features without writing a class. 
+React Hooks are functions that let you use state and other React features in functional components. They are introduced in React 16.8.0. Hooks do not work inside classes. They let you use state and other React features without writing a class.
 
 ## Why React Hooks?
 
@@ -32,7 +43,7 @@ React provides several built-in hooks that you can use in your functional compon
 The `useState` hook lets you add state to functional components. It returns an array with two elements: the current state value and a function that lets you update it.
 
 ```jsx title="Counter.js"
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -40,9 +51,7 @@ function Counter() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -59,7 +68,7 @@ export default Counter;
 The `useEffect` hook lets you perform side effects in functional components. It is similar to `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` lifecycle methods in class components.
 
 ```jsx title="ExampleComponent"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ExampleComponent = () => {
   const [userData, setUserData] = useState(null);
@@ -68,12 +77,14 @@ const ExampleComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/users/1",
+        );
         const data = await response.json();
         setUserData(data);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error("Error fetching user data:", error);
         setLoading(false);
       }
     };
@@ -82,9 +93,9 @@ const ExampleComponent = () => {
 
     // Cleanup function
     return () => {
-        <div>Component unmounted</div>;
+      <div>Component unmounted</div>;
     };
-  }, []); 
+  }, []);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -96,20 +107,19 @@ const ExampleComponent = () => {
         <div>
           <h2>Welcome, {userData.name}!</h2>
           <p>
-            <b>Email:</b> {userData.email}, 
-            <b>Phone:</b> {userData.phone}
+            <b>Email:</b> {userData.email},<b>Phone:</b> {userData.phone}
           </p>
           <p>
-            <b>Website:</b> {userData.website}, 
-            <b>Company:</b> {userData.company.name}
+            <b>Website:</b> {userData.website},<b>Company:</b>{" "}
+            {userData.company.name}
           </p>
           <p>
-            <b>City:</b> {userData.address.city}, 
-            <b>Zipcode:</b> {userData.address.zipcode}
+            <b>City:</b> {userData.address.city},<b>Zipcode:</b>{" "}
+            {userData.address.zipcode}
           </p>
           <p>
-            <b>Latitude:</b> {userData.address.geo.lat}, 
-            <b>Longitude:</b> {userData.address.geo.lng}
+            <b>Latitude:</b> {userData.address.geo.lat},<b>Longitude:</b>{" "}
+            {userData.address.geo.lng}
           </p>
 
           <button onClick={() => setUserData(null)}>Clear user data</button>
@@ -198,7 +208,7 @@ export default ContextProvider;
 ```
 
 <BrowserWindow minHeight={300} bodyStyle={{ padding: 0 }}>
-  <ContextProvider />
+<ContextProvider />
 </BrowserWindow>
 
 ### useReducer Hook
@@ -206,15 +216,15 @@ export default ContextProvider;
 The `useReducer` hook lets you manage complex state logic in functional components. It is similar to the `this.setState` method in class components.
 
 ```jsx title="AppUseReducer.js"
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
 const initialState = { count: 0 };
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'increment':
+    case "increment":
       return { count: state.count + 1 };
-    case 'decrement':
+    case "decrement":
       return { count: state.count - 1 };
     default:
       throw new Error();
@@ -227,9 +237,15 @@ function AppUseReducer() {
   return (
     <div>
       <p>Count: {state.count}</p>
-      <div style={{ display: 'flex', gap: '5px' }}>
-        <button onClick={() => dispatch({ type: 'decrement' })}> Decrement </button>
-        <button onClick={() => dispatch({ type: 'increment' })}> Increment </button>
+      <div style={{ display: "flex", gap: "5px" }}>
+        <button onClick={() => dispatch({ type: "decrement" })}>
+          {" "}
+          Decrement{" "}
+        </button>
+        <button onClick={() => dispatch({ type: "increment" })}>
+          {" "}
+          Increment{" "}
+        </button>
       </div>
     </div>
   );
@@ -247,7 +263,7 @@ export default AppUseReducer;
 You can create custom hooks to reuse stateful logic across multiple components. Custom hooks are JavaScript functions whose names start with `use`. They can call other hooks if needed.
 
 ```jsx title="AppUseCustomHook.js"
-import React from 'react';
+import React from "react";
 
 function useCounter(initialCount = 0) {
   const [count, setCount] = React.useState(initialCount);
@@ -258,14 +274,13 @@ function useCounter(initialCount = 0) {
   return { count, increment, decrement };
 }
 
-
 function AppUseCustomHook() {
   const { count, increment, decrement } = useCounter(0);
 
   return (
     <div>
       <p>Count: {count}</p>
-      <div style={{ display: 'flex', gap: '5px' }}>
+      <div style={{ display: "flex", gap: "5px" }}>
         <button onClick={decrement}> Decrement </button>
         <button onClick={increment}> Increment </button>
       </div>
