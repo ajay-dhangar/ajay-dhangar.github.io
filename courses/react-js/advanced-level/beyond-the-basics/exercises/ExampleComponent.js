@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ExampleComponent = () => {
   const [userData, setUserData] = useState(null);
@@ -7,23 +7,24 @@ const ExampleComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/users/1"
+        );
         const data = await response.json();
         setUserData(data);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error("Error fetching user data:", error);
         setLoading(false);
       }
     };
 
     fetchData();
 
-    // Cleanup function
     return () => {
-        <div>Component unmounted</div>;
+      console.log("Cleanup function called");
     };
-  }, []); 
+  }, []);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -34,10 +35,21 @@ const ExampleComponent = () => {
       {userData ? (
         <div>
           <h2>Welcome, {userData.name}!</h2>
-          <p><b>Email:</b> {userData.email}, <b>Phone:</b> {userData.phone}</p>
-          <p><b>Website:</b> {userData.website}, <b>Company:</b> {userData.company.name}</p>
-          <p><b>City:</b> {userData.address.city}, <b>Zipcode:</b> {userData.address.zipcode}</p>
-          <p><b>Latitude:</b> {userData.address.geo.lat}, <b>Longitude:</b> {userData.address.geo.lng}</p>
+          <p>
+            <b>Email:</b> {userData.email}, <b>Phone:</b> {userData.phone}
+          </p>
+          <p>
+            <b>Website:</b> {userData.website}, <b>Company:</b>{" "}
+            {userData.company.name}
+          </p>
+          <p>
+            <b>City:</b> {userData.address.city}, <b>Zipcode:</b>{" "}
+            {userData.address.zipcode}
+          </p>
+          <p>
+            <b>Latitude:</b> {userData.address.geo.lat}, <b>Longitude:</b>{" "}
+            {userData.address.geo.lng}
+          </p>
 
           <button onClick={() => setUserData(null)}>Clear user data</button>
         </div>
