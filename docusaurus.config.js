@@ -86,45 +86,47 @@ const config = {
             type: "doc",
             docId: "docs",
             html: '<span class="nav-emoji">📚</span> Tutorials',
+            position: 'right',
           },
           {
             html: '<span class="nav-emoji">🧠</span> DSA',
             to: "/dsa",
+            position: 'right',
           },
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
+            position: 'right',
           },
           {
             to: "/showcase",
             html: '<span class="nav-emoji">🌍</span> Showcase',
-            position: "left",
+            position: 'right',
           },
           {
             to: "/community",
             html: '<span class="nav-emoji">🤝</span> Community',
-            position: "left",
+            position: 'right',
           },
           {
             html: '<span class="nav-emoji"> 📊</span> Quiz',
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
+            position: 'right',
           },
           {
             type: "dropdown",
             html: '<span class="nav-emoji">🏷️</span> Tags',
-            position: "left",
+            position: 'right',
             items: [
               {
                 label: "🏷️ Tutorial Tags 📚",
                 to: "/docs/tags/",
                 activeBaseRegex: `/docs/tags/`,
               },
-
               {
                 type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
-
               {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
