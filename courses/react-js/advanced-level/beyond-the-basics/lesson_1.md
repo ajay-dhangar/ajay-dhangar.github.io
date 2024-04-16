@@ -19,7 +19,6 @@ tags:
 ---
 
 import Counter from './exercises/Counter';
-import ContextProvider from './exercises/ContextProvider';
 import AppUseReducer from './exercises/AppUseReducer';
 import AppUseCustomHook from './exercises/AppUseCustomHook';
 
@@ -202,10 +201,6 @@ const ContextProvider = () => {
 
 export default ContextProvider;
 ```
-
-<BrowserWindow minHeight={300} bodyStyle={{ padding: 0 }}>
-<ContextProvider />
-</BrowserWindow>
 
 ### useReducer Hook
 
