@@ -132,7 +132,6 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-
 ### useContext Hook
 
 The `useContext` hook lets you access the value of a context provider in functional components. It is similar to the `static contextType` property in class components.
