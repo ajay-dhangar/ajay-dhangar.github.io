@@ -19,7 +19,6 @@ tags:
 ---
 
 import Counter from './exercises/Counter';
-import ExampleComponent from './exercises/ExampleComponent';
 import ContextProvider from './exercises/ContextProvider';
 import AppUseReducer from './exercises/AppUseReducer';
 import AppUseCustomHook from './exercises/AppUseCustomHook';
@@ -134,9 +133,6 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-<BrowserWindow minHeight={300}>
-  <ExampleComponent />
-</BrowserWindow>
 
 ### useContext Hook
 
