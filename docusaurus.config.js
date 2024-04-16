@@ -1,8 +1,9 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
 import "dotenv/config";
+
+import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
+import { themes as prismThemes } from "prism-react-renderer";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 
 const path = require("path");
 
@@ -86,45 +87,47 @@ const config = {
             type: "doc",
             docId: "docs",
             html: '<span class="nav-emoji">📚</span> Tutorials',
+            position: "right",
           },
           {
             html: '<span class="nav-emoji">🧠</span> DSA',
             to: "/dsa",
+            position: "right",
           },
           {
             to: "/blog",
             html: '<span class="nav-emoji">📰</span> Blog',
+            position: "right",
           },
           {
             to: "/showcase",
             html: '<span class="nav-emoji">🌍</span> Showcase',
-            position: "left",
+            position: "right",
           },
           {
             to: "/community",
             html: '<span class="nav-emoji">🤝</span> Community',
-            position: "left",
+            position: "right",
           },
           {
             html: '<span class="nav-emoji"> 📊</span> Quiz',
             to: "https://quiz-app-ajay-dhangar.vercel.app/",
+            position: "right",
           },
           {
             type: "dropdown",
             html: '<span class="nav-emoji">🏷️</span> Tags',
-            position: "left",
+            position: "right",
             items: [
               {
                 label: "🏷️ Tutorial Tags 📚",
                 to: "/docs/tags/",
                 activeBaseRegex: `/docs/tags/`,
               },
-
               {
                 type: "html",
                 value: '<hr style="margin: 0.3rem 0;">',
               },
-
               {
                 label: "🏷️ Courses Tags 🎓",
                 to: "/courses/tags/",
@@ -141,12 +144,12 @@ const config = {
                 activeBaseRegex: `/dsa/tags/`,
               },
             ],
-          },       
+          },
           {
-            href: 'https://github.com/ajay-dhangar/code-harbor-hub',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
+            href: "https://github.com/ajay-dhangar/code-harbor-hub",
+            position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
@@ -335,8 +338,8 @@ const config = {
       "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
-        max: 1030, 
-        min: 640, 
+        max: 1030,
+        min: 640,
         steps: 2,
         disableInDev: false,
       },
@@ -394,7 +397,7 @@ const config = {
         path: "courses",
         routeBasePath: "courses",
         // editUrl: "#",
-        sidebarPath: require.resolve("./sidebarsCourses.js"),        
+        sidebarPath: require.resolve("./sidebarsCourses.js"),
         remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
