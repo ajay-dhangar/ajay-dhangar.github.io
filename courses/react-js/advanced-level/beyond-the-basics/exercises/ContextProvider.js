@@ -1,10 +1,10 @@
-import React, {createContext, useContext, useState} from "react";
+import React, { createContext, useContext, useState } from "react";
 
 // Step 1: Create a Context
 const ThemeContext = createContext();
 
 // Step 2: Create a Provider Component
-const ThemeProvider = ({children}) => {
+const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -12,14 +12,20 @@ const ThemeProvider = ({children}) => {
   };
 
   return (
-    <ThemeContext.Provider value={{
-    theme, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+      }}
+    >
       {" "}
       <div
         style={{
-    background: theme === "light" ? "#fff" : "#000",
-        color: theme === "light" ? "#000" : "#fff", width: "100%",
-        height: "300px", padding: "20px",
+          background: theme === "light" ? "#fff" : "#000",
+          color: theme === "light" ? "#000" : "#fff",
+          width: "100%",
+          height: "300px",
+          padding: "20px",
         }}
       >
         {children}
@@ -32,7 +38,7 @@ const ThemeProvider = ({children}) => {
 
 // Step 4: Use the useContext Hook in child components
 const ThemeToggler = () => {
-  const {theme, toggleTheme} = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <button onClick={toggleTheme}>
@@ -49,9 +55,14 @@ const DisplayTheme = () => {
 
 // Step 5: Use the Provider Component to wrap your application
 const ContextProvider = () => {
-  return (<ThemeProvider><div><ThemeToggler /><DisplayTheme />
-          </div>
-    </ThemeProvider>);
+  return (
+    <ThemeProvider>
+      <div>
+        <ThemeToggler />
+        <DisplayTheme />
+      </div>
+    </ThemeProvider>
+  );
 };
 
 export default ContextProvider;
