@@ -6,11 +6,11 @@ function useCounter(initialCount = 0) {
   const increment = () => setCount((prevCount) => prevCount + 1);
   const decrement = () => setCount((prevCount) => prevCount - 1);
 
-  return { count, increment, decrement };
+  return {count, increment, decrement};
 }
 
 function AppUseCustomHook() {
-  const { count, increment, decrement } = useCounter(0);
+  const {count, increment, decrement} = useCounter(0);
 
   return (
     <div>
