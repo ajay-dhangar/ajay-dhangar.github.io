@@ -4,7 +4,18 @@ title: "Unit Testing with Jest (Optional)"
 sidebar_label: Lesson - 3
 sidebar_position: 3
 description: "In this lesson, we will learn about unit testing with Jest. We will cover the basics of unit testing, setting up Jest in a React project, writing test cases for components, hooks, and utilities, and running tests with Jest."
-tags: [courses, react-js, advanced-level, unit-testing, jest, testing, components, hooks, utilities]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    unit-testing,
+    jest,
+    testing,
+    components,
+    hooks,
+    utilities,
+  ]
 ---
 
 In this lesson, we will learn about unit testing with Jest. We will cover the basics of unit testing, setting up Jest in a React project, writing test cases for components, hooks, and utilities, and running tests with Jest.
@@ -60,11 +71,11 @@ npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 3. Create a test file with the `.test.js` or `.spec.js` extension:
 
 ```jsx title="Button.test.js"
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Button from './Button';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Button from "./Button";
 
-test('renders a button component', () => {
+test("renders a button component", () => {
   render(<Button label="Click me" />);
   const buttonElement = screen.getByText(/click me/i);
   expect(buttonElement).toBeInTheDocument();
@@ -85,52 +96,52 @@ Jest provides a simple and intuitive API for writing test cases for React compon
 
 Matchers are functions provided by Jest to assert the expected behavior of the code under test. Here are some commonly used matchers:
 
-- `expect(value).toBe(expected)`: 
-  
+- `expect(value).toBe(expected)`:
+
   Asserts that the value is strictly equal to the expected value. It uses `Object.is` for equality comparisons.
 
   For example:
 
   ```js title="example.test.js"
-    test('adds 1 + 2 to equal 3', () => {
-        expect(1 + 2).toBe(3);
-    });
-    ```
+  test("adds 1 + 2 to equal 3", () => {
+    expect(1 + 2).toBe(3);
+  });
+  ```
 
 - `expect(value).toEqual(expected)`:
 
-    Asserts that the value is deeply equal to the expected value. It recursively checks the equality of all fields of the value.
-    
-    For example:
-    
-    ```js title="example.test.js"
-        test('returns the correct object', () => {
-            expect({ a: 1, b: 2 }).toEqual({ a: 1, b: 2 });
-        });
-    ```
+  Asserts that the value is deeply equal to the expected value. It recursively checks the equality of all fields of the value.
+
+  For example:
+
+  ```js title="example.test.js"
+  test("returns the correct object", () => {
+    expect({ a: 1, b: 2 }).toEqual({ a: 1, b: 2 });
+  });
+  ```
 
 - `expect(value).toBeTruthy()`:
 
-    Asserts that the value is truthy (i.e., not `false`, `0`, `''`, `null`, `undefined`, or `NaN`).
-    
-    For example:
-    
-    ```js title="example.test.js"
-        test('returns a truthy value', () => {
-            expect(1).toBeTruthy();
-        });
-    ```
+  Asserts that the value is truthy (i.e., not `false`, `0`, `''`, `null`, `undefined`, or `NaN`).
+
+  For example:
+
+  ```js title="example.test.js"
+  test("returns a truthy value", () => {
+    expect(1).toBeTruthy();
+  });
+  ```
 
 ### Testing React Components
 
 You can test React components using Jest and React Testing Library. Here's an example of testing a simple button component:
 
 ```jsx title="Button.test.js"
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Button from './Button';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Button from "./Button";
 
-test('renders a button component', () => {
+test("renders a button component", () => {
   render(<Button label="Click me" />);
   const buttonElement = screen.getByText(/click me/i);
   expect(buttonElement).toBeInTheDocument();
@@ -142,13 +153,15 @@ test('renders a button component', () => {
 You can test custom React hooks using Jest. Here's an example of testing a custom hook that fetches data from an API:
 
 ```jsx title="useFetch.test.js"
-import { renderHook } from '@testing-library/react-hooks';
-import useFetch from './useFetch';
+import { renderHook } from "@testing-library/react-hooks";
+import useFetch from "./useFetch";
 
-test('fetches data from an API', async () => {
-  const { result, waitForNextUpdate } = renderHook(() => useFetch('https://api.example.com/data'));
+test("fetches data from an API", async () => {
+  const { result, waitForNextUpdate } = renderHook(() =>
+    useFetch("https://api.example.com/data"),
+  );
   await waitForNextUpdate();
-  expect(result.current.data).toEqual({ message: 'Hello, World!' });
+  expect(result.current.data).toEqual({ message: "Hello, World!" });
 });
 ```
 
@@ -157,9 +170,9 @@ test('fetches data from an API', async () => {
 You can test utility functions using Jest. Here's an example of testing a utility function that adds two numbers:
 
 ```js title="add.test.js"
-import add from './add';
+import add from "./add";
 
-test('adds two numbers', () => {
+test("adds two numbers", () => {
   expect(add(1, 2)).toBe(3);
 });
 ```

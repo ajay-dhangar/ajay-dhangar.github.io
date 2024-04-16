@@ -4,7 +4,16 @@ title: "Server-Side Rendering (SSR) with Next.js for SEO and performance (Option
 sidebar_label: Lesson - 2
 sidebar_position: 2
 description: "In this lesson, we will learn about Server-Side Rendering (SSR) with Next.js. We will learn how to implement SSR in a Next.js application to improve SEO and performance. We will also learn about the benefits of SSR and when to use it in your React applications."
-tags: [courses, react-js, advanced-level, server-side-rendering, next-js, seo, performance]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    server-side-rendering,
+    next-js,
+    seo,
+    performance,
+  ]
 ---
 
 In this lesson, we will learn about Server-Side Rendering (SSR) with Next.js. We will learn how to implement SSR in a Next.js application to improve SEO and performance. We will also learn about the benefits of SSR and when to use it in your React applications.
@@ -42,7 +51,7 @@ To implement SSR with Next.js, you can use the `getServerSideProps` function in 
 Here's an example of implementing SSR with Next.js using the `getServerSideProps` function:
 
 ```jsx title="pages/index.js"
-import React from 'react';
+import React from "react";
 
 const Home = ({ data }) => {
   return (
@@ -55,7 +64,7 @@ const Home = ({ data }) => {
 
 export async function getServerSideProps() {
   // Fetch data from an API
-  const res = await fetch('https://api.example.com/data');
+  const res = await fetch("https://api.example.com/data");
   const data = await res.json();
 
   return {
@@ -114,4 +123,4 @@ By using Server-Side Rendering (SSR) with Next.js, you can take advantage of the
 
 ## Conclusion
 
-In this lesson, we learned about Server-Side Rendering (SSR) with Next.js and how to implement SSR in a Next.js application to improve SEO and performance. We explored the benefits of SSR, including improved SEO, faster page load times, improved accessibility, and better performance. We also discussed when to use SSR in React applications and how it can help improve the user experience and accessibility of web pages. By using SSR with Next.js, you can create web pages that are more search engine-friendly, faster to load, and accessible to a wider audience, leading to better user experience and higher conversion rates. 
+In this lesson, we learned about Server-Side Rendering (SSR) with Next.js and how to implement SSR in a Next.js application to improve SEO and performance. We explored the benefits of SSR, including improved SEO, faster page load times, improved accessibility, and better performance. We also discussed when to use SSR in React applications and how it can help improve the user experience and accessibility of web pages. By using SSR with Next.js, you can create web pages that are more search engine-friendly, faster to load, and accessible to a wider audience, leading to better user experience and higher conversion rates.
