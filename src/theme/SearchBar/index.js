@@ -34,11 +34,7 @@ function DocSearch({contextualSearch, externalUrlRegex, ...props}) {
   const processSearchResultUrl = useSearchResultUrlProcessor();
   const contextualSearchFacetFilters = useAlgoliaContextualFacetFilters();
   const configFacetFilters = props.searchParameters?.facetFilters ?? [];
-  const facetFilters = contextualSearch
-    ? // Merge contextual search filters with config filters
-      mergeFacetFilters(contextualSearchFacetFilters, configFacetFilters)
-    : // ... or use config facetFilters
-      configFacetFilters;
+  const facetFilters = contextualSearch ? mergeFacetFilters(contextualSearchFacetFilters, configFacetFilters) : configFacetFilters;
   // We let user override default searchParameters if she wants to
   const searchParameters = {
     ...props.searchParameters,
