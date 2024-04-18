@@ -28,9 +28,9 @@ restylers:
       - formatter
     arguments: []
     include:
-      - '**/*.java'
-      - '**/*.css'
-      - '**/*.html'
-      - '**/*.json'
-      - '**/*.xml'
+      - "**/*.java"
+      - "**/*.css"
+      - "**/*.html"
+      - "**/*.json"
+      - "**/*.xml"
     interpreters: []
