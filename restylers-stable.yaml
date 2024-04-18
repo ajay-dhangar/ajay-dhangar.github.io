@@ -1,0 +1,36 @@
+restylers:
+  - name: clang-format
+    image: restyled/restyler-clang-format:v1.2.0
+    enabled: true
+    version: v1.2.0
+    config:
+      style: LLVM
+      mode: file
+
+  - name: prettier
+    image: restyled/restyler-prettier:v3.2.5
+    enabled: true
+    version: v3.2.5
+    config:
+      printWidth: 80
+      tabWidth: 2
+      singleQuote: true
+      trailingComma: "es5"
+      bracketSpacing: true
+      jsxBracketSameLine: false
+      semi: true
+
+  - name: jdt
+    image: restyled/restyler-jdt:v2.13.0
+    enabled: true
+    version: v2.13.0
+    command:
+      - formatter
+    arguments: []
+    include:
+      - "**/*.java"
+      - "**/*.css"
+      - "**/*.html"
+      - "**/*.json"
+      - "**/*.xml"
+    interpreters: []
