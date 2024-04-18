@@ -1,17 +1,11 @@
-import {useCallback, useMemo, useRef, useState} from 'react';
-import {createPortal} from 'react-dom';
-import {DocSearchButton, useDocSearchKeyboardEvents} from '@docsearch/react';
+import { useCallback, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
-import {useHistory} from '@docusaurus/router';
-import {
-  isRegexpStringMatch,
-  useSearchLinkCreator,
-} from '@docusaurus/theme-common';
-import {
-  useAlgoliaContextualFacetFilters,
-  useSearchResultUrlProcessor,
-} from '@docusaurus/theme-search-algolia/client';
+import { useHistory } from '@docusaurus/router';
+import { isRegexpStringMatch, useSearchLinkCreator } from '@docusaurus/theme-common';
+import { useAlgoliaContextualFacetFilters, useSearchResultUrlProcessor } from '@docusaurus/theme-search-algolia/client';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import translations from '@theme/SearchTranslations';
