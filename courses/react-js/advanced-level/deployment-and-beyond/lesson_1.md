@@ -4,7 +4,16 @@ title: "Building a production-ready build of your React application"
 sidebar_label: Lesson - 1
 sidebar_position: 1
 description: "In this lesson, you will learn how to build a production-ready version of your React application. We will cover the steps involved in creating an optimized build, configuring environment variables, and deploying your application to a hosting service."
-tags: [courses, react-js, advanced-level, production-build, deployment, hosting, environment-variables]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    production-build,
+    deployment,
+    hosting,
+    environment-variables,
+  ]
 ---
 
 In this lesson, you will learn how to build a production-ready version of your React application. We will cover the steps involved in creating an optimized build, configuring environment variables, and deploying your application to a hosting service.
@@ -41,7 +50,7 @@ REACT_APP_API_URL=https://api.example.com
 
 Once you have built a production-ready version of your React application and configured the necessary environment variables, you can deploy your application to a hosting service such as Netlify, Vercel, or AWS Amplify. These services provide easy-to-use deployment options for React applications and offer features like continuous deployment, custom domains, and SSL certificates.
 
-:::info 
+:::info
 
 If you want to deploy and host your React application on internet, you can use several hosting services like:
 
