@@ -14,7 +14,8 @@ const config = {
   favicon: "img/logo.jpg",
 
   url: process.env.URL,
-  baseUrl: process.env.BASE_URL,
+  // baseUrl: process.env.BASE_URL,
+  baseUrl: "/",
   customFields: {
     teamEmail: process.env.EMAIL,
   },
