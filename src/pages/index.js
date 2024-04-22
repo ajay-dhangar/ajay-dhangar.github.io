@@ -34,24 +34,24 @@ import styles from "./index.module.css";
 
 const featuresData = [
   {
-    icon: "/code-harbor-hub/img/svg/blogging.svg",
+    icon: "/img/svg/blogging.svg",
     title: "Blog Posts",
     description: "Read the latest blog posts shared by the CodeHarborHub.",
   },
   {
-    icon: "/code-harbor-hub/img/svg/browsing.svg",
+    icon: "/img/svg/browsing.svg",
     title: "Browse Courses",
     description:
       "Browse through the courses and tutorials shared by the CodeHarborHub.",
   },
   {
-    icon: "/code-harbor-hub/img/svg/building.svg",
+    icon: "/img/svg/building.svg",
     title: "Contribute To projects",
     description:
       "Contribute to open source projects and learn from the CodeHarborHub.",
   },
   {
-    icon: "/code-harbor-hub/img/svg/coding.svg",
+    icon: "/img/svg/coding.svg",
     title: "Code Snippets",
     description: "Find and share code snippets with the CodeHarborHub.",
   },
@@ -62,25 +62,25 @@ const coursesData = [
     title: "HTML & CSS",
     description:
       "Learn the basics of HTML and CSS. Start building your first website.",
-    imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
+    imageUrl: "/img/svg/static_website.svg",
   },
   {
     title: "JavaScript",
     description:
       "Learn the basics of JavaScript. Start building interactive websites.",
-    imageUrl: "/code-harbor-hub/img/svg/static_assets.svg",
+    imageUrl: "/img/svg/static_assets.svg",
   },
   {
     title: "React",
     description:
       "Learn the basics of React. Start building your first React app.",
-    imageUrl: "/code-harbor-hub/img/svg/react.svg",
+    imageUrl: "/img/svg/react.svg",
   },
   {
     title: "Node.js",
     description:
       "Learn the basics of Node.js. Start building your first Node.js app.",
-    imageUrl: "/code-harbor-hub/img/svg/youtube_tutorial.svg",
+    imageUrl: "/img/svg/youtube_tutorial.svg",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function Home() {
         <Hero
           title="Welcome To CodeHarborHub"
           description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
-          imageUrl="/code-harbor-hub/img/img-5.png"
+          imageUrl="/img/img-5.png"
         />
         <hr style={{ margin: "1rem" }} />
         <div className={styles.home__divider}>
