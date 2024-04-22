@@ -4,8 +4,8 @@
   <ShortName>CodeHarborHub</ShortName>
   <Description>Search CodeHarborHub</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://ajay-dhangar.github.io/code-harbor-hub/img/logo.jpg</Image>
-  <Url type="text/html" method="get" template="https://ajay-dhangar.github.io/code-harbor-hub/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://ajay-dhangar.github.io/code-harbor-hub/opensearch.xml" />
-  <moz:SearchForm>https://ajay-dhangar.github.io/code-harbor-hub/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://ajay-dhangar.github.io/img/logo.jpg</Image>
+  <Url type="text/html" method="get" template="https://ajay-dhangar.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://ajay-dhangar.github.io/opensearch.xml" />
+  <moz:SearchForm>https://ajay-dhangar.github.io/</moz:SearchForm>
 </OpenSearchDescription>
