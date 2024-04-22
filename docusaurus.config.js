@@ -419,6 +419,11 @@ const config = {
     ],
 
     [
+      "@gracefullight/docusaurus-plugin-google-adsense",
+      { adClient: "ca-pub-5832817025080991" },
+    ],
+
+    [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       {
@@ -440,7 +445,7 @@ const config = {
         api: "Some-API",
         keys: "Some-keys",
       },
-    ],
+    ],    
   ],
 };
 

@@ -17,6 +17,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.2.1",
     "@docusaurus/plugin-content-pages": "^3.2.1",
+    "@docusaurus/plugin-google-gtag": "^3.2.1",
     "@docusaurus/plugin-ideal-image": "^3.2.1",
     "@docusaurus/plugin-pwa": "^3.2.1",
     "@docusaurus/preset-classic": "^3.2.1",
@@ -29,6 +30,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@giscus/react": "^2.4.0",
+    "@gracefullight/docusaurus-plugin-google-adsense": "^1.0.0",
     "@mdx-js/react": "^3.0.0",
     "axios": "^1.6.8",
     "clsx": "^2.0.0",
