@@ -4,14 +4,23 @@ title: "Deploying React apps: Static hosting vs Server hosting"
 sidebar_label: Lesson - 2
 sidebar_position: 2
 description: "In this lesson, you will learn about the different hosting options available for deploying React applications. We will compare static hosting and server hosting, discuss the pros and cons of each approach, and explore popular hosting services for React applications."
-tags: [courses, react-js, advanced-level, deployment, hosting, static-hosting, server-hosting]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    deployment,
+    hosting,
+    static-hosting,
+    server-hosting,
+  ]
 ---
 
 In this lesson, you will learn about the different hosting options available for deploying React applications. We will compare static hosting and server hosting, discuss the pros and cons of each approach, and explore popular hosting services for React applications.
 
 ## Introduction to hosting options
 
-When deploying a React application, you have two primary hosting options: static hosting and server hosting. Each approach has its advantages and use cases, depending on the requirements of your application. 
+When deploying a React application, you have two primary hosting options: static hosting and server hosting. Each approach has its advantages and use cases, depending on the requirements of your application.
 
 Let's explore the differences between static hosting and server hosting.
 
@@ -119,7 +128,7 @@ There are several hosting services available for deploying React applications, e
 
 :::info
 
-When choosing a hosting service for your React application, consider factors such as performance requirements, scalability needs, development complexity, budget constraints, and integration capabilities with other services. Evaluate the pros and cons of static hosting and server hosting to determine the best hosting solution for your deployment needs. 
+When choosing a hosting service for your React application, consider factors such as performance requirements, scalability needs, development complexity, budget constraints, and integration capabilities with other services. Evaluate the pros and cons of static hosting and server hosting to determine the best hosting solution for your deployment needs.
 
 :::
 

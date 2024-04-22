@@ -4,7 +4,16 @@ title: "Exploring advanced topics like React Native for mobile development (Opti
 sidebar_label: Lesson - 3
 sidebar_position: 3
 description: "In this lesson, you will explore advanced topics like React Native for mobile development. We will cover the basics of React Native, how it differs from React, and how you can use it to build mobile applications for iOS and Android."
-tags: [courses, react-js, advanced-level, react-native, mobile-development, ios, android]
+tags:
+  [
+    courses,
+    react-js,
+    advanced-level,
+    react-native,
+    mobile-development,
+    ios,
+    android,
+  ]
 ---
 
 In this lesson, you will explore advanced topics like React Native for mobile development. We will cover the basics of React Native, how it differs from React, and how you can use it to build mobile applications for iOS and Android.
@@ -52,8 +61,8 @@ Once you have set up your React Native project, you can start building mobile ap
 ### Example React Native component
 
 ```jsx
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
 const App = () => {
   return (
@@ -66,14 +75,14 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f0f0f0",
   },
   text: {
     fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
+    fontWeight: "bold",
+    color: "#333",
   },
 });
 
