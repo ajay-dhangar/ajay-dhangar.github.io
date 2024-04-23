@@ -34,91 +34,88 @@ import styles from "./index.module.css";
 
 const featuresData = [
   {
-    icon : "/img/svg/blogging.svg",
-    title : "Blog Posts",
-    description : "Read the latest blog posts shared by the CodeHarborHub.",
+    icon: "/img/svg/blogging.svg",
+    title: "Blog Posts",
+    description: "Read the latest blog posts shared by the CodeHarborHub.",
   },
   {
-    icon : "/img/svg/browsing.svg",
-    title : "Browse Courses",
-    description :
-        "Browse through the courses and tutorials shared by the CodeHarborHub.",
+    icon: "/img/svg/browsing.svg",
+    title: "Browse Courses",
+    description:
+      "Browse through the courses and tutorials shared by the CodeHarborHub.",
   },
   {
-    icon : "/img/svg/building.svg",
-    title : "Contribute To projects",
-    description :
-        "Contribute to open source projects and learn from the CodeHarborHub.",
+    icon: "/img/svg/building.svg",
+    title: "Contribute To projects",
+    description:
+      "Contribute to open source projects and learn from the CodeHarborHub.",
   },
   {
-    icon : "/img/svg/coding.svg",
-    title : "Code Snippets",
-    description : "Find and share code snippets with the CodeHarborHub.",
+    icon: "/img/svg/coding.svg",
+    title: "Code Snippets",
+    description: "Find and share code snippets with the CodeHarborHub.",
   },
 ];
 
 const coursesData = [
   {
-    title : "HTML & CSS",
-    description :
-        "Learn the basics of HTML and CSS. Start building your first website.",
-    imageUrl : "/img/svg/static_website.svg",
+    title: "HTML & CSS",
+    description:
+      "Learn the basics of HTML and CSS. Start building your first website.",
+    imageUrl: "/img/svg/static_website.svg",
   },
   {
-    title : "JavaScript",
-    description :
-        "Learn the basics of JavaScript. Start building interactive websites.",
-    imageUrl : "/img/svg/static_assets.svg",
+    title: "JavaScript",
+    description:
+      "Learn the basics of JavaScript. Start building interactive websites.",
+    imageUrl: "/img/svg/static_assets.svg",
   },
   {
-    title : "React",
-    description :
-        "Learn the basics of React. Start building your first React app.",
-    imageUrl : "/img/svg/react.svg",
+    title: "React",
+    description:
+      "Learn the basics of React. Start building your first React app.",
+    imageUrl: "/img/svg/react.svg",
   },
   {
-    title : "Node.js",
-    description :
-        "Learn the basics of Node.js. Start building your first Node.js app.",
-    imageUrl : "/img/svg/youtube_tutorial.svg",
+    title: "Node.js",
+    description:
+      "Learn the basics of Node.js. Start building your first Node.js app.",
+    imageUrl: "/img/svg/youtube_tutorial.svg",
   },
 ];
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-  title = {`Hello from ${siteConfig.title}`} description =
-      "Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more." >
+      title={`Hello from ${siteConfig.title}`}
+      description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
+    >
       {/* <HomepageHeader /> */}
 
-      < main > {" "} < Hero
-  title = "Welcome To CodeHarborHub"
-  description =
-      "Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
-  imageUrl =
-      "/img/img-5.png" / >
-      <hr style =
-       {
-         { margin: "1rem" }
-       } />
+      <main>
+        {" "}
+        <Hero
+          title="Welcome To CodeHarborHub"
+          description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
+          imageUrl="/img/img-5.png"
+        />
+        <hr style={{ margin: "1rem" }} />
         <div className={styles.home__divider}>
           <Heading as="h2">Features of CodeHarborHub</Heading>
-      </div>
-        <Features features={featuresData} />
-      <div className = {styles.home__divider}>
-      <Heading as = "h2">Courses Available</Heading>
         </div>
-      <Courses courses =
-       {
-         coursesData
-       } />
+        <Features features={featuresData} />
+        <div className={styles.home__divider}>
+          <Heading as="h2">Courses Available</Heading>
+        </div>
+        <Courses courses={coursesData} />
         <div className={styles.home__divider}>
           <Heading as="h2">Join the Discussion</Heading>
-      </div>
+        </div>
         <div>
-          <GiscusComponent /></div>
-      </main><
-      /Layout>
+          <GiscusComponent />
+        </div>
+      </main>
+    </Layout>
   );
 }
