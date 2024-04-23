@@ -7,7 +7,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX13lb7HMEfoxyMU47dsYLrQqJJoyWf33MA&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/category/getting-started-with-css/",
+    link: "/courses/category/getting-started-with-css/",
   },
 
   {
@@ -17,7 +17,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOWMEmg2lu57ybdsDfJ7XV-7ZZa8otGU5i9Q&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/",
+    link: "/courses/",
   },
 
   {
@@ -27,7 +27,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMAASFPcDWt5gtTMLyfcFjmi9G5PyV4HDRX_WzEdPcB8wswFL0Hx1gWXb8ywnTMD3FKUU&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/",
+    link: "/courses/",
   },
 
   {
@@ -37,7 +37,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmG8jnDeRNg1EU-P38Y0BqliXlhqM_oy3f6w&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/",
+    link: "/courses/",
   },
 
   {
@@ -47,7 +47,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNx845ildDdt-Ot_cS_wSaloaQki9p9_Dms-Tr4vU7ZPxGvdS0SUmInoXuf947dQrHU74&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/",
+    link: "/courses/",
   },
 
   {
@@ -57,7 +57,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN5aQO8bVP5byod5FdrX3hfmzT1bTDJHkb7Q&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/",
+    link: "/courses/",
   },
 
   {
@@ -67,7 +67,7 @@ const CSSCourses = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvIo0qL04kykHdiQGhWCvEanAJa-onN4rTw&usqp=CAU",
     category: "css",
     author: "Ajay Dhangar",
-    link: "/code-harbor-hub/courses/",
+    link: "/courses/",
   },
 
   // Add more courses here
