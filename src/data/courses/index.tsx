@@ -4,7 +4,7 @@ const courses = [
     //   title: "HTML Crash Course",
     //   description: "Learn HTML from scratch. This course is for absolute beginners who want to learn the HTML programming language.",
     //   category: "html",
-    //   imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
+    //   imageUrl: "/img/svg/static_website.svg",
     //   author: "Ajay Dhangar",
     //   link: "#"
     // },
@@ -13,7 +13,7 @@ const courses = [
     //   title: "CSS Learning Path",
     //   description: "Learn CSS from scratch. This course is for absolute beginners who want to learn the CSS programming language.",
     //   category: "css",
-    //   imageUrl: "/code-harbor-hub/img/svg/static_website.svg",
+    //   imageUrl: "/img/svg/static_website.svg",
     //   author: "Ajay Dhangar",
     //   link: "#"
     // },
@@ -22,20 +22,19 @@ const courses = [
       title: "JavaScript for Beginners",
       description: "Learn JavaScript from scratch. This course is for absolute beginners who want to learn the JavaScript programming language.",
       category: "javascript",
-      imageUrl: "/code-harbor-hub/img/svg/static_assets.svg",
+      imageUrl: "/img/svg/static_assets.svg",
       author: "Ajay Dhangar",
-      link: "/code-harbor-hub/docs/category/javascript"
-    },    
+      link: "/docs/category/javascript"
+    },
     {
       id: 5,
       title: "React for Beginners",
       description: "Learn React from scratch. This course is for absolute beginners who want to learn the React programming language.",
       category: "react",
-      imageUrl: "/code-harbor-hub/img/svg/react.svg",
+      imageUrl: "/img/svg/react.svg",
       author: "Ajay Dhangar",
-      link: "/code-harbor-hub/courses/category/reactjs"
+      link: "/courses/category/reactjs"
     },
   ];
-  
+
   export default courses;
-  

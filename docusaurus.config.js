@@ -21,7 +21,7 @@ const config = {
   },
 
   organizationName: "ajay-dhangar",
-  projectName: "code-harbor-hub",
+  projectName: "CodeHarborHub",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -42,7 +42,8 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
+          editUrl:
+            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
@@ -50,7 +51,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/Ajay-Dhangar/code-harbor-hub/edit/main/",
+          editUrl:
+            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
@@ -66,7 +68,7 @@ const config = {
       image: "img/logo.jpg",
       announcementBar: {
         id: "announcementBar",
-        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/code-harbor-hub/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
+        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
         isCloseable: true,
       },
 
@@ -147,7 +149,7 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/ajay-dhangar/code-harbor-hub",
+            href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",
@@ -163,7 +165,7 @@ const config = {
               {
                 html: `
                     <div class="footer_info--container">
-                      <img src="/code-harbor-hub/img/logo.png" alt="Footer logo" />
+                      <img src="/img/logo.png" alt="Footer logo" />
                       <p>
                         Welcome to CodeHarborHub, a place to learn and grow. We are a community of developers, creators, and learners
                       </p>

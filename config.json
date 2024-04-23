@@ -1,11 +1,7 @@
 {
   "index_name": "ajay-dhangario",
-  "start_urls": [
-    "https://ajay-dhangar.github.io/code-harbor-hub/"
-  ],
-  "sitemap_urls": [
-    "https://ajay-dhangar.github.io/code-harbor-hub/sitemap.xml"
-  ],
+  "start_urls": ["https://ajay-dhangar.github.io/"],
+  "sitemap_urls": ["https://ajay-dhangar.github.io/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
@@ -26,12 +22,7 @@
   "strip_chars": " .,;:#",
   "custom_settings": {
     "separatorsToIndex": "_",
-    "attributesForFaceting": [
-      "language",
-      "version",
-      "type",
-      "docusaurus_tag"
-    ],
+    "attributesForFaceting": ["language", "version", "type", "docusaurus_tag"],
     "attributesToRetrieve": [
       "hierarchy",
       "content",
@@ -41,8 +32,6 @@
       "type"
     ]
   },
-  "conversation_id": [
-    "833762294"
-  ],
+  "conversation_id": ["833762294"],
   "nb_hits": 46250
 }
