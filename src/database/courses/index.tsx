@@ -45,6 +45,5 @@ const courses = [
       link: "https://reactjs.org/docs/getting-started.html"
     },
   ];
-  
+
   export default courses;
-  
