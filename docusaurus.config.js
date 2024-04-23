@@ -445,7 +445,7 @@ const config = {
         api: "Some-API",
         keys: "Some-keys",
       },
-    ],    
+    ],
   ],
 };
 
