@@ -6,12 +6,11 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
- [![An image of @ajaydhangar's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/ajaydhangar)](https://holopin.io/@ajaydhangar)
+[![An image of @ajaydhangar's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/ajaydhangar)](https://holopin.io/@ajaydhangar)
 
 <div style={{background: 'linear-gradient(90deg, rgb(51, 55, 6) 0%, #FF4820 25%, #FF4820 50%, rgb(87, 89, 243) 100%)', paddingTop: '10px', borderRadius: '10px'}}>
   <a href="https://www.linkedin.com/in/ajay-dhangar" align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=DEF72C&random=false&center=true&width=1000&lines=Hi%2C+there.+I'm+Ajay+Dhangar.+A+Web+Developer+and+Open-Source+enthusiast!" alt="Typing SVG" /></a>
 </div>
-
 
 ## Introduction
 
@@ -98,4 +97,3 @@ hide_table_of_contents: true
     </ul>
   </div>
 </div>
-
