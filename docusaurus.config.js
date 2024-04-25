@@ -41,7 +41,8 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
+          editUrl:
+            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
@@ -49,7 +50,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
+          editUrl:
+            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {

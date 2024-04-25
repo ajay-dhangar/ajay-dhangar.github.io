@@ -25,7 +25,7 @@ const courses = [
       imageUrl: "/img/svg/static_assets.svg",
       author: "Ajay Dhangar",
       link: "/docs/category/javascript"
-    },    
+    },
     {
       id: 5,
       title: "React for Beginners",
@@ -36,6 +36,5 @@ const courses = [
       link: "/courses/category/reactjs"
     },
   ];
-  
+
   export default courses;
-  
