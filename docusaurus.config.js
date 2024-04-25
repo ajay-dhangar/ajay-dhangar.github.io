@@ -94,21 +94,21 @@ const config = {
           },
           {
             html: '<span class="nav-emoji">🧠</span> DSA',
-            to: "/dsa",
+            to: "/dsa/",
             position: "right",
           },
           {
-            to: "/blog",
+            to: "/blog/",
             html: '<span class="nav-emoji">📰</span> Blog',
             position: "right",
           },
           {
-            to: "/showcase",
+            to: "/showcase/",
             html: '<span class="nav-emoji">🌍</span> Showcase',
             position: "right",
           },
           {
-            to: "/community",
+            to: "/community/",
             html: '<span class="nav-emoji">🤝</span> Community',
             position: "right",
           },
@@ -418,6 +418,16 @@ const config = {
         remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "me",
+        path: "me",
+        routeBasePath: "me",
+        sidebarPath: require.resolve("./sidebarsMe.js"),
       },
     ],
 
