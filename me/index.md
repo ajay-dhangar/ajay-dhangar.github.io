@@ -52,7 +52,7 @@ hide_table_of_contents: true
   <div style={{marginRight: '8%'}}>
     <h3 style={{margin: '0', background: 'linear-gradient(90deg, rgb(151, 255, 6) 0%, #FF4820 25%, #FF4820 50%, rgb(87, 89, 243) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontSize: '1.5rem'}}>
       Frontend
-    </h3>      
+    </h3>
       <div style={{display: 'flex', flexWrap: 'wrap', gap: '5px'}}>
         <img src="https://img.shields.io/badge/html-f12?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" /> {" "}
         <img src="https://img.shields.io/badge/css-0077B5?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" /> {" "}
@@ -60,7 +60,7 @@ hide_table_of_contents: true
         <img src="https://img.shields.io/badge/react%20js-20232A?style=for-the-badge&logo=react&logoColor=white" alt="React.Js" />  {" "}
         <img src="https://img.shields.io/badge/redux-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" /> {" "}
         <img src="https://img.shields.io/badge/bootstrap-0077B5?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" /> {" "}
-        <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI" />  {" "} 
+        <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material-UI" />  {" "}
         <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Styled Components" /> {" "}
         <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown" /> {" "}
         <img src="https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.Js" /> {" "}
