@@ -93,7 +93,7 @@ Now, let's create a simple HTML page. Here is an example of a simple HTML page:
 
 :::tip Next Steps
 
-Now that you have learned about how HTML works, you can start creating your own web pages using HTML. Check out the [HTML Tutorial](/docs/html/html-tutorial) to learn more about HTML elements, tags, and how to create web pages.
+Now that you have learned about how HTML works, you can start creating your own web pages using HTML. Check out the [HTML Tutorial](/docs/category/html) to learn more about HTML elements, tags, and how to create web pages.
 
 :::
 
