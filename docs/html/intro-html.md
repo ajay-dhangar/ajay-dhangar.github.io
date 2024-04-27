@@ -3,7 +3,23 @@ id: intro-html
 title: Introduction to HTML
 sidebar_label: Intro to HTML
 sidebar_position: 1
-tags: [html, introduction, web-development, markup-language, web-pages, elements, structure, content, hyperlink, italicize, font, bigger, smaller, tutorial]
+tags:
+  [
+    html,
+    introduction,
+    web-development,
+    markup-language,
+    web-pages,
+    elements,
+    structure,
+    content,
+    hyperlink,
+    italicize,
+    font,
+    bigger,
+    smaller,
+    tutorial,
+  ]
 description: What is HTML? Why HTML? How to use HTML? history of HTML? Learn about HTML in this tutorial.
 ---
 
