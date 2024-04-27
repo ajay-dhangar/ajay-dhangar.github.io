@@ -47,7 +47,7 @@ HTML (HyperText Markup Language) is the standard markup language for creating we
 
 HTML is a markup language that defines the structure of your content. HTML consists of a series of elements that you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.
 
-HTML elements are delineated by tags, written using angle brackets. Tags such as `<img />` and `<input />` directly introduce content into the page. Other tags such as `<p>` surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+HTML elements are delineated by tags, written using angle brackets. Tags such as `<img src="image.jpg" alt="image" />` and `<input type="text" />` directly introduce content into the page. Other tags such as `<p>` surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
 
 HTML can be used in a lot of different ways. Here are a few examples:
 

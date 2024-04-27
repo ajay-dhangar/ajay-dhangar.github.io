@@ -30,7 +30,7 @@ HTML is a markup language that defines the structure of your content. HTML consi
 
 HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.
 
-For example, HTML elements can encapsulate text, images, or forms. HTML elements are delineated by tags, written using angle brackets. Tags such as `<img />` and `<input />` directly introduce content into the page. Other tags such as `<p>` surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+For example, HTML elements can encapsulate text, images, or forms. HTML elements are delineated by tags, written using angle brackets. Tags such as `<img src="image.jpg" alt="image" />` and `<input type="text" />` directly introduce content into the page. Other tags such as `<p>` surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
 
 ## How to use HTML?
 
