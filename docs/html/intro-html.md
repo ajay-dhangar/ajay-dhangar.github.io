@@ -141,7 +141,7 @@ HTML also defines special elements for defining text with a special meaning. HTM
 
 ### And many more...
 
-HTML can be used in a lot of different ways. You can use HTML to create a web page, create a hyperlink, create an italic text, and many more. You can learn more about HTML in the [HTML Tutorial](/docs/category/html-tutorial).
+HTML can be used in a lot of different ways. You can use HTML to create a web page, create a hyperlink, create an italic text, and many more. You can learn more about HTML in the [HTML Tutorial](/docs/category/html).
 
 ## History of HTML
 
