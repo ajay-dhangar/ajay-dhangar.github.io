@@ -106,7 +106,7 @@ export default function Home() {
                 at CodeHarborHub. I love to help others learn and grow in their
                 careers. I am always looking for new opportunities to learn and
                 grow.
-              
+
               <b>
                 {" "}
                 <Link to="https://www.codeharborhub.live/">Join CodeHarborHub</Link>{" "}
@@ -129,7 +129,7 @@ export default function Home() {
           description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
           imageUrl="/img/img-5.png"
         /> */}
-        <hr style={{ margin: "1rem" }} />        
+        <hr style={{ margin: "1rem" }} />
 
       </main>
       {/* <TweetsSection /> */}
