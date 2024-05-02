@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>CodeHarborHub</ShortName>
-  <Description>Search CodeHarborHub</Description>
+  <ShortName>Ajay Dhangar</ShortName>
+  <Description>Search Ajay Dhangar</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://ajay-dhangar.github.io/img/logo.jpg</Image>
   <Url type="text/html" method="get" template="https://ajay-dhangar.github.io/search?q={searchTerms}"/>
