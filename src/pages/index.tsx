@@ -1,10 +1,10 @@
-import clsx from "clsx";
+// import clsx from "clsx";
 import React from "react";
 // import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 // import LiteYouTubeEmbed from "react-lite-youtube-embed";
 // import GiscusComponent from "@site/src/components/GiscusComponent";
-import Heading from "@theme/Heading";
+// import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 // import Image from '@theme/IdealImage';
