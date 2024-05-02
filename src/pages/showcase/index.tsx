@@ -115,7 +115,7 @@ function ShowcaseHeader() {
   return (
     <section className="margin-top--lg margin-bottom--lg text--center">
       <h1 className={styles.TitleText}>{TITLE}</h1>
-      <p className={styles.DescText}>{DESCRIPTION}</p>      
+      <p className={styles.DescText}>{DESCRIPTION}</p>
     </section>
   );
 }
