@@ -28,11 +28,9 @@ import {usePluralForm} from '@docusaurus/theme-common';
 import styles from './styles.module.css';
 
 const TITLE =
-  'CodeHarborHub: Showcasing Exceptional Websites, Templates, and Project';
+  'Welcome to My Showcase and Portfolio.';
 const DESCRIPTION =
-  'Unleash your creativity and expertise with our exceptional Site/Templates/Projects Showcase at CodeHarborHub: Where Innovation Meets Inspiration.';
-const EDIT_URL =
-  'https://github.com/Ajay-Dhangar';
+  'This is my personal website where I showcase my projects and share my thoughts. If you have any questions or would like to collaborate, feel free to reach out to me. Also, if you have any feedback on my projects, I would love to hear it. And if you like what you see, please share it with others or give it a star on GitHub.';
 
 type UserState = {
   scrollTopPosition: number;
@@ -116,18 +114,8 @@ function useFilteredUsers() {
 function ShowcaseHeader() {
   return (
     <section className="margin-top--lg margin-bottom--lg text--center">
-      <h1>{TITLE}</h1>
-      <p>{DESCRIPTION}</p>
-      <a
-        className="button button--primary"
-        href={EDIT_URL}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Translate id="showcase.header.button">
-          🌟 Join the CodeHarbarHub Community
-        </Translate>
-      </a>
+      <h1 className={styles.TitleText}>{TITLE}</h1>
+      <p className={styles.DescText}>{DESCRIPTION}</p>      
     </section>
   );
 }

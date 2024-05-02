@@ -159,7 +159,7 @@ const Users: User[] = [
     preview: require('./showcase/gemini-ai-chatbot.png'),
     website: 'https://code-harbor-hub-gemini-ai-chatbot.vercel.app/',
     source: 'https://github.com/Ajay-Dhangar/gemini-ai-chatbot',
-    tags: ['opensource', 'design', 'nextjs', 'typescript', 'ai'],
+    tags: ['opensource', 'design', 'nextjs', 'typescript', 'ai', 'favorite'],
   },
 
   {

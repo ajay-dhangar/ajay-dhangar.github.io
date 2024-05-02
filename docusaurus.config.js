@@ -1,15 +1,14 @@
 import "dotenv/config";
-
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import { themes as prismThemes } from "prism-react-renderer";
-import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "CodeHarborHub",
+  title: "Ajay Dhangar",
   tagline: "A place to learn and grow",
   favicon: "img/logo.jpg",
 
@@ -20,7 +19,7 @@ const config = {
   },
 
   organizationName: "ajay-dhangar",
-  projectName: "CodeHarborHub",
+  projectName: "Ajay Dhangar",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -79,27 +78,68 @@ const config = {
       },
 
       navbar: {
-        title: "CodeHarborHub",
+        title: "Ajay Dhangar",
         logo: {
-          alt: "CodeHarborHub Logo",
-          src: "img/nav-logo.jpg",
+          alt: "Ajay Dhangar Logo",
+          src: "img/logo.jpg",
         },
         items: [
           {
-            type: "doc",
-            docId: "docs",
-            html: '<span class="nav-emoji">📚</span> Tutorials',
+            // About page
+            html: '<span class="nav-emoji">👋</span> About',
+            to: "/me/",
             position: "right",
           },
           {
-            html: '<span class="nav-emoji">🧠</span> DSA',
-            to: "/dsa/",
+            type: "dropdown",
+            html: '<span class="nav-emoji"> 📚</span> Docs',
             position: "right",
-          },
-          {
-            to: "/blog/",
-            html: '<span class="nav-emoji">📰</span> Blog',
-            position: "right",
+            items: [
+              {
+                type: 'html',
+                className: 'dropdown-archived-versions',
+                value: '<b>📚 Tutorials</b>',
+              },
+              {
+                type: "doc",
+                docId: "docs",
+                label: "Learning",
+              },
+              {
+                label: "DSA",
+                to: "/dsa/",
+                activeBaseRegex: `/dsa/`,
+              },
+              {
+                label: " Courses",
+                to: "/courses/",
+                activeBaseRegex: `/courses/`,
+              },
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                type: 'html',
+                className: 'dropdown-archived-versions',
+                value: '<b>🏷️ Tags</b>',
+              },
+              {
+                label: "Tutorial Tags",
+                to: "/docs/tags/",
+                activeBaseRegex: `/docs/tags/`,
+              },
+              {
+                label: "Courses Tags",
+                to: "/courses/tags/",
+                activeBaseRegex: `/courses/tags/`,
+              },
+              {
+                label: "DSA Tags",
+                to: "/dsa/tags/",
+                activeBaseRegex: `/dsa/tags/`,
+              },
+            ],
           },
           {
             to: "/showcase/",
@@ -111,41 +151,48 @@ const config = {
             html: '<span class="nav-emoji">🤝</span> Community',
             position: "right",
           },
-          {
-            html: '<span class="nav-emoji"> 📊</span> Quiz',
-            to: "https://quiz-app-ajay-dhangar.vercel.app/",
-            position: "right",
-          },
-          {
-            type: "dropdown",
-            html: '<span class="nav-emoji">🏷️</span> Tags',
-            position: "right",
-            items: [
-              {
-                label: "🏷️ Tutorial Tags 📚",
-                to: "/docs/tags/",
-                activeBaseRegex: `/docs/tags/`,
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-              {
-                label: "🏷️ Courses Tags 🎓",
-                to: "/courses/tags/",
-                activeBaseRegex: `/courses/tags/`,
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
+          // {
+          //   html: '<span class="nav-emoji"> 📊</span> Quiz',
+          //   to: "https://quiz-app-ajay-dhangar.vercel.app/",
+          //   position: "right",
+          // },
 
-              {
-                label: "🏷️ DSA Tags 🧠",
-                to: "/dsa/tags/",
-                activeBaseRegex: `/dsa/tags/`,
-              },
-            ],
+          // {
+          //   type: "dropdown",
+          //   html: '<span class="nav-emoji">🏷️</span> Tags',
+          //   position: "right",
+          //   items: [
+          //     {
+          //       label: "🏷️ Tutorial Tags 📚",
+          //       to: "/docs/tags/",
+          //       activeBaseRegex: `/docs/tags/`,
+          //     },
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+          //     {
+          //       label: "🏷️ Courses Tags 🎓",
+          //       to: "/courses/tags/",
+          //       activeBaseRegex: `/courses/tags/`,
+          //     },
+          //     {
+          //       type: "html",
+          //       value: '<hr style="margin: 0.3rem 0;">',
+          //     },
+
+          //     {
+          //       label: "🏷️ DSA Tags 🧠",
+          //       to: "/dsa/tags/",
+          //       activeBaseRegex: `/dsa/tags/`,
+          //     },
+          //   ],
+          // },
+
+          {
+            to: "/blog/",
+            html: '<span class="nav-emoji">📰</span> Blog',
+            position: "right",
           },
           {
             href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
@@ -292,7 +339,18 @@ const config = {
         // theme: prismThemes.vsDark,
         darkTheme: prismThemes.dracula,
         // darkTheme: prismThemes.github,
-        additionalLanguages: ["powershell"],
+        additionalLanguages: [
+          'java',
+          'latex',
+          'haskell',
+          'matlab',
+          'PHp',
+          'powershell',
+          'bash',
+          'diff',
+          'json',
+          'scss',
+        ],
       },
       docs: {
         sidebar: {

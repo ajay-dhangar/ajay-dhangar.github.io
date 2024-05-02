@@ -93,3 +93,18 @@
 .svgIconFavorite {
   margin-left: 1rem;
 }
+
+.TitleText {
+  background: linear-gradient(
+    90deg,
+    rgb(152 0 255) 0%,
+    rgb(246 41 41) 50%,
+    rgb(255 169 8) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.DescText {
+  font-size: 1.1rem;
+}

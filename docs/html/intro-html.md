@@ -50,7 +50,17 @@ For example, HTML elements can encapsulate text, images, or forms. HTML elements
 
 ## How to use HTML?
 
-HTML can be used in a lot of different ways. Here are a few examples:
+To use HTML, you need to understand the basic structure of an HTML document. An HTML document consists of the following elements:
+
+- `<!DOCTYPE html>`: This declaration defines the document type and version of HTML being used.
+- `<html>`: The root element of an HTML document.
+- `<head>`: The container for metadata and other information about the document.
+- `<title>`: The title of the document, displayed in the browser's title bar or tab.
+- `<body>`: The container for the visible content of the document.
+
+Within the `<body>` element, you can use various HTML tags to create different types of content, such as headings, paragraphs, lists, links, images, and more.
+
+HTML can be used in a lot of different ways. Here's an example of a basic HTML document:
 
 ### 1. HTML Can Create a Web Page
 
