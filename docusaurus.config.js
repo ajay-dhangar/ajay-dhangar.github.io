@@ -1,8 +1,9 @@
 import "dotenv/config";
+
 import npm2yarn from "@docusaurus/remark-plugin-npm2yarn";
 import { themes as prismThemes } from "prism-react-renderer";
-import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
 
 const path = require("path");
 
@@ -96,9 +97,9 @@ const config = {
             position: "right",
             items: [
               {
-                type: 'html',
-                className: 'dropdown-archived-versions',
-                value: '<b>📚 Tutorials</b>',
+                type: "html",
+                className: "dropdown-archived-versions",
+                value: "<b>📚 Tutorials</b>",
               },
               {
                 type: "doc",
@@ -120,9 +121,9 @@ const config = {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
               {
-                type: 'html',
-                className: 'dropdown-archived-versions',
-                value: '<b>🏷️ Tags</b>',
+                type: "html",
+                className: "dropdown-archived-versions",
+                value: "<b>🏷️ Tags</b>",
               },
               {
                 label: "Tutorial Tags",
@@ -340,16 +341,16 @@ const config = {
         darkTheme: prismThemes.dracula,
         // darkTheme: prismThemes.github,
         additionalLanguages: [
-          'java',
-          'latex',
-          'haskell',
-          'matlab',
-          'PHp',
-          'powershell',
-          'bash',
-          'diff',
-          'json',
-          'scss',
+          "java",
+          "latex",
+          "haskell",
+          "matlab",
+          "PHp",
+          "powershell",
+          "bash",
+          "diff",
+          "json",
+          "scss",
         ],
       },
       docs: {
