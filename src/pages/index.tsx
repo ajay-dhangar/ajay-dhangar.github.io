@@ -87,7 +87,7 @@ export default function Home() {
             {"Check out favorite projects in my showcase!"}
           </Link>
           {"\xa0🌟"}
-        </div>        
+        </div>
       </div>
 
       <main>
@@ -104,7 +104,7 @@ export default function Home() {
                 grow."
           imageUrl="/img/img-5.png"
         />
-        
+
         <hr style={{ margin: "1rem" }} />
       </main>
       {/* <TweetsSection /> */}

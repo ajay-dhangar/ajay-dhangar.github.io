@@ -70,9 +70,9 @@ div[class^='announcementBar_'] .clean-btn {
   opacity: 100%;
 }
 
-.navbar__logo img {  
+.navbar__logo img {
   border-radius: 8px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 mark {
