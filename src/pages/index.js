@@ -6,7 +6,7 @@ import Hero from "@site/src/components/Homepage/Hero";
 import styles from "./index.module.css";
 
 
-const Home: React.FC = () => {
+const Home = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
