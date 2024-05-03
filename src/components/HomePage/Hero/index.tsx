@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "../home.module.css";
 import Link from "@docusaurus/Link";
 import BrowserWindow from "../../BrowserWindow";
-// import YouTubePlayer from "./YouTubePlayer";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
@@ -11,18 +10,6 @@ interface HeroProps {
   description: string;
   imageUrl?: string;
   videoId?: string;
-}
-
-function VideoContainer() {
-  return (    
-      <LiteYouTubeEmbed
-        id="lI3RBnK8V6Y"
-        params="autoplay=1&autohide=1&showinfo=0&rel=0"
-        title="CodeHarborHub Website Introduction | CodeHarborHub Website Overview | CodeHarborHub Website Features"
-        poster="maxresdefault"
-        webp
-      />
-  );
 }
 
 const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
@@ -60,7 +47,13 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
               url="https://www.codeharborhub.live"
               bodyStyle={{ padding: "0", overflow: "hidden" }}
             >
-              <VideoContainer />
+              <LiteYouTubeEmbed
+                id="lI3RBnK8V6Y"
+                params="autoplay=1&autohide=1&showinfo=0&rel=0"
+                title="CodeHarborHub Website Introduction | CodeHarborHub Website Overview | CodeHarborHub Website Features"
+                poster="maxresdefault"
+                webp
+              />
             </BrowserWindow>
           ) : (
             <>
