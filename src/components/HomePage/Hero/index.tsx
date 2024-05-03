@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "../home.module.css";
 import Link from "@docusaurus/Link";
 import BrowserWindow from "../../BrowserWindow";
-// import YouTubePlayer from "./YouTubePlayer";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
