@@ -12,7 +12,7 @@ interface HeroProps {
   videoId?: string;
 }
 
-const VideoContainer: React.FC = () => {
+function VideoContainer() {
   return (
       <LiteYouTubeEmbed
         id="lI3RBnK8V6Y"
