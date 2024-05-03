@@ -12,18 +12,6 @@ interface HeroProps {
   videoId?: string;
 }
 
-function VideoContainer() {
-  return (
-      <LiteYouTubeEmbed
-        id="lI3RBnK8V6Y"
-        params="autoplay=1&autohide=1&showinfo=0&rel=0"
-        title="CodeHarborHub Website Introduction | CodeHarborHub Website Overview | CodeHarborHub Website Features"
-        poster="maxresdefault"
-        webp
-      />
-  );
-}
-
 const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -59,7 +47,13 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
               url="https://www.codeharborhub.live"
               bodyStyle={{ padding: "0", overflow: "hidden" }}
             >
-              <VideoContainer />
+              <LiteYouTubeEmbed
+                id="lI3RBnK8V6Y"
+                params="autoplay=1&autohide=1&showinfo=0&rel=0"
+                title="CodeHarborHub Website Introduction | CodeHarborHub Website Overview | CodeHarborHub Website Features"
+                poster="maxresdefault"
+                webp
+              />
             </BrowserWindow>
           ) : (
             <>
