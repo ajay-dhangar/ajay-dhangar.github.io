@@ -1,10 +1,10 @@
-import React from "react";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Hero from "@site/src/components/Homepage/Hero";
-import styles from "./index.module.css";
+import Layout from "@theme/Layout";
+import React from "react";
 
+import styles from "./index.module.css";
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -39,11 +39,10 @@ const Home = () => {
                 grow."
           imageUrl="/img/img-5.png"
         />
-
         <hr style={{ margin: "1rem" }} />
       </main>
     </Layout>
   );
-}
+};
 
 export default Home;
