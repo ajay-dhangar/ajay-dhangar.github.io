@@ -14,7 +14,7 @@ interface HeroProps {
 }
 
 function VideoContainer() {
-  return (    
+  return (
       <LiteYouTubeEmbed
         id="lI3RBnK8V6Y"
         params="autoplay=1&autohide=1&showinfo=0&rel=0"
