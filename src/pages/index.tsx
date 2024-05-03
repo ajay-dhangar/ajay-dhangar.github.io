@@ -6,7 +6,7 @@ import Hero from "@site/src/components/Homepage/Hero";
 import styles from "./index.module.css";
 
 
-export default function Home(): JSX.Element {
+const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -45,3 +45,5 @@ export default function Home(): JSX.Element {
     </Layout>
   );
 }
+
+export default Home;
