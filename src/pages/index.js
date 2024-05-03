@@ -39,11 +39,10 @@ const Home = () => {
                 grow."
           imageUrl="/img/img-5.png"
         />
-
         <hr style={{ margin: "1rem" }} />
       </main>
     </Layout>
   );
-}
+};
 
 export default Home;
