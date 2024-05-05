@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcode_harbor_hub=self.webpackChunkcode_harbor_hub||[]).push([[13640],{95624:a=>{a.exports=JSON.parse('{"label":"Declarative syntax","permalink":"/blog/tags/declarative-syntax","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
