@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import styles from "../home.module.css";
 import Link from "@docusaurus/Link";
 import BrowserWindow from "../../BrowserWindow";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
-import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+// import YouTubePlayer from "./YouTubePlayer";
 
 interface HeroProps {
   title: string;
@@ -22,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
   return (
     <div className={styles.hero_container}>
       <div className={styles.hero_content}>
-        {/* <h1 className={styles.hero_title}>{title}</h1> */}
+        <h1 className={styles.hero_title}>{title}</h1>
         <p className={styles.hero_description}>{description}</p>
         <div className={styles.buttons_container}>
           <button className={styles.animated_button}>
@@ -47,13 +46,7 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
               url="https://www.codeharborhub.live"
               bodyStyle={{ padding: "0", overflow: "hidden" }}
             >
-              <LiteYouTubeEmbed
-                id="lI3RBnK8V6Y"
-                params="autoplay=1&autohide=1&showinfo=0&rel=0"
-                title="CodeHarborHub Website Introduction | CodeHarborHub Website Overview | CodeHarborHub Website Features"
-                poster="maxresdefault"
-                webp
-              />
+              {/* <YouTubePlayer videoId="lI3RBnK8V6Y" height={300} width={480} /> */}
             </BrowserWindow>
           ) : (
             <>
