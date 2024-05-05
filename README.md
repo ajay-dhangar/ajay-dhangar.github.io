@@ -44,11 +44,12 @@ This project is licensed under the [MIT License](LICENSE)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ajay-dhangar/ajay-dhangar.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/ajay-dhangar/ajay-dhangar.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ajay-dhangar/ajay-dhangar.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ajay-dhangar/ajay-dhangar.github.io) ![GitHub Org's stars](https://img.shields.io/github/stars/Ajay-Dhangar%2Fajay-dhangar.github.io) ![GitHub License](https://img.shields.io/github/license/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub forks](https://img.shields.io/github/forks/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub watchers](https://img.shields.io/github/watchers/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub file size in bytes](https://img.shields.io/github/size/Ajay-Dhangar/ajay-dhangar.github.io/docusaurus.config.js) ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/ajay-dhangar/ajay-dhangar.github.io) ![GitHub repo size](https://img.shields.io/github/repo-size/Ajay-Dhangar/ajay-dhangar.github.io)
 
-
 > error: 6016 bytes of body are still expected2 mib | 590.00 kib/s fetch-pack: unexpected disconnect while reading sideband packet fatal: early eof fatal: fetch-pack: invalid index-pack output:
+>
 > ```
 > git config --global http.postBuffer 52428800
 > ```
+>
 > ```
 > git config --global core.compression 0
 > ```
