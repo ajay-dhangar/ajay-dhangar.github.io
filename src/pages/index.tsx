@@ -83,7 +83,7 @@ export default function Home() {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossorigin="anonymous"
-        ></script>
+         />
       </Head>
 
       <div className={styles.topBanner}>
