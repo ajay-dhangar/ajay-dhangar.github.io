@@ -7,6 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 // import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import Head from '@docusaurus/Head';
 // import Image from '@theme/IdealImage';
 // import Tweet from '@site/src/components/Tweet';
 // import Tweets, { TweetItem } from '@site/src/data/tweets';
@@ -77,15 +78,11 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
-    >
+    > 
       <Head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
-          crossorigin="anonymous"
-         />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
+     crossorigin="anonymous"></script>
       </Head>
-
       <div className={styles.topBanner}>
         <div className={styles.topBannerTitle}>
           {"🌟\xa0"}
