@@ -81,7 +81,7 @@ export default function Home() {
     >
       <Head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
-     crossorigin="anonymous"></script>
+     crossorigin="anonymous" />
       </Head>
       <div className={styles.topBanner}>
         <div className={styles.topBannerTitle}>
