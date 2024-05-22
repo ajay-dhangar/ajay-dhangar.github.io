@@ -119,7 +119,8 @@ export default function Home() {
                   कोड् हार्बोर् हब् सह योगः
                 </Link>{" "}
               </b>{" "}
-              and{" "}
+{/*                 and */}
+              च{" "}
               <b>
                 <Link to="https://www.codeharborhub.live/docs/">
 {/*                   start learning */}
