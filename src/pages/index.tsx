@@ -101,24 +101,33 @@ export default function Home() {
           <div>
             <div className={styles.topBannerDescription}>
               <p>
-                I am a software engineer and a tech enthusiast. I love to learn
+{/*                 I am a software engineer and a tech enthusiast. I love to learn
                 and share my knowledge with others. I am passionate about web
                 development, open source, and building cool stuff. I am always
                 looking for new opportunities to learn and grow. I am currently
                 working as a software engineer at a startup. I am also a mentor
                 at CodeHarborHub. I love to help others learn and grow in their
                 careers. I am always looking for new opportunities to learn and
-                grow.
+                grow. */}
+
+                तत्र सोफ्टवेयर् इन्जिनियर् अहमस्मि, तथा प्रौद्योगिकी उत्सुकः अहम्। अहं शिक्षितुं च अभ्यस्तुं च प्रियः। अहं वेब् विकासे, मुक्त स्रोतौ, च अतिशयम् रचनायां प्रवृत्तः। सदैव नवानि अवसराणि अभ्यस्तुम् च प्रवर्धितुम् च आवश्यकः। अहं सद्यः उपारंभिके सोफ्टवेयर् इन्जिनियर् रूपेण कार्यम् करोमि। अहं च कोड् हार्बोर् हब् नामके संस्थायां उपन्यासकः अस्मि। अहं परानुमोदितुं च परिणामसाधयितुं च प्रियः। अहं सदैव नवानि अवसराणि अभ्यस्तुम् च प्रवर्धितुम् च आवश्यकः।
 
               <b>
                 {" "}
-                <Link to="https://www.codeharborhub.live/">Join CodeHarborHub</Link>{" "}
+                <Link to="https://www.codeharborhub.live/">
+{/*                   Join CodeHarborHub */}
+                  कोड् हार्बोर् हब् सह योगः
+                </Link>{" "}
               </b>{" "}
               and{" "}
               <b>
-                <Link to="https://www.codeharborhub.live/docs/">start learning</Link>
+                <Link to="https://www.codeharborhub.live/docs/">
+{/*                   start learning */}
+                  कर्तुं आरम्भः
+                </Link>
               </b>{" "}
-              today!
+{/*               today! */}
+                , आजीविष्यताम् आरंभ आजीवया अवलोकयस्व॥
               </p>
             </div>
           </div>
