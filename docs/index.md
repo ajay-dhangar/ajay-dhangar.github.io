@@ -1,10 +1,15 @@
 ---
 id: docs
 title: Welcome to CodeHarborHub Tutorials
-sidebar_label: Welcome to CodeHarborHub 
+sidebar_label: Welcome to CodeHarborHub
 sidebar_position: 1
 slug: /
 ---
+
+<Head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
+     crossorigin="anonymous" />
+</Head>
 
 Welcome to the CodeHarborHub documentation! This documentation is intended to help you get started with CodeHarborHub and to provide you with a comprehensive guide to the features and functionality of the platform. This is a place to learn about technology, programming, web development, data science, and more.
 
@@ -30,3 +35,17 @@ CodeHarborHub provides a range of features for learning, teaching, and collabora
 ## Getting Started
 
 To get started with CodeHarborHub, you can follow the tutorials and resources in this documentation. You can also explore the platform and try out the features for yourself. If you have any questions or need help, you can reach out to the CodeHarborHub community for support.
+
+<!-- Example ad -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+style={{display: 'block'}}
+data-ad-client="ca-pub-5832817025080991"
+data-ad-slot="6570801606"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
