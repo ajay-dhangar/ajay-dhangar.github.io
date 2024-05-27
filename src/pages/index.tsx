@@ -1,45 +1,45 @@
-// import clsx from "clsx";
+import clsx from "clsx";
 import React from "react";
 // import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 // import LiteYouTubeEmbed from "react-lite-youtube-embed";
 // import GiscusComponent from "@site/src/components/GiscusComponent";
-// import Heading from "@theme/Heading";
+import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import Head from '@docusaurus/Head';
+import Head from "@docusaurus/Head";
 // import Image from '@theme/IdealImage';
-// import Tweet from '@site/src/components/Tweet';
-// import Tweets, { TweetItem } from '@site/src/data/tweets';
+import Tweet from "@site/src/components/Tweet";
+import Tweets, { TweetItem } from "@site/src/data/tweets";
 // import Quotes from '@site/src/data/quotes';
 import styles from "./index.module.css";
+import AdComponent from "@site/src/components/AdComponent";
 
+function TweetsSection() {
+  const tweetColumns: TweetItem[][] = [[], [], []];
+  Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
+    tweetColumns[i % 3]!.push(tweet)
+  );
 
-// function TweetsSection() {
-//   const tweetColumns: TweetItem[][] = [[], [], []];
-//   Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-//     tweetColumns[i % 3]!.push(tweet),
-//   );
-
-//   return (
-//     <div className={clsx(styles.section, styles.sectionAlt)}>
-//       <div className="container">
-//         <Heading as="h2" className={clsx('margin-bottom--lg', 'text--center')}>
-//           Loved by many engineers
-//         </Heading>
-//         <div className={clsx('row', styles.tweetsSection)}>
-//           {tweetColumns.map((tweetItems, i) => (
-//             <div className="col col--4" key={i}>
-//               {tweetItems.map((tweet) => (
-//                 <Tweet {...tweet} key={tweet.url} />
-//               ))}
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+  return (
+    <div className={clsx(styles.section, styles.sectionAlt)}>
+      <div className="container">
+        <Heading as="h2" className={clsx("margin-bottom--lg", "text--center")}>
+          Loved by many engineers
+        </Heading>
+        <div className={clsx("row", styles.tweetsSection)}>
+          {tweetColumns.map((tweetItems, i) => (
+            <div className="col col--4" key={i}>
+              {tweetItems.map((tweet) => (
+                <Tweet {...tweet} key={tweet.url} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // function QuotesSection() {
 //   return (
@@ -71,7 +71,6 @@ import styles from "./index.module.css";
 //   );
 // }
 
-
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -80,17 +79,20 @@ export default function Home() {
       description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
     >
       <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
-     crossorigin="anonymous" />
         <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405210101/reactive_library_fy2021.js"
-        nonce=""
-      />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405220101/show_ads_impl_fy2021.js?bust=31083976"
-      />
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
+          crossorigin="anonymous"
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405210101/reactive_library_fy2021.js"
+          nonce=""
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405220101/show_ads_impl_fy2021.js?bust=31083976"
+        />
       </Head>
       <div className={styles.topBanner}>
         <div className={styles.topBannerTitle}>
@@ -110,7 +112,7 @@ export default function Home() {
           <div>
             <div className={styles.topBannerDescription}>
               <p>
-{/*                 I am a software engineer and a tech enthusiast. I love to learn
+                {/*                 I am a software engineer and a tech enthusiast. I love to learn
                 and share my knowledge with others. I am passionate about web
                 development, open source, and building cool stuff. I am always
                 looking for new opportunities to learn and grow. I am currently
@@ -118,26 +120,30 @@ export default function Home() {
                 at CodeHarborHub. I love to help others learn and grow in their
                 careers. I am always looking for new opportunities to learn and
                 grow. */}
-
-                तत्र सोफ्टवेयर् इन्जिनियर् अहमस्मि, तथा प्रौद्योगिकी उत्सुकः अहम्। अहं शिक्षितुं च अभ्यस्तुं च प्रियः। अहं वेब् विकासे, मुक्त स्रोतौ, च अतिशयम् रचनायां प्रवृत्तः। सदैव नवानि अवसराणि अभ्यस्तुम् च प्रवर्धितुम् च आवश्यकः। अहं सद्यः उपारंभिके सोफ्टवेयर् इन्जिनियर् रूपेण कार्यम् करोमि। अहं च कोड् हार्बोर् हब् नामके संस्थायां उपन्यासकः अस्मि। अहं परानुमोदितुं च परिणामसाधयितुं च प्रियः। अहं सदैव नवानि अवसराणि अभ्यस्तुम् च प्रवर्धितुम् च आवश्यकः।
-
-              <b>
-                {" "}
-                <Link to="https://www.codeharborhub.live/">
-{/*                   Join CodeHarborHub */}
-                  कोड् हार्बोर् हब् सह योगः
-                </Link>{" "}
-              </b>{" "}
-{/*                 and */}
-              च{" "}
-              <b>
-                <Link to="https://www.codeharborhub.live/docs/">
-{/*                   start learning */}
-                  कर्तुं आरम्भः
-                </Link>
-              </b>{" "}
-{/*               today! */}
-                , आजीविष्यताम् आरंभ आजीवया अवलोकयस्व॥
+                तत्र सोफ्टवेयर् इन्जिनियर् अहमस्मि, तथा प्रौद्योगिकी उत्सुकः
+                अहम्। अहं शिक्षितुं च अभ्यस्तुं च प्रियः। अहं वेब् विकासे, मुक्त
+                स्रोतौ, च अतिशयम् रचनायां प्रवृत्तः। सदैव नवानि अवसराणि
+                अभ्यस्तुम् च प्रवर्धितुम् च आवश्यकः। अहं सद्यः उपारंभिके
+                सोफ्टवेयर् इन्जिनियर् रूपेण कार्यम् करोमि। अहं च कोड् हार्बोर्
+                हब् नामके संस्थायां उपन्यासकः अस्मि। अहं परानुमोदितुं च
+                परिणामसाधयितुं च प्रियः। अहं सदैव नवानि अवसराणि अभ्यस्तुम् च
+                प्रवर्धितुम् च आवश्यकः।
+                <b>
+                  {" "}
+                  <Link to="https://www.codeharborhub.live/">
+                    {/*                   Join CodeHarborHub */}
+                    कोड् हार्बोर् हब् सह योगः
+                  </Link>{" "}
+                </b>{" "}
+                {/*                 and */}च{" "}
+                <b>
+                  <Link to="https://www.codeharborhub.live/docs/">
+                    {/*                   start learning */}
+                    कर्तुं आरम्भः
+                  </Link>
+                </b>{" "}
+                {/*               today! */}, आजीविष्यताम् आरंभ आजीवया
+                अवलोकयस्व॥
               </p>
             </div>
           </div>
@@ -146,16 +152,10 @@ export default function Home() {
 
       <main>
         {" "}
-        {/* <Hero
-          title="Welcome To CodeHarborHub"
-          description="Your gateway to top-notch tech education. We're dedicated to empowering individuals with the skills to thrive in today's tech landscape. Whether you're a novice or a seasoned developer, our inclusive platform offers tailored learning opportunities. Join us today and embark on your path to tech mastery!"
-          imageUrl="/img/img-5.png"
-        /> */}
-        <hr style={{ margin: "1rem" }} />
-
+        <AdComponent />
+        <TweetsSection />
+        {/* <QuotesSection /> */}
       </main>
-      {/* <TweetsSection /> */}
-      {/* <QuotesSection /> */}
     </Layout>
   );
 }
