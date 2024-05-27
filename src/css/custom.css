@@ -243,3 +243,7 @@ table, tr, td, th {
     display: inline-block;
   }
 }
+
+.row .col .card {
+  margin-top: 10px;
+}
