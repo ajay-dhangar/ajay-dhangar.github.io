@@ -84,15 +84,6 @@ export default function Home() {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossorigin="anonymous"
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405210101/reactive_library_fy2021.js"
-          nonce=""
-        />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405220101/show_ads_impl_fy2021.js?bust=31083976"
-        />
       </Head>
       <div className={styles.topBanner}>
         <div className={styles.topBannerTitle}>
