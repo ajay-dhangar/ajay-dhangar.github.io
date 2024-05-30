@@ -13,7 +13,7 @@ import Tweet from "@site/src/components/Tweet";
 import Tweets, { TweetItem } from "@site/src/data/tweets";
 // import Quotes from '@site/src/data/quotes';
 import styles from "./index.module.css";
-import AdComponent from "@site/src/components/AdComponent";
+// import AdComponent from "@site/src/components/AdComponent";
 
 function TweetsSection() {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -143,7 +143,9 @@ export default function Home() {
 
       <main>
         {" "}
-        <AdComponent />
+         {/*
+            <AdComponent />
+         */}
         <TweetsSection />
         {/* <QuotesSection /> */}
       </main>
