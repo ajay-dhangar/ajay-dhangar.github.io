@@ -123,16 +123,16 @@ export default function Home() {
                 सोफ्टवेयर् इन्जिनियर् रूपेण कार्यम् करोमि। अहं च कोड् हार्बोर्
                 हब् नामके संस्थायां उपन्यासकः अस्मि। अहं परानुमोदितुं च
                 परिणामसाधयितुं च प्रियः। अहं सदैव नवानि अवसराणि अभ्यस्तुम् च
-                प्रवर्धितुम् च आवश्यकः।                
+                प्रवर्धितुम् च आवश्यकः।
                 <b>
                   {" "}
-                  <Link to="https://www.codeharborhub.live/">                    
+                  <Link to="https://www.codeharborhub.live/">
                     कोड् हार्बोर् हब् सह योगः
                   </Link>{" "}
                 </b>{" "}
                  च{" "}
                 <b>
-                  <Link to="https://www.codeharborhub.live/docs/">                    
+                  <Link to="https://www.codeharborhub.live/docs/">
                     कर्तुं आरम्भः
                   </Link>
                 </b>{" "}
