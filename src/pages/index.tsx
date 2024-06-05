@@ -113,7 +113,7 @@ export default function Home() {
                 working as a software engineer at a startup. I am also a mentor
                 at CodeHarborHub. I love to help others learn and grow in their
                 careers. I am always looking for new opportunities to learn and
-                grow. */}
+                grow. 
 
                 {/*
                 तत्र सोफ्टवेयर् इन्जिनियर् अहमस्मि, तथा प्रौद्योगिकी उत्सुकः
