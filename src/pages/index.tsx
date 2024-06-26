@@ -13,9 +13,9 @@ import Tweet from "@site/src/components/Tweet";
 import Tweets, { TweetItem } from "@site/src/data/tweets";
 import Quotes from "@site/src/data/quotes";
 import styles from "./index.module.css";
-import AdComponent from "@site/src/components/AdComponent";
 import Chatbot from "@site/src/components/Chatbot";
 import { text } from "express";
+// import AdComponent from "@site/src/components/AdComponent";
 
 function TweetsSection() {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -86,15 +86,9 @@ export default function Home() {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossorigin="anonymous"
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405210101/reactive_library_fy2021.js"
-          nonce=""
-        />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405220101/show_ads_impl_fy2021.js?bust=31083976"
-        />
+        <script async custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+        </script>
       </Head>
 
       <main>
@@ -157,8 +151,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <AdComponent />
+        </div>        
         <TweetsSection />
         <div style={{ margin: "10px 0" }}>
           <Heading as="h3" style={{textAlign: "center"}}>
