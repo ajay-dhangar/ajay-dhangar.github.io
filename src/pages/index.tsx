@@ -151,7 +151,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>        
+        </div>
         <TweetsSection />
         <div style={{ margin: "10px 0" }}>
           <Heading as="h3" style={{textAlign: "center"}}>
