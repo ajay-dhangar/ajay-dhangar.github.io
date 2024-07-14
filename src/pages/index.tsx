@@ -4,7 +4,69 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
+<<<<<<< HEAD
 import AdComponent from "@site/src/components/AdComponent";
+=======
+import Chatbot from "@site/src/components/Chatbot";
+import { text } from "express";
+// import AdComponent from "@site/src/components/AdComponent";
+
+function TweetsSection() {
+  const tweetColumns: TweetItem[][] = [[], [], []];
+  Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
+    tweetColumns[i % 3]!.push(tweet)
+  );
+
+  return (
+    <div className={clsx(styles.section, styles.sectionAlt)}>
+      <div className="container">
+        <Heading as="h2" className={clsx("margin-bottom--lg", "text--center")}>
+          Loved by many engineers
+        </Heading>
+        <div className={clsx("row", styles.tweetsSection)}>
+          {tweetColumns.map((tweetItems, i) => (
+            <div className="col col--4" key={i}>
+              {tweetItems.map((tweet) => (
+                <Tweet {...tweet} key={tweet.url} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuotesSection() {
+  return (
+    <div className={clsx(styles.section)}>
+      <div className="container">
+        <div className="row">
+          {Quotes.map((quote) => (
+            <div className="col" key={quote.name}>
+              <div className="avatar avatar--vertical margin-bottom--sm">
+                <Image
+                  alt={quote.name}
+                  className="avatar__photo avatar__photo--xl"
+                  img={quote.thumbnail}
+                  style={{ overflow: "hidden" }}
+                />
+                <div className="avatar__intro padding-top--sm">
+                  <div className="avatar__name">{quote.name}</div>
+                  <small className="avatar__subtitle">{quote.title}</small>
+                </div>
+              </div>
+              <p className="text--italic padding-horiz--md">
+                {quote.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+>>>>>>> fb93ba05baf2f9f9ec5049833b03000af97d0b2e
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -19,15 +81,9 @@ export default function Home() {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
           crossorigin="anonymous"
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405210101/reactive_library_fy2021.js"
-          nonce=""
-        />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202405220101/show_ads_impl_fy2021.js?bust=31083976"
-        />
+        <script async custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+        </script>
       </Head>
 
       <main>
@@ -91,7 +147,18 @@ export default function Home() {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <AdComponent />
+=======
+        <TweetsSection />
+        <div style={{ margin: "10px 0" }}>
+          <Heading as="h3" style={{textAlign: "center"}}>
+            Quotes
+          </Heading>
+          <QuotesSection />
+        </div>
+        <Chatbot />
+>>>>>>> fb93ba05baf2f9f9ec5049833b03000af97d0b2e
       </main>
     </Layout>
   );
