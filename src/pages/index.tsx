@@ -5,64 +5,8 @@ import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
 import Chatbot from "@site/src/components/Chatbot";
-import { text } from "express";
 import AdComponent from "@site/src/components/AdComponent";
 
-function TweetsSection() {
-  const tweetColumns: TweetItem[][] = [[], [], []];
-  Tweets.filter((tweet) => tweet.showOnHomepage).forEach((tweet, i) =>
-    tweetColumns[i % 3]!.push(tweet)
-  );
-
-  return (
-    <div className={clsx(styles.section, styles.sectionAlt)}>
-      <div className="container">
-        <Heading as="h2" className={clsx("margin-bottom--lg", "text--center")}>
-          Loved by many engineers
-        </Heading>
-        <div className={clsx("row", styles.tweetsSection)}>
-          {tweetColumns.map((tweetItems, i) => (
-            <div className="col col--4" key={i}>
-              {tweetItems.map((tweet) => (
-                <Tweet {...tweet} key={tweet.url} />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function QuotesSection() {
-  return (
-    <div className={clsx(styles.section)}>
-      <div className="container">
-        <div className="row">
-          {Quotes.map((quote) => (
-            <div className="col" key={quote.name}>
-              <div className="avatar avatar--vertical margin-bottom--sm">
-                <Image
-                  alt={quote.name}
-                  className="avatar__photo avatar__photo--xl"
-                  img={quote.thumbnail}
-                  style={{ overflow: "hidden" }}
-                />
-                <div className="avatar__intro padding-top--sm">
-                  <div className="avatar__name">{quote.name}</div>
-                  <small className="avatar__subtitle">{quote.title}</small>
-                </div>
-              </div>
-              <p className="text--italic padding-horiz--md">
-                {quote.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -143,14 +87,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <AdComponent />
-        <TweetsSection />
-        <div style={{ margin: "10px 0" }}>
-          <Heading as="h3" style={{textAlign: "center"}}>
-            Quotes
-          </Heading>
-          <QuotesSection />
-        </div>
+        <AdComponent />       
         <Chatbot />
       </main>
     </Layout>
