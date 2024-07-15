@@ -4,12 +4,9 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
-<<<<<<< HEAD
-import AdComponent from "@site/src/components/AdComponent";
-=======
 import Chatbot from "@site/src/components/Chatbot";
 import { text } from "express";
-// import AdComponent from "@site/src/components/AdComponent";
+import AdComponent from "@site/src/components/AdComponent";
 
 function TweetsSection() {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -66,7 +63,6 @@ function QuotesSection() {
     </div>
   );
 }
->>>>>>> fb93ba05baf2f9f9ec5049833b03000af97d0b2e
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -147,9 +143,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <AdComponent />
-=======
         <TweetsSection />
         <div style={{ margin: "10px 0" }}>
           <Heading as="h3" style={{textAlign: "center"}}>
@@ -158,7 +152,6 @@ export default function Home() {
           <QuotesSection />
         </div>
         <Chatbot />
->>>>>>> fb93ba05baf2f9f9ec5049833b03000af97d0b2e
       </main>
     </Layout>
   );
