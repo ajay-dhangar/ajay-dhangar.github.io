@@ -3,7 +3,8 @@ import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 
-const aboutImg = "/img/svg/about_me.svg";
+const aboutImg = "/img/svg/feeling_proud.svg";
+// const aboutImg = "/img/svg/environmental_study.svg";
 
 export default function AboutUsSection() {
   return (
@@ -13,13 +14,13 @@ export default function AboutUsSection() {
           <div className="col col--6">
             <Heading as={"h1"}>About Us</Heading>
             <p className={styles.aboutUsDescription}>
-              Welcome to Code Harbor Hub, your go-to destination for quality tech education. At Code Harbor Hub, we are passionate about empowering individuals with the knowledge and skills needed to thrive in the ever-evolving world of technology.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis enim doloremque rem dolorum recusandae asperiores sequi veritatis, fugiat neque cum molestias minus harum dolores est quas alias? Sequi, fugiat eum?
             </p>
             <p className={styles.aboutUsDescription}>
-              Our mission is to provide accessible and comprehensive educational resources to learners of all levels, from beginners to advanced professionals. Whether you're looking to kickstart your career in web development, master a new programming language, or stay updated on the latest tech trends, we've got you covered.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse numquam praesentium sequi reprehenderit magnam tempore, dolores quidem ipsum ea consectetur amet sunt labore a quas neque rem laborum consequuntur!
             </p>
             <p className={styles.aboutUsDescription}>
-              With a team of experienced instructors and industry experts, we offer a diverse range of courses and learning paths tailored to meet your specific goals and interests. Join our community today and embark on your journey towards success in the tech industry!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse numquam praesentium sequi reprehenderit magnam tempore, dolores quidem ipsum ea consectetur amet sunt labore a quas neque rem laborum consequuntur!
             </p>
           </div>
           <div className={clsx("col", "col--6", styles.aboutUsImage)}>
