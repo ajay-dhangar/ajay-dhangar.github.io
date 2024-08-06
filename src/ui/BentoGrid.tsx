@@ -133,7 +133,7 @@ export const BentoGridItem = ({
                 {leftTechStack.map((item) => (
                   <span
                     key={item.id}
-                    className=" lg:px-3 py-2 px-3 text-xs lg:text-base opacity-90 
+                    className=" lg:px-3 py-2 px-3 text-xs lg:text-base opacity-90
                     lg:opacity-100 rounded-lg text-center bg-[#072c15]"
                   >
                     {item.title}
@@ -146,7 +146,7 @@ export const BentoGridItem = ({
                 {rightTechStack.map((item) => (
                   <span
                     key={item.id}
-                    className=" lg:px-3 px-3 py-2 text-xs lg:text-base opacity-90 
+                    className=" lg:px-3 px-3 py-2 text-xs lg:text-base opacity-90
                     lg:opacity-100 rounded-lg text-center text-white bg-[#072c15]"
                   >
                     {item.title}
