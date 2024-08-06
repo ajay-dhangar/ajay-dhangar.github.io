@@ -1,8 +1,6 @@
 const Joi = require("joi");
 
-
 module.exports = function (context, options) {
-  //
   return {
     name: "my-plugin",
     // lifecycle methods
@@ -26,6 +24,15 @@ module.exports = function (context, options) {
           console.log("Hello World! - This is a custom command!");
           console.log('Plugin options:', options);
         });
+    },
+    configurePostCss(postcssOptions) {
+      // Add Tailwind CSS and other PostCSS plugins
+      postcssOptions.plugins = [
+        require("postcss-import"),
+        require("tailwindcss"),
+        require("autoprefixer"),
+      ];
+      return postcssOptions;
     },
   };
 };
