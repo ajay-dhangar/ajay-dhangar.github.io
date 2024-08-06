@@ -66,11 +66,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: "img/logo.jpg",
-      announcementBar: {
-        id: "announcementBar",
-        content: `⭐️ If you like CodeHarborHub, give it a star on <a target="_blank" href="https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/">GitHub</a> and join us on <a target="_blank" href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
-        isCloseable: true,
-      },
+      // announcementBar: {
+      //   id: "announcementBar",
+      //   content: `⭐️ If you like CodeHarborHub, give it a star on <a
+      //   target="_blank"
+      //   href="https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/">GitHub</a>
+      //   and join us on <a target="_blank"
+      //   href="https://www.linkedin.com/groups/14232119/">LinkedIn</a> ⭐️`,
+      //   isCloseable: true,
+      // },
 
       algolia: {
         apiKey: "2c1a3331ebff51f76d2f247323ee4ba4",
