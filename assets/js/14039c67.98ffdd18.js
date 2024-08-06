@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcode_harbor_hub=self.webpackChunkcode_harbor_hub||[]).push([[87394],{12766:e=>{e.exports=JSON.parse('{"tag":{"label":"html","permalink":"/web-dev/tags/html","allTagsPath":"/web-dev/tags","count":1,"items":[{"id":"html/welcome-html","title":"Welcome to the HTML","description":"","permalink":"/web-dev/html/welcome-html"}],"unlisted":false}}')}}]);
