@@ -8,7 +8,7 @@ import Link from "@docusaurus/Link";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-16 md:pt-8 p-4 relative overflow-hidden">
+    <div className="pb-4 pt-8 md:pt-4 p-4 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"

@@ -4,6 +4,8 @@ import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
 import Hero from "../components/HomePage/Hero";
 import Touch from "../components/HomePage/Touch";
+import Projects from "../components/HomePage/Projects";
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -25,6 +27,7 @@ export default function Home() {
       </Head>
       <main className="overflow-hidden">
         <Hero />
+        <Projects />
         <Touch />
       </main>
     </Layout>
