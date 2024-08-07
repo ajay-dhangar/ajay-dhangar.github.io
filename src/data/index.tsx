@@ -92,7 +92,7 @@ export const projects = [
       "/data/git.svg",
     ],
     link: "https://codeharborhub.github.io/",
-  },  
+  },
 ];
 
 export const testimonials = [
