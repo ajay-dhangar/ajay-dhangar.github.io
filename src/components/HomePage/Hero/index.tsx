@@ -39,7 +39,7 @@ const Hero = () => {
               <TextGenerateEffect
                 mobScreen={true}
                 className="text-[36px] text-center"
-                words="Hi I'm Ajay Dhangar, The Full Stack Developer"
+                words="Hi I'm Ajay Dhangar, Full Stack Developer"
               />
             </div>
 

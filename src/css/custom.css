@@ -481,3 +481,6 @@ table, tr, td, th {
 /* ========================= */
 /* --  ChatBot Styles End */
 /* ========================= */
+.text-primaryColor {
+  color: #48df84;
+}

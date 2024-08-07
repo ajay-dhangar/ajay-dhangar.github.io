@@ -3,7 +3,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
 import Hero from "../components/HomePage/Hero";
-
+import Touch from "../components/HomePage/Touch";
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -25,6 +25,7 @@ export default function Home() {
       </Head>
       <main className="overflow-hidden">
         <Hero />
+        <Touch />
       </main>
     </Layout>
   );
