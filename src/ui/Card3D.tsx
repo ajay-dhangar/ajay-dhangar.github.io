@@ -21,7 +21,7 @@ export const ThreeDCardDemo = ({
   otherClasses?: string;
 }) => {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="inter-var mt-4">
       <CardBody
         className="bg-gray-50 relative group/card dark:hover:shadow-2xl cursor-pointer dark:hover:shadow-emerald-500/[0.1] dark:bg-[#1e293b] dark:border-white/[0.2] border-black/[0.1]
        grid grid-cols-1 grid-rows-1 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out w-auto  h-auto rounded-xl p-6 border-[1px] border-gray-200 dark:border-[#1e293b] dark:text-white"
@@ -35,7 +35,7 @@ export const ThreeDCardDemo = ({
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 max-w-sm mt-4 dark:text-neutral-300 md:text-base text-sm p-2"
         >
           {description}
         </CardItem>
@@ -71,7 +71,7 @@ export const ThreeDCardDemo = ({
           <CardItem
             translateZ={20}
             as="button"
-            className="flex items-center gap-x-2 px-4 py-2 rounded-xl bg-gray dark:bg-[#1e293b] dark:text-black text-sm md:text-base font-bold"
+            className="flex items-center gap-x-2 px-4 py-2 rounded-xl bg-gray dark:bg-[#1e293b] dark:text-white text-sm md:text-base font-bold"
           >
             <Link to={link} target="_blank">
               Demo

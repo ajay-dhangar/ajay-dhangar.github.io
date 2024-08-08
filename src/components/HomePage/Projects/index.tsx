@@ -4,7 +4,7 @@ import { ThreeDCardDemo } from "../../../ui/Card3D";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 m-4">
       <h1 className="heading text-4xl text-center lg:text-6xl mb-10">
         A collection of{" "}
         <span className="text-primaryColor">recent projects</span>
