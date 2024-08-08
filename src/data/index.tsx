@@ -91,8 +91,13 @@ export const projects = [
       "/data/git.svg",
       "/data/docusaurus.svg",
     ],
+<<<<<<< HEAD
     link: "https://cmhq.tech/",
   },  
+=======
+    link: "https://codeharborhub.github.io/",
+  },
+>>>>>>> 1b82f16edcb1d3eab2bfe4ee52d11d4d994b7477
 ];
 
 export const testimonials = [
