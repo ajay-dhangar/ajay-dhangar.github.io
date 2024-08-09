@@ -5,6 +5,7 @@ import Head from "@docusaurus/Head";
 import Hero from "../components/HomePage/Hero";
 import Touch from "../components/HomePage/Touch";
 import Projects from "../components/HomePage/Projects";
+import Skills from "../components/HomePage/Skills";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -27,6 +28,7 @@ export default function Home() {
       </Head>
       <main className="overflow-hidden">
         <Hero />
+        <Skills />
         <Projects />
         <Touch />
       </main>
