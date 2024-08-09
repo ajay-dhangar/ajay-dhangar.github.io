@@ -1,5 +1,3 @@
-# Ajay Dhangar's Portfolio
-
 ![image](https://github.com/user-attachments/assets/3a66de59-e0ec-4df1-8339-37d1a931c60f)
 
 
