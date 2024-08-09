@@ -10,8 +10,8 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Ajay Dhangar",
-  tagline: "A place to learn and grow",
-  favicon: "img/logo.jpg",
+  tagline: "Ajay Dhangar - Full Stack Developer",
+  favicon: "img/logo.png",
 
   url: process.env.URL,
   // baseUrl: process.env.BASE_URL,
@@ -65,7 +65,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/logo.jpg",
+      image: "img/logo.png",
       // announcementBar: {
       //   id: "announcementBar",
       //   content: `⭐️ If you like CodeHarborHub, give it a star on <a
@@ -84,11 +84,11 @@ const config = {
       },
 
       navbar: {
-        title: "Ajay Dhangar",
-        logo: {
-          alt: "Ajay Dhangar Logo",
-          src: "img/logo.jpg",
-        },
+        title: "🧑‍💻 Ajay Dhangar",
+        // logo: {
+        //   alt: "Ajay Dhangar Logo",
+        //   src: "img/logo-r.png",
+        // },
         items: [
           {
             // About page
@@ -218,9 +218,6 @@ const config = {
                 html: `
                     <div class="footer_info--container">
                       <img src="/img/logo.png" alt="Footer logo" />
-                      <p>
-                        Welcome to CodeHarborHub, a place to learn and grow. We are a community of developers, creators, and learners
-                      </p>
                     </div>
                   `,
               },
