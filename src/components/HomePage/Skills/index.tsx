@@ -60,13 +60,13 @@ export default function Skills() {
           <Skill name="GitHub" to="#" icon="/icons/github.svg" />
           <Skill name="Next.js" to="#" icon="/icons/nextjs.svg" />
           <Skill name="TypeScript" to="#" icon="/icons/ts.svg" />
-          {/* <Skill name="Netlify" to="#" icon="/icons/netlify.svg" /> */}
-          {/* <Skill name="Vercel " to="#" icon="/icons/vercel.svg" /> */}
-          {/* <Skill name="GitHub Pages" to="#" icon="/icons/gh-pages.svg" /> */}
+          <Skill name="Netlify" to="#" icon="/icons/netlify.svg" />
+          <Skill name="Vercel " to="#" icon="/icons/vercel.svg" />
+          <Skill name="GitHub Pages" to="#" icon="/icons/github.svg" />
         </div>
       </div>
 
-      {/* <div>
+      <div>
         <h4 className="mb-2 text-2xl">Tools</h4>
 
         <p className="mb-6 text-text-400">
@@ -77,11 +77,11 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           <Skill name="Figma" to="#" icon="/icons/figma.svg" />
-          <Skill name="VS Code" to="#" icon="/icons/vscode.svg" />
+          <Skill name="VS Code" to="#" icon="/icons/vs-code.svg" />
           <Skill name="CodePen" to="#" icon="/icons/codepen.svg" />
-          <Skill name="Stack Overflow" to="#" icon="/icons/so.svg" />
+          <Skill name="Stack Overflow" to="#" icon="/icons/stack-overflow.svg" />
           <Skill name="Google" to="#" icon="/icons/google.svg" />
-          <Skill name="MDN Web Docs" to="#" icon="/icons/mdn.svg" />
+          <Skill name="MDN Web Docs" to="#" icon="/icons/mdn.png" />
           <Skill name="Dev.to" to="#" icon="/icons/dev.svg" />
           <Skill name="Unsplash" to="#" icon="/icons/unsplash.svg" />
           <Skill name="Canva" to="#" icon="/icons/canva.svg" />
@@ -96,16 +96,15 @@ export default function Skills() {
           <Skill name="Babel" to="#" icon="/icons/babel.svg" />
           <Skill name="Dotenv" to="#" icon="/icons/dotenv.svg" />
           <Skill name="ESLint" to="#" icon="/icons/eslint.svg" />
-          <Skill name="Prettier" to="#" icon="/icons/prettier.svg" />
+          <Skill name="Prettier" to="#" icon="/icons/prettier.png" />
           <Skill name="Docker" to="#" icon="/icons/docker.svg" />
-          <Skill name="GitHub Actions" to="#" icon="/icons/actions.svg" />
+          <Skill name="GitHub Actions" to="#" icon="/icons/gitHub-actions.svg" />
           <Skill name="Lighthouse" to="#" icon="/icons/lighthouse.svg" />
           <Skill name="Google Analytics" to="#" icon="/icons/ga.svg" />
           <Skill name="Firefox Developer Tools" to="#" icon="/icons/firefox.svg" />
           <Skill name="Chrome DevTools" to="#" icon="/icons/chrome.svg" />
-
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }
