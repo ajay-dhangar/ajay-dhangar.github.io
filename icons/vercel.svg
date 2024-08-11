@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Black Circle -->
-  <circle cx="50" cy="50" r="50" fill="#000000"/>
-  <!-- White Vercel Triangle -->
-  <path fill="#ffffff" d="M50 20L77.94 75H22.06z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#000"/><path fill="#fff" d="M50 20L77.94 75H22.06z"/></svg>
