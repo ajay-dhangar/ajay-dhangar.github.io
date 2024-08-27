@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --ifm-color-primary: #2e9e32e1;
+  --ifm-color-primary: #2e93e2;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -20,7 +20,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #48bf84;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -269,4 +269,8 @@ table, tr, td, th {
     @apply mb-2 inline-block rounded-sm text-text-400;
     @apply tracking-wider;
   }
+}
+
+.custom-drop-shadow {
+  filter: drop-shadow(0 4px 5px var(--ifm-color-primary));
 }
