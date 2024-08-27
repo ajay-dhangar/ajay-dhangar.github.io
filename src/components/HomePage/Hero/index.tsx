@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="hidden md:inline-flex">
             <div className="relative">
               <img
-                className="object-cover h-full drop-shadow-lg"
+                className="object-cover h-full drop-shadow-lg custom-drop-shadow"
                 src="/img/ajay-dhangar.png"
                 alt="Portfolio Owner Image"
                 width={400}
