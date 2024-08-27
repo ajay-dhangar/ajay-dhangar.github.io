@@ -1,34 +1,69 @@
-# CodeHarborHub
+![image](https://github.com/user-attachments/assets/3a66de59-e0ec-4df1-8339-37d1a931c60f)
 
-Welcome to CodeHarborHub - Your Gateway to Web Development Excellence!
 
-## About
+## Overview
 
-CodeHarborHub is a dynamic platform dedicated to empowering developers, enthusiasts, and learners on their journey to mastering web development. This hub serves as a central point for a variety of educational resources, including tutorials, courses, showcases, and much more.
+Welcome to my portfolio website! I'm Ajay, an aspiring Full Stack Developer with a passion for building clean, efficient, and scalable solutions. This site showcases my skills, projects, and experiences, all crafted using modern technologies like React.js, TypeScript (TSX), MDX, and Docusaurus.
+
+## About Me
+
+**Seeking Full Stack Development Opportunities**
+
+Hi! I'm Ajay, a software engineer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). I thrive on solving complex problems and turning ideas into real-world solutions. My approach is driven by curiosity and collaboration, and I always aim to write code that is clean, maintainable, and efficient.
+
+## Technologies Used
+
+This portfolio website was built using the following technologies:
+
+- **React.js**: A JavaScript library for building user interfaces.
+- **TypeScript (TSX)**: A typed superset of JavaScript that adds static types to your code, helping you catch errors early.
+- **MDX**: A format that lets you seamlessly write JSX in your Markdown documents.
+- **Docusaurus**: A static site generator that makes it easy to build, deploy, and maintain a website.
 
 ## Features
 
-- **In-Depth Tutorials**: Dive into comprehensive tutorials covering a wide range of web development topics.
-- **Courses for Mastery**: Enroll in structured courses designed to take your skills to the next level.
-- **Inspiring Showcases**: Explore inspiring showcases of real-world projects and innovative web solutions.
-- **Engaging Community**: Connect with a vibrant community of developers, share knowledge, and collaborate on projects.
+- **Responsive Design**: The website is fully responsive and optimized for all devices, ensuring a seamless experience whether you're on a desktop, tablet, or mobile.
+- **Dynamic Content**: Leveraging MDX, the content is dynamic and easy to update, making it simple to keep the site current with the latest information and projects.
+- **Modern UI/UX**: A sleek, modern design that is both visually appealing and user-friendly.
+- **Optimized Performance**: The site is built with performance in mind, ensuring fast load times and a smooth browsing experience.
 
-## Getting Started
+## How to Run Locally
 
-1. Clone the repository: `git clone https://github.com/Ajay-Dhangar/code-harbor-hub.git`
-2. Explore the content and resources available in the various directories.
+If you'd like to run this project locally, follow these steps:
 
-## Contribution Guidelines
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Ajay-Dhangar/ajay-dhangar.github.io.git
+    ```
 
-We welcome contributions! If you have valuable insights, tutorials, or want to enhance existing content, please check our [Contribution Guidelines](#).
+2. **Navigate to the project directory**:
+    ```bash
+    cd ajay-dhangar.github.io
+    ```
 
-## Join Our Community
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-Get involved, ask questions, and share your expertise. Join our community on [Discord](https://discord.gg/c53FQn3pRv) and let's learn and grow together!
+4. **Start the development server**:
+    ```bash
+    npm start
+    ```
 
-## License
+5. **Open your browser and visit**: `http://localhost:3000`
 
-This project is licensed under the [MIT License](LICENSE)
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements or spot any issues, feel free to open an issue or submit a pull request.
+
+## Contact Me
+
+I'm always open to new opportunities and collaborations. If you'd like to get in touch, you can reach me through:
+
+- **LinkedIn**: [Ajay Dhangar](https://www.linkedin.com/in/ajay-dhangar/)
+- **GitHub**: [Ajay-Dhangar](https://github.com/Ajay-Dhangar)
+- **Email**: [ajaydhangar49@gmail.com](mailto:ajaydhangar49@gmail.com)
 
 ## Connect with Us
 
@@ -36,9 +71,9 @@ This project is licensed under the [MIT License](LICENSE)
 
 ## Workflows, Badges, and Analytics
 
-[![Docker Image CI](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/docker-image.yml) [![Hadolint](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/hadolint.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/hadolint.yml) [![CodeQL](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/codeql.yml) [![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/deploy.yml) [![Greetings](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/greetings.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/greetings.yml) [![Mark stale issues and pull requests](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/stale.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/stale.yml) [![pages-build-deployment](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/pages/pages-build-deployment) [![Test deployment](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/test-deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/test-deploy.yml) [![DeepSource](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io.svg/?label=active+issues&show_trend=true&token=OZ9zXx-As_t-A-AXabIOSc9D)](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io/) [![DeepSource](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io.svg/?label=resolved+issues&show_trend=true&token=OZ9zXx-As_t-A-AXabIOSc9D)](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io/) [![DeepSource](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io.svg/?label=code+coverage&show_trend=true&token=OZ9zXx-As_t-A-AXabIOSc9D)](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io/) [![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/52757) [![DeepScan grade](https://deepscan.io/api/teams/22888/projects/27023/branches/863488/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=22888&pid=27023&bid=863488) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_code-harbor-hub&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub)
+[![Docker Image CI](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/docker-image.yml) [![Hadolint](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/hadolint.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/hadolint.yml) [![CodeQL](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/codeql.yml) [![Deploy to GitHub Pages](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/deploy.yml) [![Greetings](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/greetings.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/greetings.yml) [![Mark stale issues and pull requests](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/stale.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/stale.yml) [![pages-build-deployment](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/pages/pages-build-deployment) [![Test deployment](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/test-deploy.yml/badge.svg)](https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/actions/workflows/test-deploy.yml) [![DeepSource](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io.svg/?label=active+issues&show_trend=true&token=OZ9zXx-As_t-A-AXabIOSc9D)](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io/) [![DeepSource](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io.svg/?label=resolved+issues&show_trend=true&token=OZ9zXx-As_t-A-AXabIOSc9D)](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io/) [![DeepSource](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io.svg/?label=code+coverage&show_trend=true&token=OZ9zXx-As_t-A-AXabIOSc9D)](https://app.deepsource.com/gh/Ajay-Dhangar/ajay-dhangar.github.io/) [![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/52757) [![DeepScan grade](https://deepscan.io/api/teams/22888/projects/27023/branches/863488/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=22888&pid=27023&bid=863488) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Ajay-Dhangar_ajay-dhangar.github.io&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io)
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Ajay-Dhangar_code-harbor-hub)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_code-harbor-hub)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Ajay-Dhangar_ajay-dhangar.github.io)](https://sonarcloud.io/summary/new_code?id=Ajay-Dhangar_ajay-dhangar.github.io)
 
 ### GitHub Stats
 
@@ -53,3 +88,10 @@ This project is licensed under the [MIT License](LICENSE)
 > ```
 > git config --global core.compression 0
 > ```
+
+
+Thank you for visiting my portfolio, and I hope you enjoy exploring my work!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
