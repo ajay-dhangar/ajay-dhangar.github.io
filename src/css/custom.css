@@ -272,5 +272,5 @@ table, tr, td, th {
 }
 
 .custom-drop-shadow {
-  filter: drop-shadow(0 4px 5px var(--ifm-color-primary));
+  filter: drop-shadow(0 4px 6px var(--ifm-color-primary));
 }
