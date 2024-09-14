@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunkcode_harbor_hub=self.webpackChunkcode_harbor_hub||[]).push([[5609],{6351:(e,o,r)=>{r.r(o),r.d(o,{default:()=>p});var t=r(54688),i=(r(96540),r(25380)),a=r(74848);const n=i.Ay.div`
+"use strict";(self.webpackChunkcode_harbor_hub=self.webpackChunkcode_harbor_hub||[]).push([[5609],{6351:(e,o,r)=>{r.r(o),r.d(o,{default:()=>p});var t=r(26142),i=(r(96540),r(25380)),a=r(74848);const n=i.Ay.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
