@@ -200,12 +200,12 @@ const config = {
             html: '<span class="nav-emoji">📰</span> Blog',
             position: "right",
           },
-          {
-            href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
-            position: "right",
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
-          },
+          // {
+          //   href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
+          //   position: "right",
+          //   className: "header-github-link",
+          //   "aria-label": "GitHub repository",
+          // },
         ],
       },
       footer: {

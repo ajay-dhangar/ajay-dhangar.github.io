@@ -83,7 +83,7 @@ mark {
   border-radius: 0.2em;
 }
 
-
+/* 
 .footer {
   background-image: linear-gradient(#272329aa, #2d2c2d50, transparent), url("../../static/img/use-svg-as-background-image-particle-strokes.svg");
   color: #f2f2f2;
@@ -183,7 +183,7 @@ mark {
 
 .footer__bottom .margin-bottom--sm img {
   border-radius: 8px;
-}
+} */
 
 .solution-author-wrapper {
   text-align: center;
