@@ -141,7 +141,7 @@ export const workExperience = [
     id: 1,
     title: "Software Developer - OptimumAI",
     role: " - Software Development Intern (Remote)",
-    desc: `Developed and maintained software applications for OptimumAI, focusing on front-end development and user interface design. Collaborated with the team to create innovative solutions and improve existing products.`,
+    desc: "Developed and maintained software applications for OptimumAI, focusing on front-end development and user interface design. Collaborated with the team to create innovative solutions and improve existing products.",
     className: "md:col-span-2",
     thumbnail: "/technomide.jpg",
   },
