@@ -31,7 +31,7 @@ export const CardContainer = ({
   const handleMouseLeave = () => {
     setIsMouseEntered(false);
     if (containerRef.current) {
-      containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
+      containerRef.current.style.transform = "rotateY(0deg) rotateX(0deg)";
     }
   };
 
@@ -98,7 +98,7 @@ export const CardItem = ({
     if (ref.current) {
       ref.current.style.transform = isMouseEntered
         ? `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`
-        : `translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0)`;
+        : "translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0)";
     }
   }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);
 
