@@ -25,6 +25,7 @@ export default function Home() {
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
         />
+        <meta name="google-site-verification" content="rn58c9eOt8ij52CdcS8Lk4rx-8yUCjCkRsCDrycQfW4" />
       </Head>
       <main className="overflow-hidden">
         <Hero />
