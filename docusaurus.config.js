@@ -152,9 +152,14 @@ const config = {
             html: '<span class="nav-emoji">🌍</span> Showcase',
             position: "right",
           },
+          // {
+          //   to: "/community/",
+          //   html: '<span class="nav-emoji">🤝</span> Community',
+          //   position: "right",
+          // },
           {
-            to: "/community/",
-            html: '<span class="nav-emoji">🤝</span> Community',
+            to: "/certificates/",
+            html: '<span class="nav-emoji">🎓</span> Certificates',
             position: "right",
           },
           // {
