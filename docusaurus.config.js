@@ -485,16 +485,6 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "me",
-        path: "me",
-        routeBasePath: "me",
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
 
     [
       "@gracefullight/docusaurus-plugin-google-adsense",
