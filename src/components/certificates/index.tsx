@@ -7,7 +7,6 @@ import {
 import Card from "./Card";
 import Filter from "./Filter";
 import SearchBar from "./SearchBar";
-import { FiSearch } from "react-icons/fi";
 
 const Certificates: React.FC = () => {
   const [query, setQuery] = useState("");
@@ -26,7 +25,7 @@ const Certificates: React.FC = () => {
   });
 
   return (
-    <div className="pb-2 pt-2 md:pt-4 p-4 relative overflow-hidden">
+    <div className="pt-2 md:pt-4 p-4 pb-8 relative overflow-hidden">
       <div className="mb-2 mt-2 md:mt-4 p-4 relative overflow-hidden">
         <header className="mt-4">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-200 text-center">
@@ -42,8 +41,7 @@ const Certificates: React.FC = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 my-8">
-        <div className="flex items-center gap-2 rounded-md p-2">
-          <FiSearch className="text-gray-500 dark:text-gray-400 text-lg w-8 h-8" />
+        <div className="rounded-md p-2">
           <SearchBar query={query} onSearch={setQuery} />
         </div>
         <div className="flex items-center gap-2">
@@ -60,7 +58,7 @@ const Certificates: React.FC = () => {
         ))}
       </div>
       {filteredCertificates.length === 0 && (
-        <p className="text-gray-600 dark:text-gray-400 mt-4">
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-center">
           No certificates found.
         </p>
       )}

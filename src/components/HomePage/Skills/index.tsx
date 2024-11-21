@@ -98,7 +98,7 @@ export default function Skills() {
           <Skill name="ESLint" to="#" icon="/icons/eslint.svg" />
           <Skill name="Prettier" to="#" icon="/icons/prettier.png" />
           <Skill name="Docker" to="#" icon="/icons/docker.svg" />
-          <Skill name="GitHub Actions" to="#" icon="/icons/gitHub-actions.svg" />
+          <Skill name="GitHub Actions" to="#" icon="/icons/github-actions.svg" />
           <Skill name="Lighthouse" to="#" icon="/icons/lighthouse.svg" />
           <Skill name="Google Analytics" to="#" icon="/icons/ga.svg" />
           <Skill name="Firefox Developer Tools" to="#" icon="/icons/firefox.svg" />
