@@ -12,11 +12,14 @@ export type TechType =
   | "css"
   | "javascript"
   | "bootstrap"
+  | "python"
   | "jquery"
   | "react"
   | "nextjs"
   | "typescript"
   | "nodejs"
+  | "express"
+  | "ChatGPT"
   | "mongodb";
 
 export const certificates: Certificate[] = [
@@ -76,6 +79,78 @@ export const certificates: Certificate[] = [
     imageUrl: "https://img-c.udemycdn.com/course/750x422/5458112_e6fd_2.jpg",
     link: "https://www.udemy.com/course/full-stack-development-course-for-beginners/",
   },
+  {
+    id: "8",
+    title: "Javascript Practicals Crash Course",
+    technology: ['javascript'],
+    description: "Learn javascript Concepts With Javascript Practical Demonstrations and Exercises.",
+    imageUrl: "https://img-c.udemycdn.com/course/750x422/4200228_c917_2.jpg",
+    link: "#",
+  },
+  {
+    id: "9",
+    title: "Practical CSS3 Mastery Course",
+    technology: ['css', 'html'],
+    description: "Learn CSS3 Flexbox, CSS3 Grid, CSS3 Transitions, CSS3 Animations, CSS3 Responsive Design, and so much more!",
+    imageUrl: "https://img-c.udemycdn.com/course/750x422/4281352_1712.jpg",
+    link: "https://www.udemy.com/certificate/UC-c7930bb3-2d2b-476b-912f-29b79532ff45/",
+  },
+  {
+    id: "10",
+    title: "ChatGPT for Mastering Compelling Content",
+    technology: ['ChatGPT'],
+    description: "Learn how to use OpenAI's ChatGPT to generate compelling content for your blog, website, or social media.",
+    imageUrl: "https://img-c.udemycdn.com/course/750x422/5672298_c693_2.jpg",
+    link: "https://www.udemy.com/certificate/UC-9474eb80-bcd9-4afb-bcc6-977155e26144/",
+  },
+  {
+    id: "11",
+    title: "Fullstack MERN Web-Development",
+    technology: ['react', 'nodejs', 'mongodb', 'express'],
+    description: "Learn MERN stack web development by building production ready social network with React, Node, Express, MongoDB and SocketIO",
+    imageUrl: "https://img-c.udemycdn.com/course/240x135/4656608_c525.jpg",
+    link: "https://www.udemy.com/course/fullstack-mern-web-development-free-content/",
+  },
+  {
+    id: "12",
+    title: "Python Quick Start 40-Minute Beginner's Guide",
+    technology: ['python'],
+    description: "Learn Python basics in 40 minutes! This is the perfect Python quick start guide for beginners.",
+    imageUrl: "https://img-c.udemycdn.com/course/480x270/6243407_9eb3.jpg",
+    link: "https://www.udemy.com/course/python-quick-start-40-minute-beginners-guide/",
+  },
+  {
+    id: "13",
+    title: "ChatGPT - The Complete Beginner Course on How to Use ChatGPT",
+    technology: ['ChatGPT'],
+    description: "Learn how to use OpenAI's ChatGPT to generate compelling content for your blog, website, or social media.",
+    imageUrl: "https://img-c.udemycdn.com/course/750x422/5033810_a59c_4.jpg",
+    link: "https://www.udemy.com/certificate/UC-c269cb98-956d-42ff-9cf0-16a148a271c5/",
+  },
+  {
+    id: "14",
+    title: "CSS Complete Course For Beginners",
+    technology: ['html', 'css'],
+    description: "Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS.",
+    imageUrl: "https://img-c.udemycdn.com/course/480x270/4280734_2d17.jpg",
+    link: "https://www.udemy.com/certificate/UC-81a8f5c8-9ac2-496c-8d05-19dfdbc96609/",
+  },
+  // {
+  //   id: "",
+  //   title: "",
+  //   technology: ['react'],
+  //   description: "",
+  //   imageUrl: "#",
+  //   link: "",
+  // },
+  // {
+  //   id: "",
+  //   title: "",
+  //   technology: ['react'],
+  //   description: "",
+  //   imageUrl: "#",
+  //   link: "",
+  // },
   // {
   //   id: "",
   //   title: "",
