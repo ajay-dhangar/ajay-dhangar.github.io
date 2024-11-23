@@ -80,9 +80,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: "CodeMastermindHQ",
-    des: "A platform for developers to learn and practice coding, providing a collaborative environment for learning and sharing.",
-    img: "/data/cmhq.png",
+    title: "Algo",
+    des: "Algo is a platform for developers to learn and practice data structures and algorithms through interactive coding challenges.",
+    img: "/data/algo.png",
     iconLists: [
       "/data/re.svg",
       "/data/ts.svg",
@@ -91,7 +91,37 @@ export const projects = [
       "/data/git.svg",
       "/data/docusaurus.svg",
     ],
-    link: "https://cmhq.tech/",
+    link: "https://ajay-dhangar.github.io/algo",
+  },
+  {
+    id: 3,
+    title: "JavaScript Mastery",
+    des: "A platform for developers to learn and practice JavaScript through interactive coding challenges, tutorials, and projects.",
+    img: "/data/jsm.png",
+    iconLists: [
+      "/data/re.svg",
+      "/data/ts.svg",
+      "/data/js.svg",
+      "/data/css.svg",
+      "/data/git.svg",
+      "/data/docusaurus.svg",
+    ],
+    link: "https://javascript-mastery.github.io/",
+  },
+  {
+    id: 4,
+    title: "AI Buddies",
+    des: "A platform for developers to learn and practice AI through interactive coding challenges, tutorials, and projects.",
+    img: "/data/ai-buddies.png",
+    iconLists: [
+      "/data/re.svg",
+      "/data/ts.svg",
+      "/data/js.svg",
+      "/data/css.svg",
+      "/data/git.svg",
+      "/data/docusaurus.svg",
+    ],
+    link: "https://ai-buddies.github.io/",
   },
 ];
 
