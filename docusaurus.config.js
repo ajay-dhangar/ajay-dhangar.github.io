@@ -97,108 +97,38 @@ const config = {
             position: "right",
           },
           {
-            type: "dropdown",
-            html: '<span class="nav-emoji"> 📚</span> Docs',
+            type: "doc",
+            docId: "docs",
             position: "right",
-            items: [
-              {
-                type: "html",
-                className: "dropdown-archived-versions",
-                value: "<b>📚 Tutorials</b>",
-              },
-              {
-                type: "doc",
-                docId: "docs",
-                label: "Learning",
-              },
-              {
-                label: "DSA",
-                to: "/dsa/",
-                activeBaseRegex: `/dsa/`,
-              },
-              {
-                label: " Courses",
-                to: "/courses/",
-                activeBaseRegex: `/courses/`,
-              },
-              {
-                type: "html",
-                value: '<hr style="margin: 0.3rem 0;">',
-              },
-              {
-                type: "html",
-                className: "dropdown-archived-versions",
-                value: "<b>🏷️ Tags</b>",
-              },
-              {
-                label: "Tutorial Tags",
-                to: "/docs/tags/",
-                activeBaseRegex: `/docs/tags/`,
-              },
-              {
-                label: "Courses Tags",
-                to: "/courses/tags/",
-                activeBaseRegex: `/courses/tags/`,
-              },
-              {
-                label: "DSA Tags",
-                to: "/dsa/tags/",
-                activeBaseRegex: `/dsa/tags/`,
-              },
-            ],
-          },
+            html: '<span class="nav-emoji"> 📚</span> Docs',
+          },  
           {
             to: "/showcase/",
             html: '<span class="nav-emoji">🌍</span> Showcase',
             position: "right",
           },
-          // {
-          //   to: "/community/",
-          //   html: '<span class="nav-emoji">🤝</span> Community',
-          //   position: "right",
-          // },
           {
             to: "/certificates/",
             html: '<span class="nav-emoji">🎓</span> Certificates',
             position: "right",
           },
-          // {
-          //   html: '<span class="nav-emoji"> 📊</span> Quiz',
-          //   to: "https://quiz-app-ajay-dhangar.vercel.app/",
-          //   position: "right",
-          // },
-
-          // {
-          //   type: "dropdown",
-          //   html: '<span class="nav-emoji">🏷️</span> Tags',
-          //   position: "right",
-          //   items: [
-          //     {
-          //       label: "🏷️ Tutorial Tags 📚",
-          //       to: "/docs/tags/",
-          //       activeBaseRegex: `/docs/tags/`,
-          //     },
-          //     {
-          //       type: "html",
-          //       value: '<hr style="margin: 0.3rem 0;">',
-          //     },
-          //     {
-          //       label: "🏷️ Courses Tags 🎓",
-          //       to: "/courses/tags/",
-          //       activeBaseRegex: `/courses/tags/`,
-          //     },
-          //     {
-          //       type: "html",
-          //       value: '<hr style="margin: 0.3rem 0;">',
-          //     },
-
-          //     {
-          //       label: "🏷️ DSA Tags 🧠",
-          //       to: "/dsa/tags/",
-          //       activeBaseRegex: `/dsa/tags/`,
-          //     },
-          //   ],
-          // },
+          {
+            type: "dropdown",
+            html: '<span class="nav-emoji">🏷️</span> Tags',
+            position: "right",
+            items: [
+              {
+                label: "🏷️ Tutorial Tags 📚",
+                to: "/docs/tags/",
+                activeBaseRegex: `/docs/tags/`,
+              },
+              {
+                label: "🏷️ Blog Tags 🎓",
+                to: "/blog/tags/",
+                activeBaseRegex: `/blog/tags/`,
+              },
+            ],
+          },
 
           {
             to: "/blog/",
@@ -215,125 +145,6 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: ` `,
-            items: [
-              {
-                html: `
-                    <div class="footer_info--container">
-                      <img src="/img/logo.png" alt="Footer logo" />
-                    </div>
-                  `,
-              },
-            ],
-          },
-          {
-            title: "Resources",
-            items: [
-              {
-                label: "Tutorials",
-                to: "/docs",
-              },
-              {
-                label: "Courses",
-                to: "/courses",
-              },
-              {
-                label: "Web Dev",
-                to: "/web-dev",
-              },
-              {
-                label: "DSA",
-                to: "/docs/dsa/",
-              },
-            ],
-          },
-          {
-            title: "Company",
-            items: [
-              {
-                label: "About",
-                to: "/about/",
-              },
-              {
-                label: "Contact",
-                to: "#",
-              },
-              {
-                label: "Careers",
-                to: "#",
-              },
-              {
-                label: "Team",
-                to: "/community/team/",
-              },
-            ],
-          },
-          {
-            title: "Terms/Conditions",
-            items: [
-              {
-                label: "Privacy Policy",
-                to: "/privacy-policy/",
-              },
-              {
-                label: "Terms of Service",
-                to: "/terms-service/",
-              },
-              {
-                label: "Code of Conduct",
-                to: "#",
-              },
-              {
-                label: "Cookie Policy",
-                to: "#",
-              },
-            ],
-          },
-          {
-            title: "Quick Links",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "Community",
-                to: "/community/",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/ajay-dhangar",
-              },
-              {
-                label: "Products",
-                href: "/product/",
-              },
-            ],
-          },
-          {
-            title: "Social Media",
-            items: [
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/groups/14232119/",
-              },
-              {
-                label: "YouTube",
-                href: "https://www.youtube.com/@ajay-dhangar/",
-              },
-              {
-                label: "Discord",
-                href: "https://discord.gg/c53FQn3pRv",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/CodesWithAjay",
-              },
-            ],
-          },
-        ],
         logo: {
           alt: "Copyright © CMHQ Made with ❤️ by Ajay-Dhangar",
           src: "/img/main-logo.jpg",
@@ -412,98 +223,10 @@ const config = {
         disableInDev: false,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "community",
-        path: "community",
-        routeBasePath: "community",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        remarkPlugins: [remarkMath.default],
-        rehypePlugins: [rehypeKatex.default],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "dsa",
-        path: "dsa",
-        routeBasePath: "dsa",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        remarkPlugins: [remarkMath.default],
-        rehypePlugins: [rehypeKatex.default],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "product",
-        path: "product",
-        routeBasePath: "product",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        remarkPlugins: [remarkMath.default],
-        rehypePlugins: [rehypeKatex.default],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "courses",
-        path: "courses",
-        routeBasePath: "courses",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "dsa-solutions",
-        path: "dsa-solutions",
-        routeBasePath: "dsa-solutions",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
-    ],
 
     [
       "@gracefullight/docusaurus-plugin-google-adsense",
       { adClient: "ca-pub-5832817025080991" },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: "web-dev",
-        path: "web-dev",
-        routeBasePath: "web-dev",
-        // editUrl: "#",
-        sidebarPath: require.resolve("./sidebars.js"),
-        remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      },
     ],
 
     [
