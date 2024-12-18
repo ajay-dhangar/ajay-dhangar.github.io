@@ -1,69 +1,69 @@
-import React, { useState } from "react";
-import {
-  certificates as allCertificates,
-  Certificate,
-  TechType,
-} from "../../data/certificates";
-import Card from "./Card";
-import Filter from "./Filter";
-import SearchBar from "./SearchBar";
+import React from "react";
+import { certificates } from "../../data/certificates";
+import { SearchBar } from "./SearchBar";
+import { TagFilter } from "./TagFilter";
+import { CertificateCard } from "./CertificateCard";
+import { Award } from "lucide-react";
+import { useCertificateFilters } from "../../hooks/useCertificateFilters";
 
-const Certificates: React.FC = () => {
-  const [query, setQuery] = useState("");
-  const [selectedTech, setSelectedTech] = useState<TechType | "">("");
-
-  const technologies = Array.from(
-    new Set(allCertificates.flatMap((cert) => cert.technology))
-  );
-
-  const filteredCertificates = allCertificates.filter((cert) => {
-    const matchesQuery = cert.title.toLowerCase().includes(query.toLowerCase());
-    const matchesTech = selectedTech
-      ? cert.technology.includes(selectedTech)
-      : true;
-    return matchesQuery && matchesTech;
-  });
+export const Certificates: React.FC = () => {
+  const {
+    searchQuery,
+    setSearchQuery,
+    selectedTags,
+    allTags,
+    filteredCertificates,
+    handleTagSelect,
+  } = useCertificateFilters(certificates);
 
   return (
-    <div className="pt-2 md:pt-4 p-4 pb-8 relative overflow-hidden">
-      <div className="mb-2 mt-2 md:mt-4 p-4 relative overflow-hidden">
-        <header className="mt-4">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-200 text-center">
-            CERTiFiCATES & COURSES
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="flex justify-center mb-4">
+            <Award className="h-12 w-12 text-[var(--ifm-color-primary)]" />
+          </div>
+          <h1 className="text-4xl font-bold mb-4">
+            Professional Certifications
           </h1>
-          <p className="text-gray-600 mt-4 dark:text-gray-400 text-center text-lg">
-            Welcome to my certificates page! Here you can find all the courses
-            and certifications I have completed. Feel free to filter them by
-            technology or search for a specific certificate. If you want to know
-            more about a specific certificate, click on it to see more details.
+          <p className="text-xl mx-auto max-w-prose">
+            A comprehensive collection of my professional certifications and
+            achievements in software development and technology.
           </p>
-        </header>
-      </div>
+        </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 my-8">
-        <div className="rounded-md p-2">
-          <SearchBar query={query} onSearch={setQuery} />
+        {/* Filters Section */}
+        <div className="mb-8 space-y-4">
+          <div className="flex justify-between gap-4">
+            <div className="relative">
+              <SearchBar value={searchQuery} onChange={setSearchQuery} />
+            </div>
+            <div className="relative">
+            <TagFilter
+              tags={allTags}
+              selectedTags={selectedTags}
+              onTagSelect={handleTagSelect}
+            />
+            </div>
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <Filter
-            technologies={technologies}
-            selected={selectedTech}
-            onChange={setSelectedTech}
-          />
+
+        {/* Certificates Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredCertificates.map((certificate) => (
+            <CertificateCard key={certificate.id} certificate={certificate} />
+          ))}
         </div>
+
+        {/* Empty State */}
+        {filteredCertificates.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-lg">
+              No certificates found matching your criteria.
+            </p>
+          </div>
+        )}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredCertificates.map((cert) => (
-          <Card key={cert.id} certificate={cert} />
-        ))}
-      </div>
-      {filteredCertificates.length === 0 && (
-        <p className="text-gray-600 dark:text-gray-400 mt-4 text-center">
-          No certificates found.
-        </p>
-      )}
     </div>
   );
 };
-
-export default Certificates;

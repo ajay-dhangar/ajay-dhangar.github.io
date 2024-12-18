@@ -1,38 +1,22 @@
-import React from "react";
+import React from 'react';
+import { Search } from 'lucide-react';
 
 interface SearchBarProps {
-  query: string;
-  onSearch: (query: string) => void;
+  value: string;
+  onChange: (value: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ query, onSearch }) => {
+export const SearchBar: React.FC<SearchBarProps> = ({ value, onChange }) => {
   return (
-    <div className="relative w-full">
-      <svg
-        width="20"
-        height="20"
-        className="DocSearch-Search-Icon absolute top-1/2 left-3 transform -translate-y-1/2"
-        viewBox="0 0 20 20"
-        aria-hidden="true"
-      >
-        <path
-          d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
-          stroke="currentColor"
-          fill="none"
-          fill-rule="evenodd"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-      </svg>
+    <div className="relative">
+      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5 dark:text-gray-300" />
       <input
         type="text"
-        value={query}
-        onChange={(e) => onSearch(e.target.value)}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         placeholder="Search certificates..."
-        className="w-full rounded-md pl-10 p-2 text-gray-700 dark:text-gray-200 outline-none bg-transparent"
+        className="w-auto pl-10 pr-4 py-2 border border-[var(--ifm-color-primary)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--ifm-color-primary)] focus:border-transparent dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200"
       />
     </div>
   );
 };
-
-export default SearchBar;
