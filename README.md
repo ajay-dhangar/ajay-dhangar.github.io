@@ -3,13 +3,13 @@
 
 ## Overview
 
-Welcome to my portfolio website! I'm Ajay, an aspiring Full Stack Developer with a passion for building clean, efficient, and scalable solutions. This site showcases my skills, projects, and experiences, all crafted using modern technologies like React.js, TypeScript (TSX), MDX, and Docusaurus.
+Welcome to my portfolio website! I'm Ajay, an aspiring Full Stack Developer passionate about building clean, efficient, scalable solutions. This site showcases my skills, projects, and experiences, all crafted using modern technologies like React.js, TypeScript (TSX), MDX, and Docusaurus.
 
 ## About Me
 
 **Seeking Full Stack Development Opportunities**
 
-Hi! I'm Ajay, a software engineer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). I thrive on solving complex problems and turning ideas into real-world solutions. My approach is driven by curiosity and collaboration, and I always aim to write code that is clean, maintainable, and efficient.
+Hi! I'm Ajay, a software engineer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). I thrive on solving complex problems and turning ideas into real-world solutions. My approach is driven by curiosity and collaboration, and I always aim to write clean, maintainable, and efficient code.
 
 ## Technologies Used
 
@@ -78,17 +78,6 @@ I'm always open to new opportunities and collaborations. If you'd like to get in
 ### GitHub Stats
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ajay-dhangar/ajay-dhangar.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/ajay-dhangar/ajay-dhangar.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ajay-dhangar/ajay-dhangar.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ajay-dhangar/ajay-dhangar.github.io) ![GitHub Org's stars](https://img.shields.io/github/stars/Ajay-Dhangar%2Fajay-dhangar.github.io) ![GitHub License](https://img.shields.io/github/license/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub forks](https://img.shields.io/github/forks/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub watchers](https://img.shields.io/github/watchers/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Ajay-Dhangar/ajay-dhangar.github.io) ![GitHub file size in bytes](https://img.shields.io/github/size/Ajay-Dhangar/ajay-dhangar.github.io/docusaurus.config.js) ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/ajay-dhangar/ajay-dhangar.github.io) ![GitHub repo size](https://img.shields.io/github/repo-size/Ajay-Dhangar/ajay-dhangar.github.io)
-
-> error: 6016 bytes of body are still expected2 mib | 590.00 kib/s fetch-pack: unexpected disconnect while reading sideband packet fatal: early eof fatal: fetch-pack: invalid index-pack output:
->
-> ```
-> git config --global http.postBuffer 52428800
-> ```
->
-> ```
-> git config --global core.compression 0
-> ```
-
 
 Thank you for visiting my portfolio, and I hope you enjoy exploring my work!
 
