@@ -30,6 +30,8 @@ import './style.css';
 
 Vite is a modern build tool that offers faster development times and optimized builds. It aligns with modern web standards and provides out-of-the-box support for TypeScript, making it an excellent choice for React development. In this blog post, we will learn how to get started with React by creating a new app using Vite. We will follow the steps to set up our development environment and build our first React application.
 
+<!-- truncate -->
+
 ## Quick Start
 
 To get started with Vite, we need to have Node.js installed on our system. We can install Node.js by downloading the installer from the official website or using a package manager. Once we have Node.js installed, we can use npm to create a new Vite project with the React template.

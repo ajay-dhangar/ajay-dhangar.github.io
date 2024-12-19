@@ -7,6 +7,34 @@ decription: Install and setup nvs to Windows for PowerShell and Git-Bash
 draft: false
 ---
 
-`nvs` is a cross-platform Node.js version manager that allows you to install and use multiple versions of Node.js on the same machine. It is similar to `nvm` for Unix-based systems. `nvs` is a simple and easy-to-use tool that allows you to switch between different versions of Node.js with a single command. 
+`nvs` is a cross-platform Node.js version manager that allows you to install and use multiple versions of Node.js on the same machine. It is similar to `nvm` for Unix-based systems. `nvs` is a simple and easy-to-use tool that allows you to switch between different versions of Node.js with a single command.
+
+<!-- truncate -->
 
 In this article, we will learn how to install and set up `nvs` on Windows for PowerShell and Git-Bash.
+
+## Install `nvs`
+
+To install `nvs` on Windows, you can use the following PowerShell command:
+
+
+
+## Set up `nvs` for PowerShell
+
+To set up `nvs` for PowerShell, you need to add the following line to your PowerShell profile (`$PROFILE`):
+
+```powershell
+nvs --use=8.17.0
+```
+
+## Set up `nvs` for Git-Bash
+
+To set up `nvs` for Git-Bash, you need to add the following line to your Git-Bash profile (`~/.bashrc`):
+
+```bash
+nvs --use=8.17.0
+```
+
+## Conclusion
+
+In this article, we learned how to install and set up `nvs` on Windows for PowerShell and Git-Bash. `nvs` is a powerful tool that allows you to manage multiple versions of Node.js on the same machine, making it easy to switch between different versions for different projects. If you are working on multiple Node.js projects with different version requirements, `nvs` is a great tool to have in your toolkit. Give it a try and see how it can simplify your Node.js development workflow.

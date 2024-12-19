@@ -9,6 +9,8 @@ draft: false
 
 Debugging tests in a React application can be challenging, but fear not! We've got you covered with this step-by-step guide to help you overcome the common hurdles and make your tests shine. Let's dive in:
 
+<!-- truncate -->
+
 **Step 1: Install Create React App**
 
 If you haven't already set up your Create React App project, start by installing it:
