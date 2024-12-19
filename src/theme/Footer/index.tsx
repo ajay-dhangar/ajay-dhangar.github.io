@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    to="/about"
+                    to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     About
