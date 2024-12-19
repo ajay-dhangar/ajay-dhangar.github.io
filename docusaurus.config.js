@@ -49,12 +49,12 @@ const config = {
         pages: {
           remarkPlugins: [npm2yarn],
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   editUrl:
-        //     "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
-        //   remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
-        // },
+        blog: {
+          showReadingTime: true,
+          editUrl:
+            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
+          remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -130,11 +130,11 @@ const config = {
             ],
           },
 
-          // {
-          //   to: "/blog/",
-          //   html: '<span class="nav-emoji">📰</span> Blog',
-          //   position: "right",
-          // },
+          {
+            to: "/blog/",
+            html: '<span class="nav-emoji">📰</span> Blog',
+            position: "right",
+          },
           // {
           //   href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
           //   position: "right",
