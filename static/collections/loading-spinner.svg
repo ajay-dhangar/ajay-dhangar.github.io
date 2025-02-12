@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+  <defs>
+    <linearGradient id="tailGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9F570A;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#9F570A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tail (fading trail) -->
+  <circle cx="50" cy="50" r="35" fill="none" stroke="url(#tailGradient)" stroke-width="10" stroke-dasharray="219.91 219.91" stroke-dashoffset="0">
+    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="2s" values="0 50 50;360 50 50" />
+  </circle>
+  
+  <!-- Body -->
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#fba122" stroke-width="10" stroke-dasharray="54.98 164.93" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" />
+  </circle>
+</svg>
