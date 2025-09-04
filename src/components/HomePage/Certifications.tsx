@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Layout from "@theme/Layout";
+import { useHistory } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Award, Calendar, ExternalLink, Eye } from "lucide-react";
@@ -22,8 +22,9 @@ export interface CertificationData {
   certificateImage: string;
 }
 
-const CertificatesPage: React.FC = () => {
+const Certifications = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const history = useHistory();
 
   const certifications: CertificationData[] = [
     {
@@ -223,127 +224,122 @@ const CertificatesPage: React.FC = () => {
   }, []);
 
   const handleViewCertificate = (certId: string) => {
-    window.location.href = `/certificates/${certId}`;
+    history.push(`/certificates/${certId}`);
   };
 
   return (
-    <Layout
-      title="Certificates"
-      description="Check out my certificates on various technologies. I have a collection of certificates from Coursera, Udemy, and other platforms."
+    <div
+      ref={sectionRef}
+      className="py-20 px-6 bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-black"
     >
-      <div
-        ref={sectionRef}
-        className="py-20 px-6 bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-black"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="cert-title text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 bg-clip-text text-transparent">
-              Certifications
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Professional certifications that validate my expertise in modern
-              technologies and best practices
-            </p>
-          </div>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="heading text-4xl text-center lg:text-6xl mb-20">
+            My <span className="text-primaryColor">Certifications</span>
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Professional certifications that validate my expertise in modern
+            technologies and best practices in software development.
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {certifications.map((cert, index) => (
+            <div
+              key={index}
+              className="cert-card group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-105 border border-white/20 dark:border-gray-700/50 overflow-hidden"
+            >
+              {/* 3D Background Effect */}
               <div
-                key={index}
-                className="cert-card group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-105 border border-white/20 dark:border-gray-700/50 overflow-hidden"
-              >
-                {/* 3D Background Effect */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
-                />
+                className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
+              />
 
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700" />
+              {/* Floating Elements */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700" />
 
-                <div className="relative z-10">
-                  <div className="flex items-start justify-between mb-6">
-                    <div
-                      className={`p-4 rounded-2xl bg-gradient-to-br ${cert.color} text-white shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-500`}
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-6">
+                  <div
+                    className={`p-4 rounded-2xl bg-gradient-to-br ${cert.color} text-white shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-500`}
+                  >
+                    <Award className="w-8 h-8" />
+                  </div>
+                  <div className="flex space-x-2">
+                    <button
+                      onClick={() => handleViewCertificate(cert.id)}
+                      className="opacity-0 group-hover:opacity-100 p-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+                      title="View Certificate Details"
                     >
-                      <Award className="w-8 h-8" />
-                    </div>
-                    <div className="flex space-x-2">
-                      <button
-                        onClick={() => handleViewCertificate(cert.id)}
-                        className="opacity-0 group-hover:opacity-100 p-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110"
-                        title="View Certificate Details"
-                      >
-                        <Eye className="w-5 h-5" />
-                      </button>
-                      <a
-                        href={cert.link}
-                        className="opacity-0 group-hover:opacity-100 p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 hover:scale-110"
-                        title="External Link"
-                      >
-                        <ExternalLink className="w-5 h-5 text-gray-600 dark:text-gray-400" />
-                      </a>
-                    </div>
+                      <Eye className="w-5 h-5" />
+                    </button>
+                    <a
+                      href={cert.link}
+                      className="opacity-0 group-hover:opacity-100 p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 hover:scale-110"
+                      title="External Link"
+                    >
+                      <ExternalLink className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                    </a>
                   </div>
+                </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                    {cert.title}
-                  </h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                  {cert.title}
+                </h3>
 
-                  <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>{cert.date}</span>
-                    <span className="mx-2">•</span>
-                    <span className="font-medium">{cert.issuer}</span>
-                  </div>
+                <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  <span>{cert.date}</span>
+                  <span className="mx-2">•</span>
+                  <span className="font-medium">{cert.issuer}</span>
+                </div>
 
-                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                    {cert.description}
-                  </p>
+                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                  {cert.description}
+                </p>
 
-                  {/* Skills Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {cert.skills.slice(0, 3).map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full font-medium"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                    {cert.skills.length > 3 && (
-                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium">
-                        +{cert.skills.length - 3} more
-                      </span>
-                    )}
-                  </div>
+                {/* Skills Tags */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {cert.skills.slice(0, 3).map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full font-medium"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                  {cert.skills.length > 3 && (
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium">
+                      +{cert.skills.length - 3} more
+                    </span>
+                  )}
+                </div>
 
-                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-                        Verified Certification
-                      </span>
-                      <div
-                        className={`w-4 h-4 rounded-full bg-gradient-to-r ${cert.color} shadow-lg`}
-                      />
-                    </div>
+                <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                      Verified Certification
+                    </span>
+                    <div
+                      className={`w-4 h-4 rounded-full bg-gradient-to-r ${cert.color} shadow-lg`}
+                    />
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className="mt-20 text-center">
-            <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
-              <Award className="w-6 h-6 mr-3" />
-              <span className="text-lg font-semibold">
-                {certifications.length} Professional Certifications Earned
-              </span>
             </div>
+          ))}
+        </div>
+
+        <div className="mt-20 text-center">
+          <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
+            <Award className="w-6 h-6 mr-3" />
+            <span className="text-lg font-semibold">
+              {certifications.length} Professional Certifications Earned
+            </span>
           </div>
         </div>
       </div>
-    </Layout>
+    </div>
   );
 };
 
-export default CertificatesPage;
+export default Certifications;

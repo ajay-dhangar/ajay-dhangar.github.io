@@ -5,7 +5,9 @@ import Head from "@docusaurus/Head";
 import Hero from "../components/HomePage/Hero";
 import Touch from "../components/HomePage/Touch";
 import Projects from "../components/HomePage/Projects";
+import Project from "../components/projects";
 import Skills from "../components/HomePage/Skills";
+import Certifications from "../components/HomePage/Certifications";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -31,6 +33,8 @@ export default function Home() {
         <Hero />
         <Skills />
         <Projects />
+        <Certifications />
+        <Project />
         <Touch />
       </main>
     </Layout>
