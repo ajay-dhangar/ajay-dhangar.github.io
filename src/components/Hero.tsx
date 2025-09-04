@@ -242,14 +242,7 @@ const Hero = () => {
     };
   }, []);
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  return (
+ return (
     <div className="relative h-screen overflow-hidden flex items-center justify-center">
       <canvas
         ref={canvasRef}
@@ -285,8 +278,7 @@ const Hero = () => {
           </p>
           
           <div className="hero-cta flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button 
-              onClick={scrollToAbout}
+            <button
               className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-600 hover:to-purple-700 transition-all duration-500 hover:scale-110 hover:shadow-2xl transform-gpu"
             >
               <span className="relative z-10">Explore My Work</span>
@@ -299,15 +291,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:animate-pulse transition-all duration-300 hover:scale-125 border-none bg-transparent focus:outline-none"
-      >
-        <div className="p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300">
-          <ChevronDown className="w-8 h-8 text-gray-600 dark:text-gray-300" />
-        </div>
-      </button>
     </div>
   );
 };
