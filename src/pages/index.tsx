@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Welcome to CodeHarborHub. Learn the basics to advanced concepts of web development. html, css, javascript, react, node.js, dsa, and more."
+      description="Welcome to my portfolio website. I'm Ajay Dhangar, a passionate web developer and designer. Explore my projects, skills, and certifications."
     >
       <Head>
         <script
