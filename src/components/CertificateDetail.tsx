@@ -81,12 +81,12 @@ const CertificateDetail: React.FC<CertificateDetailProps> = ({ certificate }) =>
           <div className="grid lg:grid-cols-2 gap-16 mb-20">
             {/* Certificate Image */}
             <div className="cert-image">
-              <div className="relative group">
+              <div className="relative group md:max-w-[600px] sm:max-w-[300px] mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                 <img
                   src={certificate.certificateImage}
                   alt={certificate.title}
-                  className="relative w-full rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105"
+                  className="relative rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -167,7 +167,7 @@ const CertificateDetail: React.FC<CertificateDetailProps> = ({ certificate }) =>
           </div>
 
           {/* Skills */}
-          <div className="mb-20">
+          <div className="mb-20 px-2">
             <h3 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
               Skills Validated
             </h3>
@@ -175,7 +175,7 @@ const CertificateDetail: React.FC<CertificateDetailProps> = ({ certificate }) =>
               {certificate.skills.map((skill, index) => (
                 <div
                   key={index}
-                  className={`cert-skill px-6 py-3 bg-gradient-to-r ${certificate.color} text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 font-medium`}
+                  className={`cert-skill px-6 py-3 bg-gradient-to-r ${certificate.color} text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 font-medium cursor-default select-none`}
                 >
                   {skill}
                 </div>
