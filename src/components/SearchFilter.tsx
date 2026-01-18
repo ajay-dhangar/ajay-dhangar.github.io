@@ -20,15 +20,25 @@ export function SearchFilter({
 }: SearchAndFiltersProps) {
   return (
     <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-
       {/* Search */}
       <div className="relative flex-1">
+        <label
+          htmlFor="profile-search"
+          className="sr-only"
+        >
+          Search platforms and social media handles
+        </label>
+
         <Icons.Search
           size={18}
+          aria-hidden="true"
           className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
         />
+
         <input
+          id="profile-search"
           type="text"
+          role="searchbox"
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder="Search platforms, handles..."
@@ -50,7 +60,10 @@ export function SearchFilter({
       />
 
       {/* Result Count */}
-      <span className="text-xs text-gray-500 dark:text-neutral-500">
+      <span
+        aria-live="polite"
+        className="text-xs text-gray-500 dark:text-neutral-500"
+      >
         {resultCount} results
       </span>
     </div>
