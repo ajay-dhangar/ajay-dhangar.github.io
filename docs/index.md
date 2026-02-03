@@ -1,35 +1,60 @@
 ---
 id: docs
-title: Welcome to CodeHarborHub Tutorials
-sidebar_label: Welcome to CodeHarborHub
+title: Welcome to My Docs👋
+sidebar_label: Welcome
 sidebar_position: 1
 slug: /
 ---
 
-Welcome to the CodeHarborHub documentation! This documentation is intended to help you get started with CodeHarborHub and to provide you with a comprehensive guide to the features and functionality of the platform. This is a place to learn about technology, programming, web development, data science, and more.
+Welcome to the official documentation space for **Ajay Dhangar**. This hub serves as a central repository for my project architectures, technical guides, and personal development roadmap.
 
-## What is CodeHarborHub?
+## About Me
 
-CodeHarborHub is a platform for managing and sharing code and data. It is designed to help researchers, developers, and data scientists collaborate on projects, share code and data, and manage their work in a secure and efficient manner.
+I am a **Software Engineer** and **Open Source Enthusiast** with a passion for building scalable web applications and fostering developer communities. As the founder of [CodeHarborHub](https://github.com/codeharborhub), I focus on creating accessible educational resources for developers.
 
-It also helps to begginers to learn about technology, programming, web development, data structures, algorithms, and more.
+- **Tech Stack:** MERN Stack (MongoDB, Express, React, Node), TypeScript, Next.js.
+- **Current Focus:** AI-integrated web solutions and Open Source maintainership.
+- **Mission:** To bridge the gap between learning and professional software engineering.
 
-## Who is CodeHarborHub for?
+## Featured Projects
 
-CodeHarborHub is designed for anyone who needs to manage and share code and data. This includes researchers, developers, data scientists, and anyone else who needs to collaborate on projects, share code and data, and manage their work in a secure and efficient manner. CodeHarborHub is particularly well-suited for teams that need to work together on code and data projects, as it provides a range of features for collaboration and project management.
+Explore the technical documentation for my core initiatives:
 
-## What can I do with CodeHarborHub?
+### [CodeHarborHub](https://codeharborhub.github.io)
+An educational platform providing comprehensive tutorials and tools for developers.
+- **Key Features:** Interactive roadmaps, project ideas, and community contributions.
+- **Tech:** Docusaurus, React, MDX.
 
-CodeHarborHub provides a range of features for learning, teaching, and collaborating on code and data projects. Some of the key features of CodeHarborHub include:
+### [Algo](https://github.com/ajay-dhangar/algo)
+A collection of data structures and algorithms implemented in multiple languages.
+- **Purpose:** Helping developers master problem-solving for technical interviews.
 
-- **Web Development**: CodeHarborHub provides a range of tutorials and resources for learning web development, including HTML, CSS, JavaScript, React, and more.
-- **Data Science**: CodeHarborHub provides a range of tutorials and resources for learning data science, including Python, R, and more.
-- **Collaboration**: CodeHarborHub provides a range of features for collaborating on code and data projects, including version control, issue tracking, git & github, and more.
-- **Learning**: CodeHarborHub provides a range of tutorials and resources for learning technology, programming, web development, data science, and more.
+### [AI-Buddies](https://github.com/ajay-dhangar/ai-buddies)
+A platform dedicated to learning AI through hands-on projects and interactive paths.
 
-## Getting Started
+---
 
-To get started with CodeHarborHub, you can follow the tutorials and resources in this documentation. You can also explore the platform and try out the features for yourself. If you have any questions or need help, you can reach out to the CodeHarborHub community for support.
+## Documentation Sections
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832817025080991"
-     crossorigin="anonymous"></script>
+Navigate through the following sections to learn more:
+
+- **[Projects Reference](https://ajay-dhangar.github.io/showcase/):** Deep dives into the architecture of my major builds.
+- **[Guides & Tutorials](https://codeharborhub.github.io/tutorial/):** Step-by-step technical articles on Web Dev, Git, and DevOps.
+- **[Career Journey](./about/resume):** My professional experience, certifications, and skills.
+
+## Connect with Me
+
+If you're interested in collaborating or have questions about my projects, feel free to reach out:
+
+| Platform | Link |
+| :--- | :--- |
+| **GitHub** | [@ajay-dhangar](https://github.com/ajay-dhangar) |
+| **LinkedIn** | [in/ajay-dhangar](https://linkedin.com/in/ajay-dhangar) |
+| **YouTube** | [@CodesWithAjay](https://youtube.com/@CodesWithAjay) |
+| **Portfolio** | [ajay-dhangar.github.io](https://ajay-dhangar.github.io) |
+
+---
+
+:::tip Did you know?
+Most of my projects are **Open Source**. Feel free to explore the repositories, open issues, or submit pull requests!
+:::
