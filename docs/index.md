@@ -40,7 +40,7 @@ Navigate through the following sections to learn more:
 
 - **[Projects Reference](https://ajay-dhangar.github.io/showcase/):** Deep dives into the architecture of my major builds.
 - **[Guides & Tutorials](https://codeharborhub.github.io/tutorial/):** Step-by-step technical articles on Web Dev, Git, and DevOps.
-- **[Career Journey](./about/resume):** My professional experience, certifications, and skills.
+- **[Career Journey](https://drive.google.com/file/d/1kXgSKUjLyc0kcKuOz2SjfNnDfjXv9sHl/view?pli=1):** My professional experience, certifications, and skills.
 
 ## Connect with Me
 
