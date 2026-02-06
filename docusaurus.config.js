@@ -42,19 +42,19 @@ const config = {
             keywords: ["my-custom-admonition"],
             extendDefaults: true,
           },
-          editUrl:
-            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
+          // editUrl:
+            // "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
           remarkPlugins: [[npm2yarn, { sync: true }], remarkMath, rehypeKatex],
         },
         pages: {
           remarkPlugins: [npm2yarn],
         },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
-          remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   editUrl:
+        //     "https://github.com/Ajay-Dhangar/ajay-dhangar.github.io/edit/main/",
+        //   remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
+        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -113,40 +113,17 @@ const config = {
             position: "right",
           },
           {
-            type: "dropdown",
-            html: '<span class="nav-emoji">🏷️</span> Tags',
+            href: "https://github.com/ajay-dhangar",
             position: "right",
-            items: [
-              {
-                label: "🏷️ Tutorial Tags 📚",
-                to: "/docs/tags/",
-                activeBaseRegex: `/docs/tags/`,
-              },
-              {
-                label: "🏷️ Blog Tags 🎓",
-                to: "/blog/tags/",
-                activeBaseRegex: `/blog/tags/`,
-              },
-            ],
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
-
-          {
-            to: "/blog/",
-            html: '<span class="nav-emoji">📰</span> Blog',
-            position: "right",
-          },
-          // {
-          //   href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
-          //   position: "right",
-          //   className: "header-github-link",
-          //   "aria-label": "GitHub repository",
-          // },
         ],
       },
       footer: {
         style: "dark",
         logo: {
-          alt: "Copyright © CMHQ Made with ❤️ by Ajay-Dhangar",
+          alt: "Copyright © CHH Made with ❤️ by Ajay-Dhangar",
           src: "/img/main-logo.jpg",
           href: "https://github.com/ajay-dhangar",
         },
