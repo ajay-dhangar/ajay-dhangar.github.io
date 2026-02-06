@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Head from "@docusaurus/Head";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from '@docusaurus/Link';
 import Hero from "../../components/Online/Hero";
 import ServiceCard from "../../components/Online/ServiceCard";
 import { services } from "@site/src/data/services";
