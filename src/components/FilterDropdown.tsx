@@ -35,7 +35,7 @@ export function FilterDropdown({
         onClick={() => setOpen(!open)}
         className="
           inline-flex items-center gap-2
-          rounded-xl border border-gray-200
+          rounded-lg border border-gray-200
           bg-white px-4 py-3
           text-sm font-medium
           shadow-sm transition
@@ -43,8 +43,9 @@ export function FilterDropdown({
           dark:border-neutral-800 dark:bg-neutral-900 dark:hover:bg-neutral-800
         "
       >
+        <Icons.Filter size={16} className="text-[var(--ifm-color-primary)]" />
         {label}
-        <span className="text-gray-500">{value}</span>
+        <span className="text-[var(--ifm-color-primary)]">{value}</span>
         <Icons.ChevronDown size={16} />
       </button>
 
@@ -52,7 +53,7 @@ export function FilterDropdown({
       {open && (
         <div className="
           absolute right-0 z-20 mt-2 w-56
-          overflow-hidden rounded-xl
+          overflow-hidden
           border border-gray-200 bg-white
           shadow-lg
           dark:border-neutral-800 dark:bg-neutral-900
@@ -69,10 +70,10 @@ export function FilterDropdown({
                 }}
                 className={`
                   flex w-full items-center px-4 py-2 text-sm
-                  transition-colors
+                  transition-color border-none
                   ${
                     isActive
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-[var(--ifm-color-primary)] text-white'
                       : 'hover:bg-gray-100 dark:hover:bg-neutral-800'
                   }
                 `}

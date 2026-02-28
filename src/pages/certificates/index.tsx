@@ -270,17 +270,17 @@ const CertificatesPage: React.FC = () => {
                     <div className="flex space-x-2">
                       <button
                         onClick={() => handleViewCertificate(cert.id)}
-                        className="opacity-0 group-hover:opacity-100 p-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+                        className="opacity-0 group-hover:opacity-100 p-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110 border-none"
                         title="View Certificate Details"
                       >
                         <Eye className="w-5 h-5" />
                       </button>
                       <a
                         href={cert.link}
-                        className="opacity-0 group-hover:opacity-100 p-3 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 hover:scale-110"
+                        className="opacity-0 group-hover:opacity-100 p-2 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 hover:scale-110"
                         title="External Link"
                       >
-                        <ExternalLink className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                        <ExternalLink className="w-5 h-5" />
                       </a>
                     </div>
                   </div>

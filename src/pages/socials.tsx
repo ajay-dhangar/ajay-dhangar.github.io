@@ -64,11 +64,28 @@ export default function SocialDirectory() {
       description="Complete collection of my professional, developer, and social presence"
     >
       <main className="min-h-screen bg-gray-50 py-20 px-4 dark:bg-[#0a0a0a]">
+        <div className="pointer-events-none fixed inset-0 overflow-hidden">
+          <div className="absolute -top-[10%] -left-[10%] h-[40%] w-[40%] rounded-full bg-blue-500/10 blur-[120px]" />
+          <div className="absolute top-[20%] -right-[10%] h-[30%] w-[30%] rounded-full bg-purple-500/10 blur-[120px]" />
+        </div>
+
         <div className="mx-auto">
           {/* ─── Header ───────────────────────── */}
-          <header className="mb-16 text-center">
+          <header className="mb-12 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 font-semibold text-[var(--ifm-color-primary)] dark:border-blue-900/30 dark:bg-blue-900/20 mb-4"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--ifm-color-primary)] opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--ifm-color-primary)]"></span>
+              </span>
+              {SOCIAL_LINKS.length} Connections Online
+            </motion.div>
             <h1 className="text-4xl font-black tracking-tight text-gray-900 dark:text-white sm:text-6xl">
-              Connect <span className="text-[--ifm-color-primary]">Everywhere</span>
+              Connect{" "}
+              <span className="text-[--ifm-color-primary]">Everywhere</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-7xl text-base leading-relaxed text-gray-600 dark:text-neutral-400 sm:text-lg">
@@ -96,7 +113,7 @@ export default function SocialDirectory() {
           />
 
           {/* ─── Grid ────────────────────────── */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <AnimatePresence mode="popLayout">
               {filteredLinks.map((link) => {
                 const Icon =
@@ -114,23 +131,28 @@ export default function SocialDirectory() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-500 hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-900"
+                    className="group flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-500 hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-900 hover:no-underline"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 transition-all group-hover:bg-blue-600 group-hover:text-white dark:bg-neutral-800 dark:text-blue-400">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 transition-all group-hover:bg-[var(--ifm-color-primary)] group-hover:text-white dark:bg-neutral-800 dark:text-blue-400">
                       <Icon size={24} />
                     </div>
 
                     <div className="min-w-0">
-                      <h3 className="truncate font-bold text-gray-900 dark:text-white">
-                        {link.name}
-                      </h3>
-                      <p className="truncate text-xs text-gray-500 dark:text-neutral-500">
-                        {link.handle}
-                      </p>
+                      <h4 className="truncate font-bold text-gray-900 dark:text-white">
+                        {link.name} (
+                        <span className="truncate italic text-[var(--ifm-color-primary)]">
+                          {link.handle}
+                        </span>
+                        )
+                      </h4>
+
+                      <span className="mt-2 inline-block rounded-md bg-gray-100 px-2 py-0.5 text-[10px] font-uppercase tracking-wider text-gray-500 dark:bg-neutral-800 dark:text-neutral-400">
+                        {link.category}
+                      </span>
                     </div>
 
                     <Icons.ChevronRight
-                      className="ml-auto text-gray-300 opacity-0 transition-opacity group-hover:opacity-100"
+                      className="ml-auto text-[var(--ifm-color-primary)] opacity-0 transition-opacity group-hover:opacity-100"
                       size={16}
                     />
                   </motion.a>
