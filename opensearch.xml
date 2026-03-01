@@ -4,7 +4,7 @@
   <ShortName>Ajay Dhangar</ShortName>
   <Description>Search Ajay Dhangar</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://ajay-dhangar.github.io/img/logo.png</Image>
+  <Image width="16" height="16" type="image/x-icon">https://ajay-dhangar.github.io/https://github.com/ajay-dhangar.png</Image>
   <Url type="text/html" method="get" template="https://ajay-dhangar.github.io/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://ajay-dhangar.github.io/opensearch.xml" />
   <moz:SearchForm>https://ajay-dhangar.github.io/</moz:SearchForm>

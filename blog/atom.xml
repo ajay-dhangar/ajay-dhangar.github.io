@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ajay-dhangar.github.io/blog"/>
     <subtitle>Ajay Dhangar Blog</subtitle>
-    <icon>https://ajay-dhangar.github.io/img/logo.png</icon>
+    <icon>https://ajay-dhangar.github.io/https://github.com/ajay-dhangar.png</icon>
     <entry>
         <title type="html"><![CDATA[Fixing Git Clone Error: RPC Failed, HTTP/2 Stream Cancelled]]></title>
         <id>https://ajay-dhangar.github.io/blog/2025/09/04/fix-git-clone-rpc-failed-error</id>
