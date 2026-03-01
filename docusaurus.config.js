@@ -11,7 +11,7 @@ const path = require("path");
 const config = {
   title: "Ajay Dhangar",
   tagline: "Ajay Dhangar - Full Stack Developer",
-  favicon: "img/logo.png",
+  favicon: "https://github.com/ajay-dhangar.png",
 
   url: process.env.URL,
   // baseUrl: process.env.BASE_URL,
@@ -65,7 +65,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/logo.png",
+      image: "https://github.com/ajay-dhangar.png",
       // announcementBar: {
       //   id: "announcementBar",
       //   content: `⭐️ If you like CodeHarborHub, give it a star on <a
@@ -84,11 +84,15 @@ const config = {
       },
 
       navbar: {
-        title: "🧑‍💻 Ajay Dhangar",
-        // logo: {
-        //   alt: "Ajay Dhangar Logo",
-        //   src: "img/logo-r.png",
-        // },
+        title: "Ajay Dhangar",
+        logo: {
+          alt: "Ajay Dhangar Logo",
+          src: "https://github.com/ajay-dhangar.png",
+          width: 32,
+          height: 32,
+          className: 'h-8 w-8 rounded-full ring-2 ring-primary/20',
+          style: {border: '1px solid var(--ifm-color-primary)'},
+        },
         items: [
           {
             // About page
@@ -101,7 +105,7 @@ const config = {
             docId: "docs",
             position: "right",
             html: '<span class="nav-emoji"> 📚</span> Docs',
-          },  
+          },
           {
             to: "/showcase/",
             html: '<span class="nav-emoji">🌍</span> Showcase',

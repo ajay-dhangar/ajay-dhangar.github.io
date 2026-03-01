@@ -186,4 +186,93 @@ export const SOCIAL_LINKS: SocialLink[] = [
     category: "Analytics",
     iconName: "Activity",
   },
+  // ─── Professional ───────────────────────────────
+  {
+    name: "DoraHacks",
+    handle: "ajay-dhangar",
+    url: "https://dorahacks.io/hacker/ajay-dhangar",
+    category: "Professional",
+    iconName: "Zap",
+  },
+
+  // ─── Competitive Programming ───────────────────
+  {
+    name: "TryHackMe",
+    handle: "ajaydhangar49",
+    url: "https://tryhackme.com/p/ajaydhangar49",
+    category: "Competitive Programming",
+    iconName: "Shield",
+  },
+
+  // ─── Learning ──────────────────────────────────
+  {
+    name: "Scrimba",
+    handle: "Ajay-Dhangar",
+    url: "https://scrimba.com/@Ajay-Dhangar",
+    category: "Learning",
+    iconName: "PlayCircle",
+  },
+
+  // ─── Content & Media ───────────────────────────
+  {
+    name: "Twitch",
+    handle: "ajaydhangar49",
+    url: "https://www.twitch.tv/ajaydhangar49",
+    category: "Content & Media",
+    iconName: "Twitch",
+  },
+
+  // ─── Developer Community ───────────────────────
+  {
+    name: "Dev.to",
+    handle: "ajaydhangar49",
+    url: "https://dev.to/ajaydhangar49",
+    category: "Developer Community",
+    iconName: "Code2",
+  },
+
+  // ─── Social ────────────────────────────────────
+  {
+    name: "Bluesky",
+    handle: "ajay-dhangar.bsky.social",
+    url: "https://bsky.app/profile/ajay-dhangar.bsky.social",
+    category: "Social",
+    iconName: "Cloud",
+  },
+
+  // ─── Open Source ───────────────────────────────
+  {
+    name: "Hugging Face",
+    handle: "ajay-dhangar",
+    url: "https://huggingface.co/ajay-dhangar",
+    category: "Open Source",
+    iconName: "Smile",
+  },
+
+  // ─── Portfolio ─────────────────────────────────
+  {
+    name: "Behance",
+    handle: "ajaydhangar49",
+    url: "https://www.behance.net/ajaydhangar49/moodboards",
+    category: "Portfolio",
+    iconName: "Palette",
+  },
+
+  // ─── Productivity ──────────────────────────────
+  {
+    name: "WakaTime",
+    handle: "@ajaydhangar49",
+    url: "https://wakatime.com/@ajaydhangar49",
+    category: "Productivity",
+    iconName: "Clock",
+  },
+
+  // ─── Analytics ─────────────────────────────────
+  {
+    name: "OctoProfile",
+    handle: "ajay-dhangar",
+    url: "https://octoprofile.vercel.app/user?id=ajay-dhangar",
+    category: "Analytics",
+    iconName: "Github",
+  },
 ];
