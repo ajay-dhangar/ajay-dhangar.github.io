@@ -2,6 +2,9 @@ name: Greetings
 
 on: [pull_request_target, issues]
 
+permissions:
+  contents: read
+
 jobs:
   greeting:
     runs-on: ubuntu-latest
@@ -9,12 +12,12 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: >
-          Thanks for opening an issue in CodeHarborHub! 🚀
-          We'll get back to you as soon as possible.
-        pr-message: >
-          Thanks for opening a pull request in CodeHarborHub! 🎉
-          We appreciate your contribution and will review it shortly.
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: >
+            Thanks for opening an issue in CodeHarborHub! 
+            We'll get back to you as soon as possible.
+          pr-message: >
+            Thanks for opening a pull request in CodeHarborHub! 
+            We appreciate your contribution and will review it shortly.
