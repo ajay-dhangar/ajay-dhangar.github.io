@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: 0 0% 100%;
   --ifm-color-primary: #2e93e2;
@@ -38,25 +39,17 @@
   /* --ifm-footer-background-color: #303846; */
 }
 
+/* Update .dyte-badge inside @layer components */
 @layer components {
-  .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  .noise-bg {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.6)), url('/landing-page/grid-light.svg');
   }
-  
-  .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-blue-600 font-semibold py-3 px-6 rounded-xl border-2 border-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  html[data-theme='dark'] .noise-bg {
+    background-image: url('/landing-page/grid-dark.svg');
   }
-  
-  .card {
-    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2;
-  }
-  
-  .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
-  }
-  
-  .container-max {
-    @apply max-w-7xl mx-auto;
+  .dyte-badge {
+    @apply mb-2 inline-block rounded-sm text-gray-400 tracking-wider;
   }
 }
 
@@ -144,11 +137,81 @@ mark {
   }
 
   .dyte-badge {
-    @apply mb-2 inline-block rounded-sm text-text-400;
+    @apply mb-2 inline-block rounded-sm;
     @apply tracking-wider;
   }
 }
 
 .custom-drop-shadow {
   filter: drop-shadow(0 4px 6px var(--ifm-color-primary));
+}
+
+/* Add to the bottom of src/css/custom.css so "Print" produces a clean resume */
+@media print {
+  nav.navbar,
+  footer,
+  .theme-announcement-bar,
+  div[class^='announcementBar_'] {
+    display: none !important;
+  }
+  body,
+  main {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  section {
+    break-inside: avoid;
+  }
+}
+
+
+/* Hire page refinements */
+.hire-me-page .hire-profile-panel {
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 18px 55px
+    color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.hire-me-page .hire-profile-link {
+  color: var(--ifm-font-color-base);
+  transition:
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.hire-me-page .hire-profile-link:hover {
+  color: var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-100);
+  text-decoration: none;
+}
+
+.hire-me-page .hire-card:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.hire-me-page .hire-primary-button,
+.hire-me-page .hire-secondary-button {
+  text-decoration: none;
+}
+
+@media (min-width: 997px) {
+  .hire-me-page #hire-capabilities,
+  .hire-me-page #hire-work,
+  .hire-me-page #hire-opportunities,
+  .hire-me-page #hire-contact {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hire-me-page .hire-card,
+  .hire-me-page .hire-profile-link,
+  .hire-me-page .hire-primary-button,
+  .hire-me-page .hire-secondary-button {
+    transition: none;
+  }
 }

@@ -23,7 +23,9 @@ import MagicButton from "../ui/MagicButton";
 import Link from "@docusaurus/Link";
 import { FaLocationArrow } from "react-icons/fa";
 import YoutubeVideo from "../components/YoutubeVideo";
-
+import ProjectHeader from '@site/src/components/projects/ProjectHeader';
+import ProjectsGallery from '@site/src/components/projects/ProjectsGallery';
+ 
 export default {
   // Re-use the default mapping
   ...MDXComponents,
@@ -52,4 +54,6 @@ export default {
   MagicButton,
   Link,
   FaLocationArrow,
+  ProjectHeader,
+  ProjectsGallery,
 };

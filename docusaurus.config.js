@@ -56,7 +56,7 @@ const config = {
           remarkPlugins: [[npm2yarn, { converters: ["pnpm"] }]],
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: ['./src/css/custom.css', './src/css/projects.css'],
         },
       }),
     ],
@@ -97,47 +97,89 @@ const config = {
           {
             // About page
             html: '<span class="nav-emoji">👋</span> About',
-            to: "/me/",
-            position: "right",
+            to: "/about/",
+            position: "left",
           },
           {
             type: "doc",
             docId: "docs",
-            position: "right",
+            position: "left",
             html: '<span class="nav-emoji"> 📚</span> Docs',
           },
           {
             to: "/showcase/",
             html: '<span class="nav-emoji">🌍</span> Showcase',
-            position: "right",
+            position: "left",
           },
           {
             to: "/certificates/",
             html: '<span class="nav-emoji">🎓</span> Certificates',
-            position: "right",
-          },
-          {
-            type: "dropdown",
-            html: '<span class="nav-emoji">🏷️</span> Tags',
-            position: "right",
-            items: [
-              {
-                label: "🏷️ Tutorial Tags 📚",
-                to: "/docs/tags/",
-                activeBaseRegex: `/docs/tags/`,
-              },
-              {
-                label: "🏷️ Blog Tags 🎓",
-                to: "/blog/tags/",
-                activeBaseRegex: `/blog/tags/`,
-              },
-            ],
+            position: "left",
           },
 
           {
             to: "/blog/",
             html: '<span class="nav-emoji">📰</span> Blog',
-            position: "right",
+            position: "left",
+          },
+          {
+            type: "dropdown",
+            html: '<span class="nav-emoji">🔗</span> More',
+            position: "left",
+            items: [
+              {
+                to: "/hire-me/",
+                label: "Hire Me",
+              },
+              {
+                label: "Skills",
+                to: "/skills/",
+              },
+              {
+                label: "Services",
+                to: "/services/",
+              },
+              {
+                label: "Socials",
+                to: "/socials/",
+              },
+              {
+                label: "Contact",
+                to: "/contact/",
+              },
+              {
+                label: "Resume",
+                to: "/resume/",
+              },
+               {
+                label: "Achievements",
+                to: "/achievements/",
+              },
+               {
+                label: "Uses",
+                to: "/uses/",
+              },
+               {
+                label: "Now",
+                to: "/now/",
+              },
+               {
+                label: "Open Source",
+                to: "/open-source/",
+              },
+               {
+                label: "Testimonials",
+                to: "/testimonials/",
+              },
+              {
+                label: "Experience",
+                to: "/experience/",
+              },
+              {
+                label: "Projects",
+                to: "/projects/",
+              },
+            ],
           },
           // {
           //   href: "https://github.com/ajay-dhangar/ajay-dhangar.github.io",
@@ -232,6 +274,19 @@ const config = {
       "@gracefullight/docusaurus-plugin-google-adsense",
       { adClient: "ca-pub-5832817025080991" },
     ],
+
+    [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'projects',
+      path: 'projects',
+      routeBasePath: 'projects',
+      sidebarPath: false,        // no sidebar on project pages
+      breadcrumbs: false,
+      showLastUpdateTime: false,
+      showLastUpdateAuthor: false,
+    },
+  ],
 
     [
       path.join(__dirname, "/plugins/my-plugin"),

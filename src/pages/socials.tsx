@@ -117,6 +117,7 @@ export default function SocialDirectory() {
             <AnimatePresence mode="popLayout">
               {filteredLinks.map((link) => {
                 const Icon =
+                // @ts-ignore
                   (Icons as Record<string, React.FC<any>>)[link.iconName] ??
                   Icons.Link;
 

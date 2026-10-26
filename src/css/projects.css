@@ -1,0 +1,11 @@
+/* Styles scoped to the "projects" docs plugin instance (id: 'projects'). */
+
+/* Case studies are standalone pages, so hide previous/next doc navigation. */
+.plugin-id-projects .pagination-nav {
+  display: none;
+}
+
+/* Headings in the case study body sit a little tighter under the header block. */
+.plugin-id-projects .theme-doc-markdown h2 {
+  margin-top: 2.5rem;
+}

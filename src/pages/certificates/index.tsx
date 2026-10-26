@@ -1,349 +1,339 @@
-import React, { useEffect, useRef } from "react";
-import Layout from "@theme/Layout";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Award, Calendar, ExternalLink, Eye } from "lucide-react";
+import React, {useEffect, useMemo, useRef, useState} from 'react';
+import Layout from '@theme/Layout';
+import {certificates, type Certificate, type CertCategory} from '../../data/certificates';
 
-gsap.registerPlugin(ScrollTrigger);
+type Sort = 'newest' | 'oldest' | 'az';
 
-export interface CertificationData {
-  id: string;
-  title: string;
-  issuer: string;
-  date: string;
-  description: string;
-  badge: string;
-  link: string;
-  color: string;
-  fullDescription: string;
-  skills: string[];
-  credentialId: string;
-  validUntil?: string;
-  certificateImage: string;
+const sortLabels: Record<Sort, string> = {
+  newest: 'Newest first',
+  oldest: 'Oldest first',
+  az: 'Title A to Z',
+};
+
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .filter((w) => /^[A-Za-z]/.test(w))
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join('')
+    .toUpperCase();
 }
 
-const CertificatesPage: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+function byDate(a: Certificate, b: Certificate) {
+  return b.year - a.year || (b.month ?? 0) - (a.month ?? 0);
+}
 
-  const certifications: CertificationData[] = [
-    {
-      id: "aws-solutions-architect",
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      description:
-        "Professional-level certification demonstrating expertise in designing distributed systems on AWS.",
-      badge:
-        "https://images.pexels.com/photos/2422280/pexels-photo-2422280.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      color: "from-orange-500 to-red-500",
-      fullDescription:
-        "The AWS Certified Solutions Architect – Professional certification validates advanced technical skills and experience in designing distributed applications and systems on the AWS platform. This certification demonstrates expertise in designing and deploying dynamically scalable, highly available, fault-tolerant, and reliable applications on AWS.",
-      skills: [
-        "AWS Architecture",
-        "Cloud Computing",
-        "System Design",
-        "Security",
-        "Cost Optimization",
-        "Migration Strategies",
-      ],
-      credentialId: "AWS-SAP-2023-001234",
-      validUntil: "2026",
-      certificateImage:
-        "https://images.pexels.com/photos/2422280/pexels-photo-2422280.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-    {
-      id: "google-cloud-developer",
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud Platform",
-      date: "2023",
-      description:
-        "Certification in designing, building, and deploying applications on Google Cloud.",
-      badge:
-        "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      color: "from-blue-500 to-green-500",
-      fullDescription:
-        "The Professional Cloud Developer certification demonstrates the ability to build scalable and highly available applications using Google-recommended tools and best practices. This certification validates skills in application development, monitoring, and debugging on Google Cloud Platform.",
-      skills: [
-        "Google Cloud Platform",
-        "Application Development",
-        "Microservices",
-        "DevOps",
-        "Monitoring",
-        "API Design",
-      ],
-      credentialId: "GCP-PCD-2023-005678",
-      validUntil: "2025",
-      certificateImage:
-        "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-    {
-      id: "meta-frontend-developer",
-      title: "Meta Frontend Developer Professional",
-      issuer: "Meta (Facebook)",
-      date: "2022",
-      description:
-        "Comprehensive program covering React, JavaScript, HTML, CSS, and UX/UI design principles.",
-      badge:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      color: "from-blue-600 to-purple-600",
-      fullDescription:
-        "The Meta Frontend Developer Professional Certificate program provides comprehensive training in frontend development technologies and best practices. This program covers modern JavaScript, React development, responsive design, and user experience principles used at Meta.",
-      skills: [
-        "React",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "UX/UI Design",
-        "Responsive Design",
-        "Version Control",
-      ],
-      credentialId: "META-FED-2022-009876",
-      certificateImage:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-    {
-      id: "docker-certified-associate",
-      title: "Docker Certified Associate",
-      issuer: "Docker Inc.",
-      date: "2022",
-      description:
-        "Certification in containerization, Docker fundamentals, and container orchestration.",
-      badge:
-        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      color: "from-cyan-500 to-blue-500",
-      fullDescription:
-        "The Docker Certified Associate (DCA) certification validates skills in containerization using Docker. This certification demonstrates proficiency in Docker fundamentals, image creation, container orchestration, networking, security, and troubleshooting.",
-      skills: [
-        "Docker",
-        "Containerization",
-        "Orchestration",
-        "Networking",
-        "Security",
-        "DevOps",
-      ],
-      credentialId: "DCA-2022-543210",
-      validUntil: "2025",
-      certificateImage:
-        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-    {
-      id: "kubernetes-administrator",
-      title: "Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      description:
-        "Hands-on certification for Kubernetes cluster administration and troubleshooting.",
-      badge:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      color: "from-purple-500 to-indigo-500",
-      fullDescription:
-        "The Certified Kubernetes Administrator (CKA) program provides assurance that CKAs have the skills, knowledge, and competency to perform the responsibilities of Kubernetes administrators. This hands-on certification demonstrates expertise in cluster management, troubleshooting, and maintenance.",
-      skills: [
-        "Kubernetes",
-        "Cluster Administration",
-        "Troubleshooting",
-        "Networking",
-        "Storage",
-        "Security",
-      ],
-      credentialId: "CKA-2022-112233",
-      validUntil: "2025",
-      certificateImage:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-    {
-      id: "mongodb-developer",
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB Inc.",
-      date: "2021",
-      description:
-        "Professional certification in MongoDB database design, development, and optimization.",
-      badge:
-        "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400",
-      link: "#",
-      color: "from-green-500 to-emerald-500",
-      fullDescription:
-        "The MongoDB Certified Developer Associate certification validates the knowledge and skills required to develop applications using MongoDB. This certification demonstrates proficiency in MongoDB fundamentals, data modeling, indexing, aggregation, and application development.",
-      skills: [
-        "MongoDB",
-        "Database Design",
-        "Data Modeling",
-        "Indexing",
-        "Aggregation",
-        "Performance Optimization",
-      ],
-      credentialId: "MDB-DEV-2021-445566",
-      certificateImage:
-        "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-  ];
+function Badge({children}: {children: React.ReactNode}) {
+  return (
+    <span className="rounded-md bg-gray-100 px-2 py-0.5 text-xs text-gray-700 dark:bg-gray-800 dark:text-gray-300">
+      {children}
+    </span>
+  );
+}
+
+function CertRow({cert, onOpen}: {cert: Certificate; onOpen: () => void}) {
+  return (
+    <li className="m-0 border-b border-gray-200 dark:border-gray-700">
+      <button
+        type="button"
+        onClick={onOpen}
+        className="flex w-full cursor-pointer appearance-none items-start gap-4 border-0 bg-transparent px-2 py-5 text-left text-inherit transition-colors hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--ifm-color-primary)] dark:hover:bg-gray-800/60"
+        style={{font: 'inherit'}}
+        aria-label={`${cert.title}, ${cert.issuer}, ${cert.year}. Open details`}
+      >
+        <span
+          aria-hidden="true"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--ifm-color-primary)] text-sm font-semibold text-[var(--ifm-color-primary)]"
+        >
+          {initials(cert.issuer)}
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-lg font-semibold leading-snug">{cert.title}</span>
+          <span className="mt-0.5 block text-gray-600 dark:text-gray-400">{cert.issuer}</span>
+          <span className="mt-3 flex flex-wrap gap-2">
+            {cert.skills.slice(0, 4).map((s) => (
+              <Badge key={s}>{s}</Badge>
+            ))}
+            {cert.skills.length > 4 && <Badge>+{cert.skills.length - 4} more</Badge>}
+          </span>
+        </span>
+        <span className="hidden shrink-0 text-right text-sm sm:block">
+          <span className="block text-gray-600 dark:text-gray-400">{cert.category}</span>
+          <span
+            className={`mt-1 block ${
+              cert.credentialUrl ? 'text-[var(--ifm-color-primary)]' : 'text-gray-500 dark:text-gray-500'
+            }`}
+          >
+            {cert.credentialUrl ? 'Verifiable' : 'No public link'}
+          </span>
+        </span>
+      </button>
+    </li>
+  );
+}
+
+function DetailDialog({cert, onClose}: {cert: Certificate | null; onClose: () => void}) {
+  const ref = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
+    const dlg = ref.current;
+    if (!dlg) return;
+    if (cert && !dlg.open) dlg.showModal();
+    if (!cert && dlg.open) dlg.close();
+  }, [cert]);
 
-    gsap.fromTo(
-      ".cert-title",
-      { opacity: 0, y: 50, scale: 0.9 },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 1.2,
-        ease: "back.out(1.7)",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 80%",
-        },
-      }
-    );
+  return (
+    <dialog
+      ref={ref}
+      onClose={onClose}
+      onClick={(e) => {
+        // Click on the backdrop (the dialog element itself) closes it.
+        if (e.target === ref.current) ref.current?.close();
+      }}
+      aria-labelledby="cert-dialog-title"
+      className="w-[min(92vw,40rem)] rounded-2xl border border-gray-200 bg-white p-0 text-gray-900 shadow-2xl backdrop:bg-black/60 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
+    >
+      {cert && (
+        <div className="p-6 sm:p-8">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <p className="m-0 text-sm text-gray-600 dark:text-gray-400">
+                {cert.issuer} · {cert.year}
+              </p>
+              <h2 id="cert-dialog-title" className="mb-0 mt-1 text-2xl font-bold leading-snug">
+                {cert.title}
+              </h2>
+            </div>
+            <button
+              type="button"
+              onClick={() => ref.current?.close()}
+              aria-label="Close details"
+              className="shrink-0 cursor-pointer rounded-lg border border-gray-300 bg-transparent px-3 py-1 text-sm text-inherit dark:border-gray-600"
+            >
+              Close
+            </button>
+          </div>
 
-    gsap.fromTo(
-      ".cert-card",
-      { opacity: 0, y: 50, rotationY: -15, scale: 0.8 },
-      {
-        opacity: 1,
-        y: 0,
-        rotationY: 0,
-        scale: 1,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 60%",
-        },
-      }
-    );
+          {cert.image && (
+            <img
+              src={cert.image}
+              alt={`Certificate: ${cert.title}`}
+              className="mt-5 w-full rounded-lg border border-gray-200 dark:border-gray-700"
+              loading="lazy"
+            />
+          )}
+
+          <p className="mt-5 text-gray-700 dark:text-gray-300">{cert.description}</p>
+
+          <h3 className="mb-2 mt-6 text-base font-semibold">Skills covered</h3>
+          <ul className="m-0 flex list-none flex-wrap gap-2 p-0">
+            {cert.skills.map((s) => (
+              <li key={s} className="m-0">
+                <Badge>{s}</Badge>
+              </li>
+            ))}
+          </ul>
+
+          {cert.credentialId && (
+            <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">
+              Credential ID: <code>{cert.credentialId}</code>
+            </p>
+          )}
+
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            {cert.credentialUrl ? (
+              <a
+                href={cert.credentialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary hover:text-white hover:no-underline"
+              >
+                Verify on {cert.issuer.split(' ')[0]}
+              </a>
+            ) : (
+              <p className="m-0 text-sm text-gray-600 dark:text-gray-400">
+                This certificate has no public verification link. Ask me for proof by email.
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+    </dialog>
+  );
+}
+
+export default function Certificates(): JSX.Element {
+  const [query, setQuery] = useState('');
+  const [category, setCategory] = useState<CertCategory | 'All'>('All');
+  const [sort, setSort] = useState<Sort>('newest');
+  const [openId, setOpenId] = useState<string | null>(null);
+
+  const categories = useMemo(() => {
+    const counts = new Map<CertCategory, number>();
+    certificates.forEach((c) => counts.set(c.category, (counts.get(c.category) ?? 0) + 1));
+    return Array.from(counts.entries());
   }, []);
 
-  const handleViewCertificate = (certId: string) => {
-    window.location.href = `/certificates/${certId}`;
+  const visible = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const list = certificates.filter((c) => {
+      if (category !== 'All' && c.category !== category) return false;
+      if (!q) return true;
+      return [c.title, c.issuer, c.description, ...c.skills].some((t) => t.toLowerCase().includes(q));
+    });
+    if (sort === 'newest') list.sort(byDate);
+    if (sort === 'oldest') list.sort((a, b) => -byDate(a, b));
+    if (sort === 'az') list.sort((a, b) => a.title.localeCompare(b.title));
+    return list;
+  }, [query, category, sort]);
+
+  // Group by year only when sorting by date; A-Z gets one flat list.
+  const groups = useMemo(() => {
+    if (sort === 'az') return [{label: '', items: visible}];
+    const map = new Map<number, Certificate[]>();
+    visible.forEach((c) => map.set(c.year, [...(map.get(c.year) ?? []), c]));
+    return Array.from(map.entries()).map(([year, items]) => ({label: String(year), items}));
+  }, [visible, sort]);
+
+  const issuers = new Set(certificates.map((c) => c.issuer)).size;
+  const latest = Math.max(...certificates.map((c) => c.year));
+  const filtering = query.trim() !== '' || category !== 'All';
+  const openCert = certificates.find((c) => c.id === openId) ?? null;
+
+  const reset = () => {
+    setQuery('');
+    setCategory('All');
   };
 
   return (
     <Layout
       title="Certificates"
-      description="Check out my certificates on various technologies. I have a collection of certificates from Coursera, Udemy, and other platforms."
+      description="Professional certifications and training completed by Ajay Dhangar in cloud, frontend, DevOps, and databases."
     >
-      <div
-        ref={sectionRef}
-        className="py-20 px-6 bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-black"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="cert-title text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 bg-clip-text text-transparent">
-              Certifications
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Professional certifications that validate my expertise in modern
-              technologies and best practices
+      <main className="section-padding m-4">
+        <div className="container-max">
+          <header className="max-w-2xl">
+            <h1 className="mb-4 text-4xl font-bold sm:text-5xl">Certificates</h1>
+            <p className="text-lg text-gray-700 dark:text-gray-300">
+              Courses and exams I have completed. Open any entry for the skills it covered and a
+              link to check it with the issuer.
             </p>
-          </div>
+            <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+              {certificates.length} certificates · {issuers} issuers · latest in {latest}
+            </p>
+          </header>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
-              <div
-                key={index}
-                className="cert-card group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-105 border border-white/20 dark:border-gray-700/50 overflow-hidden"
+          {/* Controls */}
+          <div className="mt-10 grid gap-4 md:grid-cols-[1fr_auto] md:items-end">
+            <div>
+              <label htmlFor="cert-search" className="mb-1 block text-sm font-medium">
+                Search by title, issuer, or skill
+              </label>
+              <input
+                id="cert-search"
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Try “React” or “Google”"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-base text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100"
+              />
+            </div>
+            <div>
+              <label htmlFor="cert-sort" className="mb-1 block text-sm font-medium">
+                Sort
+              </label>
+              <select
+                id="cert-sort"
+                value={sort}
+                onChange={(e) => setSort(e.target.value as Sort)}
+                className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2.5 text-base text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-100 md:w-auto"
               >
-                {/* 3D Background Effect */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
-                />
-
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700" />
-
-                <div className="relative z-10">
-                  <div className="flex items-start justify-between mb-6">
-                    <div
-                      className={`p-4 rounded-2xl bg-gradient-to-br ${cert.color} text-white shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-500`}
-                    >
-                      <Award className="w-8 h-8" />
-                    </div>
-                    <div className="flex space-x-2">
-                      <button
-                        onClick={() => handleViewCertificate(cert.id)}
-                        className="opacity-0 group-hover:opacity-100 p-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110 border-none"
-                        title="View Certificate Details"
-                      >
-                        <Eye className="w-5 h-5" />
-                      </button>
-                      <a
-                        href={cert.link}
-                        className="opacity-0 group-hover:opacity-100 p-2 bg-gray-100 dark:bg-gray-700 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300 hover:scale-110"
-                        title="External Link"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    </div>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                    {cert.title}
-                  </h3>
-
-                  <div className="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>{cert.date}</span>
-                    <span className="mx-2">•</span>
-                    <span className="font-medium">{cert.issuer}</span>
-                  </div>
-
-                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-6">
-                    {cert.description}
-                  </p>
-
-                  {/* Skills Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {cert.skills.slice(0, 3).map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full font-medium"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                    {cert.skills.length > 3 && (
-                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium">
-                        +{cert.skills.length - 3} more
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-                        Verified Certification
-                      </span>
-                      <div
-                        className={`w-4 h-4 rounded-full bg-gradient-to-r ${cert.color} shadow-lg`}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-20 text-center">
-            <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
-              <Award className="w-6 h-6 mr-3" />
-              <span className="text-lg font-semibold">
-                {certifications.length} Professional Certifications Earned
-              </span>
+                {(Object.keys(sortLabels) as Sort[]).map((s) => (
+                  <option key={s} value={s}>
+                    {sortLabels[s]}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
+
+          <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+            {([['All', certificates.length], ...categories] as [CertCategory | 'All', number][]).map(
+              ([name, count]) => {
+                const active = category === name;
+                return (
+                  <button
+                    key={name}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => setCategory(name)}
+                    className={`cursor-pointer rounded-full border px-4 py-1.5 text-sm transition-colors ${
+                      active
+                        ? 'border-[var(--ifm-color-primary)] bg-[var(--ifm-color-primary)] text-white'
+                        : 'border-gray-300 bg-transparent text-inherit hover:border-[var(--ifm-color-primary)] dark:border-gray-600'
+                    }`}
+                  >
+                    {name} <span className="opacity-70">{count}</span>
+                  </button>
+                );
+              },
+            )}
+          </div>
+
+          <p aria-live="polite" className="mb-0 mt-6 text-sm text-gray-600 dark:text-gray-400">
+            Showing {visible.length} of {certificates.length}
+            {filtering && (
+              <>
+                {' · '}
+                <button
+                  type="button"
+                  onClick={reset}
+                  className="cursor-pointer border-0 bg-transparent p-0 text-[var(--ifm-color-primary)] underline"
+                >
+                  Clear filters
+                </button>
+              </>
+            )}
+          </p>
+
+          {/* Results */}
+          {visible.length === 0 ? (
+            <div className="mt-8 rounded-xl border border-dashed border-gray-300 p-10 text-center dark:border-gray-600">
+              <p className="mb-1 text-lg font-semibold">No certificates match “{query}”</p>
+              <p className="mb-5 text-gray-600 dark:text-gray-400">
+                Check the spelling, or remove the category filter.
+              </p>
+              <button type="button" onClick={reset} className="btn-primary cursor-pointer border-0">
+                Show all certificates
+              </button>
+            </div>
+          ) : (
+            <div className="mt-4">
+              {groups.map((g) => (
+                <section
+                  key={g.label || 'all'}
+                  className={g.label ? 'grid gap-2 md:grid-cols-[6rem_1fr] md:gap-8' : ''}
+                  aria-label={g.label ? `Certificates from ${g.label}` : undefined}
+                >
+                  {g.label && (
+                    <h2 className="m-0 pt-5 text-xl font-semibold text-gray-500 dark:text-gray-400 md:sticky md:top-20 md:self-start">
+                      {g.label}
+                    </h2>
+                  )}
+                  <ul className="m-0 list-none p-0">
+                    {g.items.map((c) => (
+                      <CertRow key={c.id} cert={c} onOpen={() => setOpenId(c.id)} />
+                    ))}
+                  </ul>
+                </section>
+              ))}
+            </div>
+          )}
         </div>
-      </div>
+      </main>
+
+      <DetailDialog cert={openCert} onClose={() => setOpenId(null)} />
     </Layout>
   );
-};
-
-export default CertificatesPage;
+}
