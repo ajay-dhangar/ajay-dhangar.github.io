@@ -95,7 +95,7 @@ export default function AboutPage(): JSX.Element {
                 I am a B.Tech Software Engineer based in India, passionate about building high-performance web platforms, developer tools, and interactive educational environments. As the founder of <strong>CodeHarborHub</strong> and creator of the <strong>Algo</strong> project, my goal is to simplify tech learning and foster open-source growth worldwide.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
-                <Link to="/docs/intro" className="btn-primary no-underline text-white hover:text-white">
+                <Link to="/docs/" className="btn-primary no-underline text-white hover:text-white">
                   Explore Documentation
                 </Link>
                 <a href="https://github.com/ajay-dhangar" target="_blank" rel="noopener noreferrer" className="btn-secondary no-underline flex items-center gap-2">
